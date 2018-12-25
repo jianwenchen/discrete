@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  24 DEC 2018 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  25 DEC 2018 10:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,7 +602,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 11.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 12.
 
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
@@ -610,11 +610,7 @@ File: c70gbsn.fd 2008/10/03 4.8.1
 )
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2012/05/07 4.8.3
-)
-
-LaTeX Warning: No \author given.
-
-[1
+) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -664,11 +660,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3391 strings out of 494406
- 37936 string characters out of 6169674
+ 3404 strings out of 494406
+ 38126 string characters out of 6169674
  99947 words of memory out of 5000000
- 6683 multiletter control sequences out of 15000+600000
- 23140 words of font info for 83 fonts, out of 8000000 for 9000
+ 6693 multiletter control sequences out of 15000+600000
+ 24027 words of font info for 86 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  32i,7n,48p,1148b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -710,7 +706,7 @@ ype1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9
 2.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/
 fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 /gbsnuff.pfb>
-Output written on book.pdf (9 pages, 244142 bytes).
+Output written on book.pdf (9 pages, 245945 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
