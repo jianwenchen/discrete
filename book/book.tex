@@ -1,0 +1,29 @@
+\documentclass{book}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{xCJKnumb}
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+  \title{离散数学}
+  \maketitle
+
+  \titleformat{\chapter}{\centering\Huge\bfseries}{第 \xCJKnumber{\thechapter}
+    章}{1em}{}
+  \newtheorem{Ex}{习题}[chapter]
+
+
+  \input{set}
+  \input{miscellaneous}
+  \setcounter{chapter}{0}o
+  \input{set_ans}
+  \input{miscellaneous_ans}
+  
+\end{CJK*}
+\end{document}
+
+
+
+

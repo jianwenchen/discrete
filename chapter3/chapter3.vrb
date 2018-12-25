@@ -1,0 +1,10 @@
+\frametitle{4. 关系的闭包}
+  \begin{algorithm}[H]
+    \caption{Computing the Transitive Closure}
+    \begin{algorithmic}
+    \REQUIRE $M_R$: zero-one $n \times n$ matrix for relation $R$
+    \ENSURE $B$: zero-one $n \times n$ matrix for realtion $R^*$
+     \STATE $A \leftarrow M_R$
+     \STATE $B \leftarrow A$
+    \end{algorithmic}
+  \end{algorithm}

@@ -1,0 +1,298 @@
+\documentclass{beamer}
+%\usepackage{beamerthemesplit}
+\usepackage{CJKutf8}
+\usepackage{tikz}
+\usepackage{clrscode}
+\setbeamertemplate{theorems}[numbered]
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+\newtheorem{Thm}{定理}[section]
+\newtheorem{Cor}{推论}[section]
+\newtheorem{Ax}{公理}[section]
+\theoremstyle{definition}
+\newtheorem{Def}{定义}[section]
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+\date{}
+\author{}
+
+\title{第四章 无穷集合及其基数}
+\begin{frame}
+  \titlepage
+\end{frame}  
+\section{可数集}
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Def}
+    如果从集合$X$到集合$Y$存在一个双射，则称$X$与$Y$\alert{对等}，记为$X \sim Y$。
+  \end{Def}\pause
+  \begin{Def}
+    如果从自然数集$\mathbb{N}$到集合$X$存在一个一一对应$f:\mathbb{N}\to X$，则称集合$X$是可数无穷集合，简称\alert{可数集}或\alert{可列集}。如果$X$不是可数集且$X$不是有穷集合，则称$X$为不可数无穷集合，简称\alert{不可数集}。
+  \end{Def}\pause
+  \begin{Thm}
+    集合$A$为可数集的充分必要条件是$A$的全部元素可以排成无重复项的序列
+    \[a_1, a_2, \ldots, a_n, \cdots\]
+    因此，$A$可写成$A = \{a_1, a_2, a_3, \cdots\}$。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Thm}
+   设$A$为可数集合，$B$为有穷集合，则$A\cup B$为可数集。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Thm}
+    设$A$与$B$为两个可数集，则$A\cup B$为可数集。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Thm}
+    设$A_1, A_2, \cdots, A_n, \cdots$为可数集合的一个无穷序列，则$\bigcup_{n=1}^{\infty}A_n$是可数集。即可数多个可数集之并是可数集。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Thm}
+    设$A$与$B$为两个可数集，则$A\times B$为可数集。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 可数集}
+  \begin{Thm}
+    全体有理数之集$\mathbb{Q}$是可数集。
+  \end{Thm}
+\end{frame}
+
+
+\section{连续统集}
+\begin{frame}
+  \frametitle{2 连续统集}
+  \begin{Thm}
+    区间$[0,1]$中的所有实数构成的集合是不可数集。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2 连续统集}
+  \begin{Def}
+    凡与集合$[0,1]$存在一个一一对应的集合称为具有“连续统的势”的集合，简称\alert{连续统}。
+  \end{Def}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2 连续统集}
+  \begin{Thm}
+    无穷集合必包含有可数子集。
+  \end{Thm}\pause
+  \begin{Thm}
+    设$M$是一个无穷集合，$A$是至多可数集合，则$M \sim M \cup A$。
+  \end{Thm}\pause
+  \begin{Thm}
+    设$M$为无穷集合，$A$为$M$的至多可数子集，$M\setminus A$为无穷集合，则$M \sim M\setminus A$。
+  \end{Thm}
+\end{frame}
+\begin{frame}
+  \frametitle{2 连续统集}
+  \begin{Thm}
+    设$A_1, A_2, \cdots, A_n$为$n$个两两不相交的连续统，则$\bigcup_{i=1}^nA_i$是连续统。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2 连续统集}
+  \begin{Thm}
+    设$A_1, A_2, \cdots, A_n, \cdots$为两两不相交的集序列。如果$A_k \sim [0,1], k = 1, 2, \cdots$，则
+    \[\bigcup_{n=1}^{\infty}A_n \sim [0,1]\]
+  \end{Thm}
+  \begin{Cor}
+    全体实数之集是一个连续统。
+  \end{Cor}
+  \begin{Cor}
+    全体无理数之集是一个连续统。
+  \end{Cor}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2 连续统集}
+    \begin{codebox}
+    \Procname{$\proc{K}(P)$}
+    \li \If $H(P,P) == 1$ 
+    \li  $\quad\quad$\Return
+    \li \ElseNoIf Loop forever
+    \End
+  \end{codebox}  
+\end{frame}
+
+\section{基数及其比较}
+\begin{frame}
+  \frametitle{3 基数及其比较}
+  \begin{Def}
+    集合$A$的基数是一个符号，凡与$A$对等的集合都赋以同一个记号。集合$A$的基数记为$|A|$。
+  \end{Def}
+  \begin{Def}
+    所有与集合$A$对等的集合构成的集族称为$A$的基数。
+  \end{Def}
+    \begin{Def}
+    集合$A$的基数与集合$B$的基数称为是相等的，当且仅当$A \sim B$。
+  \end{Def}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3 基数及其比较}
+  \begin{Def}
+    $\alpha$，$\beta$是任意两个基数，$A$,$B$是分别以$\alpha$，$\beta$为其基数的集合。如果$A$与$B$的一个真子集对等，但$A$却不能与$B$对等，则称$\alpha$小于基数$\beta$，记为$\alpha < \beta$。
+  \end{Def}\pause
+  显然，
+
+  $\alpha \leq \beta$当且仅当存在单射$f:A \to B$。
+
+  $\alpha < \beta$当且仅当存在单数$f:A \to B$且不存在$A$到$B$的双射。
+\end{frame}
+
+\begin{frame}
+  \frametitle{3 基数及其比较}
+  \begin{Thm}[康托]
+    对任一集合$M$，$|M| < |2^{M}|$。
+  \end{Thm}
+\end{frame}
+
+\section{康托-伯恩斯坦定理}
+\begin{frame}
+  \frametitle{4 康托-伯恩斯坦定理}
+  \begin{Thm}[康托-伯恩斯坦]
+    设$A$，$B$是两个集合。如果存在单射$f:A\to B$与单射$g:B\to A$，则$A$与$B$的基数相等。
+  \end{Thm}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{4 康托-伯恩斯坦定理}
+  \begin{Thm}[塔斯基不动点定理]
+    设$(A, \leq)$为一个完备格($A$的任一非空子集均有上确界和下确界)，$f:A \to A$为单调函数($\forall x, y \in A, x \leq y \rightarrow f(x) \leq f(y)$)，则$\exists z \in A$，使得$f(z)=z$。
+  \end{Thm}
+  \begin{Thm}[巴拿赫映射分解定理]
+    设$A$, $B$为任意两个集合，$f$为从$A$到$B$的映射，$g$为从$B$到$A$的映射，则存在$A$的划分$\{A_1,A_2\}$和$B$的$\{B_1,B_2\}$，使得\[f(A_1) = B_1,g(A_2) = B_2.\]
+  \end{Thm}
+\end{frame}
+
+\section{公理集合论}
+\begin{frame}
+  \frametitle{5 公理集合论}
+  \begin{Ax}[外延公理]
+    \begin{equation*}
+      \forall A \forall B (\forall x (x \in A \leftrightarrow x\in B)\rightarrow A = B)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[空集公理]
+    \begin{equation*}
+      \exists \phi \forall x (x \notin \phi)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[对公理]
+    \begin{equation*}
+      \forall u \forall v \exists B \forall x (x \in B \Leftrightarrow x = u \lor x = v)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[并集公理]
+    \begin{equation*}
+     \forall A \exists B \forall x (x \in B \leftrightarrow (\exists b \in A) x \in b)
+    \end{equation*}
+  \end{Ax}
+\end{frame}
+\begin{frame}
+  \frametitle{5 公理集合论}
+    \begin{Ax}[幂集公理]
+    \begin{equation*}
+      \forall a \exists B \forall x ( x \in B \leftrightarrow x \subseteq a)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[子集公理]
+    \begin{equation*}
+      \forall c \exists B \forall x (x \in B \leftrightarrow x \in c \land \varphi(x))
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[无穷公理]
+    \begin{equation*}
+      \exists A ( \phi \in A \land (\forall a \in A) a^+ \in A)
+    \end{equation*}
+  \end{Ax}
+\end{frame}
+
+\begin{frame}
+  \frametitle{5 公理集合论}
+    \begin{Ax}[代换公理]
+    \begin{equation*}
+      \begin{split}
+      \forall A ((\forall x \in A) \forall y_1 \forall y_2 (\varphi(x, y_1) \land \varphi(x, y2) \rightarrow y_1 = y_2)\\
+      \rightarrow \exists B \forall y (y \in B \leftrightarrow (\exists x \in A) \varphi(x, y)))
+    \end{split}
+  \end{equation*}
+  \end{Ax}
+  \begin{Ax}[正则公理]
+    \begin{equation*}
+      (\forall A \neq \phi) (\exists m \in A) m \cap A = \phi
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[选择公理]
+    \begin{equation*}
+      (\forall \text{relation} R)
+      (\exists \text{function} F)
+      (F \subseteq R \land
+      \text{dom} F
+      = \text{dom} R)
+    \end{equation*}
+  \end{Ax}
+\end{frame}
+
+\begin{frame}
+  \frametitle{5 公理集合论}
+  \begin{enumerate}
+  \item $0 \in \mathbb{N}$；
+  \item $n \in \mathbb{N} \rightarrow n ++ \in \mathbb{N}$;
+  \item $\forall n \in \mathbb{N} n ++ \neq 0$；
+  \item $\forall n \in \mathbb{N} \forall m \in \mathbb{N} n \neq m \rightarrow n ++ \neq m ++$；
+    \item $(P(0) \land \forall n \in \mathbb{N} p(n) \rightarrow p(n++) )\rightarrow \forall n p(n)$。 
+  \end{enumerate}
+\end{frame}
+\begin{frame}
+  \frametitle{5 公理集合论}
+   设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+   
+    \end{enumerate}
+  \end{frame}
+  \begin{frame}
+  \frametitle{5 公理集合论}
+    \begin{enumerate}
+       \item $x \leq x$
+   \item $ x \leq y \land y \leq x \rightarrow x = y$
+   \item $x \leq y \land y \leq z \rightarrow x \leq z$
+   \item $x \leq y \lor y \leq x$ 
+\item $x > y \rightarrow x + z > y + z$
+\item $x > y \land z >0 \rightarrow x * z > y * z$
+\item   $\forall A \subseteq \mathbb{R} (A \neq \phi \land \exists x \in \mathbb{R} (\forall y \in A (y \leq x)) \rightarrow \exists z \in R ((\forall y \in A (y \leq z) )\land ( \forall x \in \mathbb{R} (\forall y \in A (y \leq x) \rightarrow z \leq x))))$
+\end{enumerate}
+\end{frame}
+
+\end{CJK*}
+\end{document}

@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{集合的概念}{2}{0}{1}
+\beamer@sectionintoc {2}{子集、集合的相等}{10}{0}{2}
+\beamer@sectionintoc {3}{集合的基本运算}{19}{0}{3}
+\beamer@sectionintoc {4}{余集}{54}{0}{4}
+\beamer@sectionintoc {5}{笛卡尔乘积}{54}{0}{5}
+\beamer@sectionintoc {6}{有穷集合的基数}{54}{0}{6}

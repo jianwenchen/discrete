@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{关系的概念}{2}{0}{1}
+\beamer@sectionintoc {2}{关系的性质}{8}{0}{2}
+\beamer@sectionintoc {3}{关系的运算}{14}{0}{3}
+\beamer@sectionintoc {4}{关系矩阵}{20}{0}{4}
+\beamer@sectionintoc {5}{关系的闭包}{29}{0}{5}
+\beamer@sectionintoc {6}{等价关系与集合的划分}{44}{0}{6}
+\beamer@sectionintoc {7}{偏序关系}{51}{0}{7}
