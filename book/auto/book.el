@@ -4,8 +4,10 @@
    (TeX-run-style-hooks
     "latex2e"
     "set"
+    "permutation"
     "miscellaneous"
     "set_ans"
+    "permutation_ans"
     "miscellaneous_ans"
     "bk10"
     "CJKutf8"

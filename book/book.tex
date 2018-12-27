@@ -11,16 +11,20 @@
   \author{陈建文}
   \maketitle
 
-  \titleformat{\chapter}{\centering\Huge\bfseries}{第 \xCJKnumber{\thechapter}
+  \titleformat{\chapter}{\centering\Huge\bfseries}{第\, \xCJKnumber{\thechapter}\,
     章}{1em}{}
   \newtheorem{Ex}{习题}[chapter]
 
+  
 
   \input{set}
+  \input{permutation}
   \input{miscellaneous}
   \setcounter{chapter}{0}
   \input{set_ans}
+  \input{permutation_ans}
   \input{miscellaneous_ans}
+  
   
 \end{CJK*}
 \end{document}
