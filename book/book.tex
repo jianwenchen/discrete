@@ -1,6 +1,7 @@
 \documentclass{book}
 \usepackage{CJKutf8}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{titlesec}
 \usepackage{titletoc}
@@ -13,15 +14,19 @@
 
   \titleformat{\chapter}{\centering\Huge\bfseries}{第\, \xCJKnumber{\thechapter}\,
     章}{1em}{}
+%  \renewcommand{\chaptermark}[1]{\markboth{第 \thechapter 章}{}}
   \newtheorem{Ex}{习题}[chapter]
 
   
 
   \input{set}
+  \input{function}
   \input{permutation}
   \input{miscellaneous}
   \setcounter{chapter}{0}
   \input{set_ans}
+  \input{function_ans}
+  
   \input{permutation_ans}
   \input{miscellaneous_ans}
   

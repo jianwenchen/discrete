@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  27 DEC 2018 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  28 DEC 2018 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,6 +483,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks21
@@ -516,82 +523,82 @@ Package: xCJKnumb 2006/10/17 4.7.0
 ) (./book.aux)
 \openout1 = `book.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -602,7 +609,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 12.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 13.
 
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
@@ -610,6 +617,16 @@ File: c70gbsn.fd 2008/10/03 4.8.1
 )
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2012/05/07 4.8.3
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
@@ -621,9 +638,9 @@ File: c70gbsn.fdx 2012/05/07 4.8.3
 Chapter 1.
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 5.
+(Font)              using `C70/gbsn/m/n' instead on input line 3.
 
-) (./permutation.tex [3]
+) (./function.tex [3]
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
 (Font)              using `C70/gbsn/m/n' instead on input line 1.
@@ -632,18 +649,26 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/sl' undefined
 
 ]
 Chapter 2.
-) (./miscellaneous.tex [5] [6
+) (./permutation.tex [5] [6
 
 ]
 Chapter 3.
-) (./set_ans.tex [7] [8
+) (./miscellaneous.tex [7] [8
+
+]
+Chapter 4.
+) (./set_ans.tex [9] [10
 
 ]
 Chapter 1.
-) (./permutation_ans.tex [9] [10
+) (./function_ans.tex [11] [12
 
 ]
 Chapter 2.
+) (./permutation_ans.tex [13] [14
+
+]
+Chapter 3.
 
 Overfull \hbox (4.5632pt too wide) in paragraph at lines 10--12
 []\C70/gbsn/m/it/10/8b ° \C70/gbsn/m/n/10/5f ^^O[]\C70/gbsn/m/n/10/53 ó \C70/gb
@@ -664,16 +689,16 @@ Overfull \hbox (15.75922pt too wide) in paragraph at lines 57--59
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 )$\C70/
 gbsn/m/n/10/54 Œ$\OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1
 /cmr/m/n/10 )$\C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n/10/90 ^^R \C70/gbsn/m/n/10/63
- ¨ \C70/gbsn/m/it/10/51 s \C70/gbsn/m/n/10/7c û \C70/gbsn/m/n/10/5f ^^O \C70/gb
-sn/m/n/10/66 / \C70/gbsn/m/n/10/4e ^^@ \C70/gbsn/m/n/10/81 ô \C70/gbsn/m/n/10/7
-6 „ \C70/gbsn/m/n/10/ff ^^L \C70/gbsn/m/n/10/56 à \C70/gbsn/m/n/10/6b d$\OML/cm
-m/m/it/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 ) = \OML/cmm/m
-/it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 )$\C70/gbsn/m/n
-/10/30 ^^B
+ ¨ \C70/gbsn/m/n/10/51 s \C70/gbsn/m/n/10/7c û \C70/gbsn/m/n/10/5f ^^O \C70/gbs
+n/m/n/10/66 / \C70/gbsn/m/n/10/4e ^^@ \C70/gbsn/m/n/10/81 ô \C70/gbsn/m/n/10/76
+ „ \C70/gbsn/m/n/10/ff ^^L \C70/gbsn/m/n/10/56 à \C70/gbsn/m/n/10/6b d$\OML/cmm
+/m/it/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 ) = \OML/cmm/m/
+it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; k\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/
+10/30 ^^B
  []
 
-[11]) (./miscellaneous_ans.tex [12]
-Chapter 3.
+[15]) (./miscellaneous_ans.tex [16]
+Chapter 4.
 
 Overfull \hbox (3.11142pt too wide) in paragraph at lines 33--37
 \C70/gbsn/m/n/10/68 9 \C70/gbsn/m/n/10/63 n \C70/gbsn/m/n/10/4e 
@@ -682,13 +707,13 @@ m/n/10/4e : \C70/gbsn/m/n/10/50 v \C70/gbsn/m/n/10/65 p \C70/gbsn/m/n/10/62 ^^V
  \C70/gbsn/m/n/10/59 G \C70/gbsn/m/n/10/65 p \C70/gbsn/m/n/10/ff ^^L \C70/gbsn/
 m/n/10/53 ï \C70/gbsn/m/n/10/5f —$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/4e :$\O
 T1/cmr/m/n/10 0$\C70/gbsn/m/n/10/62 ^^V\OT1/cmr/m/n/10 1\C70/gbsn/m/n/10/30 ^^B
- \C70/gbsn/m/n/10/5e & \C70/gbsn/m/it/10/51 e \C70/gbsn/m/n/10/65 ¹ \C70/gbsn/m
-/n/10/7a  \C70/gbsn/m/n/10/7e Ä[]\C70/gbsn/m/n/10/53 ï \C70/gbsn/m/n/10/5f —$\
-OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/
-10/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/76 „
+ \C70/gbsn/m/n/10/5e & \C70/gbsn/m/n/10/51 e \C70/gbsn/m/n/10/65 ¹ \C70/gbsn/m/
+n/10/7a  \C70/gbsn/m/n/10/7e Ä[]\C70/gbsn/m/n/10/53 ï \C70/gbsn/m/n/10/5f —$\O
+ML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/1
+0/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/76 „
  []
 
-) [13
+) [17
 
 ] (./book.aux)
 
@@ -696,13 +721,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3648 strings out of 494406
- 41696 string characters out of 6169674
- 102947 words of memory out of 5000000
- 6894 multiletter control sequences out of 15000+600000
- 28082 words of font info for 101 fonts, out of 8000000 for 9000
+ 3780 strings out of 494406
+ 43616 string characters out of 6169674
+ 103397 words of memory out of 5000000
+ 6994 multiletter control sequences out of 15000+600000
+ 31743 words of font info for 117 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 32i,15n,48p,1149b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,21n,48p,1149b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -731,30 +756,31 @@ texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphic
 /share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/fonts/type1
 /arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pf
 b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
-e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8e.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.p
-fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fon
-ts/type1/arphic/gbsnu/gbsnu92.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
-snu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/te
-xmf/fonts/type1/arphic/gbsnu/gbsnu99.pfb></usr/share/texmf/fonts/type1/arphic/g
-bsnu/gbsnuff.pfb>
-Output written on book.pdf (13 pages, 317683 bytes).
+s/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu6d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7a.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
+d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu8e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu92.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu99.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on book.pdf (17 pages, 332425 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
+ 378 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
