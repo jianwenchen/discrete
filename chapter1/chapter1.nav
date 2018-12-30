@@ -1,17 +1,17 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\sectionentry {1}{集合的概念}{2}{集合的概念}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{集合的概念}{2}{集合的概念}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{0}{2}{3/8}{}{0}}
 \headcommand {\beamer@framepages {3}{8}}
 \headcommand {\slideentry {1}{0}{3}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {2}{子集、集合的相等}{10}{子集、集合的相等}{0}}
 \headcommand {\beamer@sectionpages {2}{9}}
 \headcommand {\beamer@subsectionpages {2}{9}}
+\headcommand {\sectionentry {2}{子集、集合的相等}{10}{子集、集合的相等}{0}}
 \headcommand {\slideentry {2}{0}{1}{10/12}{}{0}}
 \headcommand {\beamer@framepages {10}{12}}
 \headcommand {\slideentry {2}{0}{2}{13/15}{}{0}}
@@ -20,9 +20,9 @@
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {2}{0}{4}{17/18}{}{0}}
 \headcommand {\beamer@framepages {17}{18}}
-\headcommand {\sectionentry {3}{集合的基本运算}{19}{集合的基本运算}{0}}
 \headcommand {\beamer@sectionpages {10}{18}}
 \headcommand {\beamer@subsectionpages {10}{18}}
+\headcommand {\sectionentry {3}{集合的基本运算}{19}{集合的基本运算}{0}}
 \headcommand {\slideentry {3}{0}{1}{19/21}{}{0}}
 \headcommand {\beamer@framepages {19}{21}}
 \headcommand {\slideentry {3}{0}{2}{22/24}{}{0}}
@@ -55,15 +55,15 @@
 \headcommand {\beamer@framepages {46}{49}}
 \headcommand {\slideentry {3}{0}{16}{50/53}{}{0}}
 \headcommand {\beamer@framepages {50}{53}}
-\headcommand {\sectionentry {4}{余集}{54}{余集}{0}}
 \headcommand {\beamer@sectionpages {19}{53}}
 \headcommand {\beamer@subsectionpages {19}{53}}
+\headcommand {\sectionentry {4}{余集}{54}{余集}{0}}
+\headcommand {\beamer@sectionpages {54}{53}}
+\headcommand {\beamer@subsectionpages {54}{53}}
 \headcommand {\sectionentry {5}{笛卡尔乘积}{54}{笛卡尔乘积}{0}}
 \headcommand {\beamer@sectionpages {54}{53}}
 \headcommand {\beamer@subsectionpages {54}{53}}
 \headcommand {\sectionentry {6}{有穷集合的基数}{54}{有穷集合的基数}{0}}
-\headcommand {\beamer@sectionpages {54}{53}}
-\headcommand {\beamer@subsectionpages {54}{53}}
 \headcommand {\slideentry {6}{0}{1}{54/54}{}{0}}
 \headcommand {\beamer@framepages {54}{54}}
 \headcommand {\slideentry {6}{0}{2}{55/55}{}{0}}
@@ -94,4 +94,4 @@
 \headcommand {\beamer@subsectionpages {1}{72}}
 \headcommand {\beamer@sectionpages {1}{72}}
 \headcommand {\beamer@documentpages {72}}
-\headcommand {\def \inserttotalframenumber {37}}
+\headcommand {\gdef \inserttotalframenumber {37}}
