@@ -120,4 +120,4 @@
 \headcommand {\beamer@subsectionpages {1}{76}}
 \headcommand {\beamer@sectionpages {1}{76}}
 \headcommand {\beamer@documentpages {76}}
-\headcommand {\def \inserttotalframenumber {59}}
+\headcommand {\gdef \inserttotalframenumber {59}}

@@ -239,7 +239,7 @@
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
   \begin{definition6.3.3}
-    如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上各顶点互不相同，则称此闭通道为\alert{圈}，或回路。
+    如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上各顶点互不相同，则称此闭通道为\alert{圈}，或\alert{回路}。
   \end{definition6.3.3}
   \centering
 \includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
@@ -488,7 +488,8 @@ $G$
 \begin{frame}
   \frametitle{6.4 补图、偶图}
   \begin{definition6.4.2}
-    对任意的正整数$m$，$n$，$m \geq 2$，$n \geq 2$，求一个最小的正整数$r(m,n)$，使得任何有$r(m,n)$个顶点的图$G$中一定含有一个$K_m$或者图$G^c$中含有$K_n$，这里的数$r(m,n)$称为\alert{拉姆齐数}。
+    对任意的正整数$m$，$n$，$m \geq 2$，$n \geq 2$，求一个最小的正整数$r(m,n)$，
+    使得任何有$r(m,n)$个顶点的图$G$中一定含有一个$K_m$或者图$G^c$中一定含有一个$K_n$，这里的数$r(m,n)$称为\alert{拉姆齐数}。
   \end{definition6.4.2}
 \end{frame}
 
@@ -1122,7 +1123,8 @@ $G$
    \draw[thick] (K) to [bend left = 20] (E);
  \end{tikzpicture}  
   \begin{proof}[证明（续上页）]
-    由于$G$是连通的，$p > 2\delta(G)$，所有$G$必有某个顶点$v$，$v$不在$C$上，但与$C$上某个顶点$v_i$邻接。于是得到$G$的一个更长的路，这就出现了矛盾。
+    由于$G$是连通的，$p > 2\delta(G)$，所有$G$必有某个顶点$v$，$v$不在$C$上，但
+    与$C$上某个顶点$v_i$邻接。于是得到$G$的一条更长的路，这就出现了矛盾。
     
   \end{proof}
 \end{frame}
