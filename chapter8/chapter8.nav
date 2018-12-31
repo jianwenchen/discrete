@@ -1,8 +1,8 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\sectionentry {1}{顶点连通度和边连通度}{2}{顶点连通度和边连通度}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{顶点连通度和边连通度}{2}{顶点连通度和边连通度}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/4}{}{0}}
 \headcommand {\beamer@framepages {2}{4}}
 \headcommand {\slideentry {1}{0}{2}{5/8}{}{0}}
@@ -15,12 +15,12 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\slideentry {1}{0}{6}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\sectionentry {2}{门格尔定理}{37}{门格尔定理}{0}}
 \headcommand {\beamer@sectionpages {2}{36}}
 \headcommand {\beamer@subsectionpages {2}{36}}
-\headcommand {\sectionentry {3}{匹配、霍尔定理}{37}{匹配、霍尔定理}{0}}
+\headcommand {\sectionentry {2}{门格尔定理}{37}{门格尔定理}{0}}
 \headcommand {\beamer@sectionpages {37}{36}}
 \headcommand {\beamer@subsectionpages {37}{36}}
+\headcommand {\sectionentry {3}{匹配、霍尔定理}{37}{匹配、霍尔定理}{0}}
 \headcommand {\slideentry {3}{0}{1}{37/38}{}{0}}
 \headcommand {\beamer@framepages {37}{38}}
 \headcommand {\slideentry {3}{0}{2}{39/40}{}{0}}
@@ -33,4 +33,4 @@
 \headcommand {\beamer@subsectionpages {1}{43}}
 \headcommand {\beamer@sectionpages {1}{43}}
 \headcommand {\beamer@documentpages {43}}
-\headcommand {\def \inserttotalframenumber {11}}
+\headcommand {\gdef \inserttotalframenumber {11}}

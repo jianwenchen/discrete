@@ -1,8 +1,8 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\sectionentry {1}{关系的概念}{2}{关系的概念}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{关系的概念}{2}{关系的概念}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/3}{}{0}}
 \headcommand {\beamer@framepages {2}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/5}{}{0}}
@@ -11,9 +11,9 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\slideentry {1}{0}{4}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\sectionentry {2}{关系的性质}{8}{关系的性质}{0}}
 \headcommand {\beamer@sectionpages {2}{7}}
 \headcommand {\beamer@subsectionpages {2}{7}}
+\headcommand {\sectionentry {2}{关系的性质}{8}{关系的性质}{0}}
 \headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
@@ -24,16 +24,16 @@
 \headcommand {\beamer@framepages {12}{12}}
 \headcommand {\slideentry {2}{0}{5}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {3}{关系的运算}{14}{关系的运算}{0}}
 \headcommand {\beamer@sectionpages {8}{13}}
 \headcommand {\beamer@subsectionpages {8}{13}}
+\headcommand {\sectionentry {3}{关系的运算}{14}{关系的运算}{0}}
 \headcommand {\slideentry {3}{0}{1}{14/15}{}{0}}
 \headcommand {\beamer@framepages {14}{15}}
 \headcommand {\slideentry {3}{0}{2}{16/19}{}{0}}
 \headcommand {\beamer@framepages {16}{19}}
-\headcommand {\sectionentry {4}{关系矩阵}{20}{关系矩阵}{0}}
 \headcommand {\beamer@sectionpages {14}{19}}
 \headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\sectionentry {4}{关系矩阵}{20}{关系矩阵}{0}}
 \headcommand {\slideentry {4}{0}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {4}{0}{2}{21/22}{}{0}}
@@ -48,9 +48,9 @@
 \headcommand {\beamer@framepages {26}{26}}
 \headcommand {\slideentry {4}{0}{7}{27/28}{}{0}}
 \headcommand {\beamer@framepages {27}{28}}
-\headcommand {\sectionentry {5}{关系的闭包}{29}{关系的闭包}{0}}
 \headcommand {\beamer@sectionpages {20}{28}}
 \headcommand {\beamer@subsectionpages {20}{28}}
+\headcommand {\sectionentry {5}{关系的闭包}{29}{关系的闭包}{0}}
 \headcommand {\slideentry {5}{0}{1}{29/30}{}{0}}
 \headcommand {\beamer@framepages {29}{30}}
 \headcommand {\slideentry {5}{0}{2}{31/37}{}{0}}
@@ -65,9 +65,9 @@
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\slideentry {5}{0}{7}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\sectionentry {6}{等价关系与集合的划分}{44}{等价关系与集合的划分}{0}}
 \headcommand {\beamer@sectionpages {29}{43}}
 \headcommand {\beamer@subsectionpages {29}{43}}
+\headcommand {\sectionentry {6}{等价关系与集合的划分}{44}{等价关系与集合的划分}{0}}
 \headcommand {\slideentry {6}{0}{1}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
 \headcommand {\slideentry {6}{0}{2}{45/46}{}{0}}
@@ -78,9 +78,9 @@
 \headcommand {\beamer@framepages {48}{48}}
 \headcommand {\slideentry {6}{0}{5}{49/50}{}{0}}
 \headcommand {\beamer@framepages {49}{50}}
-\headcommand {\sectionentry {7}{偏序关系}{51}{偏序关系}{0}}
 \headcommand {\beamer@sectionpages {44}{50}}
 \headcommand {\beamer@subsectionpages {44}{50}}
+\headcommand {\sectionentry {7}{偏序关系}{51}{偏序关系}{0}}
 \headcommand {\slideentry {7}{0}{1}{51/52}{}{0}}
 \headcommand {\beamer@framepages {51}{52}}
 \headcommand {\slideentry {7}{0}{2}{53/53}{}{0}}
@@ -103,4 +103,4 @@
 \headcommand {\beamer@subsectionpages {1}{60}}
 \headcommand {\beamer@sectionpages {1}{60}}
 \headcommand {\beamer@documentpages {60}}
-\headcommand {\def \inserttotalframenumber {40}}
+\headcommand {\gdef \inserttotalframenumber {40}}

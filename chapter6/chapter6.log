@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  30 DEC 2018 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  31 DEC 2018 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1429,7 +1429,7 @@ Package epstopdf Info: Source file: <konigsberg.eps>
 o.pdf konigsberg.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<konigsberg-eps-converted-to.pdf, id=59, 477.785pt x 235.88126pt>
+<konigsberg-eps-converted-to.pdf, id=65, 477.785pt x 235.88126pt>
 File: konigsberg-eps-converted-to.pdf Graphic file (type pdf)
 <use konigsberg-eps-converted-to.pdf>
 Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 80
@@ -1465,7 +1465,7 @@ Package epstopdf Info: Source file: <graph.eps>
  graph.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<graph-eps-converted-to.pdf, id=170, 342.27875pt x 314.17375pt>
+<graph-eps-converted-to.pdf, id=171, 342.27875pt x 314.17375pt>
 File: graph-eps-converted-to.pdf Graphic file (type pdf)
 <use graph-eps-converted-to.pdf>
 Package pdftex.def Info: graph-eps-converted-to.pdf  used on input line 103.
@@ -2210,10 +2210,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23132 strings out of 494406
- 429272 string characters out of 6169674
- 523358 words of memory out of 5000000
- 25694 multiletter control sequences out of 15000+600000
+ 23142 strings out of 494406
+ 429423 string characters out of 6169674
+ 523414 words of memory out of 5000000
+ 25702 multiletter control sequences out of 15000+600000
  54496 words of font info for 195 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,63p,802b,1716s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2272,7 +2272,7 @@ onts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
 gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9f.pfb></usr/share/
 texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter6.pdf (76 pages, 593037 bytes).
+Output written on chapter6.pdf (76 pages, 595083 bytes).
 PDF statistics:
  2408 PDF objects out of 2487 (max. 8388607)
  2150 compressed objects within 22 object streams
