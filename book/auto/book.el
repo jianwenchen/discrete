@@ -6,6 +6,8 @@
     "set"
     "function"
     "permutation"
+    "euler"
+    "hamilton"
     "miscellaneous"
     "set_ans"
     "function_ans"
@@ -18,7 +20,8 @@
     "amsthm"
     "titlesec"
     "titletoc"
-    "xCJKnumb")
+    "xCJKnumb"
+    "tikz")
    (LaTeX-add-amsthm-newtheorems
     "Ex"))
  :latex)
