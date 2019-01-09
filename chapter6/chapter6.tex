@@ -558,64 +558,64 @@ $G$
     设$G=((V_1,V_2),E)$为偶图，存在$G$的一个完全匹配$Y$且$|Y| = |V_1|$的充分必要条件是对$V_1$的任意子集$A$， $|N(A)| \geq |A|$，其中\[N(A) = \{y\in V_2|\exists x \in A \{x,y\} \in E\}\]。
   \end{theorem6.4.3}
 \end{frame}
-  \begin{frame}
-    \frametitle{Stable Matching}
-    \begin{definition1}
-      A certain community consists of $n$ men and $n$ women. Each person ranks those of the opposite sex in accordance with his or her preferences for a marriage partner. We seek a satisfactory way of marrying off all members of the community. We call a set of marriages unstable if under it there are a man and a woman who are not married to each other but prefer each other to their actual mates. For any pattern of preferences is it possible to find a stable set of marriages?
-    \end{definition1}
-  \end{frame}
+%   \begin{frame}
+%     \frametitle{Stable Matching}
+%     \begin{definition1}
+%       A certain community consists of $n$ men and $n$ women. Each person ranks those of the opposite sex in accordance with his or her preferences for a marriage partner. We seek a satisfactory way of marrying off all members of the community. We call a set of marriages unstable if under it there are a man and a woman who are not married to each other but prefer each other to their actual mates. For any pattern of preferences is it possible to find a stable set of marriages?
+%     \end{definition1}
+%   \end{frame}
   
-  \begin{frame}
-    \frametitle{Stable Matching}
-      \begin{codebox}
-    \Procname{$\proc{Gale-Shapley}(manPref,womanPref)$}
-    \zi Initially all $m \in M$ and $w \in W$ are free
-    \zi \While there is a man $m$ who is free
-    \zi \Do
-           Choose such a man $m$
-    \zi       $w \gets $ the highest-ranked woman in m's preference list \\   $\quad\quad\quad$to whom m has not yet proposed
-    \zi \If $w$ is free then
-    \zi \Then $(m,w)$ become engaged
-    \zi \Else
-    \zi $w$ is currently engaged to $m'$
-    \zi \If $w$ prefers $m'$ to $m$ 
-    \zi \Then $m$ remains free
-    \zi \Else
-    \zi $(m,w)$ become engaged
-    \zi $m'$ becomes free
-    \End
-     \End
-    \End
-    \zi \Return S 
-  \end{codebox}
-\end{frame}
-\begin{frame}
-  \frametitle{Stable Matching}
-  \begin{Thm1}
-    The G-S algorithm terminates.
-  \end{Thm1}
-\end{frame}
+%   \begin{frame}
+%     \frametitle{Stable Matching}
+%       \begin{codebox}
+%     \Procname{$\proc{Gale-Shapley}(manPref,womanPref)$}
+%     \zi Initially all $m \in M$ and $w \in W$ are free
+%     \zi \While there is a man $m$ who is free
+%     \zi \Do
+%            Choose such a man $m$
+%     \zi       $w \gets $ the highest-ranked woman in m's preference list \\   $\quad\quad\quad$to whom m has not yet proposed
+%     \zi \If $w$ is free then
+%     \zi \Then $(m,w)$ become engaged
+%     \zi \Else
+%     \zi $w$ is currently engaged to $m'$
+%     \zi \If $w$ prefers $m'$ to $m$ 
+%     \zi \Then $m$ remains free
+%     \zi \Else
+%     \zi $(m,w)$ become engaged
+%     \zi $m'$ becomes free
+%     \End
+%      \End
+%     \End
+%     \zi \Return S 
+%   \end{codebox}
+% \end{frame}
+% \begin{frame}
+%   \frametitle{Stable Matching}
+%   \begin{Thm1}
+%     The G-S algorithm terminates.
+%   \end{Thm1}
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Stable Matching}
-  \begin{Thm2}
-    The G-S algorithm returns a stable matching.
-  \end{Thm2}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Stable Matching}
+%   \begin{Thm2}
+%     The G-S algorithm returns a stable matching.
+%   \end{Thm2}
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Stable Matching}
-  \begin{Thm3}
-    In the stable matching returned from the G-S algorithm, each man is paired with his best valid partner.
-  \end{Thm3}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Stable Matching}
+%   \begin{Thm3}
+%     In the stable matching returned from the G-S algorithm, each man is paired with his best valid partner.
+%   \end{Thm3}
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Stable Matching}
-  \begin{Thm4}
-    In the stable matching returned from the G-S algorithm, each woman is paired with her worst valid partner.
-  \end{Thm4}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Stable Matching}
+%   \begin{Thm4}
+%     In the stable matching returned from the G-S algorithm, each woman is paired with her worst valid partner.
+%   \end{Thm4}
+% \end{frame}
 
 
 \begin{frame}
