@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{ragged2e}
 \usepackage{CJKutf8}
 \usepackage{tikz}
 \setbeamertemplate{theorems}[numbered]
@@ -85,7 +86,8 @@
     设$v$是连通图$G=(V,E)$的一个割点，则下列命题等价：
     \begin{enumerate}[(1)]
     \item $v$是图$G$的一个割点；
-    \item 集合$V\setminus \{v\}$有一个二划分$\{U,W\}$使得$\forall u \in U$，$w \in W$，$v$在联结$u$和$w$的每条路上；
+    \item \justifying\let\raggedright\justifying
+集合$V\setminus \{v\}$有一个二划分$\{U,W\}$, 使得$\forall u \in U$，$w \in W$，$v$在联结$u$和$w$的每条路上；
     \item 存在与$v$不同的两个顶点$u$和$w$，使得$v$在每一条$u$与$w$间的路上。
     \end{enumerate}
   \end{Thm}

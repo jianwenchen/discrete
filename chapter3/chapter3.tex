@@ -1,5 +1,6 @@
 \documentclass{beamer}
-%\usepackage{beamerthemesplit}
+% \usepackage{beamerthemesplit}
+\usepackage{ragged2e}
 \usepackage{CJKutf8}
 \usepackage{tikz}
 \usepackage{algorithm}
@@ -7,6 +8,7 @@
 \setbeamertemplate{theorems}[numbered]
 \usepackage{clrscode3e}
 
+\justifying\let\raggedright\justifying
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
 
@@ -26,12 +28,14 @@
 \section{关系的概念}
 \begin{frame}
   \frametitle{1. 关系的概念}
-  \begin{Def}
+  
+  \begin{Def}\justifying\let\raggedright\justifying
     设$A$与$B$是两个集合。一个从$A\times B$到$\{T,F\}$的映射$R$，称为从$A$到$B$的一个\alert{二元关系}。
     $\forall (a,b) \in A \times B$，如果$(a,b)$在$R$下的象为$T$，则称$a$与$b$符合关系$R$，记为$aRb$;
     如果(a,b)在$R$下的象为$F$，则称$a$与$b$不符合关系$R$，记为$aR\!\!\! / b$。如果$A=B$，则说$R$为$A$上的二元关系。
-  \end{Def}\pause
-  \begin{Def}
+  \end{Def}
+  \pause
+  \begin{Def}\justifying\let\raggedright\justifying
     设$A$与$B$是两个集合。$A\times B$的任一子集称为从$A$到$B$的一个\alert{二元关系}。如果$(a,b)\in R$，则称$a$与$b$符合关系$R$，记为$aRb$；如果$(a,b) \notin R$，则称$a$与$b$不符合关系$R$，并记为$aR\!\!\! / b$。
     如果$A=B$，则称$R$为$A$上的二元关系。
   \end{Def}
@@ -42,7 +46,7 @@
   \begin{Ex}
     自然数集$\mathbb{N}$上的小于等于关系"$\leq$"是$\mathbb{N}$上的一个二元关系。
   \end{Ex}\pause
-  \begin{Ex}
+  \begin{Ex}\justifying\let\raggedright\justifying
     设$n$为任一给定的自然数。对任意的两个整数$m$，$k$，如果$m-k$能被$n$整除，则称$m$与$k$为模$n$同余，并记为$m\equiv k \pmod{n}$。
     显然，$m\equiv k \pmod{n}$当且仅当$m$被$n$除所得到的余数与$k$被$n$除所得到的余数相等。模$n$同余是$\mathbb{Z}$上的一个二元关系。
   \end{Ex}
@@ -54,7 +58,7 @@
     设$R \subseteq A \times B$，集合
     \[\{x|x \in A \text{且} \exists y \in B \text{使得} (x,y) \in R\}\]
     称为$R$的\alert{定义域}，记为$dom(R)$； 集合
-    \[\{x|x \in B \text{且} \exists x \in A \text{使得} (x,y) \in R\}\]
+    \[\{y|y \in B \text{且} \exists x \in A \text{使得} (x,y) \in R\}\]
     称为$R$的\alert{值域}，记为$ran(R)$。
   \end{Def}
 \end{frame}
