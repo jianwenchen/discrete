@@ -1,0 +1,181 @@
+\chapter{树}
+
+\begin{Ex}
+  下列图为树的是\underline{$\quad\quad$}。
+\end{Ex}
+
+  \vspace{0.5cm}
+
+  A.
+    \begin{minipage}{0.18\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+ \end{tikzpicture}
+\end{minipage}\hfill
+  B.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+ \end{tikzpicture}
+
+\end{minipage}\hfill
+      C.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (E);
+ \end{tikzpicture}
+
+\end{minipage}\hfill
+      D.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (A) to  (F);
+
+ \end{tikzpicture}
+
+\end{minipage}
+
+
+\begin{Ex}
+  下列图为森林的是\underline{$\quad\quad$}。
+\end{Ex}
+
+  \vspace{0.5cm}
+
+  A.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+ \end{tikzpicture}
+
+\end{minipage}\hfill  
+  B.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (A) to  (B);
+   
+ \end{tikzpicture}
+
+\end{minipage}\hfill
+C.
+\begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+      \draw[thick] (E) to  (F);
+
+ \end{tikzpicture}
+
+\end{minipage}\hfill
+D.
+    \begin{minipage}{0.18\linewidth}
+      \centering
+          \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}, scale = 0.8]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (1,0)  {};
+   \node[specification] (C)  at (2,0)  {};
+   \node[specification] (D)  at (0,1)  {};
+   \node[specification] (E)  at (1,1)  {};
+   \node[specification] (F)  at (2,1)  {};
+
+   \draw[thick] (A) to  (D);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (B) to  (D);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (A) to  (B);
+   \draw[thick] (E) to  (F);
+
+
+ \end{tikzpicture}
+
+\end{minipage}
