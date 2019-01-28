@@ -32,7 +32,8 @@
   \begin{Def}\justifying\let\raggedright\justifying
     设$A$与$B$是两个集合。一个从$A\times B$到$\{T,F\}$的映射$R$，称为从$A$到$B$的一个\alert{二元关系}。
     $\forall (a,b) \in A \times B$，如果$(a,b)$在$R$下的象为$T$，则称$a$与$b$符合关系$R$，记为$aRb$;
-    如果(a,b)在$R$下的象为$F$，则称$a$与$b$不符合关系$R$，记为$aR\!\!\! / b$。如果$A=B$，则说$R$为$A$上的二元关系。
+    如果(a,b)在$R$下的象为$F$，则称$a$与$b$不符合关系$R$，记为$aR\!\!\! / b$。如
+    果$A=B$，则称$R$为$A$上的二元关系。
   \end{Def}
   \pause
   \begin{Def}\justifying\let\raggedright\justifying
@@ -56,9 +57,9 @@
   \frametitle{1. 关系的概念}
   \begin{Def}
     设$R \subseteq A \times B$，集合
-    \[\{x|x \in A \text{且} \exists y \in B \text{使得} (x,y) \in R\}\]
+    \[\{x \in A | \exists y \in B \text{使得} (x,y) \in R\}\]
     称为$R$的\alert{定义域}，记为$dom(R)$； 集合
-    \[\{y|y \in B \text{且} \exists x \in A \text{使得} (x,y) \in R\}\]
+    \[\{y \in B | \exists x \in A \text{使得} (x,y) \in R\}\]
     称为$R$的\alert{值域}，记为$ran(R)$。
   \end{Def}
 \end{frame}
@@ -75,57 +76,60 @@
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
-    $X$上的二元关系$R$称为\alert{自反}的，如果$\forall x \in X$都有$xRx$。
+    集合$X$上的二元关系$R$称为\alert{自反}的，如果对$X$的任意元素$x$都有$xRx$。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
-   $X$上的二元关系$R$称为\alert{反自反}的，如果$\forall x \in X$都有$(x,x) \notin R$。
+   集合$X$上的二元关系$R$称为\alert{反自反}的，如果对$X$的任意元素$x$都有$(x,x) \notin R$。
   \end{Def}
 \end{frame}
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
-    设$R$为$X$上的二元关系。如果$\forall x, y \in X$，只要$xRy$就有$yRx$，则称$R$是\alert{对称}的。
-  \end{Def}\pause
-\end{frame}
-\begin{frame}
-  \frametitle{2. 关系的性质}
-  \begin{Def}
-     设$R$是$X$上的二元关系。对$X$的任意元素$x,y$，如果$xRy$且$yRx$，则$x=y$，那么就称$R$为\alert{反对称}的。    
+    集合$X$上的二元关系称为\alert{对称}的，如果对$X$的任意元素$x$，$y$，只要$xRy$就有$yRx$。
   \end{Def}
 \end{frame}
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
-    设$R$为$X$上的二元关系，如果对$X$的任意$x,y,z$，只要$xRy$且$yRz$，就有$xRz$，则称$R$为\alert{传递}的。
+         集合$X$上的二元关系称为\alert{反对称}的，如果对$X$的任意元素$x$，$y$，$xRy$且$yRx$，则$x=y$。    
+  \end{Def}
+\end{frame}
+\begin{frame}
+  \frametitle{2. 关系的性质}
+  \begin{Def}
+        集合$X$上的二元关系称为\alert{传递}的，如果对$X$的任意元素$x$，$y$，$z$，只要$xRy$且$yRz$，就有$xRz$。
   \end{Def}
 \end{frame}
 \section{关系的运算}
 \begin{frame}
   \frametitle{3. 关系的运算}
   \begin{Def}
-    设$R$为$A$到$B$的二元关系，$R$的\alert{逆}$R^{-1}$定义为$B$到$A$上的二元关系
+    设$R$为从集合$A$到集合$B$的二元关系，$R$的\alert{逆}$R^{-1}$定义为从集合$B$
+    到集合$A$的二元关系
     \[R^{-1}=\{(y,x)|(x,y)\in R\}\]
   \end{Def}\pause
   \begin{Thm}
-    设$R$为$X$上的二元关系，则$R$是对称的当且仅当$R=R^{-1}$。
+    设$R$为集合$X$上的二元关系，则$R$是对称的当且仅当$R=R^{-1}$。
   \end{Thm}  
 \end{frame}
 \begin{frame}
   \frametitle{3. 关系的运算}
-  \begin{Def}
-    设$R$是$A$到$B$，$S$是$B$到$C$的二元关系。$R$与$S$的合成$R\circ S$定义为$A$到$C$的一个二元关系
-    \[R\circ S = \{(x,z)|(x,z)\in A \times C \text{且}  \exists y \in B \text{使得} xRy \text{且} ySz\}\]
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$R$为从集合$A$到集合$B$，$S$为从集合$B$到集合$C$的二元关系。$R$与$S$的合成
+    $R\circ S$定义为从集合$A$到集合$C$的一个二元关系
+    \[R\circ S = \{(x,z)\in A \times C |  \exists y \in B \text{使得} xRy \text{且} ySz\}\]
   \end{Def}\pause
     \begin{Thm}
-    设$R_1$，$R_2$，$R_3$分别是从$A$到$B$，从$B$到$C$，从$C$到$D$的二元关系，则
+    设$R_1$，$R_2$，$R_3$分别为从集合$A$到集合$B$，从集合$B$到集合$C$，从集合$C$
+    到集合$D$的二元关系，则
     \[(R_1 \circ R_2)\circ R_3 = R_1 \circ (R_2 \circ R_3)\]
   \end{Thm}\pause
   \begin{Thm}
-    设$R$是$X$上的一个二元关系，则$R$是传递的当且仅当$R\circ R \subseteq R$。
+    设$R$为集合$X$上的一个二元关系，则$R$是传递的当且仅当$R\circ R \subseteq R$。
   \end{Thm}\pause
 \end{frame}
 
@@ -133,7 +137,8 @@
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
   \begin{Def}
-    设$X$是一个$m$元集，并且其元素编了号，不妨设$X=\{x_1, x_2, \ldots, x_m\}$。类似的， 设$Y=\{y_1, y_2, \cdots, y_n\}$。令$R$是$X$到$Y$的一个二元关系。
+    设$X=\{x_1, x_2, \ldots, x_m\}$为一个包含$m$个元素的集合，$Y=\{y_1, y_2,
+    \cdots, y_n\}$为一个包含$n$个元素的集合。令$R$是$X$到$Y$的一个二元关系。
     由$R$定义一个$m \times n$矩阵$B = (b_{ij})$如下： $\forall (x_i, y_j) \in X \times Y$，
 \[
     b_{ij}=
@@ -158,7 +163,7 @@
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
   \begin{Thm}
-  设$B$为集合$X$上关系$R$的矩阵，则
+  设$B$为集合$X$上二元关系$R$的矩阵，则
   \begin{enumerate}[(1)]
   \item $R$是自反的，当且仅当$B$的对角线上的全部元素都为1；
   \item $R$是反自反的，当且仅当$B$的对角线上的全部元素都为0；
@@ -171,20 +176,21 @@
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
   \begin{Thm}
-  设$R$为集合$X$上的关系，则
+  设$R$为集合$X$上的二元关系，则
   \begin{enumerate}[(1)]
   \item $R$是自反的，当且仅当$R$的图的每个顶点均有一个环；
   \item $R$是反自反的，当且仅当$R$的图中没有环；
-  \item $R$是对称的，当且仅当$R$的图中任两个不同顶点间有矢线，则必有两条方向相反的矢线；
-  \item $R$是反对称的，当且仅当$R$的图中任两个不同顶点间有失线，则不能有两条方向相反的矢线;
-  \item $R$是传递的，当且仅当从某顶点沿矢线经两条矢线可到另一点，则从某点到另一点有一条矢线。
+  \item $R$是对称的，当且仅当$R$的图中任意两个不同顶点间有矢线，则必有两条方向相反的矢线；
+  \item $R$是反对称的，当且仅当$R$的图中任意两个不同顶点间有失线，则不能有两条方向相反的矢线;
+  \item $R$是传递的，当且仅当从该顶点沿矢线经两条矢线可到另一顶点，则从该顶点到
+    另一顶点有一条矢线。
   \end{enumerate}
 \end{Thm}
 \end{frame}
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
   \begin{Thm}
-    设$B$为集合$X$上关系$R$的矩阵，则$R^{-1}$的矩阵为$B^{T}$。
+    设$B$为集合$X$上二元关系$R$的矩阵，则$R^{-1}$的矩阵为$B^{T}$。
   \end{Thm}
 \end{frame}
 
@@ -201,7 +207,7 @@
     \end{equation*}
   \end{Def}
   \begin{Thm}
-    设$R$，$S$为$X$到$Y$的二元关系，其矩阵分别为$B_R$和$B_S$。 $R\cup S$ 与$R \cap S$的矩阵分别为$B_{R\cup S}$，$B_{R\cap S}$，则
+    设$R$，$S$为从集合$X$到集合$Y$的二元关系，其矩阵分别为$B_R$和$B_S$。 $R\cup S$ 与$R \cap S$的矩阵分别为$B_{R\cup S}$，$B_{R\cap S}$，则
     \begin{equation*}
       B_{R\cup S}=B_R \lor B_S, B_{R\cap S}=B_R \land B_S
     \end{equation*}
@@ -218,7 +224,8 @@
     \end{align*}
   \end{Def}\pause
   \begin{Thm}
-    设$X, Y, Z$为有穷集， $|X| =m$，$|Y|=p$，$|Z| = n$。$R$是$X$到$Y$的二元关系， $S$是$Y$到$Z$的二元关系，$R$，$S$，$R \circ S$的矩阵分别为$B_{R}$，$B_{S}$，$B_{R\circ S}$，则$B_{R\circ S} = B_R \circ B_S$。
+    设$X, Y, Z$为有穷集合， $|X| =m$，$|Y|=p$，$|Z| = n$。$R$是从$X$到$Y$的二元
+    关系， $S$是从$Y$到$Z$的二元关系，$R$，$S$，$R \circ S$的矩阵分别为$B_{R}$，$B_{S}$，$B_{R\circ S}$，则$B_{R\circ S} = B_R \circ B_S$。
   \end{Thm}
 \end{frame}
 
@@ -226,7 +233,7 @@
 \begin{frame}
   \frametitle{5. 关系的闭包}
   \begin{Def}
-    设$R$是$X$上的一个二元关系。$X$上的一切包含$R$的传递关系的交称为$R$的传递闭包，用$R^+$表示。即
+    设$R$是集合$X$上的一个二元关系。$X$上的一切包含$R$的传递关系的交称为$R$的传递闭包，用$R^+$表示。即
     \begin{equation*}
       R^+ = \bigcap_{R \subseteq R' \text{且} R'\text{是传递的}}R'
     \end{equation*}
@@ -239,7 +246,7 @@
 \begin{frame}
   \frametitle{5. 关系的闭包}
   \begin{Thm}
-    设$R$为集合$X$上的二元关系，$a \in X$，$b \in X$，则$(a,b) \in R^n$当且仅当存在$x_1\in X$，$x_2\in X$，$\ldots$，$x_{n-1}\in X$，使得$(a, x_1) \in R$，\\ $(x_1, x_2)\in R$，  $\ldots$， $(x_{n-1}, b)\in R$。
+    设$R$为集合$X$上的二元关系，$a \in X$，$b \in X$，$n \geq 2$，则$(a,b) \in R^n$当且仅当存在$x_1\in X$，$x_2\in X$，$\ldots$，$x_{n-1}\in X$，使得$(a, x_1) \in R$，$(x_1, x_2)\in R$，  $\ldots$， $(x_{n-1}, b)\in R$。
   \end{Thm}
   \begin{proof}[证明]
   \pause 用数学归纳法证明，施归纳于$n$:
@@ -267,7 +274,7 @@
   \end{Thm}
   \pause
   \begin{Thm}
-    设$R$是集合$X$上的二元关系，$|X| = n$， $B$是$R$的关系矩阵，$B_{R^+}$是$R^+$的关系矩阵，简记为$B^+$，则
+    设$R$为集合$X$上的二元关系，$|X| = n$， $B$为$R$的关系矩阵，$B_{R^+}$为$R^+$的关系矩阵，简记为$B^+$，则
     \begin{equation*}
       B^+ = B \lor B^{(2)} \lor \cdots \lor B^{(n)}
     \end{equation*}
@@ -352,9 +359,9 @@
   \begin{Def}
     集合$X$上的二元关系称为\alert{等价关系}，如果$R$同时满足以下三个性质：
     \begin{enumerate}[(1)]
-    \item $R$是自反的，即$\forall x \in X, xRx$;
-    \item $R$是对称的，即如果$xRy$，则$yRX$;
-    \item $R$是传递的，即如果$xRy$且$yRz$，则$xRz$。
+    \item $R$是自反的，即对$X$中的任意元素$x$，$xRx$;
+    \item $R$是对称的，即对$X$中的任意元素$x$，$y$，如果$xRy$，则$yRX$;
+    \item $R$是传递的，即对$x$中的任意元素$x$，$y$，$z$，如果$xRy$且$yRz$，则$xRz$。
     \end{enumerate}
   \end{Def}
 \end{frame}
@@ -376,10 +383,10 @@
 \begin{frame}
   \frametitle{6. 等价关系与集合的划分}
   \begin{Def}
-    设$\cong$是$X$上的一个等价关系，$x\in X$，$X$的子集
-    \[E_x=\{y|y\in X \text{且} x \cong y\}\]称为$x$关于$\cong$的\alert{等价类}，记为$[x]$，即
+    设$\cong$为集合$X$上的一个等价关系，$x\in X$，$X$的子集
+    \[E_x=\{y\in X | x \cong y\}\]称为$x$关于$\cong$的\alert{等价类}，记为$[x]$，即
     \begin{equation*}
-      [x] = \{y|y \in X \text{且} x \cong y\}
+      [x] = \{y \in X | x \cong y\}
     \end{equation*}
   \end{Def}
 \end{frame}
@@ -397,11 +404,11 @@
 \begin{frame}
   \frametitle{6. 等价关系与集合的划分}
   \begin{Thm}
-    设$\cong$是$X$上的一个等价关系，则$\cong$的所有等价类的集合构成$X$的一个划分。
+    设$\cong$为$X$上的一个等价关系，则$\cong$的所有等价类的集合构成$X$的一个划分。
   \end{Thm}
   \pause
   \begin{Thm}
-    设$\mathbf{A}$是集合$X$的一个划分。令
+    设$\mathbf{A}$为集合$X$的一个划分。令
     \begin{equation*}
       \cong = \bigcup_{A\in \mathbf{A}}A\times A
     \end{equation*}
@@ -414,9 +421,9 @@
   \begin{Def}
     集合$X$上的二元关系称为\alert{偏序关系}，如果$R$同时满足以下三个性质：
     \begin{enumerate}[(1)]
-    \item $R$是自反的，即$\forall x \in X, xRx$；
-    \item $R$是反对称的，即如果$xRy$且$yRX$，则$x=y$；
-    \item $R$是传递的，即如果$xRy$且$yRz$，则$xRz$。
+    \item $R$是自反的，即对$X$中的任意元素$x$，$xRx$；
+    \item $R$是反对称的，即对$X$中的任意元素$x$，$y$，如果$xRy$且$yRx$，则$x=y$；
+    \item $R$是传递的，即对$X$中的任意元素$x$，$y$，$z$，如果$xRy$且$yRz$，则$xRz$。
     \end{enumerate}
   \end{Def}\pause
     \begin{Def}
@@ -427,7 +434,7 @@
 \begin{frame}
   \frametitle{7. 偏序关系与偏序集}
   \begin{Ex}
-    实数集$\mathbb{R}$上通常的“小于等于”关系$\leq$是偏序关系，所以$(\mathbb{R},\leq$为偏序集。
+    实数集$\mathbb{R}$上通常的“小于等于”关系$\leq$是偏序关系，所以$(\mathbb{R},\leq)$为偏序集。
   \end{Ex}
   \begin{Ex}
     设$S$是一个集合，$S$的子集间的包含关系$\subseteq$是$2^S$上的偏序关系，所以$(\mathbb{S},\subseteq)$为偏序集。
@@ -448,8 +455,8 @@
 
 \begin{frame}
 \frametitle{7. 偏序关系与偏序集}
-  \begin{Def}
-    设$\leq$为集合$X$上的偏序关系，如果$\forall x, y \in X$，$x \leq y$与$y \leq x$至少有一个成立，则称$\leq$为$X$上的\alert{全序关系}，相应的，二元组$(X,\leq)$称为\alert{全序集}。
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$\leq$为集合$X$上的偏序关系，如果$\forall x, y \in X$，$x \leq y$与$y \leq x$至少有一个成立，则称$\leq$为$X$上的\alert{全序关系}。相应的，二元组$(X,\leq)$称为\alert{全序集}。
   \end{Def}
 \end{frame}
 \begin{frame}
