@@ -9,10 +9,13 @@
     "euler"
     "hamilton"
     "tree"
+    "connectivity"
+    "plane"
     "miscellaneous"
     "set_ans"
     "function_ans"
     "counting_ans"
+    "connectivity_ans"
     "miscellaneous_ans"
     "bk10"
     "CJKutf8"
@@ -24,6 +27,7 @@
     "xCJKnumb"
     "tikz")
    (LaTeX-add-amsthm-newtheorems
+    "Def"
     "Ex"))
  :latex)
 
