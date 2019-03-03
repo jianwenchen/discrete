@@ -147,45 +147,57 @@
    \draw[thick] (Y) to  (A);
    \draw[thick] (Y) to  (E);
    \draw[thick] (Y) to  (I);
-
-
-
-   
-
  \end{tikzpicture}
 
  (c)
 \end{minipage}\hfill
     \begin{minipage}{0.49\linewidth}
-    \centering
-    \begin{tikzpicture}[auto,
-    specification/.style ={circle, draw, thick}, scale=0.8]
-   \node[specification] (A)  at (0,0)  {};
-   \node[specification] (B)  at (1,0)  {};
-   \node[specification] (C)  at (2,0)  {};
-   \node[specification] (D)  at (0,1)  {};
-   \node[specification] (E)  at (1,1)  {};
-   \node[specification] (F)  at (2,1)  {};
-   \node[specification] (G)  at (0,2)  {};
-   \node[specification] (H)  at (1,2)  {};
-   \node[specification] (I)  at (2,2)  {};
+      \centering
+          \begin{tikzpicture}[auto,
+      specification/.style ={circle, draw, thick}, scale=0.8]
 
-   \draw[thick] (A) to  (B);
-   \draw[thick] (B) to  (C);
-   \draw[thick] (D) to  (E);
-   \draw[thick] (E) to  (F);
-   \draw[thick] (G) to (H);
-   \draw[thick] (H) to (I);
-   \draw[thick] (A) to (D);
-   \draw[thick] (B) to (E);
-   \draw[thick] (C) to (F);
-   \draw[thick] (D) to (G);
-   \draw[thick] (E) to (H);
-   \draw[thick] (F) to (I);
-   \draw[thick] (D) to (H);
-   \draw[thick] (B) to (F);
+   \node[specification] (A)  at (0:2cm)  {};
+   \node[specification] (B)  at (360/16:2cm)  {};
+   \node[specification] (C)  at (360/16*2:2cm)  {};
+   \node[specification] (D)  at (360/16*3:2cm)  {};
+   \node[specification] (E)  at (360/16*4:2cm)  {};
+   \node[specification] (F)  at (360/16*5:2cm)  {};
+   \node[specification] (G)  at (360/16*6:2cm)  {};
+   \node[specification] (H)  at (360/16*7:2cm)  {};
+   \node[specification] (I)  at (360/16*8:2cm)  {};
+   \node[specification] (J)  at (360/16*9:2cm)  {};
+   \node[specification] (K)  at (360/16*10:2cm)  {};
+   \node[specification] (L)  at (360/16*11:2cm)  {};
+   \node[specification] (M)  at (360/16*12:2cm)  {};
+   \node[specification] (N)  at (360/16*13:2cm)  {};
+   \node[specification] (O)  at (360/16*14:2cm)  {};
+   \node[specification] (P)  at (360/16*15:2cm)  {};
+   
+   
+
+
+   \draw[thick] (A) to  (F);
+   \draw[thick] (C) to  (F);
+   \draw[thick] (F) to  (K);
+   \draw[thick] (C) to  (M);
+   \draw[thick] (A) to  (M);
+   \draw[thick] (D) to  (K);
+   \draw[thick] (F) to  (K);
+
+
+   
+   \draw[thick] (H) to  (E);
+   \draw[thick] (H) to (L);
+   \draw[thick] (H) to (N);
+   
+   \draw[thick] (P) to  (O);
+   \draw[thick] (B) to  (G);
+   \draw[thick] (G) to [bend right = 50] (I);
+   \draw[thick] (I) to  (O);
+   \draw[thick] (O) to  (J);
+   \draw[thick] (J) to  (B);
+
  \end{tikzpicture}
-
  (d)
 \end{minipage}
 
