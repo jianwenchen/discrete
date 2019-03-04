@@ -323,19 +323,147 @@
 \begin{frame}
   \frametitle{9.2 非哈密顿平面图}
   \centering
-  \includegraphics[width=7cm, height=6cm]{e1}
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  at (18:2.3cm)  {};
+   \node[specification] (B)  at (90:2.3cm)  {};
+   \node[specification] (C)  at (162:2.3cm)  {};
+   \node[specification] (D) at (234:2.3cm)  {};
+   \node[specification] (E)  at (306:2.3cm)  {};
+   \node[specification] (F)  at (18:1.2cm)  {};
+   \node[specification] (G)  at (90:1.2cm)  {};
+   \node[specification] (H)  at (162:1.2cm)  {};
+   \node[specification] (I) at (234:1.2cm)  {};
+   \node[specification] (J) at (306:1.2cm)  {};
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (I);
+   \draw[thick] (I) to  (J);
+   \draw[thick] (J) to  (F);
+
+   \draw[thick] (A) to  node[swap] {y} (F);
+   \draw[thick] (B) to  (G);
+   \draw[thick] (C) to node {x}   (H);
+   \draw[thick] (D) to  (I);
+   \draw[thick] (E) to  (J);
+ \end{tikzpicture}
 \end{frame}
 
 \begin{frame}
   \frametitle{9.2 非哈密顿平面图}
   \centering
-  \includegraphics[width=7cm, height=6cm]{e2}
+    \begin{tikzpicture}[auto,
+      specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A1)  at (8:2.3cm)  {};
+   
+   \node[specification] (A)  at (18:1.7cm)  {};
+   \node[specification] (A2)  at (28:2.3cm)  {};
+
+   \node[specification] (B)  at (90:2.3cm)  {};
+   \node[specification] (C1)  at (152:2.3cm)  {};   
+   \node[specification] (C)  at (162:1.7cm)  {};
+   \node[specification] (C2)  at (172:2.3cm)  {};
+
+   \node[specification] (D) at (234:2.3cm)  {};
+   \node[specification] (E)  at (306:2.3cm)  {};
+   \node[specification] (F)  at (18:1.2cm)  {};
+   \node[specification] (G)  at (90:1.2cm)  {};
+   \node[specification] (H)  at (162:1.2cm)  {};
+   \node[specification] (I) at (234:1.2cm)  {};
+   \node[specification] (J) at (306:1.2cm)  {};
+
+
+   \draw[thick] (A) to  (A1);
+   \draw[thick] (A) to  (A2);
+   \draw[thick] (A1) to node[swap] {y}  (A2);   
+   \draw[thick] (A2) to  (B);
+   \draw[thick] (B) to  (C1);
+
+   \draw[thick] (C) to  (C1);
+   \draw[thick] (C) to  (C2);
+   \draw[thick] (C1) to node[swap] {x} (C2);
+   \draw[thick] (C2) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A1);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (I);
+   \draw[thick] (I) to  (J);
+   \draw[thick] (J) to  (F);
+
+   \draw[thick] (A) to  (F);
+   \draw[thick] (B) to  (G);
+   \draw[thick] (C) to  (H);
+   \draw[thick] (D) to  (I);
+   \draw[thick] (E) to  (J);
+ \end{tikzpicture}
 \end{frame}
 
 \begin{frame}
   \frametitle{9.2 非哈密顿平面图}
   \centering
-  \includegraphics[width=7cm, height=6cm]{e3}
+      \begin{tikzpicture}[auto,
+      specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A1)  at (8:2.3cm)  {};
+   \node[specification] (A3)  at (18:2.3cm)  {};   
+   \node[specification] (A)  at (18:1.7cm)  {};
+   \node[specification] (A2)  at (28:2.3cm)  {};
+
+   \node[specification] (B)  at (90:2.3cm)  {};
+   \node[specification] (C1)  at (152:2.3cm)  {};
+   \node[specification] (C3)  at (162:2.3cm)  {};
+
+   \node[specification] (C)  at (162:1.7cm)  {};
+   \node[specification] (C2)  at (172:2.3cm)  {};
+
+   \node[specification] (D) at (234:2.3cm)  {};
+   \node[specification] (E)  at (306:2.3cm)  {};
+   \node[specification] (F)  at (18:1.2cm)  {};
+   \node[specification] (G)  at (90:1.2cm)  {};
+   \node[specification] (H)  at (162:1.2cm)  {};
+   \node[specification] (I) at (234:1.2cm)  {};
+   \node[specification] (J) at (306:1.2cm)  {};
+
+
+   \draw[thick] (A) to  (A1);
+   \draw[thick] (A) to  (A2);
+   \draw[thick] (A1) to   (A3);
+   \draw[thick] (A3) to   (A2);
+
+   \draw[thick] (A2) to  (B);
+   \draw[thick] (B) to  (C1);
+
+   \draw[thick] (C) to  (C1);
+   \draw[thick] (C) to  (C2);
+   \draw[thick] (C1) to  (C3);
+   \draw[thick] (C3) to  (C2);
+   \draw[thick] (C2) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A1);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (I);
+   \draw[thick] (I) to  (J);
+   \draw[thick] (J) to  (F);
+
+   \draw[thick] (A) to  (F);
+   \draw[thick] (B) to  (G);
+   \draw[thick] (C) to  (H);
+   \draw[thick] (D) to  (I);
+   \draw[thick] (E) to  (J);
+
+   \draw[thick] (C3.north) .. controls  (-2.5cm, 1cm) and (-2.0cm, 2.6cm) .. (0cm,2.6cm) ..  controls (2.0cm, 2.6cm) and (2.5cm, 1cm)  ..  (A3.north);
+
+   \node at (0cm, 2.8cm) {x};
+   
+ \end{tikzpicture}
 \end{frame}
 
 \begin{frame}
@@ -624,3 +752,8 @@
 
 \end{CJK}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
