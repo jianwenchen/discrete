@@ -29,7 +29,8 @@
     如果从集合$X$到集合$Y$存在一个双射，则称$X$与$Y$\alert{对等}，记为$X \sim Y$。
   \end{Def}\pause
   \begin{Def}
-    如果从自然数集$\mathbb{N}$到集合$X$存在一个一一对应$f:\mathbb{N}\to X$，则称集合$X$是可数无穷集合，简称\alert{可数集}或\alert{可列集}。如果$X$不是可数集且$X$不是有穷集合，则称$X$为不可数无穷集合，简称\alert{不可数集}。
+    如果从自然数集$\mathbb{N}$到集合$X$存在一个一一对应$f:\mathbb{N}\to X$，则称
+    集合$X$为可数无穷集合，简称\alert{可数集}或\alert{可列集}。如果$X$不是可数集且$X$不是有穷集合，则称$X$为不可数无穷集合，简称\alert{不可数集}。
   \end{Def}\pause
   \begin{Thm}
     集合$A$为可数集的充分必要条件是$A$的全部元素可以排成无重复项的序列
@@ -156,7 +157,7 @@
 
   $\alpha \leq \beta$当且仅当存在单射$f:A \to B$。
 
-  $\alpha < \beta$当且仅当存在单数$f:A \to B$且不存在$A$到$B$的双射。
+  $\alpha < \beta$当且仅当存在单射$f:A \to B$且不存在$A$到$B$的双射。
 \end{frame}
 
 \begin{frame}
@@ -170,20 +171,20 @@
 \begin{frame}
   \frametitle{4 康托-伯恩斯坦定理}
   \begin{Thm}[康托-伯恩斯坦]
-    设$A$，$B$是两个集合。如果存在单射$f:A\to B$与单射$g:B\to A$，则$A$与$B$的基数相等。
+    设$A$，$B$为两个集合。如果存在单射$f:A\to B$与单射$g:B\to A$，则$A$与$B$的基数相等。
   \end{Thm}
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{4 康托-伯恩斯坦定理}
-  \begin{Thm}[塔斯基不动点定理]
-    设$(A, \leq)$为一个完备格($A$的任一非空子集均有上确界和下确界)，$f:A \to A$为单调函数($\forall x, y \in A, x \leq y \rightarrow f(x) \leq f(y)$)，则$\exists z \in A$，使得$f(z)=z$。
-  \end{Thm}
-  \begin{Thm}[巴拿赫映射分解定理]
-    设$A$, $B$为任意两个集合，$f$为从$A$到$B$的映射，$g$为从$B$到$A$的映射，则存在$A$的划分$\{A_1,A_2\}$和$B$的$\{B_1,B_2\}$，使得\[f(A_1) = B_1,g(A_2) = B_2.\]
-  \end{Thm}
-\end{frame}
+% \begin{frame}
+%   \frametitle{4 康托-伯恩斯坦定理}
+%   \begin{Thm}[塔斯基不动点定理]
+%     设$(A, \leq)$为一个完备格($A$的任一非空子集均有上确界和下确界)，$f:A \to A$为单调函数($\forall x, y \in A, x \leq y \rightarrow f(x) \leq f(y)$)，则$\exists z \in A$，使得$f(z)=z$。
+%   \end{Thm}
+%   \begin{Thm}[巴拿赫映射分解定理]
+%     设$A$, $B$为任意两个集合，$f$为从$A$到$B$的映射，$g$为从$B$到$A$的映射，则存在$A$的划分$\{A_1,A_2\}$和$B$的$\{B_1,B_2\}$，使得\[f(A_1) = B_1,g(A_2) = B_2.\]
+%   \end{Thm}
+% \end{frame}
 
 \section{公理集合论}
 \begin{frame}
@@ -296,3 +297,8 @@
 
 \end{CJK*}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
