@@ -124,8 +124,7 @@
     \[R\circ S = \{(x,z)\in A \times C |  \exists y \in B \text{使得} xRy \text{且} ySz\}\]
   \end{Def}\pause
     \begin{Thm}
-    设$R_1$，$R_2$，$R_3$分别为从集合$A$到集合$B$，从集合$B$到集合$C$，从集合$C$
-    到集合$D$的二元关系，则
+    设$R_1$，$R_2$，$R_3$分别为从集合$A$到集合$B$，从集合$B$到集合$C$，从集合$C$到集合$D$的二元关系，则
     \[(R_1 \circ R_2)\circ R_3 = R_1 \circ (R_2 \circ R_3)\]
   \end{Thm}\pause
   \begin{Thm}
@@ -136,9 +135,9 @@
 \section{关系矩阵}
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
-  \begin{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
     设$X=\{x_1, x_2, \ldots, x_m\}$为一个包含$m$个元素的集合，$Y=\{y_1, y_2,
-    \cdots, y_n\}$为一个包含$n$个元素的集合。令$R$是$X$到$Y$的一个二元关系。
+    \cdots, y_n\}$为一个包含$n$个元素的集合。令$R$是从$X$到$Y$的一个二元关系。
     由$R$定义一个$m \times n$矩阵$B = (b_{ij})$如下： $\forall (x_i, y_j) \in X \times Y$，
 \[
     b_{ij}=
@@ -182,8 +181,7 @@
   \item $R$是反自反的，当且仅当$R$的图中没有环；
   \item $R$是对称的，当且仅当$R$的图中任意两个不同顶点间有矢线，则必有两条方向相反的矢线；
   \item $R$是反对称的，当且仅当$R$的图中任意两个不同顶点间有失线，则不能有两条方向相反的矢线;
-  \item $R$是传递的，当且仅当从该顶点沿矢线经两条矢线可到另一顶点，则从该顶点到
-    另一顶点有一条矢线。
+  \item $R$是传递的，当且仅当如果从某顶点沿矢线经两条矢线可到另一顶点，则从该顶点到另一顶点有一条矢线。
   \end{enumerate}
 \end{Thm}
 \end{frame}

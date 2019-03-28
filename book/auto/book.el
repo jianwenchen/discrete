@@ -5,6 +5,7 @@
     "latex2e"
     "set"
     "function"
+    "relation"
     "counting"
     "euler"
     "hamilton"
