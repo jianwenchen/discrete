@@ -271,16 +271,18 @@
     设$R$为集合$X$上的一个二元关系，$|X| = n$，则\[R^+ = \bigcup_{i=1}^nR^i = R \cup R^2  \cup \cdots \cup R^n \]。
   \end{Thm}
   \begin{proof}[证明]\justifying\let\raggedright\justifying\small{
-    只须证明对任一自然数$k > n$，有$R^k \subseteq \bigcup_{i=1}^nR^i$。\pause 为此，设
-    $(a,b) \in R^k$，则存在$b_1, b_2, \cdots, b_{k-1} \in X$使得$(a,b_1) \in R$, 
-    $(b_1, b_2) \in R, \cdots, (b_{k-2}, b_{k-1})\in R, (b_{k-1}, b) \in R$。记
-    $b_0 = a, b_k = b$。 \pause $b_1,b_2, \cdots, b_{k-1}, b$是$X$中的$k$个元素，而$X$
-    中仅有$n$个元素，$n < k$，　所以$b_1, b_2, \cdots, b_{k-1}, b$中必有两个相等
-    的元素。设$b_i=b_j$，$1 \leq i < j \leq k$。 \pause 于是，我们有$(a,b_1)\in R,
-    \cdots, (b_{i-1}, b_i)\in R, (b_j, b_{j+1})\in R, \cdots, (b_{k-1},b)\in R$,
-    故$(a,b)\in R^{k-(j-i)}$，$p_1=k-(j-i) < k$。 \pause 若$p_1 = k - (j - i) > n$, 则重
-    复上述过程又有$p_2 < p_1$使得$(a,b) \in R^{p_2}$。 \pause 如此进行下去，必有$m \leq
-    n$使得$(a,b) \in R^m$。所以，$R^k \subseteq \bigcup_{i=1}^nR^i$。 \pause 因此，$R^+=\bigcup_{i=1}^nR^i$。}
+      只须证明对任一自然数$k > n$，有$R^k \subseteq \bigcup_{i=1}^nR^i$。\pause
+      为此，设$(a,b) \in R^k$，则存在$b_1, b_2, \cdots, b_{k-1} \in
+      X$使得$(a,b_1) \in R$, $(b_1, b_2) \in R, \cdots, (b_{k-2}, b_{k-1})\in R,
+      (b_{k-1}, b) \in R$。记$b_0 = a, b_k = b$。 \pause $b_1,b_2, \cdots,
+      b_{k-1}, b$是$X$中的$k$个元素，而$X$中仅有$n$个元素，$n < k$，所以$b_1,
+      b_2, \cdots, b_{k-1}, b$中必有两个相等的元素。设$b_i=b_j$，$1 \leq i < j
+      \leq k$。 \pause 于是，我们有$(a,b_1)\in R, \cdots, (b_{i-1}, b_i)\in R,
+      (b_j, b_{j+1})\in R, \cdots, (b_{k-1},b)\in R$,故$(a,b)\in
+      R^{k-(j-i)}$，$p_1=k-(j-i) < k$。 \pause 若$p_1 = k - (j - i) > n$, 则重复
+      上述过程又有$p_2 < p_1$使得$(a,b) \in R^{p_2}$。 \pause 如此进行下去，必
+      有$m \leq n$使得$(a,b) \in R^m$。所以，$R^k \subseteq
+      \bigcup_{i=1}^nR^i$。 \pause 因此，$R^+=\bigcup_{i=1}^nR^i$。}
   \end{proof}
 \end{frame}
 \begin{frame}
