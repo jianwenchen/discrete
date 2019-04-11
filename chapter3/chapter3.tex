@@ -372,7 +372,7 @@
 \begin{frame}
   \frametitle{6. 等价关系与集合的划分}
   \begin{Def}
-    集合$X$上的二元关系称为\alert{等价关系}，如果$R$同时满足以下三个性质：
+    集合$X$上的二元关系$R$称为\alert{等价关系}，如果$R$同时满足以下三个性质：
     \begin{enumerate}[(1)]
     \item $R$是自反的，即对$X$中的任意元素$x$，$xRx$;
     \item $R$是对称的，即对$X$中的任意元素$x$，$y$，如果$xRy$，则$yRX$;
@@ -434,7 +434,7 @@
 \begin{frame}
   \frametitle{7. 偏序关系与偏序集}
   \begin{Def}
-    集合$X$上的二元关系称为\alert{偏序关系}，如果$R$同时满足以下三个性质：
+    集合$X$上的二元关系$R$称为\alert{偏序关系}，如果$R$同时满足以下三个性质：
     \begin{enumerate}[(1)]
     \item $R$是自反的，即对$X$中的任意元素$x$，$xRx$；
     \item $R$是反对称的，即对$X$中的任意元素$x$，$y$，如果$xRy$且$yRx$，则$x=y$；
@@ -452,7 +452,7 @@
     实数集$\mathbb{R}$上通常的“小于等于”关系$\leq$是偏序关系，所以$(\mathbb{R},\leq)$为偏序集。
   \end{Ex}
   \begin{Ex}
-    设$S$是一个集合，$S$的子集间的包含关系$\subseteq$是$2^S$上的偏序关系，所以$(\mathbb{S},\subseteq)$为偏序集。
+    设$S$为一个集合，$S$的子集间的包含关系$\subseteq$是$2^S$上的偏序关系，所以$(\mathbb{S},\subseteq)$为偏序集。
   \end{Ex}
 \end{frame}
 
@@ -477,19 +477,19 @@
 \begin{frame}
   \frametitle{7. 偏序关系与偏序集}
   \begin{Def}
-    设$(X,\leq)$是一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$使得$\forall x \in A$有$x \leq s$，则称$s$为$A$的\alert{最大元素}；如果存在一个元素$t\in A$使得$\forall x \in A$有$t \leq x$，则称$t$为$A$的\alert{最小元素}。
+    设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$使得$\forall x \in A$有$x \leq s$，则称$s$为$A$的\alert{最大元素}；如果存在一个元素$t\in A$使得$\forall x \in A$有$t \leq x$，则称$t$为$A$的\alert{最小元素}。
   \end{Def}
     \begin{Def}
-    设$(X,\leq)$是一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$,在$A$中没有元素$x$使得$s < x$，则称$s$为$A$的\alert{极大元素}；如果存在一个元素$t$，在$A$中没有元素$x$使得$x < t$，则称$t$为$A$的\alert{极小元素}。
+    设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$,在$A$中没有元素$x$使得$s < x$，则称$s$为$A$的\alert{极大元素}；如果存在一个元素$t$，在$A$中没有元素$x$使得$x < t$，则称$t$为$A$的\alert{极小元素}。
   \end{Def}
 \end{frame}
 \begin{frame}
   \frametitle{7. 偏序关系与偏序集}
   \begin{Def}
-    设$(X,\leq)$是一个偏序集，$A\subseteq X$。如果存在一个元素$s\in X$使得$\forall x \in A$有$x \leq s$，则称$s$为$A$的一个\alert{上界}；如果存在一个元素$t\in X$使得$\forall x \in A$有$t \leq x$，则称$t$为$A$的一个\alert{下界}。
+    设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in X$使得$\forall x \in A$有$x \leq s$，则称$s$为$A$的一个\alert{上界}；如果存在一个元素$t\in X$使得$\forall x \in A$有$t \leq x$，则称$t$为$A$的一个\alert{下界}。
   \end{Def}
     \begin{Def}
-      设$(X,\leq)$是一个偏序集，$A\subseteq X$。如果$A$有上界且$A$的一切上界之集有最小元素，则这个最小上界称为$A$的\alert{上确界}，记为$\sup A$；如果$A$有下界且$A$的一切下界之集有最大元素，则这个最大下界称为$A$的\alert{下确界}，记为$\inf A$。
+      设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果$A$有上界且$A$的一切上界之集有最小元素，则这个最小上界称为$A$的\alert{上确界}，记为$\sup A$；如果$A$有下界且$A$的一切下界之集有最大元素，则这个最大下界称为$A$的\alert{下确界}，记为$\inf A$。
   \end{Def}
 \end{frame}
 
@@ -500,7 +500,7 @@
    \item   $x + y = y + x$
    \item   $(x + y) + z = x + (y + z)$
    \item   $0 + x = x + 0 = x$
-   \item   $(-x) + x = (-x) + x = 0$
+   \item   $(-x) + x = x + (-x)= 0$
    \item   $x * y = y * x$
    \item   $(x * y) * z = x * (y *z)$
    \item   $1 * x = x * 1 = x$
