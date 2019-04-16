@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  14 APR 2019 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  16 APR 2019 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1814,8 +1814,12 @@ sn/m/it/10.95/59 ‚
 
 ] [55
 
+] [56
+
+] [57
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 []$\OT1/cmss/m/it/10.95 R$\C70/gbsn/m/it/10.95/66 / \C70/gbsn/m/it/10.95/4f   \
 C70/gbsn/m/it/10.95/90 ^^R \C70/gbsn/m/it/10.95/76 „ \C70/gbsn/m/it/10.95/ff ^^
 L \C70/gbsn/m/it/10.95/53 s \C70/gbsn/m/it/10.95/5b ù$\OT1/cmss/m/it/10.95 X$\C
@@ -1826,10 +1830,10 @@ sn/m/it/10.95/ff ^^L$\OT1/cmss/m/it/10.95 z$\C70/gbsn/m/it/10.95/ff ^^L \C70/gb
 sn/m/it/10.95/59 ‚
  []
 
-[56
+[58
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
 []$\OT1/cmss/m/it/10.95 R$\C70/gbsn/m/it/10.95/66 / \C70/gbsn/m/it/10.95/4f   \
 C70/gbsn/m/it/10.95/90 ^^R \C70/gbsn/m/it/10.95/76 „ \C70/gbsn/m/it/10.95/ff ^^
 L \C70/gbsn/m/it/10.95/53 s \C70/gbsn/m/it/10.95/5b ù$\OT1/cmss/m/it/10.95 X$\C
@@ -1840,11 +1844,7 @@ sn/m/it/10.95/ff ^^L$\OT1/cmss/m/it/10.95 z$\C70/gbsn/m/it/10.95/ff ^^L \C70/gb
 sn/m/it/10.95/59 ‚
  []
 
-[57
-
-] [58
-
-] [59
+[59
 
 ] [60
 
@@ -1856,8 +1856,24 @@ sn/m/it/10.95/59 ‚
 
 ] [64
 
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
 ]
-Overfull \hbox (8.78914pt too wide) in paragraph at lines 532--532
+Overfull \hbox (8.78914pt too wide) in paragraph at lines 634--634
 []\OT1/cmss/m/n/10.95 2. \C70/gbsn/m/it/10.95/8b ¾$\OT1/cmss/m/it/10.95 X\OML/c
 mm/m/it/10.95 ; \OT1/cmss/m/it/10.95 Y\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.9
 5 S$\C70/gbsn/m/it/10.95/54 ^^L \C70/gbsn/m/it/10.95/4e ` \C70/gbsn/m/n/10.95/9
@@ -1872,7 +1888,7 @@ e I \C70/gbsn/m/it/10.95/59 ‚ \C70/gbsn/m/it/10.95/4e  \C70/gbsn/m/it/10.95/ff
  []
 
 
-Overfull \hbox (8.78914pt too wide) in paragraph at lines 532--532
+Overfull \hbox (8.78914pt too wide) in paragraph at lines 634--634
 []\OT1/cmss/m/n/10.95 3. \C70/gbsn/m/it/10.95/8b ¾$\OT1/cmss/m/it/10.95 X\OML/c
 mm/m/it/10.95 ; \OT1/cmss/m/it/10.95 Y\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.9
 5 S$\C70/gbsn/m/it/10.95/54 ^^L \C70/gbsn/m/it/10.95/4e ` \C70/gbsn/m/n/10.95/9
@@ -1886,7 +1902,7 @@ e I \C70/gbsn/m/it/10.95/59 ‚ \C70/gbsn/m/it/10.95/4e  \C70/gbsn/m/it/10.95/ff
 /ff ^^L$\OT1/cmss/m/it/10.95 f []
  []
 
-[65
+[73
 
 ]
 \tf@nav=\write6
@@ -1898,11 +1914,11 @@ e I \C70/gbsn/m/it/10.95/59 ‚ \C70/gbsn/m/it/10.95/4e  \C70/gbsn/m/it/10.95/ff
 \tf@snm=\write8
 \openout8 = `chapter3.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
  (./chapter3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
 Package rerunfilecheck Info: File `chapter3.out' has not changed.
 (rerunfilecheck)             Checksum: 4C467F1A0FDA66A2FADEB35FFCCA0B9C;547.
 
@@ -1911,13 +1927,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22752 strings out of 494406
- 421775 string characters out of 6169674
- 500994 words of memory out of 5000000
- 25344 multiletter control sequences out of 15000+600000
- 51909 words of font info for 186 fonts, out of 8000000 for 9000
+ 22833 strings out of 494406
+ 422913 string characters out of 6169674
+ 501280 words of memory out of 5000000
+ 25393 multiletter control sequences out of 15000+600000
+ 55439 words of font info for 198 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,14n,54p,803b,1404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,17n,54p,803b,1419s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
@@ -1971,10 +1987,10 @@ fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 /texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphi
 c/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chapter3.pdf (65 pages, 511117 bytes).
+Output written on chapter3.pdf (73 pages, 524866 bytes).
 PDF statistics:
- 2070 PDF objects out of 2073 (max. 8388607)
- 1851 compressed objects within 19 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 2279 PDF objects out of 2487 (max. 8388607)
+ 2050 compressed objects within 21 object streams
+ 154 named destinations out of 1000 (max. 500000)
  323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

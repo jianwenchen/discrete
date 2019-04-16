@@ -430,6 +430,41 @@
     则$\cong$是$X$上的一个等价关系且$\mathbf{A}$就是$\cong$的等价类之集。
   \end{Thm}
 \end{frame}
+\begin{frame}
+  \frametitle{6. 等价关系与集合的划分}
+  \begin{Thm}
+    设$X$为一个集合，
+    \begin{align*}
+    \mathbb{R} &= \{\cong \subseteq X \times X | \cong\text{为集合}X\text{上的一个等价关系}\},\\
+    \mathbb{A} &= \{\mathbf{A} \subseteq 2^X| \mathbf{A}\text{为集合}X\text{的一个划分}\},\\
+    \end{align*}
+    $f$为从$\mathbb{R}$到$\mathbb{A}$的一个映射，对任意的$\cong\in\mathbb{R}$，
+    \[f(\cong) = \{[x] | x \in X\}\]
+    $g$为从$\mathbb{A}$到$\mathbb{R}$的一个映射，对任意的
+    $\mathbf{A}\in \mathbb{A}$，\[g(\mathbf{A})=\bigcup_{A \in \mathbf{A}}A\times A\]
+    则$f$为从$\mathbb{R}$到$\mathbb{A}$的双射，且$f^{-1}=g$。
+  \end{Thm}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{6. 等价关系与集合的划分}
+  \begin{proof}[证明]
+    \begin{enumerate}
+    \item 证明$f$为映射。这就是要证明对于集合$X$上的任意一个等价关系$\cong$，　
+      $f(\cong) = \{[x]|x\in X\}$为集合$X$的一个划分。
+    \item 证明$g$为映射。这就是要证明对于集合$X$的任意一个划分$\mathbb{A}$，
+      $g(\mathbb{A}) = \bigcup_{A\in \mathbb{A}}A\times A$为集合$X$上的一个等价关系。
+    \item 证明$g\circ f = I_{\mathbf{R}}$。这就是要证明对于集合$X$上的任意一个等
+      价关系$\cong$，$\bigcup_{x\in X}[x]\times [x] = \cong$。
+    \item 证明$f\circ g = I_{\mathbf{A}}$。这就是要证明对于集合$X$的任意一个划分
+      $\mathbf{A}$，等价关系$\bigcup_{A \in \mathbf{A}}A\times A$所对应的等价类
+      的集合就是$\mathbf{A}$。
+    \end{enumerate}
+  \end{proof}
+  
+\end{frame}
+
 \section{偏序关系}
 \begin{frame}
   \frametitle{7. 偏序关系与偏序集}
@@ -523,6 +558,73 @@
 \end{enumerate}
 \end{frame}
 \begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+  \draw (45:1cm) rectangle (225:1cm);
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+  \draw (45:1cm) rectangle (225:1cm);
+  \draw (0:1cm) -- (45:1cm) -- (90:1cm) -- (135:1cm) -- (180:1cm) -- (225:1cm) -- (270:1cm) -- (315:1cm) -- (0:1cm);
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+  \draw (45:1cm) rectangle (225:1cm);
+  \draw (0:1cm) -- (45:1cm) -- (90:1cm) -- (135:1cm) -- (180:1cm) -- (225:1cm) -- (270:1cm) -- (315:1cm) -- (0:1cm);
+  \draw (1cm,1cm) rectangle (-1cm,-1cm);  
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+  \draw (45:1cm) rectangle (225:1cm);
+  \draw (0:1cm) -- (45:1cm) -- (90:1cm) -- (135:1cm) -- (180:1cm) -- (225:1cm) -- (270:1cm) -- (315:1cm) -- (0:1cm);
+
+  \draw (0,0) circle [radius=2cm];
+  \draw (45:2cm) rectangle (225:2cm);
+  \draw (0:2cm) -- (45:2cm) -- (90:2cm) -- (135:2cm) -- (180:2cm) -- (225:2cm) -- (270:2cm) -- (315:2cm) -- (0:2cm);
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}
+  \centering
+\begin{tikzpicture}[thick]
+  \draw (0,0) circle [radius=1cm];
+  
+  \draw (0:1cm) -- (45:1cm) -- (90:1cm) -- (135:1cm) -- (180:1cm) -- (225:1cm) -- (270:1cm) -- (315:1cm) -- (0:1cm);
+
+  \draw (0,0) circle [radius=2cm];
+  \draw (0:2cm) -- (45:2cm) -- (90:2cm) -- (135:2cm) -- (180:2cm) -- (225:2cm) -- (270:2cm) -- (315:2cm) -- (0:2cm);
+  \draw (0,0) -- (45:2cm);
+  \draw (0,0) -- (90:2cm);
+  \draw (0,0) -- (135:2cm);
+  \draw (0,0) -- (180:2cm);
+  \draw (0,0) -- (235:2cm);
+  \draw (0,0) -- (270:2cm);
+  \draw (0,0) -- (315:2cm);
+  
+\end{tikzpicture}  
+\end{frame}
+
+\begin{frame}  
   \frametitle{习题}
   1. 设$X = \{1,2,3\}$， $Y = \{1,2\}$，$S = \{f|f:X \to Y\}$。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[I_m(f) = I_m(g)\]证明$\cong$是$S$上的等价关系，并求出等价类之集。
 
