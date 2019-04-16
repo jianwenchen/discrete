@@ -7,6 +7,7 @@
 \usepackage{algorithmic}
 \setbeamertemplate{theorems}[numbered]
 \usepackage{clrscode3e}
+\usepackage{mathrsfs}
 
 \justifying\let\raggedright\justifying
 \begin{document}
@@ -408,10 +409,10 @@
 \begin{frame}
   \frametitle{6. 等价关系与集合的划分}
   \begin{Def}
-    设$X$为集合, $X$的一些非空子集形成的集族$\mathbf{A}$称为$X$的一个划分，如果$\mathbf{A}$具有性质
+    设$X$为集合, $X$的一些非空子集形成的集族$\mathscr{A}$称为$X$的一个划分，如果$\mathscr{A}$具有性质
     \begin{enumerate}
-    \item $\forall A, B \in \mathbf{A}$，如果$A \neq B$，则$A \cap B = \phi$；
-      \item $\bigcup_{A \in \mathbf{A}} = X$
+    \item $\forall A, B \in \mathscr{A}$，如果$A \neq B$，则$A \cap B = \phi$；
+      \item $\bigcup_{A \in \mathscr{A}} = X$
     \end{enumerate}
   \end{Def}
 \end{frame}
@@ -423,11 +424,11 @@
   \end{Thm}
   \pause
   \begin{Thm}
-    设$\mathbf{A}$为集合$X$的一个划分。令
+    设$\mathscr{A}$为集合$X$的一个划分。令
     \begin{equation*}
-      \cong = \bigcup_{A\in \mathbf{A}}A\times A
+      \cong = \bigcup_{A\in \mathscr{A}}A\times A
     \end{equation*}
-    则$\cong$是$X$上的一个等价关系且$\mathbf{A}$就是$\cong$的等价类之集。
+    则$\cong$是$X$上的一个等价关系且$\mathscr{A}$就是$\cong$的等价类之集。
   \end{Thm}
 \end{frame}
 \begin{frame}
@@ -436,12 +437,10 @@
     设$X$为一个集合，
     \begin{align*}
     \mathbb{R} &= \{\cong \subseteq X \times X | \cong\text{为集合}X\text{上的一个等价关系}\},\\
-    \mathbb{A} &= \{\mathbf{A} \subseteq 2^X| \mathbf{A}\text{为集合}X\text{的一个划分}\},\\
+      \mathbb{A} &= \{\mathscr{A} \subseteq 2^X| \mathscr{A}\text{为集合}X\text{的一个划分}\},\\
+      f &= \{(\cong, \{[x]_{\cong} | x \in X\})|\cong \in \mathbb{R}, [x]_{\cong}=\{y\in X | x \cong y\}\}\\
+      g&=\{(\mathscr{A}, \bigcup_{A \in \mathscr{A}}A\times A)|\mathscr{A} \in \mathbb{A}\}\\
     \end{align*}
-    $f$为从$\mathbb{R}$到$\mathbb{A}$的一个映射，对任意的$\cong\in\mathbb{R}$，
-    \[f(\cong) = \{[x] | x \in X\}\]
-    $g$为从$\mathbb{A}$到$\mathbb{R}$的一个映射，对任意的
-    $\mathbf{A}\in \mathbb{A}$，\[g(\mathbf{A})=\bigcup_{A \in \mathbf{A}}A\times A\]
     则$f$为从$\mathbb{R}$到$\mathbb{A}$的双射，且$f^{-1}=g$。
   \end{Thm}
   
@@ -453,13 +452,13 @@
     \begin{enumerate}
     \item 证明$f$为映射。这就是要证明对于集合$X$上的任意一个等价关系$\cong$，　
       $f(\cong) = \{[x]|x\in X\}$为集合$X$的一个划分。
-    \item 证明$g$为映射。这就是要证明对于集合$X$的任意一个划分$\mathbb{A}$，
-      $g(\mathbb{A}) = \bigcup_{A\in \mathbb{A}}A\times A$为集合$X$上的一个等价关系。
-    \item 证明$g\circ f = I_{\mathbf{R}}$。这就是要证明对于集合$X$上的任意一个等
-      价关系$\cong$，$\bigcup_{x\in X}[x]\times [x] = \cong$。
-    \item 证明$f\circ g = I_{\mathbf{A}}$。这就是要证明对于集合$X$的任意一个划分
-      $\mathbf{A}$，等价关系$\bigcup_{A \in \mathbf{A}}A\times A$所对应的等价类
-      的集合就是$\mathbf{A}$。
+    \item 证明$g$为映射。这就是要证明对于集合$X$的任意一个划分$\mathscr{A}$，
+      $g(\mathscr{A}) = \bigcup_{A\in \mathscr{A}}A\times A$为集合$X$上的一个等价关系。
+    \item 证明$g\circ f = I_{\mathbb{R}}$。这就是要证明对于集合$X$上的任意一个等
+      价关系$\cong$，$\bigcup_{x\in X}[x]_{\cong}\times [x]_{\cong} = \cong$。
+    \item 证明$f\circ g = I_{\mathbb{A}}$。这就是要证明对于集合$X$的任意一个划分
+      $\mathscr{A}$，等价关系$\bigcup_{A \in \mathscr{A}}A\times A$所对应的等价类
+      的集合就是$\mathscr{A}$。
     \end{enumerate}
   \end{proof}
   
