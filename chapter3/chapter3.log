@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  17 APR 2019 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  23 APR 2019 12:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1937,7 +1937,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  22858 strings out of 494406
  423346 string characters out of 6169674
- 501397 words of memory out of 5000000
+ 501399 words of memory out of 5000000
  25408 multiletter control sequences out of 15000+600000
  55840 words of font info for 202 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
@@ -1996,7 +1996,7 @@ fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
 c/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on chapter3.pdf (73 pages, 527645 bytes).
+Output written on chapter3.pdf (73 pages, 527670 bytes).
 PDF statistics:
  2283 PDF objects out of 2487 (max. 8388607)
  2053 compressed objects within 21 object streams
