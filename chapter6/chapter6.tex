@@ -82,12 +82,12 @@
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-设$V$是一个集合，$V$的一切二元子集之集合记为$\mathcal{P}_2(V)$，即
+设$V$为一个集合，$V$的一切二元子集之集合记为$\mathcal{P}_2(V)$，即
 \begin{equation*}
   \mathcal{P}_2(V) = \{A|A \subseteq V \text{且} |A| = 2\}\text{。}
 \end{equation*}
 \begin{definition6.2.1}
-  设$V$是一个非空有限集合，$E \subseteq \mathcal{P}_2(V)$，二元组$G = (V, E)$称为一个\alert{无向图}。$V$中的元素称为无向图$G$的\alert{顶点}，$V$为\alert{顶点集}；$E$中的元素称为无向图$G$的\alert{边}，$E$为\alert{边集}。无向图简称\alert{图}。如果$|V|=p$，$|E|=q$，则称$G$为一个$(p,q)$图，即$G$是一个具有$p$个顶点$q$条边的图。
+  设$V$为一个非空有限集合，$E \subseteq \mathcal{P}_2(V)$，二元组$G = (V, E)$称为一个\alert{无向图}。$V$中的元素称为无向图$G$的\alert{顶点}，$V$为\alert{顶点集}；$E$中的元素称为无向图$G$的\alert{边}，$E$为\alert{边集}。无向图简称\alert{图}。如果$|V|=p$，$|E|=q$，则称$G$为一个$(p,q)$图，即$G$是一个具有$p$个顶点$q$条边的图。
 \end{definition6.2.1}
 \centering
 \includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
@@ -132,7 +132,7 @@
 \begin{frame}
   \frametitle{6.2 基本定义}
   \begin{theorem6.2.1}
-    设$G=(V,E)$是一个具有$p$个顶点$q$条边的图，则$G$中各顶点度的和等于边的条数$q$的两倍，即
+    设$G=(V,E)$为一个具有$p$个顶点$q$条边的图，则$G$中各顶点度的和等于边的条数$q$的两倍，即
         \begin{equation*}
       \sum_{v \in V}\deg v = 2q
     \end{equation*}
@@ -161,7 +161,7 @@
     \end{minipage}
     \pause
   \begin{definition6.2.6}
-    设$G=(V,E)$是一个图，如果$V_1$是$V$的非空子集，$E_1$是$E$的非空子集并且$E_1$中每条边的顶点都在$V_1$中，则称图$H=(V_1,E_1)$ 为$G$ 的一个\alert{子图}。
+    设$G=(V,E)$为一个图，如果$V_1$是$V$的非空子集，$E_1$是$E$的非空子集并且$E_1$中每条边的顶点都在$V_1$中，则称图$H=(V_1,E_1)$ 为$G$ 的一个\alert{子图}。
 如果$H \neq G$，则称$H$为$G$的\alert{真子图}。
   \end{definition6.2.6}
 \end{frame}
@@ -176,7 +176,7 @@
     \end{minipage}
     \pause
   \begin{definition6.2.7}
-    设$G=(V,E)$是一个图，如果$F\subseteq E$，则称$G$的子图$H=(V,F)$ 为$G$的一个\alert{生成子图}。
+    设$G=(V,E)$为一个图，如果$F\subseteq E$，则称$G$的子图$H=(V,F)$ 为$G$的一个\alert{生成子图}。
   \end{definition6.2.7}
 \end{frame}
 
@@ -212,7 +212,7 @@
     \end{minipage}
     \pause
   \begin{definition6.2.10}
-    设$G=(V,E)$, $H = (U, F)$是两个图，如果存在一个一一对应$\phi:V \to
+    设$G=(V,E)$, $H = (U, F)$为两个图，如果存在一个一一对应$\phi:V \to
     U$，使得$\{u,v\} \in E$当且仅当$\{\phi(u),\phi(v)\} \in F$,则称$G$与$H$\alert{同构}。
   \end{definition6.2.10}
 \end{frame}
@@ -220,7 +220,7 @@
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
   \begin{definition6.3.1}
-    设$G=(V,E)$是一个图。$G$的一条\alert{通道}是$G$的顶点和边的一个交错序列
+    设$G=(V,E)$为一个图。$G$的一条\alert{通道}是$G$的顶点和边的一个交错序列
     \[v_0,x_1,v_1,x_2,v_2,x_3,\ldots,v_{n-1},x_n,v_n\]
     其中$x_i=v_{i-1}v_i,i=1,2,\ldots,n$。$n$称为通道的长。这样的通道常称为$v_0-v_n$通道，并简记为$v_0v_1v_2\ldots   v_n$。当$v_0=v_n$时，则称此通道为\alert{闭通道}。
   \end{definition6.3.1}
@@ -249,7 +249,7 @@
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
   \begin{definition6.3.4}
-   设$G=(V,E)$为图，如果$G$中任两个不同顶点间至少有一条路联结，则称$G$是一个\alert{连通图}。
+   设$G=(V,E)$为一个图，如果$G$中任两个不同顶点间至少有一条路联结，则称$G$为一个\alert{连通图}。
   \end{definition6.3.4}
   \centering
 \includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
