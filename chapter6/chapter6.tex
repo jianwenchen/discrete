@@ -89,7 +89,8 @@
 \begin{definition6.2.1}
   设$V$是一个非空有限集合，$E \subseteq \mathcal{P}_2(V)$，二元组$G = (V, E)$称为一个\alert{无向图}。$V$中的元素称为无向图$G$的\alert{顶点}，$V$为\alert{顶点集}；$E$中的元素称为无向图$G$的\alert{边}，$E$为\alert{边集}。无向图简称\alert{图}。如果$|V|=p$，$|E|=q$，则称$G$为一个$(p,q)$图，即$G$是一个具有$p$个顶点$q$条边的图。
 \end{definition6.2.1}
-
+\centering
+\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
 \end{frame}
 
 
@@ -516,48 +517,49 @@ $G$
 \end{frame}
 
 \begin{frame}
-  \frametitle{匹配}
-  \begin{definition6.4.4}
-    设$G=(V,E)$是一个图，$G$的任两条不邻接的边$x$与$y$称为互相\alert{独
-      立}的。$G$的边集$E$的子集$Y$称为$G$的一个\alert{匹配}，如果$Y$中任意两条边都是互相独立的。
-  \end{definition6.4.4}
-\pause
-\centering
-\includegraphics[width=5cm,height=4cm]{matching}
-\end{frame}
-\begin{frame}
-  \frametitle{匹配}
-  \begin{definition6.4.5}
-    设$Y$是图$G=(V,E)$的一个匹配，如果$2|Y|=|V|$，则称$Y$为$G$的一个\alert{完美匹配}。
-  \end{definition6.4.5}
-\pause
-\centering
-\includegraphics[width=5cm,height=4cm]{perfect}
-\end{frame}
-
-\begin{frame}
-  \frametitle{匹配}
-    \begin{definition6.4.6}
-   设$Y$是图$G=(V,E)$的一个匹配，如果对于$G$的任一匹配$Y'$，恒有$|Y'|\leq |Y|$, 则称$Y$为$G$的一个\alert{最大匹配}。
-  \end{definition6.4.6}
-\pause
-\centering
-\includegraphics[width=4cm,height=3cm]{maximum}
-\end{frame}
-\begin{frame}
-  \frametitle{匹配}
-  \begin{definition6.4.7}
-    设$G=((V_1,V_2),E)$是一个偶图,如果存在$G$的一
-    个匹配$Y$使得$|Y|=min\{|V_1|,|V_2|\}$，则称$Y$是偶图$G$的一个\alert{完全匹配}。
-  \end{definition6.4.7}
-\end{frame}
-
-\begin{frame}
-  \frametitle{匹配}
+  \frametitle{6.4 补图、偶图}
   \begin{theorem6.4.3}
-    设$G=((V_1,V_2),E)$为偶图，存在$G$的一个完全匹配$Y$且$|Y| = |V_1|$的充分必要条件是对$V_1$的任意子集$A$， $|N(A)| \geq |A|$，其中\[N(A) = \{y\in V_2|\exists x \in A \{x,y\} \in E\}\]。
+    所有具有$p$个顶点而没有三角形的图中最多有$\llcorner p^2/4\lrcorner$条边。
   \end{theorem6.4.3}
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{匹配}
+%   \begin{definition6.4.4}
+%     设$G=(V,E)$是一个图，$G$的任两条不邻接的边$x$与$y$称为互相\alert{独
+%       立}的。$G$的边集$E$的子集$Y$称为$G$的一个\alert{匹配}，如果$Y$中任意两条边都是互相独立的。
+%   \end{definition6.4.4}
+% \pause
+% \centering
+% \includegraphics[width=5cm,height=4cm]{matching}
+% \end{frame}
+% \begin{frame}
+%   \frametitle{匹配}
+%   \begin{definition6.4.5}
+%     设$Y$是图$G=(V,E)$的一个匹配，如果$2|Y|=|V|$，则称$Y$为$G$的一个\alert{完美匹配}。
+%   \end{definition6.4.5}
+% \pause
+% \centering
+% \includegraphics[width=5cm,height=4cm]{perfect}
+% \end{frame}
+
+% \begin{frame}
+%   \frametitle{匹配}
+%     \begin{definition6.4.6}
+%    设$Y$是图$G=(V,E)$的一个匹配，如果对于$G$的任一匹配$Y'$，恒有$|Y'|\leq |Y|$, 则称$Y$为$G$的一个\alert{最大匹配}。
+%   \end{definition6.4.6}
+% \pause
+% \centering
+% \includegraphics[width=4cm,height=3cm]{maximum}
+% \end{frame}
+% \begin{frame}
+%   \frametitle{匹配}
+%   \begin{definition6.4.7}
+%     设$G=((V_1,V_2),E)$是一个偶图,如果存在$G$的一
+%     个匹配$Y$使得$|Y|=min\{|V_1|,|V_2|\}$，则称$Y$是偶图$G$的一个\alert{完全匹配}。
+%   \end{definition6.4.7}
+% \end{frame}
+
 %   \begin{frame}
 %     \frametitle{Stable Matching}
 %     \begin{definition1}
