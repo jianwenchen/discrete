@@ -3,10 +3,19 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{clrscode3e}
+\usepackage{ragged2e}
+
+
+\setbeamertemplate{theorems}[numbered]
+\newtheorem{Thm}{定理}[section]
+\theoremstyle{definition}
+\newtheorem{Def}{定义}[section]
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+
 
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
-\newtheorem{Ex}{习题}
 \newtheorem{definition1.1.1}{定义1.1.1}
 \newtheorem{definition6.2.1}{定义6.2.1}
 \newtheorem{definition6.2.2}{定义6.2.2}
@@ -72,135 +81,332 @@
 \title{第六章 图的基本概念}
 \begin{frame}
   \titlepage
-\end{frame}  
+\end{frame}
+\section{图论的产生与发展史概述}
 \begin{frame}
   \frametitle{6.1 图论的产生与发展史概述}
   \centering
 \includegraphics[width=5cm,height=4cm]{konigsberg} 
 \end{frame}
 
-
+\section{基本定义}
 \begin{frame}
   \frametitle{6.2 基本定义}
 设$V$为一个集合，$V$的一切二元子集之集合记为$\mathcal{P}_2(V)$，即
 \begin{equation*}
   \mathcal{P}_2(V) = \{A|A \subseteq V \text{且} |A| = 2\}\text{。}
 \end{equation*}
-\begin{definition6.2.1}
+\begin{Def}\justifying\let\raggedright\justifying
   设$V$为一个非空有限集合，$E \subseteq \mathcal{P}_2(V)$，二元组$G = (V, E)$称为一个\alert{无向图}。$V$中的元素称为无向图$G$的\alert{顶点}，$V$为\alert{顶点集}；$E$中的元素称为无向图$G$的\alert{边}，$E$为\alert{边集}。无向图简称\alert{图}。如果$|V|=p$，$|E|=q$，则称$G$为一个$(p,q)$图，即$G$是一个具有$p$个顶点$q$条边的图。
-\end{definition6.2.1}
-\centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+\end{Def}
+      \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{definition6.2.2}
+  \begin{Def}\justifying\let\raggedright\justifying
     在图$G=(V,E)$中，如果$\{u,v\}\in E$,则称\alert{顶点$u$与$v$邻接};若$x$与$y$是图$G$的两条边，并且仅有一个公共端点，即$|x \cap y|= 1$,则称\alert{边$x$与$y$邻接};如果$x=\{u,v\}$是图$G$的一条边，则称\alert{$u$与$x$互相关联}，同样的，称\alert{$v$与$x$互相关联}。
-  \end{definition6.2.2}
-\centering
-    \includegraphics[width=4cm,height=3cm]{graph}
+  \end{Def}
+        \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+
 \end{frame}
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{definition6.2.3}
+  \begin{Def}
    如果一个图中两个顶点间允许有多于一条边存在，则称为\alert{多重图}，这些边称为\alert{多重边}; 如果一个图中允许联结一个顶点与其自身的边存在，则称为\alert{带环图}，这些边称为\alert{环};允许有环或多重边存在的图，称之为\alert{伪图}。
-  \end{definition6.2.3}
+  \end{Def}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{definition6.2.4}
+  \begin{Def}
 设$G=(V,E)$为一个图，如果$E=\Phi$,则称$G$为\alert{零图}; $(1,0)$图称为\alert{平凡图}。    
-  \end{definition6.2.4}
+  \end{Def}
 \end{frame}
 
 
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{definition6.2.5}
+  \begin{Def}
     设$v$为图$G=(V,E)$的任意一个顶点，$G$中与$v$关联的边的数目称为顶点$v$的\alert{度}，记为$\deg x$。
-  \end{definition6.2.5}
-\centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+  \end{Def}
+   \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\  G   
 \end{frame}
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{theorem6.2.1}
+  \begin{Thm}
     设$G=(V,E)$为一个具有$p$个顶点$q$条边的图，则$G$中各顶点度的和等于边的条数$q$的两倍，即
         \begin{equation*}
       \sum_{v \in V}\deg v = 2q
     \end{equation*}
-  \end{theorem6.2.1}
-\centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+  \end{Thm}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\  G   
 \end{frame}
 
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-  \begin{theorem6.2.2}
+  \begin{Thm}
        在任一图中，度为奇数的顶点的数目必为偶数。
-  \end{theorem6.2.2}
+  \end{Thm}
 \centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G 
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\  G 
+\end{frame}
+\begin{frame}
+  \frametitle{6.2 基本定义}
+  \begin{Def}
+    图$G$称为\alert{$r$度正则图}，如果$G$的每个顶点的度都等于$r$。３度正则图也叫三次图。
+    一个具有$p$个顶点的$p-1$度正则图称为包含$p$个顶点的\alert{完全图}，记为$K_p$。
+  \end{Def}
+\end{frame}
+\begin{frame}
+  \frametitle{6.2 基本定义}
+    \begin{minipage}[c]{0.4\textwidth}
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\ \centering G 
+    \end{minipage}\hspace{2cm}
+    \begin{minipage}[c]{0.4\textwidth}
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (E);
+ \end{tikzpicture}
+\\ \centering H 
+    \end{minipage}
+    \pause
+  \begin{Def}
+    设$G=(V,E)$为一个图，图$H=(V_1,E_1)$称为$G$的一个子图，当且仅当$V_1$为$G$的
+    非空子集且$E_1$为$E$的子集。如果$H \neq G$，则称$H$为$G$的\alert{真子图}。
+  \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.2 基本定义}
-    \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\ \centering G 
+  \begin{minipage}[c]{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\ \centering G 
     \end{minipage}\hspace{2cm}
     \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{subgraph2} \\ \centering H 
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (E);
+ \end{tikzpicture}
+ \\ \centering H 
     \end{minipage}
     \pause
-  \begin{definition6.2.6}
-    设$G=(V,E)$为一个图，如果$V_1$是$V$的非空子集，$E_1$是$E$的非空子集并且$E_1$中每条边的顶点都在$V_1$中，则称图$H=(V_1,E_1)$ 为$G$ 的一个\alert{子图}。
-如果$H \neq G$，则称$H$为$G$的\alert{真子图}。
-  \end{definition6.2.6}
-\end{frame}
-
-\begin{frame}
-  \frametitle{6.2 基本定义}
-    \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\ \centering G 
-    \end{minipage}\hspace{2cm}
-    \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{spanning} \\ \centering H 
-    \end{minipage}
-    \pause
-  \begin{definition6.2.7}
+  \begin{Def}
     设$G=(V,E)$为一个图，如果$F\subseteq E$，则称$G$的子图$H=(V,F)$ 为$G$的一个\alert{生成子图}。
-  \end{definition6.2.7}
+  \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.2 基本定义}
     \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\ \centering G 
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\ \centering G 
     \end{minipage}\hspace{2cm}
     \begin{minipage}[c]{0.4\textwidth}
-\includegraphics[width=4cm,height=3cm]{induced} \\ \centering H 
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (B) to  (E);
+ \end{tikzpicture}
+\\ \centering H 
     \end{minipage}
 
     \pause
-  \begin{definition6.2.8}
+  \begin{Def}
     设$G$的子图$H$具有某种性质，若$G$中不存在与$H$不同的具有此性质且包含$H$的子图，则称$H$是具有此性质的\alert{极大子图}。
-  \end{definition6.2.8}
+  \end{Def}
 \pause
-  \begin{definition6.2.9}
+  \begin{Def}
     设$S$为图$G=(V,E)$的顶点集$V$的非空子集，则$G$的以$S$为顶点集的极大子图称为由$S$导出的子图，记为$\langle S \rangle$。
 形式的，
 \begin{equation*}
   \langle S \rangle=(S, \mathcal{P}_2(S) \cap E)
 \end{equation*}
-  \end{definition6.2.9}
+  \end{Def}
 \end{frame}
 \begin{frame}
   \frametitle{6.2 基本定义}
@@ -211,48 +417,129 @@
 \includegraphics[width=4cm,height=3cm]{isomorphic} \\ \centering H 
     \end{minipage}
     \pause
-  \begin{definition6.2.10}
+  \begin{Def}
     设$G=(V,E)$, $H = (U, F)$为两个图，如果存在一个一一对应$\phi:V \to
     U$，使得$\{u,v\} \in E$当且仅当$\{\phi(u),\phi(v)\} \in F$,则称$G$与$H$\alert{同构}。
-  \end{definition6.2.10}
+  \end{Def}
 \end{frame}
-
+\section{路、圈、连通图
+}
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{definition6.3.1}
+  \begin{Def}
     设$G=(V,E)$为一个图。$G$的一条\alert{通道}是$G$的顶点和边的一个交错序列
     \[v_0,x_1,v_1,x_2,v_2,x_3,\ldots,v_{n-1},x_n,v_n\]
     其中$x_i=v_{i-1}v_i,i=1,2,\ldots,n$。$n$称为通道的长。这样的通道常称为$v_0-v_n$通道，并简记为$v_0v_1v_2\ldots   v_n$。当$v_0=v_n$时，则称此通道为\alert{闭通道}。
-  \end{definition6.3.1}
+  \end{Def}
   \centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\  G   
 \end{frame}
 
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{definition6.3.2}
+  \begin{Def}
    如果图中一条通道上的各边互不相同，则称此通道为图的\alert{迹}。如果一条闭通道上的各边互不相同，则此闭通道称为\alert{闭迹}。
-  \end{definition6.3.2}
+  \end{Def}
   \centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\  G   
 \end{frame}
 
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{definition6.3.3}
+  \begin{Def}
     如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上各顶点互不相同，则称此闭通道为\alert{圈}，或\alert{回路}。
-  \end{definition6.3.3}
+  \end{Def}
   \centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\  G   
 \end{frame}
 
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{definition6.3.4}
+  \begin{Def}
    设$G=(V,E)$为一个图，如果$G$中任两个不同顶点间至少有一条路联结，则称$G$为一个\alert{连通图}。
-  \end{definition6.3.4}
+  \end{Def}
   \centering
-\includegraphics[width=4cm,height=3cm]{subgraph1} \\  G   
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+ \\  G   
 \end{frame}
 
 \begin{frame}
@@ -351,9 +638,9 @@ $G$
 
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{definition6.3.5}
+  \begin{Def}
     图$G$的极大连通子图称为$G$的一个\alert{支}。
-  \end{definition6.3.5}
+  \end{Def}
   \begin{minipage}{0.33\linewidth}
     \centering
     \begin{tikzpicture}[auto,
@@ -401,18 +688,19 @@ $G$
 
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
-  \begin{theorem6.3.1}
-    设$G=(V,E)$是一个图。在$V$上定义二元关系$\cong$如下：\[\forall u, v \in V, u \cong v\text{当且仅当}u\text{与}v\text{间有一条路，}\]则$\cong$是$V$上的等价关系，$G$的支就是关于$\cong$的每个等价类的导出子图。
-  \end{theorem6.3.1}
+  \begin{Thm}
+    设$G=(V,E)$是一个图。在$V$上定义二元关系$\cong$如下：\[\forall u, v \in V, u
+      \cong v\text{当且仅当}u\text{与}v\text{间有一条路，}\]则$\cong$为$V$上的等价关系，$G$的支就是关于$\cong$的每个等价类的导出子图。
+  \end{Thm}
 \end{frame}
 
 
-
+\section{补图、偶图}
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{definition6.4.1}
+  \begin{Def}
     设$G=(V,E)$是一个图，图$G^c=(V, \mathcal{P}_2(V)\setminus E)$称为$G$的\alert{补图}。如果$G$与$G^c$同构，则称$G$是\alert{自补图}。
-  \end{definition6.4.1}
+  \end{Def}
   \begin{minipage}{0.49\linewidth}
     \centering
     \begin{tikzpicture}[auto,
@@ -446,9 +734,9 @@ $G$
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{definition6.4.1}
+  \begin{Def}
     设$G=(V,E)$是一个图，图$G^c=(V, \mathcal{P}_2(V)\setminus E)$称为$G$的\alert{补图}。如果$G$与$G^c$同构，则称$G$是\alert{自补图}。
-  \end{definition6.4.1}
+  \end{Def}
   \begin{minipage}{0.49\linewidth}
     \centering
     \begin{tikzpicture}[auto,
@@ -481,46 +769,64 @@ $G$
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{theorem6.4.1}
+  \begin{Thm}
     对任一有$6$个顶点的图$G$，$G$中或$G^c$中有一个三角形。
-  \end{theorem6.4.1}
+  \end{Thm}
+  \begin{proof}[证明]
+    设图$G$的顶点集为$V=\{v_1,v_2,v_3,v_4,v_5,v_6\}$,考虑顶点$v_1$。
+    \begin{itemize}
+    \item 存在三个顶点，其中的每个顶点都与顶点$v_1$相邻接。不失一般性，不妨设这
+      个三个顶点为$v_2,v_3,v_4$。
+      \begin{itemize}
+      \item 在顶点$v_2,v_3,v_4$中，存在两个顶点相邻接。
+      \item 在顶点$v_2,v_3,v_4$中，任意两个顶点都不邻接。
+      \end{itemize}
+    \item 存在三个顶点，其中的每个顶点都与顶点$v_1$不邻接。不失一般性，不妨设这
+      个三个顶点为$v_2,v_3,v_4$。
+      \begin{itemize}
+      \item 在顶点$v_2,v_3,v_4$中，存在两个顶点不邻接。
+      \item 在顶点$v_2,v_3,v_4$中，任意两个顶点互相邻接。
+      \end{itemize}
+
+    \end{itemize}
+  \end{proof}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{definition6.4.2}
+  \begin{Def}
     对任意的正整数$m$，$n$，$m \geq 2$，$n \geq 2$，求一个最小的正整数$r(m,n)$，
     使得任何有$r(m,n)$个顶点的图$G$中一定含有一个$K_m$或者图$G^c$中一定含有一个$K_n$，这里的数$r(m,n)$称为\alert{拉姆齐数}。
-  \end{definition6.4.2}
+  \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{definition6.4.2}
-    设$G=(V,E)$是一个图,如果$G$的顶点集$V$有一个二划分$\{V_1,V_2\}$，
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$G=(V,E)$为一个图,如果$G$的顶点集$V$有一个二划分$\{V_1,V_2\}$，
     使得$G$的任一条边的两个端点一个在$V_1$中，另一个在$V_2$中，则称$G$为\alert{偶图}。如果$\forall u \in V_1, v \in V_2$均有$uv \in E$，则称$G$为\alert{完全偶图}，记为$K_{m,n}$，其中$|V_1|=m,|V_2|=n$。
-  \end{definition6.4.2}
+  \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{definition6.4.3}
+  \begin{Def}
     设$G=(V,E)$是一个图，$u$和$v$是$G$的顶点。联结$u$和$v$的最短路的长称为$u$与$v$之间的\alert{距离}，并记为$d(u,v)$。如果$u$与$v$间在$G$中没有路，则定义$d(u,v)=\infty$。
-  \end{definition6.4.3}
+  \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{theorem6.4.2}
+  \begin{Thm}
     图$G$为偶图的充分必要条件是它的所有圈都是偶数长。
-  \end{theorem6.4.2}
+  \end{Thm}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.4 补图、偶图}
-  \begin{theorem6.4.3}
+  \begin{Thm}
     所有具有$p$个顶点而没有三角形的图中最多有$\llcorner p^2/4\lrcorner$条边。
-  \end{theorem6.4.3}
+  \end{Thm}
 \end{frame}
 
 % \begin{frame}
@@ -619,49 +925,49 @@ $G$
 %   \end{Thm4}
 % \end{frame}
 
-
+\section{欧拉图}
 \begin{frame}
   \frametitle{6.5 欧拉图}
 \centering
 \includegraphics[width=5cm,height=4cm]{konigsberg} 
     \pause
-  \begin{definition6.5.1}
+  \begin{Def}
     包含图的所有顶点和所有边的闭迹称为\alert{欧拉闭迹}。存在一条欧拉闭迹的图称为\alert{欧拉图}。
-  \end{definition6.5.1}
+  \end{Def}
 
 \end{frame}
 
 
 \begin{frame}
   \frametitle{6.5 欧拉图}
-  \begin{theorem6.5.1}
+  \begin{Thm}
     图G是欧拉图当且仅当$G$是连通的且每个顶点的度是偶数。
-  \end{theorem6.5.1}
+  \end{Thm}
 
 \end{frame}
 
 \begin{frame}
   \frametitle{6.5 欧拉图}
-  \begin{definition6.5.2}
+  \begin{Def}
     包含图的所有顶点和边的迹称为欧拉迹。
-  \end{definition6.5.2}
+  \end{Def}
 
 \end{frame}
 
 \begin{frame}
   \frametitle{6.5 欧拉图}
-  \begin{theorem6.5.2}
+  \begin{Thm}
     图G有一条欧拉迹当且仅当$G$是连通的且恰有两个奇度顶点。
-  \end{theorem6.5.2}
+  \end{Thm}
 
 \end{frame}
 
 
 \begin{frame}
   \frametitle{6.5 欧拉图}
-  \begin{theorem6.5.3}
+  \begin{Thm}
     设$G$是连通图，$G$恰有$2n$个奇度顶点，$n \geq 1$，则$G$的全部边可以排成$n$条开迹，而且至少有$n$条开迹。
-  \end{theorem6.5.3}
+  \end{Thm}
 
 \end{frame}
 
@@ -674,7 +980,7 @@ $G$
 %     图$G$的一条包含所有顶点的路称为$G$的一条\alert{哈密顿路};图$G$的一个包含所有顶点的圈称为$G$的一个\alert{哈密顿圈}。具有哈密顿圈的图称为\alert{哈密顿图}。
 %   \end{definition6.6.1}
 % \end{frame}
-
+\section{哈密顿图}
 \begin{frame}
   \frametitle{6.6 哈密顿图}
   \centering
@@ -740,9 +1046,9 @@ $G$
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-   \begin{definition6.6.1}
+   \begin{Def}
     图$G$的一条包含所有顶点的路称为$G$的一条\alert{哈密顿路};图$G$的一个包含所有顶点的圈称为$G$的一个\alert{哈密顿圈}。具有哈密顿圈的图称为\alert{哈密顿图}。
-  \end{definition6.6.1}  
+  \end{Def}  
 \end{frame}
 
 \begin{frame}
@@ -798,11 +1104,11 @@ $G$
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-  \begin{theorem6.6.1}
-    设$G=(V,E)$是哈密顿图，则对$V$的每个非空子集$S$，均有
+  \begin{Thm}
+    设$G=(V,E)$为哈密顿图，则对$V$的每个非空子集$S$，均有
     \[\omega(G-S) \leq |S|\]
     其中$G-S$是从$G$中去掉$S$中那些顶点后所得到的图，$\omega(G-S)$是图$G-S$的支数。
-  \end{theorem6.6.1}
+  \end{Thm}
 \end{frame}
 
 \begin{frame}
@@ -881,24 +1187,24 @@ $G$
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-  \begin{theorem6.6.2}
-    设$G$是有$p(p \geq 3)$个顶点的图。如果对$G$的任一对不邻接的顶点$u$和$v$，均有
+  \begin{Thm}
+    设$G$为有$p(p \geq 3)$个顶点的图。如果对$G$的任一对不邻接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p,
     \end{equation*}
 则$G$是一个哈密顿图。
-  \end{theorem6.6.2}
+  \end{Thm}
 \end{frame}
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-  \begin{theorem6.6.3}
-    设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
+  \begin{Thm}
+    设$G$为一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p - 1,
     \end{equation*}
 则$G$有哈密顿路。
-\end{theorem6.6.3}
+\end{Thm}
 \centering
 \vspace{0.5cm}
     \begin{tikzpicture}[auto,
@@ -933,13 +1239,13 @@ $G$
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-  \begin{theorem6.6.3}
+  \begin{Thm}
     设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p - 1,
     \end{equation*}
 则$G$有哈密顿路。
-\end{theorem6.6.3}
+\end{Thm}
 \centering
 \vspace{0.5cm}
     \begin{tikzpicture}[auto,
@@ -974,13 +1280,13 @@ $G$
 
 \begin{frame}
   \frametitle{6.6 哈密顿图}
-  \begin{theorem6.6.4}
+  \begin{Thm}
     设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p - 1,
     \end{equation*}
 则$G$是连通的。
-\end{theorem6.6.4}
+\end{Thm}
 
 \end{frame}
 
@@ -1130,6 +1436,7 @@ $G$
     
   \end{proof}
 \end{frame}
+\section{图的邻接矩阵}
 \begin{frame}
   \frametitle{6.7 图的邻接矩阵}
 \centering
