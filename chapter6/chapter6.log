@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  3 MAY 2019 23:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  7 MAY 2019 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1533,7 +1533,7 @@ Package epstopdf Info: Source file: <k33.eps>
 33.eps>
 (epstopdf)             \includegraphics on input line 424.
 Package epstopdf Info: Output file is already uptodate.
-<k33-eps-converted-to.pdf, id=592, 308.15125pt x 241.90375pt>
+<k33-eps-converted-to.pdf, id=591, 308.15125pt x 241.90375pt>
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
 Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 424.
@@ -1548,7 +1548,7 @@ Package epstopdf Info: Source file: <isomorphic.eps>
 o.pdf isomorphic.eps>
 (epstopdf)             \includegraphics on input line 424.
 Package epstopdf Info: Output file is already uptodate.
-<isomorphic-eps-converted-to.pdf, id=593, 286.06876pt x 277.035pt>
+<isomorphic-eps-converted-to.pdf, id=592, 286.06876pt x 277.035pt>
 File: isomorphic-eps-converted-to.pdf Graphic file (type pdf)
 <use isomorphic-eps-converted-to.pdf>
 Package pdftex.def Info: isomorphic-eps-converted-to.pdf  used on input line 42
@@ -1757,7 +1757,7 @@ Package epstopdf Info: Source file: <representation.eps>
 ed-to.pdf representation.eps>
 (epstopdf)             \includegraphics on input line 1444.
 Package epstopdf Info: Output file is already uptodate.
-<representation-eps-converted-to.pdf, id=1790, 301.125pt x 217.81375pt>
+<representation-eps-converted-to.pdf, id=1791, 301.125pt x 217.81375pt>
 File: representation-eps-converted-to.pdf Graphic file (type pdf)
 <use representation-eps-converted-to.pdf>
 Package pdftex.def Info: representation-eps-converted-to.pdf  used on input lin
@@ -1789,10 +1789,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23256 strings out of 494406
- 431778 string characters out of 6169674
- 524153 words of memory out of 5000000
- 25831 multiletter control sequences out of 15000+600000
+ 23258 strings out of 494406
+ 431796 string characters out of 6169674
+ 524189 words of memory out of 5000000
+ 25833 multiletter control sequences out of 15000+600000
  53034 words of font info for 190 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,63p,802b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1848,7 +1848,7 @@ u/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/shar
 e/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arph
 ic/gbsnu/gbsnu9f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter6.pdf (64 pages, 547832 bytes).
+Output written on chapter6.pdf (64 pages, 547930 bytes).
 PDF statistics:
  2070 PDF objects out of 2073 (max. 8388607)
  1844 compressed objects within 19 object streams
