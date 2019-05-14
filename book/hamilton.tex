@@ -4,7 +4,20 @@
 若图$G$含有一个包含所有结点的圈，则将其称之为图$G$的一个{\bfseries哈密顿圈}。包
 含哈密顿圈的图称之为{\bfseries 哈密顿图}。
 
+\begin{Ex}
+      设$G=(V,E)$为哈密顿图，则对$V$的每个非空子集$S$，均有
+    \[\omega(G-S) \leq |S|\]
+    其中$G-S$是从$G$中去掉$S$中那些顶点后所得到的图，$\omega(G-S)$是图$G-S$的支数。
+  \end{Ex}
 
+  \begin{Ex}
+        设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
+    \begin{equation*}
+      \deg u + \deg v \geq p - 1,
+    \end{equation*}
+则$G$是连通的。
+
+  \end{Ex}
 
 \begin{Ex}
   下图是否是哈密顿图？若是，找出一个哈密顿圈？若不是，说明理由。
@@ -502,3 +515,7 @@
 \end{Ex}
 
 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book"
+%%% End:

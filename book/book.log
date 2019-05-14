@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  26 APR 2019 07:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  14 MAY 2019 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1068,12 +1068,33 @@ Chapter 5.
 
 ]
 Chapter 6.
+
+Overfull \hbox (24.5119pt too wide) in paragraph at lines 3--5
+[]\C70/gbsn/m/it/10/4e `[][] \C70/gbsn/m/it/10/98 ˜[][]\OT1/cmr/bx/n/10 6.1. []
+\C70/gbsn/m/it/10/8b ¾$\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 V
+; E\OT1/cmr/m/n/10 )$\C70/gbsn/m/it/10/4e : ^^@ *\OT1/cmr/m/it/10 (p,q)\C70/gbs
+n/m/it/10/56 þ \C70/gbsn/m/it/10/ff ^^L$\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 ^^B
+ \OML/cmm/m/it/10 p$\C70/gbsn/m/it/10/77 é \C70/gbsn/m/sl/10/96 5$\OML/cmm/m/it
+/10 A$\C70/gbsn/m/it/10/4e :$\OML/cmm/m/it/10 G$\C70/gbsn/m/sl/10/76 „ \C70/gbs
+n/m/it/10/90 » \C70/gbsn/m/it/10/63 ¥ \C70/gbsn/m/it/10/77 é \C70/gbsn/m/sl/10/
+96 5 \C70/gbsn/m/it/10/ff ^^L \C70/gbsn/m/it/10/6c B \C70/gbsn/m/it/10/8b Á$\OM
+L/cmm/m/it/10 G$\C70/gbsn/m/it/10/4e -$\OML/cmm/m/it/10 v[]$\C70/gbsn/m/it/10/4
+e ^^N$\OML/cmm/m/it/10 v[]$\C70/gbsn/m/it/10/95 ô
+ []
+
 ) (./euler.tex [13] [14
 
 ]
 Chapter 7.
+
+LaTeX Font Warning: Font shape `C70/gbsn/bx/it' undefined
+(Font)              using `C70/gbsn/bx/n' instead on input line 3.
+
 [15]) (./hamilton.tex [16]
 Chapter 8.
+[17
+
+]
 Package epstopdf Info: Source file: <timg.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
 (epstopdf)                    size: 958550 bytes
@@ -1082,20 +1103,21 @@ Package epstopdf Info: Source file: <timg.eps>
 (epstopdf)                    size: 36977 bytes
 (epstopdf)             Command: <repstopdf --outfile=timg-eps-converted-to.pdf 
 timg.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./timg-eps-converted-to.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<timg-eps-converted-to.pdf, id=162, 393.47pt x 401.5pt>
+<timg-eps-converted-to.pdf, id=174, 393.47pt x 401.5pt>
 File: timg-eps-converted-to.pdf Graphic file (type pdf)
 <use timg-eps-converted-to.pdf>
-Package pdftex.def Info: timg-eps-converted-to.pdf  used on input line 131.
+Package pdftex.def Info: timg-eps-converted-to.pdf  used on input line 144.
 (pdftex.def)             Requested size: 142.26147pt x 113.80992pt.
-[17
 
-] [18 <./timg-eps-converted-to.pdf>]) (./tree.tex [19] [20
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./timg-eps-converted-to.pdf>]) (./tree.tex [19] [20
 
 ]
 Chapter 9.
@@ -1103,10 +1125,6 @@ Chapter 9.
 
 ]
 Chapter 10.
-
-LaTeX Font Warning: Font shape `C70/gbsn/bx/it' undefined
-(Font)              using `C70/gbsn/bx/n' instead on input line 3.
-
 ) (./matching.tex [23] [24
 
 ]
@@ -1194,16 +1212,58 @@ n/10/30 ^^B
 
 [41
 
-]) (./connectivity_ans.tex [42]
+]) (./infinite_ans.tex [42]
 Chapter 5.
-) (./miscellaneous_ans.tex [43
+) (./graph_ans.tex [43
 
 ] [44
 
 ]
 Chapter 6.
 
-Overfull \hbox (3.11142pt too wide) in paragraph at lines 33--37
+Overfull \hbox (24.5119pt too wide) in paragraph at lines 3--5
+[]\C70/gbsn/m/n/10/4e `[][] \C70/gbsn/bx/it/10/98 ˜[][]\OT1/cmr/bx/n/10 6.1. []
+\C70/gbsn/m/it/10/8b ¾$\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 V
+; E\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/10/4e : ^^@ *\OT1/cmr/m/it/10 (p,q)\C70/gbsn
+/bx/n/10/56 þ \C70/gbsn/m/n/10/ff ^^L$\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 ^^B \
+OML/cmm/m/it/10 p$\C70/gbsn/m/n/10/77 é \C70/gbsn/m/sl/10/96 5$\OML/cmm/m/it/10
+ A$\C70/gbsn/m/n/10/4e :$\OML/cmm/m/it/10 G$\C70/gbsn/m/n/10/76 „ \C70/gbsn/m/n
+/10/90 » \C70/gbsn/m/n/10/63 ¥ \C70/gbsn/m/n/10/77 é \C70/gbsn/m/sl/10/96 5 \C7
+0/gbsn/m/n/10/ff ^^L \C70/gbsn/m/it/10/6c B \C70/gbsn/m/it/10/8b Á$\OML/cmm/m/i
+t/10 G$\C70/gbsn/m/n/10/4e -$\OML/cmm/m/it/10 v[]$\C70/gbsn/m/n/10/4e ^^N$\OML/
+cmm/m/it/10 v[]$\C70/gbsn/bx/it/10/95 ô
+ []
+
+) (./euler_ans.tex [45] [46
+
+]
+Chapter 7.
+
+Overfull \hbox (15.8867pt too wide) in paragraph at lines 25--29
+[]\C70/gbsn/m/it/10/8b ¾ \C70/gbsn/m/n/10/8f Þ \C70/gbsn/m/n/10/90 ^^Z \C70/gbs
+n/bx/n/10/56 þ$\OML/cmm/m/it/10 G$\C70/gbsn/m/n/10/67 	$\OT1/cmr/m/n/10 2\OML/c
+mm/m/it/10 n$\C70/gbsn/m/n/10/4e * \C70/gbsn/m/n/10/59 G \C70/gbsn/m/n/10/5e ¦ 
+\C70/gbsn/bx/it/10/98 v \C70/gbsn/bx/it/10/70 ¹$\OML/cmm/m/it/10 u[]; v[]; u[];
+ v[]; [] ; u[]; v[]$\C70/gbsn/m/n/10/30 ^^B \C70/gbsn/bx/n/10/57 ($\OML/cmm/m/i
+t/10 G$\C70/gbsn/m/n/10/4e - \C70/gbsn/m/n/10/52   \C70/gbsn/m/n/10/51 e$\OML/c
+mm/m/it/10 n$\C70/gbsn/m/n/10/67 a \C70/gbsn/m/n/10/8f ¹$\OML/cmm/m/it/10 u[]v[
+]$\C70/gbsn/m/n/10/ff ^^L
+ []
+
+) (./hamilton_ans.tex [47] [48
+
+]
+Chapter 8.
+) (./connectivity_ans.tex [49] [50
+
+]
+Chapter 9.
+) (./miscellaneous_ans.tex [51] [52
+
+]
+Chapter 10.
+
+Overfull \hbox (8.11143pt too wide) in paragraph at lines 33--37
 \C70/gbsn/m/n/10/68 9 \C70/gbsn/m/n/10/63 n \C70/gbsn/m/n/10/4e 
  \C70/gbsn/m/n/10/5f ^^O \C70/gbsn/m/n/10/53 ó \C70/gbsn/m/n/10/7a ï \C70/gbsn/
 m/n/10/4e : \C70/gbsn/m/n/10/50 v \C70/gbsn/m/n/10/65 p \C70/gbsn/m/n/10/62 ^^V
@@ -1216,19 +1276,19 @@ OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/
 10/ff ^^L$\OML/cmm/m/it/10 y[]$\C70/gbsn/m/n/10/76 „
  []
 
-) [45] (./book.aux)
+) [53] (./book.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15656 strings out of 494406
- 285879 string characters out of 6169674
- 430901 words of memory out of 5000000
- 18473 multiletter control sequences out of 15000+600000
+ 15787 strings out of 494406
+ 288064 string characters out of 6169674
+ 409828 words of memory out of 5000000
+ 18582 multiletter control sequences out of 15000+600000
  39875 words of font info for 145 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 55i,21n,60p,1149b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,21n,60p,1150b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
@@ -1284,10 +1344,10 @@ r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type
 1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu99.p
 fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on book.pdf (45 pages, 479916 bytes).
+Output written on book.pdf (53 pages, 510726 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
+ 541 PDF objects out of 1000 (max. 8388607)
+ 346 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
