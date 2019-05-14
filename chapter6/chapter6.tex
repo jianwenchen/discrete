@@ -1248,7 +1248,7 @@ $G$
  \begin{proof}[证明（续上页）]
    设$v_{i_1},v_{i_2},\ldots,v_{i_r}$与$v_1$邻接，$2=i_1 < i_2 < \cdots < i_r < k$，则$v_k$必与某个$v_{i_s-1}$邻接，$2\leq s \leq r$。
       否则，$v_k$至多与最长路上其余的顶点邻接，所以
-      \[\deg v_1 + \deg v_2 \leq r + ((k-1) - r) = k - 1 < p - 1\]
+      \[\deg v_1 + \deg v_k \leq r + ((k-1) - r) = k - 1 < p - 1\]
       矛盾。于是，$v_1v_2\cdots v_{i_{s-1}}v_kv_{k-1}\cdots v_{i_s}v_1$是$G$中的一个圈。总之，$v_1,v_2,\cdots,v_k$在$G$的同一个圈$C$上。
     
   \end{proof}
