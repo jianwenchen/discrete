@@ -26,6 +26,7 @@
     "graph_ans"
     "euler_ans"
     "hamilton_ans"
+    "tree_ans"
     "connectivity_ans"
     "miscellaneous_ans"
     "bk10"

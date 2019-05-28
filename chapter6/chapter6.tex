@@ -375,26 +375,21 @@
     其中$x_i=v_{i-1}v_i,i=1,2,\ldots,n$。$n$称为通道的长。这样的通道常称为$v_0-v_n$通道，并简记为$v_0v_1v_2\ldots   v_n$。当$v_0=v_n$时，则称此通道为\alert{闭通道}。
   \end{Def}
   \centering
-    \centering
-    \begin{tikzpicture}[auto,
-    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
-   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
-   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
-   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
-   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
-   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (E) [label=-135:$v_5$] at (0,0)  {};
+   \node[specification] (F) [label=135:$v_3$] at (0,2)  {};
+   \node[specification] (G) [label=45:$v_2$] at (2,2)  {};
+   \node[specification] (H) [label=-45:$v_4$] at (2,0)  {};
+   \node[specification] (I) [label=-45:$v_1$] at (4,2)  {};
    
-   
-   \draw[thick] (A) to  (B);
-   \draw[thick] (B) to  (C);
-   \draw[thick] (C) to  (D);
-   \draw[thick] (D) to  (E);
-   \draw[thick] (E) to  (A);
-   \draw[thick] (A) to  (C);
-   \draw[thick] (B) to  (E);
-   \draw[thick] (C) to  (E);
-   \draw[thick] (D) to  (A);
- \end{tikzpicture}
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (E);
+   \draw[thick] (E) to  (G);
+   \draw[thick] (G) to  (I);
+ \end{tikzpicture}  
  \\  G   
 \end{frame}
 
@@ -404,26 +399,21 @@
    如果图中一条通道上的各边互不相同，则称此通道为图的\alert{迹}。如果一条闭通道上的各边互不相同，则此闭通道称为\alert{闭迹}。
   \end{Def}
   \centering
-    \centering
-    \begin{tikzpicture}[auto,
-    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
-   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
-   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
-   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
-   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
-   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (E) [label=-135:$v_5$] at (0,0)  {};
+   \node[specification] (F) [label=135:$v_3$] at (0,2)  {};
+   \node[specification] (G) [label=45:$v_2$] at (2,2)  {};
+   \node[specification] (H) [label=-45:$v_4$] at (2,0)  {};
+   \node[specification] (I) [label=-45:$v_1$] at (4,2)  {};
    
-   
-   \draw[thick] (A) to  (B);
-   \draw[thick] (B) to  (C);
-   \draw[thick] (C) to  (D);
-   \draw[thick] (D) to  (E);
-   \draw[thick] (E) to  (A);
-   \draw[thick] (A) to  (C);
-   \draw[thick] (B) to  (E);
-   \draw[thick] (C) to  (E);
-   \draw[thick] (D) to  (A);
- \end{tikzpicture}
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (E);
+   \draw[thick] (E) to  (G);
+   \draw[thick] (G) to  (I);
+ \end{tikzpicture}  
  \\  G   
 \end{frame}
 
@@ -433,26 +423,21 @@
     如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上各顶点互不相同，则称此闭通道为\alert{圈}，或\alert{回路}。
   \end{Def}
   \centering
-    \centering
-    \begin{tikzpicture}[auto,
-    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
-   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
-   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
-   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
-   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
-   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (E) [label=-135:$v_5$] at (0,0)  {};
+   \node[specification] (F) [label=135:$v_3$] at (0,2)  {};
+   \node[specification] (G) [label=45:$v_2$] at (2,2)  {};
+   \node[specification] (H) [label=-45:$v_4$] at (2,0)  {};
+   \node[specification] (I) [label=-45:$v_1$] at (4,2)  {};
    
-   
-   \draw[thick] (A) to  (B);
-   \draw[thick] (B) to  (C);
-   \draw[thick] (C) to  (D);
-   \draw[thick] (D) to  (E);
-   \draw[thick] (E) to  (A);
-   \draw[thick] (A) to  (C);
-   \draw[thick] (B) to  (E);
-   \draw[thick] (C) to  (E);
-   \draw[thick] (D) to  (A);
- \end{tikzpicture}
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (E);
+   \draw[thick] (E) to  (G);
+   \draw[thick] (G) to  (I);
+ \end{tikzpicture}  
  \\  G   
 \end{frame}
 
@@ -461,7 +446,6 @@
   \begin{Def}
    设$G=(V,E)$为一个图，如果$G$中任两个不同顶点间至少有一条路联结，则称$G$为一个\alert{连通图}。
   \end{Def}
-  \centering
     \centering
     \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
@@ -1453,11 +1437,11 @@ $G$
 %   \end{proof}
 % \end{frame}
 \section{图的邻接矩阵}
-\begin{frame}
-  \frametitle{6.7 图的邻接矩阵}
-\centering
-\includegraphics[width=5cm,height=4cm]{representation} 
-\end{frame}
+% \begin{frame}
+%   \frametitle{6.7 图的邻接矩阵}
+% \centering
+% \includegraphics[width=5cm,height=4cm]{representation} 
+% \end{frame}
 
 \begin{frame}
   \frametitle{6.7 图的邻接矩阵}
@@ -1465,6 +1449,23 @@ $G$
     设$G=(V,E)$为一个(p,q)图，$p\times p$矩阵$A$为$G$的邻接矩阵，则$G$中$v_i$与
     $v_j$间长为$l$的通道的条数等于$A^l$的第$i$行第$j$列元素的值。
   \end{Thm}
+    \centering
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (E) [label=-135:$v_5$] at (0,0)  {};
+   \node[specification] (F) [label=135:$v_3$] at (0,2)  {};
+   \node[specification] (G) [label=45:$v_2$] at (2,2)  {};
+   \node[specification] (H) [label=-45:$v_4$] at (2,0)  {};
+   \node[specification] (I) [label=-45:$v_1$] at (4,2)  {};
+   
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (E);
+   \draw[thick] (E) to  (G);
+   \draw[thick] (G) to  (I);
+ \end{tikzpicture}  
+ \\  G   
 \end{frame}
 
 

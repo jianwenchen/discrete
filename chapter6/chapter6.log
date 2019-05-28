@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  14 MAY 2019 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  16 MAY 2019 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1551,21 +1551,21 @@ Package pdftex.def Info: isomorphic-eps-converted-to.pdf  used on input line 36
 ] [23
 
 ]
-Overfull \hbox (2.21255pt too wide) in paragraph at lines 533--533
+Overfull \hbox (2.21255pt too wide) in paragraph at lines 517--517
  [][] 
  []
 
 [24
 
 ]
-Overfull \hbox (2.21255pt too wide) in paragraph at lines 580--580
+Overfull \hbox (2.21255pt too wide) in paragraph at lines 564--564
  [][] 
  []
 
 [25
 
 ]
-Overfull \hbox (2.21255pt too wide) in paragraph at lines 630--630
+Overfull \hbox (2.21255pt too wide) in paragraph at lines 614--614
  [][] 
  []
 
@@ -1586,7 +1586,7 @@ Overfull \hbox (2.21255pt too wide) in paragraph at lines 630--630
 ] [33
 
 ]
-Underfull \hbox (badness 3281) in paragraph at lines 752--752
+Underfull \hbox (badness 3281) in paragraph at lines 736--736
 []\C70/gbsn/m/it/10.95/8b ¾$\OT1/cmss/m/it/10.95 G \OT1/cmss/m/n/10.95 = (\OT1/
 cmss/m/it/10.95 V\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.95 E\OT1/cmss/m/n/10.9
 5 )$\C70/gbsn/m/it/10.95/4e : ^^@ * \C70/gbsn/m/it/10.95/56 þ\OT1/cmss/m/n/10.9
@@ -1613,12 +1613,12 @@ Package epstopdf Info: Source file: <konigsberg.eps>
 (epstopdf)                    size: 4373 bytes
 (epstopdf)             Command: <repstopdf --outfile=konigsberg-eps-converted-t
 o.pdf konigsberg.eps>
-(epstopdf)             \includegraphics on input line 881.
+(epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
 File: konigsberg-eps-converted-to.pdf Graphic file (type pdf)
 <use konigsberg-eps-converted-to.pdf>
-Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 88
-1.
+Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 86
+5.
 (pdftex.def)             Requested size: 142.25761pt x 113.81198pt.
  [38
 
@@ -1631,12 +1631,12 @@ Package epstopdf Info: Source file: <konigsberg.eps>
 (epstopdf)                    size: 4373 bytes
 (epstopdf)             Command: <repstopdf --outfile=konigsberg-eps-converted-t
 o.pdf konigsberg.eps>
-(epstopdf)             \includegraphics on input line 881.
+(epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
 File: konigsberg-eps-converted-to.pdf Graphic file (type pdf)
 <use konigsberg-eps-converted-to.pdf>
-Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 88
-1.
+Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 86
+5.
 (pdftex.def)             Requested size: 142.25761pt x 113.81198pt.
  [39
 
@@ -1685,31 +1685,12 @@ Package pdftex.def Info: konigsberg-eps-converted-to.pdf  used on input line 88
 <timg.jpg, id=1689, 393.47pt x 401.5pt>
 File: timg.jpg Graphic file (type jpg)
 <use timg.jpg>
-Package pdftex.def Info: timg.jpg  used on input line 1314.
+Package pdftex.def Info: timg.jpg  used on input line 1298.
 (pdftex.def)             Requested size: 142.26147pt x 113.80992pt.
  [60
 
  <./timg.jpg>]
-Package epstopdf Info: Source file: <representation.eps>
-(epstopdf)                    date: 2018-12-25 10:19:08
-(epstopdf)                    size: 8967 bytes
-(epstopdf)             Output file: <representation-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-25 10:19:08
-(epstopdf)                    size: 4491 bytes
-(epstopdf)             Command: <repstopdf --outfile=representation-eps-convert
-ed-to.pdf representation.eps>
-(epstopdf)             \includegraphics on input line 1460.
-Package epstopdf Info: Output file is already uptodate.
-<representation-eps-converted-to.pdf, id=1715, 301.125pt x 217.81375pt>
-File: representation-eps-converted-to.pdf Graphic file (type pdf)
-<use representation-eps-converted-to.pdf>
-Package pdftex.def Info: representation-eps-converted-to.pdf  used on input lin
-e 1460.
-(pdftex.def)             Requested size: 142.26852pt x 113.80885pt.
-
 [61
-
- <./representation-eps-converted-to.pdf>] [62
 
 ]
 \tf@nav=\write6
@@ -1721,11 +1702,11 @@ e 1460.
 \tf@snm=\write8
 \openout8 = `chapter6.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1478.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1478.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1479.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1479.
  (./chapter6.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1478.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1479.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1479.
 
 Package rerunfilecheck Info: File `chapter6.out' has not changed.
 (rerunfilecheck)             Checksum: 37ED45EE2A0331C3CCF07B08DFA6B803;566.
@@ -1735,13 +1716,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22929 strings out of 494406
- 426201 string characters out of 6169674
- 515176 words of memory out of 5000000
- 25504 multiletter control sequences out of 15000+600000
+ 22920 strings out of 494406
+ 425963 string characters out of 6169674
+ 515141 words of memory out of 5000000
+ 25498 multiletter control sequences out of 15000+600000
  53509 words of font info for 192 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,14n,62p,802b,1433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,62p,802b,1434s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1794,10 +1775,10 @@ u/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/shar
 e/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arph
 ic/gbsnu/gbsnu9f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter6.pdf (62 pages, 540924 bytes).
+Output written on chapter6.pdf (61 pages, 537395 bytes).
 PDF statistics:
- 2018 PDF objects out of 2073 (max. 8388607)
- 1795 compressed objects within 18 object streams
- 132 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1986 PDF objects out of 2073 (max. 8388607)
+ 1766 compressed objects within 18 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

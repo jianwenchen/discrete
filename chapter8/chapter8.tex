@@ -219,6 +219,14 @@
   \frametitle{1. 顶点连通度和边连通度}
 
   \begin{Thm}
+    对任何整数$a,b,c$，　$0 < a \leq b \leq c$，　存在一个图$G$使得\[\kappa (G)
+      = a, \lambda (G) = b, \delta (G) = c\]
+  \end{Thm}
+  \end{frame}
+  \begin{frame}
+  \frametitle{1. 顶点连通度和边连通度}
+
+  \begin{Thm}
     设$G=(V,E)$有$p$个顶点且$\delta(G) \geq [ \frac{p}{2} ]$，则$\lambda(G) = \delta(G)$。
   \end{Thm}\small{\pause
   \begin{proof}[证明]
@@ -226,7 +234,7 @@
 
      
 
-   \pause 因为$\delta(G) \geq [\frac{p}{2}]$，所以$G$是连通的。\pause 由$G$是连通的知$\lambda(G) > 0$，从而存在$V$的真子集$A$使得$G$中联结$A$中的一个顶点与$V\setminus A$中的一个顶点的边恰有$\lambda(G)$条。\pause 所有这些边的集合记为$F$。
+   \pause 因为$\delta(G) \geq [\frac{p}{2}]$，所以$G$是连通的。\pause 如果$G$为平凡图，　则$\lambda (G) = \delta(G) = 0$。如果$G$不是平凡图，则$\lambda(G) > 0$，从而存在$V$的真子集$A$使得$G$中联结$A$中的一个顶点与$V\setminus A$中的一个顶点的边恰有$\lambda(G)$条。\pause 所有这些边的集合记为$F$。
 
   \pause  由$|A| + |V\setminus A| = p$知必有$|A| \leq [\frac{p}{2}]$或者$|V\setminus A| \leq [p/2]$。\pause 不妨设$|A| \leq [\frac{p}{2}]$。 \pause 由于$\delta(G) \geq [\frac{p}{2}]$，$A$中的每个顶点至少与$V\setminus A$中的一个顶点邻接。\pause 否则，如果$A$中的某个顶点$u$只与$A$中的顶点邻接，则$\deg u \leq |A|-1 \leq [\frac{p}{2}] - 1 < \delta(G)$，矛盾。 
 

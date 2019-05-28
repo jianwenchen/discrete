@@ -115,10 +115,8 @@
 \headcommand {\sectionentry {7}{图的邻接矩阵}{61}{图的邻接矩阵}{0}}
 \headcommand {\slideentry {7}{0}{1}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {7}{0}{2}{62/62}{}{0}}
-\headcommand {\beamer@framepages {62}{62}}
-\headcommand {\beamer@partpages {1}{62}}
-\headcommand {\beamer@subsectionpages {1}{62}}
-\headcommand {\beamer@sectionpages {1}{62}}
-\headcommand {\beamer@documentpages {62}}
-\headcommand {\gdef \inserttotalframenumber {49}}
+\headcommand {\beamer@partpages {1}{61}}
+\headcommand {\beamer@subsectionpages {1}{61}}
+\headcommand {\beamer@sectionpages {1}{61}}
+\headcommand {\beamer@documentpages {61}}
+\headcommand {\gdef \inserttotalframenumber {48}}

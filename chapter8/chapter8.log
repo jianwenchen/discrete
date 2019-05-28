@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  30 APR 2019 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  28 MAY 2019 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1469,148 +1469,150 @@ Overfull \hbox (4.89664pt too wide) in paragraph at lines 216--216
 
 [19
 
-]
-Overfull \vbox (8.54231pt too high) detected at line 237
- []
-
-[20
+] [20
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [21
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [22
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [23
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [24
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [25
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [26
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [27
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [28
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [29
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [30
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [31
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [32
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [33
 
 ]
-Overfull \vbox (8.54231pt too high) detected at line 237
+Overfull \vbox (20.54231pt too high) detected at line 245
  []
 
 [34
 
-] [35
+]
+Overfull \vbox (20.54231pt too high) detected at line 245
+ []
+
+[35
 
 ] [36
 
+] [37
+
 ]
-<matching.png, id=1036, 651.43375pt x 587.19376pt>
+<matching.png, id=1062, 651.43375pt x 587.19376pt>
 File: matching.png Graphic file (type png)
 <use matching.png>
-Package pdftex.def Info: matching.png  used on input line 266.
+Package pdftex.def Info: matching.png  used on input line 274.
 (pdftex.def)             Requested size: 142.2622pt x 113.80792pt.
- [37
+ [38
 
  <./matching.png>]
 File: matching.png Graphic file (type png)
 <use matching.png>
-Package pdftex.def Info: matching.png  used on input line 266.
+Package pdftex.def Info: matching.png  used on input line 274.
 (pdftex.def)             Requested size: 142.2622pt x 113.80792pt.
- [38
+ [39
 
 ]
-<perfect.png, id=1093, 747.79375pt x 1056.94875pt>
+<perfect.png, id=1118, 747.79375pt x 1056.94875pt>
 File: perfect.png Graphic file (type png)
 <use perfect.png>
-Package pdftex.def Info: perfect.png  used on input line 275.
+Package pdftex.def Info: perfect.png  used on input line 283.
 (pdftex.def)             Requested size: 142.26485pt x 113.79718pt.
- [39
+ [40
 
  <./perfect.png>]
 File: perfect.png Graphic file (type png)
 <use perfect.png>
-Package pdftex.def Info: perfect.png  used on input line 275.
+Package pdftex.def Info: perfect.png  used on input line 283.
 (pdftex.def)             Requested size: 142.26485pt x 113.79718pt.
- [40
+ [41
 
 ]
-<maximum.png, id=1146, 747.79375pt x 1056.94875pt>
+<maximum.png, id=1171, 747.79375pt x 1056.94875pt>
 File: maximum.png Graphic file (type png)
 <use maximum.png>
-Package pdftex.def Info: maximum.png  used on input line 287.
+Package pdftex.def Info: maximum.png  used on input line 295.
 (pdftex.def)             Requested size: 113.80731pt x 85.34789pt.
- [41
+ [42
 
  <./maximum.png>]
 File: maximum.png Graphic file (type png)
 <use maximum.png>
-Package pdftex.def Info: maximum.png  used on input line 287.
+Package pdftex.def Info: maximum.png  used on input line 295.
 (pdftex.def)             Requested size: 113.80731pt x 85.34789pt.
- [42
-
-] [43
+ [43
 
 ] [44
+
+] [45
 
 ]
 \tf@nav=\write6
@@ -1622,11 +1624,11 @@ Package pdftex.def Info: maximum.png  used on input line 287.
 \tf@snm=\write8
 \openout8 = `chapter8.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (./chapter8.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `chapter8.out' has not changed.
 (rerunfilecheck)             Checksum: 7AD289BE36383A4529CF5DF236D7983E;281.
 
@@ -1635,10 +1637,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21973 strings out of 494406
- 411635 string characters out of 6169674
- 517335 words of memory out of 5000000
- 24682 multiletter control sequences out of 15000+600000
+ 21993 strings out of 494406
+ 411932 string characters out of 6169674
+ 518405 words of memory out of 5000000
+ 24698 multiletter control sequences out of 15000+600000
  42332 words of font info for 152 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,62p,802b,1887s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1683,10 +1685,10 @@ r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type
 fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fon
 ts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb>
-Output written on chapter8.pdf (44 pages, 461181 bytes).
+Output written on chapter8.pdf (45 pages, 465713 bytes).
 PDF statistics:
- 1445 PDF objects out of 1728 (max. 8388607)
- 1273 compressed objects within 13 object streams
- 92 named destinations out of 1000 (max. 500000)
+ 1470 PDF objects out of 1728 (max. 8388607)
+ 1297 compressed objects within 13 object streams
+ 94 named destinations out of 1000 (max. 500000)
  266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

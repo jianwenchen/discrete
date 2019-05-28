@@ -1,6 +1,21 @@
 \chapter{树}
+  \begin{Def}
+    连通且无圈的无向图称为无向树，简称{\bfseries树}。 一个没有圈的无向图
+    称为无向森林，简称{\bfseries森林}。
+  \end{Def}
 
-\begin{Ex}
+  \begin{Ex}
+  设$G=(V,E)$是一个$(p,q)$图，试证下列各命题等价：
+  \begin{enumerate}
+  \item $G$是树；
+  \item $G$的任两个不同顶点间有唯一的一条路联结；
+  \item $G$是连通的且去掉任意一条边则得到一个不连通的图；
+  \item $G$是连通的且$q = p - 1$；
+  \item $G$中无圈且$q = p - 1$；
+  \item $G$中无圈且$G$中任意两个不邻接的顶点间加一条边则得到一个含有圈的图。
+  \end{enumerate}
+  \end{Ex}
+  \begin{Ex}
   下列图为树的是\underline{$\quad\quad$}。
 \end{Ex}
 
@@ -179,3 +194,8 @@ D.
  \end{tikzpicture}
 
 \end{minipage}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book"
+%%% End:

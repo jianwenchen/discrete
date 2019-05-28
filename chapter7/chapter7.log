@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  26 JAN 2019 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  17 MAY 2019 01:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1419,6 +1419,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [10
 
+] [11
+
 ]
 \tf@nav=\write6
 \openout6 = `chapter7.nav'.
@@ -1429,11 +1431,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@snm=\write8
 \openout8 = `chapter7.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
  (./chapter7.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `chapter7.out' has not changed.
 (rerunfilecheck)             Checksum: 0CF78079EFCABCF5BB39A87573130D9D;223.
 
@@ -1442,13 +1444,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21748 strings out of 494406
- 408553 string characters out of 6169674
- 491686 words of memory out of 5000000
- 24571 multiletter control sequences out of 15000+600000
- 26650 words of font info for 95 fonts, out of 8000000 for 9000
+ 21771 strings out of 494406
+ 408923 string characters out of 6169674
+ 491769 words of memory out of 5000000
+ 24587 multiletter control sequences out of 15000+600000
+ 27226 words of font info for 97 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,14n,55p,803b,1353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,55p,803b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
@@ -1478,16 +1480,17 @@ pe1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76
 onts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
 gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/
 texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic
-/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr
-/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1
-/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pf
-b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on chapter7.pdf (10 pages, 212731 bytes).
+/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr
+/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/type1
+/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
+Output written on chapter7.pdf (11 pages, 218945 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 24 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

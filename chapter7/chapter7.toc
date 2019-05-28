@@ -1,3 +1,3 @@
 \beamer@sectionintoc {1}{树及其性质}{2}{0}{1}
 \beamer@sectionintoc {2}{生成树}{5}{0}{2}
-\beamer@sectionintoc {3}{割点、桥和割集}{6}{0}{3}
+\beamer@sectionintoc {3}{割点、桥和割集}{7}{0}{3}
