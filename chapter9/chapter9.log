@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  4 MAR 2019 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  4 JUN 2019 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1421,13 +1421,13 @@ Package pdftex.def Info: Worldmap.png  used on input line 58.
 ]
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 82.
+(Font)              using `C70/gbsn/m/n' instead on input line 83.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1444,12 +1444,12 @@ Package epstopdf Info: Source file: <k5.eps>
 (epstopdf)                    size: 3060 bytes
 (epstopdf)             Command: <repstopdf --outfile=k5-eps-converted-to.pdf k5
 .eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 <k5-eps-converted-to.pdf, id=304, 298.11375pt x 289.08pt>
 File: k5-eps-converted-to.pdf Graphic file (type pdf)
 <use k5-eps-converted-to.pdf>
-Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -1459,12 +1459,12 @@ Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    size: 3109 bytes
 (epstopdf)             Command: <repstopdf --outfile=k33-eps-converted-to.pdf k
 33.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 <k33-eps-converted-to.pdf, id=305, 296.10625pt x 170.6375pt>
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
-Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.80922pt x 85.36018pt.
  [9
 
@@ -1478,11 +1478,11 @@ Package epstopdf Info: Source file: <k5.eps>
 (epstopdf)                    size: 3060 bytes
 (epstopdf)             Command: <repstopdf --outfile=k5-eps-converted-to.pdf k5
 .eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k5-eps-converted-to.pdf Graphic file (type pdf)
 <use k5-eps-converted-to.pdf>
-Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -1492,11 +1492,11 @@ Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    size: 3109 bytes
 (epstopdf)             Command: <repstopdf --outfile=k33-eps-converted-to.pdf k
 33.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
-Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.80922pt x 85.36018pt.
  [10
 
@@ -1509,11 +1509,11 @@ Package epstopdf Info: Source file: <k5.eps>
 (epstopdf)                    size: 3060 bytes
 (epstopdf)             Command: <repstopdf --outfile=k5-eps-converted-to.pdf k5
 .eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k5-eps-converted-to.pdf Graphic file (type pdf)
 <use k5-eps-converted-to.pdf>
-Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -1523,11 +1523,11 @@ Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    size: 3109 bytes
 (epstopdf)             Command: <repstopdf --outfile=k33-eps-converted-to.pdf k
 33.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
-Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.80922pt x 85.36018pt.
  [11
 
@@ -1540,11 +1540,11 @@ Package epstopdf Info: Source file: <k5.eps>
 (epstopdf)                    size: 3060 bytes
 (epstopdf)             Command: <repstopdf --outfile=k5-eps-converted-to.pdf k5
 .eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k5-eps-converted-to.pdf Graphic file (type pdf)
 <use k5-eps-converted-to.pdf>
-Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -1554,11 +1554,11 @@ Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    size: 3109 bytes
 (epstopdf)             Command: <repstopdf --outfile=k33-eps-converted-to.pdf k
 33.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
-Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 109.
+Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 110.
 (pdftex.def)             Requested size: 113.80922pt x 85.36018pt.
  [12
 
@@ -1571,12 +1571,12 @@ Package epstopdf Info: Source file: <face.eps>
 (epstopdf)                    size: 4349 bytes
 (epstopdf)             Command: <repstopdf --outfile=face-eps-converted-to.pdf 
 face.eps>
-(epstopdf)             \includegraphics on input line 117.
+(epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 <face-eps-converted-to.pdf, id=421, 359.3425pt x 323.2075pt>
 File: face-eps-converted-to.pdf Graphic file (type pdf)
 <use face-eps-converted-to.pdf>
-Package pdftex.def Info: face-eps-converted-to.pdf  used on input line 117.
+Package pdftex.def Info: face-eps-converted-to.pdf  used on input line 118.
 (pdftex.def)             Requested size: 113.80759pt x 85.3586pt.
  [13
 
@@ -1589,12 +1589,12 @@ Package epstopdf Info: Source file: <euler.eps>
 (epstopdf)                    size: 4186 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler-eps-converted-to.pdf
  euler.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 <euler-eps-converted-to.pdf, id=456, 292.09125pt x 233.87375pt>
 File: euler-eps-converted-to.pdf Graphic file (type pdf)
 <use euler-eps-converted-to.pdf>
-Package pdftex.def Info: euler-eps-converted-to.pdf  used on input line 127.
+Package pdftex.def Info: euler-eps-converted-to.pdf  used on input line 128.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [14
 
@@ -1607,12 +1607,12 @@ Package epstopdf Info: Source file: <euler1.eps>
 (epstopdf)                    size: 4170 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler1-eps-converted-to.pd
 f euler1.eps>
-(epstopdf)             \includegraphics on input line 138.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 <euler1-eps-converted-to.pdf, id=487, 292.09125pt x 233.87375pt>
 File: euler1-eps-converted-to.pdf Graphic file (type pdf)
 <use euler1-eps-converted-to.pdf>
-Package pdftex.def Info: euler1-eps-converted-to.pdf  used on input line 138.
+Package pdftex.def Info: euler1-eps-converted-to.pdf  used on input line 139.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [15
 
@@ -1625,12 +1625,12 @@ Package epstopdf Info: Source file: <euler2.eps>
 (epstopdf)                    size: 4154 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler2-eps-converted-to.pd
 f euler2.eps>
-(epstopdf)             \includegraphics on input line 148.
+(epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
 <euler2-eps-converted-to.pdf, id=515, 292.09125pt x 233.87375pt>
 File: euler2-eps-converted-to.pdf Graphic file (type pdf)
 <use euler2-eps-converted-to.pdf>
-Package pdftex.def Info: euler2-eps-converted-to.pdf  used on input line 148.
+Package pdftex.def Info: euler2-eps-converted-to.pdf  used on input line 149.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [16
 
@@ -1643,12 +1643,12 @@ Package epstopdf Info: Source file: <euler3.eps>
 (epstopdf)                    size: 4132 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler3-eps-converted-to.pd
 f euler3.eps>
-(epstopdf)             \includegraphics on input line 158.
+(epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
 <euler3-eps-converted-to.pdf, id=544, 292.09125pt x 233.87375pt>
 File: euler3-eps-converted-to.pdf Graphic file (type pdf)
 <use euler3-eps-converted-to.pdf>
-Package pdftex.def Info: euler3-eps-converted-to.pdf  used on input line 158.
+Package pdftex.def Info: euler3-eps-converted-to.pdf  used on input line 159.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [17
 
@@ -1661,12 +1661,12 @@ Package epstopdf Info: Source file: <euler4.eps>
 (epstopdf)                    size: 4153 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler4-eps-converted-to.pd
 f euler4.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 <euler4-eps-converted-to.pdf, id=572, 292.09125pt x 233.87375pt>
 File: euler4-eps-converted-to.pdf Graphic file (type pdf)
 <use euler4-eps-converted-to.pdf>
-Package pdftex.def Info: euler4-eps-converted-to.pdf  used on input line 168.
+Package pdftex.def Info: euler4-eps-converted-to.pdf  used on input line 169.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
 [18
 
@@ -1679,12 +1679,12 @@ Package epstopdf Info: Source file: <euler5.eps>
 (epstopdf)                    size: 4134 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler5-eps-converted-to.pd
 f euler5.eps>
-(epstopdf)             \includegraphics on input line 178.
+(epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 <euler5-eps-converted-to.pdf, id=600, 292.09125pt x 233.87375pt>
 File: euler5-eps-converted-to.pdf Graphic file (type pdf)
 <use euler5-eps-converted-to.pdf>
-Package pdftex.def Info: euler5-eps-converted-to.pdf  used on input line 178.
+Package pdftex.def Info: euler5-eps-converted-to.pdf  used on input line 179.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [19
 
@@ -1697,12 +1697,12 @@ Package epstopdf Info: Source file: <euler6.eps>
 (epstopdf)                    size: 4128 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler6-eps-converted-to.pd
 f euler6.eps>
-(epstopdf)             \includegraphics on input line 189.
+(epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
 <euler6-eps-converted-to.pdf, id=629, 292.09125pt x 233.87375pt>
 File: euler6-eps-converted-to.pdf Graphic file (type pdf)
 <use euler6-eps-converted-to.pdf>
-Package pdftex.def Info: euler6-eps-converted-to.pdf  used on input line 189.
+Package pdftex.def Info: euler6-eps-converted-to.pdf  used on input line 190.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
 
 [20
@@ -1716,11 +1716,11 @@ Package epstopdf Info: Source file: <euler.eps>
 (epstopdf)                    size: 4186 bytes
 (epstopdf)             Command: <repstopdf --outfile=euler-eps-converted-to.pdf
  euler.eps>
-(epstopdf)             \includegraphics on input line 200.
+(epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
 File: euler-eps-converted-to.pdf Graphic file (type pdf)
 <use euler-eps-converted-to.pdf>
-Package pdftex.def Info: euler-eps-converted-to.pdf  used on input line 200.
+Package pdftex.def Info: euler-eps-converted-to.pdf  used on input line 201.
 (pdftex.def)             Requested size: 113.8126pt x 85.35783pt.
  [21
 
@@ -1743,11 +1743,11 @@ Package epstopdf Info: Source file: <k5.eps>
 (epstopdf)                    size: 3060 bytes
 (epstopdf)             Command: <repstopdf --outfile=k5-eps-converted-to.pdf k5
 .eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 File: k5-eps-converted-to.pdf Graphic file (type pdf)
 <use k5-eps-converted-to.pdf>
-Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 268.
+Package pdftex.def Info: k5-eps-converted-to.pdf  used on input line 269.
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -1757,11 +1757,11 @@ Package epstopdf Info: Source file: <k33.eps>
 (epstopdf)                    size: 3109 bytes
 (epstopdf)             Command: <repstopdf --outfile=k33-eps-converted-to.pdf k
 33.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 File: k33-eps-converted-to.pdf Graphic file (type pdf)
 <use k33-eps-converted-to.pdf>
-Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 268.
+Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 269.
 (pdftex.def)             Requested size: 113.80922pt x 85.36018pt.
  [27
 
@@ -1777,7 +1777,7 @@ Package pdftex.def Info: k33-eps-converted-to.pdf  used on input line 268.
 ] [32
 
 ]
-Overfull \hbox (25.35085pt too wide) detected at line 315
+Overfull \hbox (25.35085pt too wide) detected at line 316
 []
  []
 
@@ -1787,7 +1787,7 @@ Overfull \hbox (25.35085pt too wide) detected at line 315
 <grinberg.png, id=1011, 520.19344pt x 496.10344pt>
 File: grinberg.png Graphic file (type png)
 <use grinberg.png>
-Package pdftex.def Info: grinberg.png  used on input line 321.
+Package pdftex.def Info: grinberg.png  used on input line 322.
 (pdftex.def)             Requested size: 199.1678pt x 170.71681pt.
  [34
 
@@ -1801,7 +1801,7 @@ Package pdftex.def Info: grinberg.png  used on input line 321.
 <e4.png, id=1114, 490.08093pt x 438.8897pt>
 File: e4.png Graphic file (type png)
 <use e4.png>
-Package pdftex.def Info: e4.png  used on input line 473.
+Package pdftex.def Info: e4.png  used on input line 474.
 (pdftex.def)             Requested size: 199.16966pt x 170.71759pt.
  [38
 
@@ -1825,12 +1825,12 @@ Package epstopdf Info: Source file: <pentagon.eps>
 (epstopdf)                    size: 2993 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon-eps-converted-to.
 pdf pentagon.eps>
-(epstopdf)             \includegraphics on input line 539.
+(epstopdf)             \includegraphics on input line 540.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon-eps-converted-to.pdf, id=1275, 298.11375pt x 289.08pt>
 File: pentagon-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon-eps-converted-to.pdf  used on input line 539.
+Package pdftex.def Info: pentagon-eps-converted-to.pdf  used on input line 540.
 
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [44
@@ -1844,12 +1844,12 @@ Package epstopdf Info: Source file: <pentagon1.eps>
 (epstopdf)                    size: 2999 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon1-eps-converted-to
 .pdf pentagon1.eps>
-(epstopdf)             \includegraphics on input line 553.
+(epstopdf)             \includegraphics on input line 554.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon1-eps-converted-to.pdf, id=1303, 298.11375pt x 289.08pt>
 File: pentagon1-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon1-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon1-eps-converted-to.pdf  used on input line 553
+Package pdftex.def Info: pentagon1-eps-converted-to.pdf  used on input line 554
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [45
@@ -1863,12 +1863,12 @@ Package epstopdf Info: Source file: <pentagon2.eps>
 (epstopdf)                    size: 3004 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon2-eps-converted-to
 .pdf pentagon2.eps>
-(epstopdf)             \includegraphics on input line 566.
+(epstopdf)             \includegraphics on input line 567.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon2-eps-converted-to.pdf, id=1332, 298.11375pt x 289.08pt>
 File: pentagon2-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon2-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon2-eps-converted-to.pdf  used on input line 566
+Package pdftex.def Info: pentagon2-eps-converted-to.pdf  used on input line 567
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [46
@@ -1882,12 +1882,12 @@ Package epstopdf Info: Source file: <pentagon3.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon3-eps-converted-to
 .pdf pentagon3.eps>
-(epstopdf)             \includegraphics on input line 580.
+(epstopdf)             \includegraphics on input line 581.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon3-eps-converted-to.pdf, id=1360, 298.11375pt x 289.08pt>
 File: pentagon3-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon3-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon3-eps-converted-to.pdf  used on input line 580
+Package pdftex.def Info: pentagon3-eps-converted-to.pdf  used on input line 581
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [47
@@ -1901,12 +1901,12 @@ Package epstopdf Info: Source file: <pentagon4.eps>
 (epstopdf)                    size: 3007 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon4-eps-converted-to
 .pdf pentagon4.eps>
-(epstopdf)             \includegraphics on input line 593.
+(epstopdf)             \includegraphics on input line 594.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon4-eps-converted-to.pdf, id=1388, 298.11375pt x 289.08pt>
 File: pentagon4-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon4-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon4-eps-converted-to.pdf  used on input line 593
+Package pdftex.def Info: pentagon4-eps-converted-to.pdf  used on input line 594
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [48
@@ -1920,12 +1920,12 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 607.
 Package epstopdf Info: Output file is already uptodate.
 <pentagon5-eps-converted-to.pdf, id=1416, 298.11375pt x 289.08pt>
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 606
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 607
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
  [49
@@ -1939,11 +1939,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 620.
+(epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 620
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 621
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color2.eps>
@@ -1954,12 +1954,12 @@ Package epstopdf Info: Source file: <color2.eps>
 (epstopdf)                    size: 4356 bytes
 (epstopdf)             Command: <repstopdf --outfile=color2-eps-converted-to.pd
 f color2.eps>
-(epstopdf)             \includegraphics on input line 620.
+(epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 <color2-eps-converted-to.pdf, id=1446, 449.68pt x 271.0125pt>
 File: color2-eps-converted-to.pdf Graphic file (type pdf)
 <use color2-eps-converted-to.pdf>
-Package pdftex.def Info: color2-eps-converted-to.pdf  used on input line 620.
+Package pdftex.def Info: color2-eps-converted-to.pdf  used on input line 621.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [50
 
@@ -1972,11 +1972,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 633.
+(epstopdf)             \includegraphics on input line 634.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 633
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 634
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color21.eps>
@@ -1987,12 +1987,12 @@ Package epstopdf Info: Source file: <color21.eps>
 (epstopdf)                    size: 4360 bytes
 (epstopdf)             Command: <repstopdf --outfile=color21-eps-converted-to.p
 df color21.eps>
-(epstopdf)             \includegraphics on input line 633.
+(epstopdf)             \includegraphics on input line 634.
 Package epstopdf Info: Output file is already uptodate.
 <color21-eps-converted-to.pdf, id=1474, 449.68pt x 271.0125pt>
 File: color21-eps-converted-to.pdf Graphic file (type pdf)
 <use color21-eps-converted-to.pdf>
-Package pdftex.def Info: color21-eps-converted-to.pdf  used on input line 633.
+Package pdftex.def Info: color21-eps-converted-to.pdf  used on input line 634.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [51
 
@@ -2005,11 +2005,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 647.
+(epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 647
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 648
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color22.eps>
@@ -2020,12 +2020,12 @@ Package epstopdf Info: Source file: <color22.eps>
 (epstopdf)                    size: 4369 bytes
 (epstopdf)             Command: <repstopdf --outfile=color22-eps-converted-to.p
 df color22.eps>
-(epstopdf)             \includegraphics on input line 647.
+(epstopdf)             \includegraphics on input line 648.
 Package epstopdf Info: Output file is already uptodate.
 <color22-eps-converted-to.pdf, id=1502, 449.68pt x 271.0125pt>
 File: color22-eps-converted-to.pdf Graphic file (type pdf)
 <use color22-eps-converted-to.pdf>
-Package pdftex.def Info: color22-eps-converted-to.pdf  used on input line 647.
+Package pdftex.def Info: color22-eps-converted-to.pdf  used on input line 648.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [52
 
@@ -2038,11 +2038,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 660.
+(epstopdf)             \includegraphics on input line 661.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 660
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 661
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color23.eps>
@@ -2053,12 +2053,12 @@ Package epstopdf Info: Source file: <color23.eps>
 (epstopdf)                    size: 4373 bytes
 (epstopdf)             Command: <repstopdf --outfile=color23-eps-converted-to.p
 df color23.eps>
-(epstopdf)             \includegraphics on input line 660.
+(epstopdf)             \includegraphics on input line 661.
 Package epstopdf Info: Output file is already uptodate.
 <color23-eps-converted-to.pdf, id=1530, 449.68pt x 271.0125pt>
 File: color23-eps-converted-to.pdf Graphic file (type pdf)
 <use color23-eps-converted-to.pdf>
-Package pdftex.def Info: color23-eps-converted-to.pdf  used on input line 660.
+Package pdftex.def Info: color23-eps-converted-to.pdf  used on input line 661.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [53
 
@@ -2071,11 +2071,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 673.
+(epstopdf)             \includegraphics on input line 674.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 673
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 674
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color24.eps>
@@ -2086,12 +2086,12 @@ Package epstopdf Info: Source file: <color24.eps>
 (epstopdf)                    size: 4375 bytes
 (epstopdf)             Command: <repstopdf --outfile=color24-eps-converted-to.p
 df color24.eps>
-(epstopdf)             \includegraphics on input line 673.
+(epstopdf)             \includegraphics on input line 674.
 Package epstopdf Info: Output file is already uptodate.
 <color24-eps-converted-to.pdf, id=1559, 449.68pt x 271.0125pt>
 File: color24-eps-converted-to.pdf Graphic file (type pdf)
 <use color24-eps-converted-to.pdf>
-Package pdftex.def Info: color24-eps-converted-to.pdf  used on input line 673.
+Package pdftex.def Info: color24-eps-converted-to.pdf  used on input line 674.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [54
 
@@ -2104,11 +2104,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 686.
+(epstopdf)             \includegraphics on input line 687.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 686
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 687
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color25.eps>
@@ -2119,12 +2119,12 @@ Package epstopdf Info: Source file: <color25.eps>
 (epstopdf)                    size: 4373 bytes
 (epstopdf)             Command: <repstopdf --outfile=color25-eps-converted-to.p
 df color25.eps>
-(epstopdf)             \includegraphics on input line 686.
+(epstopdf)             \includegraphics on input line 687.
 Package epstopdf Info: Output file is already uptodate.
 <color25-eps-converted-to.pdf, id=1587, 449.68pt x 271.0125pt>
 File: color25-eps-converted-to.pdf Graphic file (type pdf)
 <use color25-eps-converted-to.pdf>
-Package pdftex.def Info: color25-eps-converted-to.pdf  used on input line 686.
+Package pdftex.def Info: color25-eps-converted-to.pdf  used on input line 687.
 (pdftex.def)             Requested size: 113.8126pt x 85.35698pt.
  [55
 
@@ -2137,11 +2137,11 @@ Package epstopdf Info: Source file: <pentagon5.eps>
 (epstopdf)                    size: 3005 bytes
 (epstopdf)             Command: <repstopdf --outfile=pentagon5-eps-converted-to
 .pdf pentagon5.eps>
-(epstopdf)             \includegraphics on input line 700.
+(epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
 File: pentagon5-eps-converted-to.pdf Graphic file (type pdf)
 <use pentagon5-eps-converted-to.pdf>
-Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 700
+Package pdftex.def Info: pentagon5-eps-converted-to.pdf  used on input line 701
 .
 (pdftex.def)             Requested size: 113.81206pt x 85.35725pt.
 Package epstopdf Info: Source file: <color26.eps>
@@ -2152,12 +2152,12 @@ Package epstopdf Info: Source file: <color26.eps>
 (epstopdf)                    size: 5662 bytes
 (epstopdf)             Command: <repstopdf --outfile=color26-eps-converted-to.p
 df color26.eps>
-(epstopdf)             \includegraphics on input line 700.
+(epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
 <color26-eps-converted-to.pdf, id=1616, 449.68pt x 277.035pt>
 File: color26-eps-converted-to.pdf Graphic file (type pdf)
 <use color26-eps-converted-to.pdf>
-Package pdftex.def Info: color26-eps-converted-to.pdf  used on input line 700.
+Package pdftex.def Info: color26-eps-converted-to.pdf  used on input line 701.
 (pdftex.def)             Requested size: 113.8126pt x 85.35577pt.
  [56
 
@@ -2176,12 +2176,12 @@ Package epstopdf Info: Source file: <color52.eps>
 (epstopdf)                    size: 3021 bytes
 (epstopdf)             Command: <repstopdf --outfile=color52-eps-converted-to.p
 df color52.eps>
-(epstopdf)             \includegraphics on input line 727.
+(epstopdf)             \includegraphics on input line 728.
 Package epstopdf Info: Output file is already uptodate.
 <color52-eps-converted-to.pdf, id=1724, 304.13625pt x 190.7125pt>
 File: color52-eps-converted-to.pdf Graphic file (type pdf)
 <use color52-eps-converted-to.pdf>
-Package pdftex.def Info: color52-eps-converted-to.pdf  used on input line 727.
+Package pdftex.def Info: color52-eps-converted-to.pdf  used on input line 728.
 (pdftex.def)             Requested size: 113.80948pt x 85.35712pt.
  [60
 
@@ -2194,12 +2194,12 @@ Package epstopdf Info: Source file: <color53.eps>
 (epstopdf)                    size: 3021 bytes
 (epstopdf)             Command: <repstopdf --outfile=color53-eps-converted-to.p
 df color53.eps>
-(epstopdf)             \includegraphics on input line 735.
+(epstopdf)             \includegraphics on input line 736.
 Package epstopdf Info: Output file is already uptodate.
 <color53-eps-converted-to.pdf, id=1753, 304.13625pt x 190.7125pt>
 File: color53-eps-converted-to.pdf Graphic file (type pdf)
 <use color53-eps-converted-to.pdf>
-Package pdftex.def Info: color53-eps-converted-to.pdf  used on input line 735.
+Package pdftex.def Info: color53-eps-converted-to.pdf  used on input line 736.
 (pdftex.def)             Requested size: 113.80948pt x 85.35712pt.
  [61
 
@@ -2212,12 +2212,12 @@ Package epstopdf Info: Source file: <color51.eps>
 (epstopdf)                    size: 3099 bytes
 (epstopdf)             Command: <repstopdf --outfile=color51-eps-converted-to.p
 df color51.eps>
-(epstopdf)             \includegraphics on input line 744.
+(epstopdf)             \includegraphics on input line 745.
 Package epstopdf Info: Output file is already uptodate.
 <color51-eps-converted-to.pdf, id=1782, 304.13625pt x 278.03876pt>
 File: color51-eps-converted-to.pdf Graphic file (type pdf)
 <use color51-eps-converted-to.pdf>
-Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 744.
+Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 745.
 (pdftex.def)             Requested size: 113.80948pt x 85.35957pt.
  [62
 
@@ -2233,11 +2233,11 @@ Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 744.
 \tf@snm=\write8
 \openout8 = `chapter9.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 754.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 755.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 755.
  (./chapter9.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 754.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 754.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 755.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 755.
 Package rerunfilecheck Info: File `chapter9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2246,10 +2246,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22670 strings out of 494406
- 424069 string characters out of 6169674
+ 22676 strings out of 494406
+ 424247 string characters out of 6169674
  503144 words of memory out of 5000000
- 25303 multiletter control sequences out of 15000+600000
+ 25309 multiletter control sequences out of 15000+600000
  35355 words of font info for 126 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,62p,799b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2301,7 +2301,7 @@ pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fo
 nts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
 bsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter9.pdf (63 pages, 703891 bytes).
+Output written on chapter9.pdf (63 pages, 703954 bytes).
 PDF statistics:
  2064 PDF objects out of 2073 (max. 8388607)
  1820 compressed objects within 19 object streams

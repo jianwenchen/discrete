@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{ragged2e}
 \usepackage{CJKutf8}
 \usepackage{tikz}
 \setbeamertemplate{theorems}[numbered]
@@ -297,9 +298,9 @@
   \frametitle{3. 匹配、霍尔定理}
 
   \begin{Def}
-    设$G=(V,E)$是一个偶图且$V=V_1\cup V_2$,
+    设$G=(V,E)$为一个偶图且$V=V_1\cup V_2$,
     $\forall x \in
-    E$，$x$是联结$V_1$的一个顶点与$V_2$的一个顶点的边。如果存在$G$的一
+    E$，$x$为联结$V_1$的一个顶点与$V_2$的一个顶点的边。如果存在$G$的一
     个匹配$Y$使得$|Y|=min\{|V_1|,|V_2|\}$，则称$Y$是偶图$G$的一个\alert{完全匹配}。
   \end{Def}
 
@@ -315,12 +316,49 @@
   \end{Def}
 
 \end{frame}
-
 \begin{frame}
   \frametitle{匹配}
   \begin{Thm}
-    设$G=((V_1,V_2),E)$为偶图，存在$G$的一个完全匹配$Y$且$|Y| = |V_1|$的充分必要条件是对$V_1$的任意子集$A$， $|N(A)| \geq |A|$，其中\[N(A) = \{y\in V_2|\exists x \in A \{x,y\} \in E\}\]。
+    设$G=((V_1,V_2),E)$为偶图，存在$G$的一个完全匹配$Y$且$|Y| = |V_1|$的充分必要条件是对$V_1$的任意子集$A$， $|N(A)| \geq |A|$，其中\[N(A) = \{y\in V_2|\exists x \in A \{x,y\} \in E\}\]
   \end{Thm}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{匹配}
+  \begin{proof}[证明]
+\justifying\let\raggedright\justifying
+设$G=((V_1,V_2),E)$为偶图，如果存在$G$的一个完全匹配$Y$且$|Y| = |V_1|$，则显然对$V_1$的任意子集$A$， $|N(A)| \geq |A|$。
+
+设$G=((V_1,V_2),E)$为偶图，对$V_1$的任意子集$A$， $|N(A)| \geq |A|$，以下用数学归纳法证明存在$G$的一个完全匹配$Y$使得$|Y| = |V_1|$，施归纳于$|V_1|$。
+
+(1)当$|V_1|=1$时，设$V_1$中唯一的一个元素为$u$，由$|N(V_1)| \geq |V_1|$知
+$N(V_1)$中至少含有一个元素$v$，则$\{\{u,v\}\}$构成了$G$的一个满足条件的完全匹配。
+
+(2)假设当$|V_1|<k$时结论成立，往证当$|V_1|=k$时结论也成立。
+设$|V_1|=k$，分以下两种情况讨论：
+
+（i）对$V_1$的任意真子集$A$，$|N(A)| > |A| + 1$。取$V_1$中的任意一个元素$u$，由于$|N(\{u\})| \geq 1$，　可取
+$N(\{u\})$中的一个元素$v$使得$uv \in E$。　考虑偶图$G-\{u,v\}$，对任意的
+$V_1\setminus \{u\}$的子集$B$，　$|N(B)| \geq |B|$。由归纳假设，偶图$G-\{u,v\}$
+有一个完全匹配$Y'$且$|Y'| = |V_1\setminus \{u\}|$。$Y' \cup \{\{u,v\}\}$即为$G$的
+一个完全匹配，且$|Y' \cup \{\{u,v\}\}| = |V_1|$。
+  \end{proof}
+\end{frame}
+\begin{frame}
+  \frametitle{匹配}
+  \begin{proof}[证明(续上页)]
+\justifying\let\raggedright\justifying
+（ii）存在$V_1$的真子集$A$，$|N(A)| = |A|$。
+
+考虑图$G$中由$A \cup N(A)$导出的子图$G_1$以及由$(V_1\setminus A) \cup
+N(V_1\setminus A)$导出的子图$G_2$。　$G_1$为偶图，且在$G_1$中对$A$的任意子集$B$，$|N(B)| \geq |B|$。
+$G_2$为偶图，且在$G_2$中对集合$V_1\setminus A$的任意子集$C$，　$|N(C)| \geq |C|$，　这是因为如果
+$|N(C)| < |C|$, 则$|N(C \cup A)| < |C \cup A|$，　与前提条件矛盾。由归纳假设，
+$G_1$有完全匹配$M_1$，$|M_1|=|A|$，$G_2$有完全匹配$M_2$，$|M_2|=|V_1\setminus A|$。于是
+$M_1\cup M_2$构成了$G$的完全匹配，且$|M_1\cup M_2| = |V_1|$。
+
+  \end{proof}
 \end{frame}
 
 \begin{frame}
