@@ -24,7 +24,7 @@
   \frametitle{1. 有向图的概念}
 
   \begin{Def}\justifying\let\raggedright\justifying
-    设$V$是一个有穷非空集合，$A \subseteq V\times V \setminus \{(v,v)|v \in V\}$，二元组$D=(V,A)$称为一个\alert{有向图}。$V$称为有向图$D$的\alert{顶点集}，$V$中的元素称为$D$的\alert{顶点}。
+    设$V$为一个有穷非空集合，$A \subseteq V\times V \setminus \{(v,v)|v \in V\}$，二元组$D=(V,A)$称为一个\alert{有向图}。$V$称为有向图$D$的\alert{顶点集}，$V$中的元素称为$D$的\alert{顶点}。
     $A$称为$D$的\alert{弧集}或\alert{有向边集}，$A$中的元素称为$D$的\alert{弧}或\alert{有向边}。如果$x = (u,v) \in A$，则$u$称为弧$x$的\alert{起点}，$v$称为弧$x$的\alert{终点}。
   \end{Def}
     \centering
@@ -77,7 +77,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    如果$(u,v)$和$(v,u)$都是有向图$D$的弧，则称$(u,v)$与$(v,u)$是$D$的\alert{对称弧}。如果$D$中不含对称弧，则称$D$是\alert{定向图}。
+    如果$(u,v)$和$(v,u)$都是有向图$D$的弧，则称$(u,v)$与$(v,u)$为$D$的\alert{对称弧}。如果$D$中不含对称弧，则称$D$是\alert{定向图}。
   \end{Def}
   \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick}]
@@ -211,7 +211,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    一个\alert{比赛图}是一个定向完全图，即任两个不同顶点间有且仅有一条弧。
+    一个\alert{比赛图}为一个定向完全图，即任两个不同顶点间有且仅有一条弧。
   \end{Def}
   \centering
     \begin{tikzpicture}[auto,
@@ -269,7 +269,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}\justifying\let\raggedright\justifying
-    设$D_1=(V_1,A_1)$，$D_2=(V_2,A_2)$都是有向图，如果存在一个一一对应$\varphi:V_1 \to V_2$，使得$\forall u,v \in V_1, (u,v) \in A_1$当且仅当$(\varphi(u), \varphi(v)) \in A_2$，则称$D_1$与$D_2$\alert{同构}。
+    设$D_1=(V_1,A_1)$，$D_2=(V_2,A_2)$都为有向图，如果存在一个一一对应$\varphi:V_1 \to V_2$，使得$\forall u,v \in V_1, (u,v) \in A_1$当且仅当$(\varphi(u), \varphi(v)) \in A_2$，则称$D_1$与$D_2$\alert{同构}。
   \end{Def}
   \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick}]
@@ -300,7 +300,8 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}\justifying\let\raggedright\justifying
-    设$D=(V,A)$是一个有向图，如果$V_1$是$V$的非空子集，$A_1$是$A$的非空子集，并且$A_1$中每条弧的端点都在$V_1$中，则称图$H=(V_1,A_1)$ 为$D$ 的一个\alert{子图}。
+    设$D=(V,A)$为一个有向图，有向图$H=(V_1,A_1)$称为$D$的一个\alert{子图}，如果
+    $V_1$为$V$的非空子集，$A_1$为$A$的子集。
 如果$H \neq D$，则称$H$为$D$的\alert{真子图}。
 \end{Def}
   \begin{tikzpicture}[auto,
@@ -333,7 +334,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-        设$D=(V,A)$是一个有向图，如果$F\subseteq A$，则称$D$的子图$H=(V,F)$ 为$D$的一个\alert{生成子图}。
+        设$D=(V,A)$为一个有向图，如果$F\subseteq A$，则称$D$的子图$H=(V,F)$ 为$D$的一个\alert{生成子图}。
 \end{Def}
   \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick}]
@@ -363,7 +364,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    设$D=(V,A)$是一个有向图，如果$S \subseteq V$，则$S$的\alert{导出子图}定义为$H=(S,F)$，其中
+    设$D=(V,A)$为一个有向图，如果$S \subseteq V$，则$S$的\alert{导出子图}定义为$H=(S,F)$，其中
     \[F=\{(u,v)\in A | u \in S, v \in S\}\]
 \end{Def}
   \begin{tikzpicture}[auto,
@@ -397,7 +398,7 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-    设$D=(V,A)$是一个有向图。$D$的顶点和弧的交错序列
+    设$D=(V,A)$为一个有向图。$D$的顶点和弧的交错序列
     \[v_0,x_1,v_1,x_2,v_2,\cdots,v_{n-1},x_n,v_n \]
     称为$D$的一个\alert{有向通道}，如果$x_i = (v_{i-1},v_i)$， $i=1,2,\cdots, n$。 \\$n$称为该有向通道的长。 如果$v_0=v_n$,则称它是\alert{闭有向通道}。
   \end{Def}
@@ -419,7 +420,7 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-设$D=(V,A)$是一个有向图，$D$的一条\alert{有向迹}是$D$的一条所有弧均不相同的有向通道。起点和终点相同的迹称为\alert{闭迹}。迹上出现的弧的条数称为迹的长。   
+设$D=(V,A)$为一个有向图，$D$的一条\alert{有向迹}是$D$的一条所有弧均不相同的有向通道。起点和终点相同的迹称为\alert{闭迹}。迹上出现的弧的条数称为迹的长。   
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,
@@ -439,7 +440,7 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-设$D=(V,A)$是一个有向图，$D$的一条不含重复顶点的有向通道称为$D$的一条\alert{有向路}。有向路上弧的条数称为该有向路的长。一条至少含有两个不同顶点的闭有向通道称为一个\alert{有向圈}，如果该闭有向通道上除起点和终点外各顶点互不相同。
+设$D=(V,A)$为一个有向图，$D$的一条不含重复顶点的有向通道称为$D$的一条\alert{有向路}。有向路上弧的条数称为该有向路的长。一条至少含有两个不同顶点的闭有向通道称为一个\alert{有向圈}，如果该闭有向通道上除起点和终点外各顶点互不相同。
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,

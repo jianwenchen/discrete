@@ -15,35 +15,38 @@
 \begin{frame}
   \frametitle{5. 有向树与有序树}
   \begin{Def}
-  设$T=(V,A)$是一个有根树。如果$(u,v)\in A$，则称$v$为$u$的\alert{儿子}，$u$为$v$的\alert{父亲}。如果从顶点$u$能达到顶点$v$，则称$v$为$u$的\alert{子孙}，$u$为$v$的\alert{祖先}。如果$u$是$v$的祖先且$u \neq v$，则称$u$为$v$的\alert{真祖先}，$v$为$u$的\alert{真子孙}。
+  设$T=(V,A)$为一棵有根树。如果$(u,v)\in A$，则称$v$为$u$的\alert{儿子}，$u$为$v$的\alert{父亲}。如果从顶点$u$能达到顶点$v$，则称$v$为$u$的\alert{子孙}，$u$为$v$的\alert{祖先}。如果$u$是$v$的祖先且$u \neq v$，则称$u$为$v$的\alert{真祖先}，$v$为$u$的\alert{真子孙}。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{5. 有向树与有序树}
   \begin{Def}\justifying\let\raggedright\justifying
-    设$T=(V,A)$是一个以$v_0$为根的有根树。从$v_0$到顶点$v$的有向路的长度称为$T$的顶点$v$的\alert{深度}。从顶点$v$到$T$的叶子的最长的有向路的长度称为顶点$v$在$T$中的\alert{高度}。根顶点$v_0$的高度称为树$T$的\alert{高度}。
+    设$T=(V,A)$为一棵以$v_0$为根的有根树。从$v_0$到顶点$v$的有向路的长度称为$T$的顶点$v$的\alert{深度}。从顶点$v$到$T$的叶子的最长的有向路的长度称为顶点$v$在$T$中的\alert{高度}。根顶点$v_0$的高度称为树$T$的\alert{高度}。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{5. 有向树与有序树}
   \begin{Def}
-    设$T=(V,A)$是一个有根树，$v$是$T$的一个顶点，由$v$及其子孙所导出的$T$的子图称为$T$的以$v$为根的\alert{子树}。
+    设$T=(V,A)$为一棵有根树，$v$是$T$的一个顶点，由$v$及其子孙所导出的$T$的子图称为$T$的以$v$为根的\alert{子树}。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{5. 有向树与有序树}
   \begin{Def}
-    设$T=(V,A)$是一个有根树。如果$T$的每个顶点的各个儿子排定了次序，则称$T$为一个\alert{有序树}。
+    设$T=(V,A)$为一棵有根树。如果$T$的每个顶点的各个儿子排定了次序，则称$T$为一
+    棵\alert{有序树}。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{5. 有向树与有序树}
   \begin{Def}
-    有序树$T$称为\alert{$m$元有序树}，如果$T$的每个顶点的出度$\leq m$。一个$m$元有序树$T$称为\alert{正则$m$元有序树}，如果$T$的每个顶点的出度不是$0$就是$m$。
+    有序树$T$称为\alert{$m$元有序树}，如果$T$的每个顶点的出度$\leq m$。一棵$m$元
+    有序树$T$称为\alert{正则$m$元有序树}，如果$T$的每个顶点的出度不是$0$就是$m$。
+    二元有序树简称\alert{二元树}。
   \end{Def}
 \end{frame}
 

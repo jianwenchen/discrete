@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  10 MAR 2019 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  13 JUN 2019 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1481,11 +1481,11 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 \tf@snm=\write8
 \openout8 = `chapter10.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 637.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 637.
  (./chapter10.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 637.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 637.
 Package rerunfilecheck Info: File `chapter10.out' has not changed.
 (rerunfilecheck)             Checksum: 5FE28D92D44FB9FA099C4FDD6A793725;465.
 
@@ -1494,10 +1494,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22104 strings out of 494406
- 413209 string characters out of 6169674
- 495808 words of memory out of 5000000
- 24835 multiletter control sequences out of 15000+600000
+ 22100 strings out of 494406
+ 413157 string characters out of 6169674
+ 495811 words of memory out of 5000000
+ 24831 multiletter control sequences out of 15000+600000
  32404 words of font info for 116 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,55p,804b,1387s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1546,7 +1546,7 @@ pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fo
 nts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
 bsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/t
 exmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on chapter10.pdf (34 pages, 357427 bytes).
+Output written on chapter10.pdf (34 pages, 355973 bytes).
 PDF statistics:
  1217 PDF objects out of 1440 (max. 8388607)
  1051 compressed objects within 11 object streams
