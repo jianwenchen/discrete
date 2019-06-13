@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{有向图的概念}{2}{0}{1}
 \beamer@sectionintoc {2}{2. 有向路和有向圈}{15}{0}{2}
-\beamer@sectionintoc {3}{3. 强连通图的应用}{24}{0}{3}
-\beamer@sectionintoc {4}{4. 有向图的邻接矩阵}{24}{0}{4}
-\beamer@sectionintoc {5}{5. 有向树与有序树}{28}{0}{5}
+\beamer@sectionintoc {3}{3. 强连通图的应用}{25}{0}{3}
+\beamer@sectionintoc {4}{4. 有向图的邻接矩阵}{25}{0}{4}
+\beamer@sectionintoc {5}{5. 有向树与有序树}{29}{0}{5}

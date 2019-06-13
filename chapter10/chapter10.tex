@@ -456,6 +456,28 @@
    \draw[thick, ->] (A) to  (C);
  \end{tikzpicture}      
 \end{frame}
+\begin{frame}
+  \frametitle{2. 有向路和有向圈}
+  \begin{Def}
+含有向图$D$的所有顶点的有向圈称为$D$的\alert{生成有向圈}，或\alert{有向哈密顿圈}。
+有生成有向圈的有向图称
+为\alert{有向哈密顿图}。含有向图$D$的所有顶点的有向路称为$D$的\alert{生成有向路}，
+或\alert{有向哈密顿路}。
+  \end{Def}
+  \centering
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) [label=-135:$v_1$] at (0,0)  {};
+   \node[specification] (B) [label=135:$v_2$] at (0,2)  {};
+   \node[specification] (C) [label=45:$v_3$] at (2,2)  {};
+   \node[specification] (D) [label=-45:$v_4$] at (2,0)  {};
+   \draw[thick, ->] (A) to  (B);
+   \draw[thick, ->] (C) to  (B);
+   \draw[thick, ->] (C) to  (D);
+   \draw[thick, ->] (D) to  (A);
+   \draw[thick, ->] (A) to  (C);
+ \end{tikzpicture}      
+\end{frame}
 
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
