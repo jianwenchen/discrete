@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\begin{center}
+  \begin{tikzpicture}
+    \node  at (-1.6cm, 1.5cm) {A};
+    \node  at (-0.6cm, 1.5cm) {B};
+    \node  at (0.5cm, 1.5cm) {C};
+    \node  at (1.6cm, 1.5cm) {D};
+    \node at (-2.3cm, 0.8cm) {$\alpha$};
+    \node at (-2.3cm, 0.3cm) {$\beta$};
+    \node at (-2.3cm, -0.2cm) {$\gamma$};
+    \node at (-2.3cm, -0.7cm) {$\delta$};
+    \matrix[draw, column sep = 4mm]{
+        \node {1,3}; & \node {2,3}; & \node {3,2}; & \node {4,3};\\
+        \node {1,4}; & \node {4,1}; & \node {3,3}; & \node {2,2};\\
+        \node {2,2}; & \node {1,4}; & \node {3,4}; & \node {4,1};\\
+        \node {4,1}; & \node {2,2}; & \node {3,1}; & \node {1,4};\\        
+      };
+    \draw (0.55cm, 0.8cm) ellipse [x radius = 0.5cm, y radius = 0.25cm];
+    \draw (1.6cm, 0.3cm) ellipse [x radius = 0.5cm, y radius = 0.25cm];
+    \draw (-1.6cm, -0.2cm) ellipse [x radius = 0.5cm, y radius = 0.25cm];
+    \draw (-0.6cm, -0.8cm) ellipse [x radius = 0.5cm, y radius = 0.25cm];
+ \end{tikzpicture}
+\end{center}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
