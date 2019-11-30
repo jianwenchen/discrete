@@ -4,6 +4,10 @@
 \usepackage{tikz}
 \setbeamertemplate{theorems}[numbered]
 
+\usepackage{ragged2e}
+%\justifying\let\raggedright\justifying
+
+
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
 
@@ -13,6 +17,8 @@
 \newtheorem{Def}{定义}[section]
 \theoremstyle{example}
 \newtheorem*{Ex}{例：}
+\newtheorem{Exercise}{习题}
+
 \date{}
 \author{陈建文}
 
@@ -34,27 +40,53 @@
   %   $X$称为$f$的\alert{定义域}；集合$\{f(x) | x \in X\}$称为$f$的\alert{值域}，记为$Im(f)$。
   % \end{Def}
   \begin{Def}
-    设$X$和$Y$是两个非空集合。一个从$X$到$Y$的映射是一个满足以下两个条件的$X\times Y$的子集$f$：
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的\alert{映射}$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
+    从$X$到$Y$的映射$f$常记为$f:X\to Y$。
+  \end{Def}\pause
+
+  \begin{Def}
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射为一个满足以下两个条件的$X\times Y$的子集$f$：
     \begin{enumerate}
     \item 对$X$的每一个元素$x$，存在一个$y\in Y$，使得$(x,y) \in f$；
     \item 若$(x,y)\in f$，$(x,y')\in f$，则$y=y'$。
     \end{enumerate}
-    $(x,y)\in f$记为$y=f(x)$，$y$称为$x$在$f$下的\alert{象}，而$x$称为$y$的\alert{原象}。$X$称为$f$的\alert{定义域}；集合$\{f(x) | x \in X\}$称为$f$的\alert{值域}，记为$Im(f)$。
+    $(x,y)\in f$记为$y=f(x)$。
+  \end{Def}\pause
+
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f$为从集合$X$到集合$Y$的映射，$f:X\to Y$，　如果$y = f(x)$，$y$称为$x$在$f$下的\alert{象}，而$x$称为$y$的\alert{原象}。$X$称为$f$的\alert{定义域}；集合$\{f(x) | x \in X\}$称为$f$的\alert{值域}，记为$Im(f)$。
   \end{Def}
 \end{frame}
 \begin{frame}
   \frametitle{1. 映射}
+
   \begin{Def}
-    设$f:X\to Y$，$A\subseteq X$，当把$f$的定义域限制在$A$上时，就得到了一个$\phi: A\to Y$，$\forall x \in A$，$\phi(x) = f(x)$。$\phi$称为$f$在$A$上的\alert{限制}，并且常用$f|A$来表示$\phi$。反过来，我们也称$f$是$\phi$在$X$上的\alert{扩张}。
+    设$f:X\to Y$，$A\subseteq X$，当把$f$的定义域限制在$A$上时，就得到了一个
+    $\phi: A\to Y$，$\forall x \in A$，$\phi(x) = f(x)$。$\phi$称为$f$在$A$上的
+    \alert{限制}，并且常用$f|A$来表示$\phi$。反过来，我们也称$f$为$\phi$在$X$上的\alert{扩张}。
   \end{Def}\pause
     \begin{Def}
-    设$f:A \to Y$，$A \subseteq X$， 则称$f$是$X$上的一个\alert{部分映射}。
+    设$f:A \to Y$，$A \subseteq X$， 则称$f$为$X$上的一个\alert{部分映射}。
   \end{Def}\pause
   \begin{Def}
-    两个映射$f$与$g$称为是\alert{相等}的当且仅当$f$和$g$都是$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
+    两个映射$f$与$g$称为是\alert{相等}的当且仅当$f$和$g$都为$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
   \end{Def}\pause
   \begin{Def}
     设$f:X\to Y$，如果$\forall x \in X, f(x) = x$，则称$f$为$X$上的恒等映射。$X$上的恒等映射常记为$I_X$。
+  \end{Def}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{1.映射}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的\alert{单射}。
+  \end{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的\alert{满射}。
+  \end{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的\alert{双射}，或者称$f$为从$X$到$Y$的\alert{一一对应}。
   \end{Def}
 
 \end{frame}
@@ -156,13 +188,15 @@
   \end{Thm}
   \pause
   \begin{Thm}
-    设$f:X\to Y$，$g:Y\to Z$都是可逆映射，则$g\circ f$也是可逆映射并且$(g\circ f)^{-1} = f^{-1}\circ g^{-1}$。
+    设$f:X\to Y$，$g:Y\to Z$都为可逆映射，则$g\circ f$也为可逆映射并且$(g\circ f)^{-1} = f^{-1}\circ g^{-1}$。
   \end{Thm}
 \end{frame}
 \begin{frame}
   \frametitle{5. 逆映射}
-  \begin{Def}
-    设$f:X\to Y$为一个映射，如果存在一个映射 $g:Y\to X$ 使 得 $g\circ f = I_X$，则称$f$是\alert{左可逆}的，$g$称为$f$的\alert{左逆映射}；如果存在一个映射 $h:Y\to X$ 使 得 $f\circ h=I_Y$，则称 $f$ 是\alert{右可逆}的，$h$ 称 为 $f$ 的 \alert{右逆映射}。
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$为一个映射，如果存在一个映射 $g:Y\to X$ 使 得 $g\circ f = I_X$，
+    则称$f$为\alert{左可逆}的，$g$称为$f$的\alert{左逆映射}；如果存在一个映射
+    $h:Y\to X$ 使 得 $f\circ h=I_Y$，则称$f$为\alert{右可逆}的，$h$称为$f$的\alert{右逆映射}。
   \end{Def}\pause
   \begin{Thm}
     设$f:X\to Y$为一个映射，则
@@ -532,5 +566,66 @@
     设$X$是一个集合，则代数系$(2^X, \cup, \cap, ^c)$与$(Ch(X), \lor, \land, \bar{} \ )$同构。
   \end{Thm}
 \end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise}
+  设$X=\{a,b,c\}, Y=\{0,1\}, Z=\{2,3\}$。$f:X \to Y, f(a) = f(b) = 0, f(c) = 1$；
+  $g:Y\to Z, g(0) = 2, g(1) = 3$。试求$g\circ f$。
+  \end{Exercise}
+  \begin{Exercise}
+    设$f:X \to Y$，$C \subseteq Y$，$D \subseteq Y$，证明
+
+    $f^{-1}(C \setminus D) = f^{-1}(C) \setminus f^{-1}(D)$
+  \end{Exercise}
+    \begin{Exercise}
+    设$f:X \to Y$，$A \subseteq X$，$B \subseteq X$，证明
+
+    $f(A \setminus B) \supseteq f(A) \setminus f(B)$
+    
+  \end{Exercise}
+  \begin{Exercise}
+    设$f:X\to Y$，$A \subseteq X$，则$(f(A))^c \subseteq f(A^c)$成立吗？$ f(A^c)\subseteq (f(A))^c$成立吗？
+  \end{Exercise}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise}
+    设$f:X\to Y$，　证明：$f$为满射当且仅当$\forall E \in 2^Y, f(f^{-1}(E)) = E$。
+  \end{Exercise}
+
+  \begin{Exercise}
+    设$f:X\to Y$，　证明：$f$为单射当且仅当$\forall F \in 2^X, f^{-1}(f(F)) = F$。    
+  \end{Exercise}
+    \begin{Exercise}
+    设$f:X \to Y$，$g:Y \to Z$，$A \subseteq Z$，证明：$(gf)^{-1}(A) = f^{-1}(g^{-1}(A))$。
+  \end{Exercise}
+  \begin{Exercise}
+    设$N=\{1,2,\ldots\}$，试构造两个映射$f:N \to N$与$g:N\to N$，使得$fg = I_N$，
+    但$gf \neq I_N$。
+  \end{Exercise}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+ \begin{Exercise}
+    设$f:X \to Y$，
+
+    （１）如果存在唯一的一个映射$g:Y\to X$，使得$gf = I_X$，那么$f$是否可逆呢？
+
+    （２）如果存在唯一的一个映射$g:Y\to X$，使得$fg = I_Y$，那么$f$是否可逆呢？
+
+  \end{Exercise}
+  \begin{Exercise}
+    是否存在一个从集合$X$到$X$的一一对应，使得$f=f^{-1}$，但$f \neq I_X$?
+  \end{Exercise}
+\end{frame}
+
 \end{CJK*}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

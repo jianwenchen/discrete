@@ -12,6 +12,9 @@
 \newtheorem{Def}{定义}[section]
 \theoremstyle{example}
 \newtheorem*{Ex}{例：}
+\newtheorem{Exercise}{习题}
+\newtheorem{Exercise1}{习题}
+
 \date{}
 \author{陈建文}
 
@@ -55,6 +58,49 @@
 
 \begin{frame}
   \frametitle{1. 集合的概念}
+  \begin{tabular}{cc|c}
+    p& q& p $\land$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{cc|c}
+    p& q& p $\lor$ q\\
+    \hline
+    T&T&T\\
+    T&F&T\\
+    F&T&T\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{c|c}
+    p& $\lnot$ p\\
+    \hline
+    T&F\\
+    F&T\\
+  \end{tabular}
+
+    \begin{tabular}{cc|c}
+    p& q& p $\to$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&T\\
+    F&F&T\\
+  \end{tabular}\hspace{0.87cm}
+  \begin{tabular}{cc|c}
+    p& q& p $\leftrightarrow$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&T\\
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \frametitle{1. 集合的概念}
 
 存在一个集合，该集合中不包含任何元素，称为\alert{空集}，记为$\Phi$。
 
@@ -65,7 +111,7 @@
   \frametitle{2. 子集、集合的相等}
 
   \begin{Def}
-    设$A$，$B$是两个集合，如果$A$中的每个元素都是$B$中的元素，并且$B$中的每个元素都是$A$中的元素,则称$A$与$B$\alert{相等}，并记为\\ $A=B$。
+    设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，并且$B$中的每个元素都是$A$中的元素,则称$A$与$B$\alert{相等}，并记为\\ $A=B$。
   \end{Def}
   \begin{itemize}
 \pause
@@ -77,7 +123,8 @@
 \begin{frame}
   \frametitle{2. 子集、集合的相等}
   \begin{Def}
-设$A$，$B$是两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$是$B$的\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$并且$A \neq B$,则称 $A$是$B$ 的\alert{真子集}，记为$A\subset B$。    
+设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$为$B$的
+\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$并且$A \neq B$,则称 $A$为$B$ 的\alert{真子集}，记为$A\subset B$。    
   \end{Def}
   \begin{itemize}
 \pause
@@ -107,7 +154,7 @@
   \frametitle{3. 集合的基本运算}
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    设$A,B$是任意的两个集合，至少属于集合 $A$ 与集合$B$之一的那些元素构成的集合称为 $A$ 与 $B$的\alert{并集}，记为$A \cup B$。
+    设$A,B$为任意的两个集合，至少属于集合 $A$ 与集合$B$之一的那些元素构成的集合称为 $A$ 与 $B$的\alert{并集}，记为$A \cup B$。
     \begin{equation*}
       A\cup B = \{x|x \in A \lor x \in B\}
     \end{equation*}
@@ -132,7 +179,7 @@
   \frametitle{3. 集合的基本运算}
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    设$A,B$是任意的两个集合，由既属于集合 $A$ 又属于集合 $B$ 的所有元素构成的集合称为 $A$ 与 $B$的\alert{交集}，记为$A \cap B$。
+    设$A,B$为任意的两个集合，由既属于集合 $A$ 又属于集合$B$的所有元素构成的集合称为 $A$ 与 $B$的\alert{交集}，记为$A \cap B$。
     \begin{equation*}
       A\cap B = \{x|x \in A \land x \in B\}
     \end{equation*}
@@ -159,7 +206,7 @@
   \frametitle{3. 集合的基本运算}
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    设$A,B$是任意的两个集合，由属于集合$A$但不属于集合$B$的所有元素构成的集合称为 $A$ 与 $B$的\alert{差集}，记为$A \setminus B$。
+    设$A,B$为任意的两个集合，由属于集合$A$但不属于集合$B$的所有元素构成的集合称为 $A$ 与 $B$的\alert{差集}，记为$A \setminus B$。
     \begin{equation*}
       A\setminus B = \{x|x \in A \land x \notin B\}
     \end{equation*}
@@ -213,86 +260,86 @@
 设$S$为全集，$\emptyset$为空集，$A$,$B$,$C$为$S$的子集，则\\
 1. $A \cup B = B \cup A$, $A \cap B = B \cap A$.\\
 2. $(A \cup B) \cup C = A \cup (B \cup C)$,$(A \cap B) \cap C = A \cap (B \cap C)$.\\
-3. $A \cup A = A$,$A \cap A = A$.\\
-4. $(A \cup B) \cap A = A$,$(A \cap B) \cup A = A$.\\
-5. $A \cup \emptyset = A$, $A \cap \emptyset = \emptyset$.\\
-6. $A \cup S = S$, $A \cap S = A$.\\
-7. $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.\\
-8. $A \cup A^c = S$, $A \cap A^c = \emptyset$.\\
-9. $C\setminus (A \cup B) = (C \setminus A) \cap (C \setminus B)$, $C \setminus (A \cap B) = (C \setminus A) \cup (C \setminus B)$.\\ 
-9'. $(A \cup B)^c = A^c \cap B^c$, $(A \cap B)^c = A^c \cup B^c$.\\
+%3. $A \cup A = A$,$A \cap A = A$.\\
+%4. $(A \cup B) \cap A = A$,$(A \cap B) \cup A = A$.\\
+4. $A \cup \emptyset = A$, $A \cap \emptyset = \emptyset$.\\
+5. $A \cup S = S$, $A \cap S = A$.\\
+6. $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.\\
+7. $A \cup A^c = S$, $A \cap A^c = \emptyset$.\\
+8. $C\setminus (A \cup B) = (C \setminus A) \cap (C \setminus B)$, $C \setminus (A \cap B) = (C \setminus A) \cup (C \setminus B)$.\\ 
+8'. $(A \cup B)^c = A^c \cap B^c$, $(A \cap B)^c = A^c \cup B^c$.\\
   \end{Thm}
 \end{frame}
 
-\begin{frame}
-  \frametitle{3. 集合的基本运算}
-  \begin{tabular}{cc|c}
-    p& q& p $\land$ q\\
-    \hline
-    T&T&T\\
-    T&F&F\\
-    F&T&F\\
-    F&F&F\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{cc|c}
-    p& q& p $\lor$ q\\
-    \hline
-    T&T&T\\
-    T&F&T\\
-    F&T&T\\
-    F&F&F\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{c|c}
-    p& $\lnot$ p\\
-    \hline
-    T&F\\
-    F&T\\
-  \end{tabular}
+% \begin{frame}
+%   \frametitle{3. 集合的基本运算}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\land$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&F\\
+%     F&T&F\\
+%     F&F&F\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\lor$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&T\\
+%     F&T&T\\
+%     F&F&F\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{c|c}
+%     p& $\lnot$ p\\
+%     \hline
+%     T&F\\
+%     F&T\\
+%   \end{tabular}
 
-  \vspace{1cm}\pause
-    \begin{tabular}{cc|c}
-    x& y& x $\land$ y\\
-    \hline
-    1&1&1\\
-    1&0&0\\
-    0&1&0\\
-    0&0&0\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{cc|c}
-    x& y& x $\lor$ y\\
-    \hline
-    1&1&1\\
-    1&0&1\\
-    0&1&1\\
-    0&0&0\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{c|c}
-    x& $\bar{x}$\\
-    \hline
-    1&0\\
-    0&1\\
-  \end{tabular}
+%   \vspace{1cm}\pause
+%     \begin{tabular}{cc|c}
+%     x& y& x $\land$ y\\
+%     \hline
+%     1&1&1\\
+%     1&0&0\\
+%     0&1&0\\
+%     0&0&0\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{cc|c}
+%     x& y& x $\lor$ y\\
+%     \hline
+%     1&1&1\\
+%     1&0&1\\
+%     0&1&1\\
+%     0&0&0\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{c|c}
+%     x& $\bar{x}$\\
+%     \hline
+%     1&0\\
+%     0&1\\
+%   \end{tabular}
 
-\end{frame}
-\begin{frame}
-  \frametitle{3. 集合的基本运算}
-  \begin{Def}
-    设$B$是一个集合，在其上定义了一个一元运算 $\ \bar{}\ $，两个二元运算$\lor$和$\land$，以及两个特定的元素$0$和$1$，使得对$B$中的任何元素$x$，$y$，$z$，满足以下条件，则称$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个\alert{布尔代数}。
-    \begin{align*}
-      1. &x \lor y = y \lor x, x \land y = y \land x\\
-      2. &(x \lor y) \lor z = x \lor (y \lor z), (x \land y) \land z = x \land (y \land z) \\
-      3. &x \lor 0 = x \\
-      4. &x \land 1 = x \\
-      5.&x \lor (y \land z) = (x \lor y) \land (x \lor z), x \land (y \lor z) = (x \land y) \lor (x \land z)\\
-      6. &x \lor \bar{x} = 1, x \land \bar{x} = 0\\
-    \end{align*}
-  \end{Def}
-\end{frame}
+% \end{frame}
+% \begin{frame}
+%   \frametitle{3. 集合的基本运算}
+%   \begin{Def}
+%     设$B$是一个集合，在其上定义了一个一元运算 $\ \bar{}\ $，两个二元运算$\lor$和$\land$，以及两个特定的元素$0$和$1$，使得对$B$中的任何元素$x$，$y$，$z$，满足以下条件，则称$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个\alert{布尔代数}。
+%     \begin{align*}
+%       1. &x \lor y = y \lor x, x \land y = y \land x\\
+%       2. &(x \lor y) \lor z = x \lor (y \lor z), (x \land y) \land z = x \land (y \land z) \\
+%       3. &x \lor 0 = x \\
+%       4. &x \land 1 = x \\
+%       5.&x \lor (y \land z) = (x \lor y) \land (x \lor z), x \land (y \lor z) = (x \land y) \lor (x \land z)\\
+%       6. &x \lor \bar{x} = 1, x \land \bar{x} = 0\\
+%     \end{align*}
+%   \end{Def}
+% \end{frame}
 \begin{frame}
   \frametitle{3. 集合的基本运算}
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    设$A,B$是两个集合，$A\setminus B$与$B\setminus A$ 的 并 集 合 称 为 $A$ 与 $B$ 的 \alert{对 称 差}，记为$A \bigtriangleup B$。
+    设$A,B$为两个集合，$A\setminus B$与$B\setminus A$的并集称为$A$与$B$的\alert{对 称 差}，记为$A \bigtriangleup B$。
     \begin{equation*}
       A\bigtriangleup B = (A \setminus B) \cup (B \setminus A)
     \end{equation*}
@@ -337,47 +384,47 @@
   \end{Thm}
 \end{frame}
 
+% \begin{frame}
+%   \frametitle{3. 集合的基本运算}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\oplus$ q\\
+%     \hline
+%     T&T&F\\
+%     T&F&T\\
+%     F&T&T\\
+%     F&F&F\\
+%   \end{tabular}
+
+%   \vspace{1cm}\pause
+%     \begin{tabular}{cc|c}
+%     x& y& x $\oplus$ y\\
+%     \hline
+%     1&1&0\\
+%     1&0&1\\
+%     0&1&1\\
+%     0&0&0\\
+%     \end{tabular}
+% \end{frame}
+
+% \begin{frame}
+%   \frametitle{3. 集合的基本运算}
+%   \begin{Def}
+%     设$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个布尔代数，$x \in B, y \in B$，定义 $x$与$y$的\alert{对称差}为
+%     $x \oplus y = (x \land \bar{y}) \lor (\bar{x} \land y)$。
+%   \end{Def}
+%   \begin{Thm}
+%     设$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个布尔代数，$x \in B, y \in B, z \in B$。则\\
+% 1. $x \oplus y = y \oplus x$.\\
+% 2. $(x \oplus y) \oplus z = x \oplus (y \oplus z)$.\\
+% 3. $0 \oplus x = x$.\\
+% 4. $x \oplus x = 0$.\\
+% 5. $x \land (y \oplus z) = (x \land y) \oplus (x \land z)$.\\ 
+%   \end{Thm}
+% \end{frame}
+
 \begin{frame}
   \frametitle{3. 集合的基本运算}
-  \begin{tabular}{cc|c}
-    p& q& p $\oplus$ q\\
-    \hline
-    T&T&F\\
-    T&F&T\\
-    F&T&T\\
-    F&F&F\\
-  \end{tabular}
-
-  \vspace{1cm}\pause
-    \begin{tabular}{cc|c}
-    x& y& x $\oplus$ y\\
-    \hline
-    1&1&0\\
-    1&0&1\\
-    0&1&1\\
-    0&0&0\\
-    \end{tabular}
-\end{frame}
-
-\begin{frame}
-  \frametitle{3. 集合的基本运算}
-  \begin{Def}
-    设$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个布尔代数，$x \in B, y \in B$，定义 $x$与$y$的\alert{对称差}为
-    $x \oplus y = (x \land \bar{y}) \lor (\bar{x} \land y)$。
-  \end{Def}
-  \begin{Thm}
-    设$(B, \ \bar{}\ , \lor, \land, 0, 1)$为一个布尔代数，$x \in B, y \in B, z \in B$。则\\
-1. $x \oplus y = y \oplus x$.\\
-2. $(x \oplus y) \oplus z = x \oplus (y \oplus z)$.\\
-3. $0 \oplus x = x$.\\
-4. $x \oplus x = 0$.\\
-5. $x \land (y \oplus z) = (x \land y) \oplus (x \land z)$.\\ 
-  \end{Thm}
-\end{frame}
-
-\begin{frame}
-  \frametitle{3. 集合的基本运算}
-  \begin{Def}
+  \begin{Def}  \justifying\let\raggedright\justifying
     以集合为元素的集合称为\alert{集族}。如果$I$为任意一个集合，对$I$中每个元素$\alpha$都有一个唯一的集合与之对应，这个集合记为$A_{\alpha}$，那么所有这些$A_{\alpha}$形成的集族可以用$\{A_{\alpha}\}_{\alpha \in I}$表示，其中$I$称为\alert{标号集}。
   \end{Def}
   \begin{Def}
@@ -415,7 +462,7 @@
 \begin{frame}
   \frametitle{3. 集合的运算}
   \begin{Def}
-    两个对象按照一定的顺序排列构成的整体称为一个\alert{有序对}。如果第一对象为 $a$ ，第二个对象为 $b$ ，则该有序对记为 $(a,b)$~。
+    两个对象按照一定的顺序排列构成的整体称为一个\alert{有序对}。如果第一个对象为 $a$ ，第二个对象为 $b$ ，则该有序对记为 $(a,b)$~。
 
     $(a,b)=(c,d)$ 当且仅当 $a=c$ 并且 $b=d$。
   \end{Def}\pause
@@ -472,7 +519,7 @@ $(a_1,a_2, \ldots, a_n)=(b_1,b_2, \ldots, b_n)$当且仅当$a_1=b_1$,$a_2=b_2$�
 \begin{frame}
   \frametitle{6. 有穷集合的基数}
   \begin{Def}
-    设$X$和$Y$是两个非空集合。一个从$X$到$Y$的\alert{映射}$f$是一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素与之对应。
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的\alert{映射}$f$是一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
     从$X$到$Y$的映射$f$常记为$f:X\to Y$。
   \end{Def}
     \begin{Def}
@@ -631,6 +678,196 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   在1000名大学毕业生的调查中，每个人至少掌握了一门外语，其中804人掌握了英语，205人掌握了日语，190人掌握了 俄语，125  人 既 掌 握 了 英 语 又 掌 握 了 日 语，57人既掌握了日语又掌握了俄语，85人既掌握了英语又掌握了俄语。试求这1000名大学生，英语、日语、俄语全掌握的有多少人。
 \end{Ex}
 \end{frame}
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise}
+   设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
+  \end{Exercise}
+  \begin{Exercise}
+    下列命题中哪个是假的？
+
+    A. 对每个集合$A$，$\phi \in 2^A$。
+
+    B. 对每个集合$A$，$\phi \subseteq 2^A$。
+
+    C. 对每个集合$A$，$A \in 2^A$。
+
+    D. 对每个集合$A$，$A \subseteq 2^A$。
+  \end{Exercise}
+  \begin{Exercise}
+    设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\quad\quad\quad}$，$A\cap B=\underline{\quad\quad\quad}$，$A\setminus B=\underline{\quad\quad\quad}$，$A\bigtriangleup B=\underline{\quad\quad\quad}$，$A\times B=\underline{\quad\quad\quad}$。
+  \end{Exercise}
+  \begin{Exercise}
+   设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
+   (B\setminus C)$。
+  \end{Exercise}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise}
+      下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
+    \end{Exercise}
+
+  \begin{Exercise}
+下列命题中哪个是真的？
+
+A. 对任何集合$A$，$B$，$2^{A\cup B} = 2^A \cup 2^B$。
+
+B. 对任何集合$A$，$B$，$2^{A\cap B} = 2^A \cap 2^B$。
+
+C. 对任何集合$A$，$B$，$2^{A\setminus B} = 2^A \setminus 2^B$。
+
+D. 对任何集合$A$，$B$，$2^{A\bigtriangleup B} = 2^A \bigtriangleup 2^B$。
+  \end{Exercise}
+  \begin{Exercise}
+    设$A$，$B$，$C$为集合，并且$A\cup B = A \cup C$，则下列哪个断言成立？
+
+    A. $B = C$
+
+    B. $A \cap B = A \cap C$
+
+    C. $A \cap B^c = A \cap C^c$
+
+    D. $A^c \cap B = A^c \cap C$
+  \end{Exercise}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+
+    $(A \cap B) \times (C \cap D) =
+    (A\times C) \cap (B \times D)$
+  \end{Exercise}
+  \begin{Exercise}
+   设$A$，$B$，$C$为集合，化简
+
+$(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap B \cap C^c) \cup (A^c \cap B^c \cap C) \cup (A \cap B^c \cap C^c) \cup (A^c \cap B \cap C^c)$
+  \end{Exercise}
+  \begin{Exercise}
+   证明
+
+1) $A\bigtriangleup B = (A\cup B) \cap (A^c \cup B^c)$
+
+2) $(A \bigtriangleup B)^c = (A \cap B) \cup (A^c \cap B^c)$
+
+3) $(A \bigtriangleup B)^c = (A^c \cup B) \cap (A \cup B^c)$
+  \end{Exercise}  
+\end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise1}
+   设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
+  \end{Exercise1}
+  \begin{Exercise1}
+    下列命题中哪个是假的？
+
+    A. 对每个集合$A$，$\phi \in 2^A$。
+
+    B. 对每个集合$A$，$\phi \subseteq 2^A$。
+
+    C. 对每个集合$A$，$A \in 2^A$。
+
+    D. 对每个集合$A$，$A \subseteq 2^A$。
+  \end{Exercise1}
+  \begin{Exercise1}
+    设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\quad\quad\quad}$，$A\cap B=\underline{\quad\quad\quad}$，$A\setminus B=\underline{\quad\quad\quad}$，$A\bigtriangleup B=\underline{\quad\quad\quad}$，$A\times B=\underline{\quad\quad\quad}$。
+  \end{Exercise1}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise1}
+   设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
+   (B\setminus C)$。
+ \end{Exercise1}
+ \begin{proof}[证明]\justifying\let\raggedright\justifying
+   先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
+   (B\setminus C)$。
+
+   对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
+   \notin C$，　从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
+   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
+   \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
+   (B\setminus C)$。
+
+   再证 $(A\setminus C) \cup
+   (B\setminus C) \subseteq (A\cup B) \setminus C$。
+
+   对任意的$x$，如果$x \in (A\setminus C) \cup
+   (B\setminus C)$，则$x \in A
+   \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
+   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
+   B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
+   \notin C$, 因此$x \in (A\cup B) \setminus C$。
+ \end{proof}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise1}
+      下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
+    \end{Exercise1}
+    \begin{proof}[解]
+      该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，　则$(A
+      \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
+此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
+    \end{proof}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise1}
+下列命题中哪个是真的？
+
+A. 对任何集合$A$，$B$，$2^{A\cup B} = 2^A \cup 2^B$。
+
+B. 对任何集合$A$，$B$，$2^{A\cap B} = 2^A \cap 2^B$。
+
+C. 对任何集合$A$，$B$，$2^{A\setminus B} = 2^A \setminus 2^B$。
+
+D. 对任何集合$A$，$B$，$2^{A\bigtriangleup B} = 2^A \bigtriangleup 2^B$。
+  \end{Exercise1}
+  \begin{Exercise1}
+    设$A$，$B$，$C$为集合，并且$A\cup B = A \cup C$，则下列哪个断言成立？
+
+    A. $B = C$
+
+    B. $A \cap B = A \cap C$
+
+    C. $A \cap B^c = A \cap C^c$
+
+    D. $A^c \cap B = A^c \cap C$
+  \end{Exercise1}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise1}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+
+    $(A \cap B) \times (C \cap D) =
+    (A\times C) \cap (B \times D)$
+  \end{Exercise1}
+  \begin{Exercise1}
+   设$A$，$B$，$C$为集合，化简
+
+$(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap B \cap C^c) \cup (A^c \cap B^c \cap C) \cup (A \cap B^c \cap C^c) \cup (A^c \cap B \cap C^c)$
+  \end{Exercise1}
+  \begin{Exercise1}
+   证明
+
+1) $A\bigtriangleup B = (A\cup B) \cap (A^c \cup B^c)$
+
+2) $(A \bigtriangleup B)^c = (A \cap B) \cup (A^c \cap B^c)$
+
+3) $(A \bigtriangleup B)^c = (A^c \cup B) \cap (A \cup B^c)$
+  \end{Exercise1}  
+\end{frame}
 
 \end{CJK*}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

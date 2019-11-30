@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  11 JAN 2019 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  1 DEC 2019 08:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1373,12 +1373,14 @@ File: UTF8.chr 2015/04/18 4.8.4
 )
 \c@Thm=\count170
 \c@Def=\count171
+\c@Exercise=\count172
+\c@Exercise1=\count173
 
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 16.
+(hyperref)                setting the option has no effect on input line 19.
 
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 21.
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 24.
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2008/10/03 4.8.1
@@ -1388,12 +1390,12 @@ File: c70gbsn.fdx 2012/05/07 4.8.3
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1426,14 +1428,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [15
 
+] [16
+
 ]
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 94.
+(Font)              using `C70/gbsn/m/n' instead on input line 141.
 
-[16
-
-] [17
+[17
 
 ] [18
 
@@ -1461,10 +1463,10 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 
 ] [30
 
-]
-[31
+] [31
 
-] [32
+]
+[32
 
 ] [33
 
@@ -1490,40 +1492,39 @@ LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
 
 ] [44
 
-] [45
+]
+Overfull \vbox (45.44543pt too high) detected at line 514
+ []
+
+[45
 
 ]
+Overfull \vbox (45.44543pt too high) detected at line 514
+ []
+
 [46
 
-] [47
+]
+Overfull \vbox (45.44543pt too high) detected at line 514
+ []
 
-] [48
+[47
+
+]
+Overfull \vbox (45.44543pt too high) detected at line 514
+ []
+
+[48
 
 ] [49
 
-]
-Overfull \vbox (45.44543pt too high) detected at line 467
- []
+] [50
 
-[50
+] [51
 
-]
-Overfull \vbox (45.44543pt too high) detected at line 467
- []
+] [52
 
-[51
-
-]
-Overfull \vbox (45.44543pt too high) detected at line 467
- []
-
-[52
-
-]
-Overfull \vbox (45.44543pt too high) detected at line 467
- []
-
-[53
+] [53
 
 ] [54
 
@@ -1541,7 +1542,12 @@ Overfull \vbox (45.44543pt too high) detected at line 467
 
 ] [61
 
-] [62
+]
+Overfull \hbox (14.6719pt too wide) detected at line 615
+[]
+ []
+
+[62
 
 ] [63
 
@@ -1549,14 +1555,14 @@ Overfull \vbox (45.44543pt too high) detected at line 467
 
 ] [65
 
-] [66
-
 ]
-Overfull \hbox (14.6719pt too wide) detected at line 568
+Overfull \hbox (3.08719pt too wide) detected at line 673
 []
  []
 
-[67
+[66
+
+] [67
 
 ] [68
 
@@ -1564,14 +1570,15 @@ Overfull \hbox (14.6719pt too wide) detected at line 568
 
 ] [70
 
-]
-Overfull \hbox (3.08719pt too wide) detected at line 626
-[]
- []
-
-[71
+] [71
 
 ] [72
+
+] [73
+
+] [74
+
+] [75
 
 ]
 \tf@nav=\write6
@@ -1583,11 +1590,11 @@ Overfull \hbox (3.08719pt too wide) detected at line 626
 \tf@snm=\write8
 \openout8 = `chapter1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 868.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 868.
  (./chapter1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 868.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 868.
 Package rerunfilecheck Info: File `chapter1.out' has not changed.
 (rerunfilecheck)             Checksum: 3C96EE0CA2C2AF8F32D5B850539A0EAA;482.
 
@@ -1596,13 +1603,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22341 strings out of 494406
- 417337 string characters out of 6169674
- 494178 words of memory out of 5000000
- 24990 multiletter control sequences out of 15000+600000
- 39113 words of font info for 140 fonts, out of 8000000 for 9000
+ 22409 strings out of 494406
+ 418240 string characters out of 6169674
+ 494045 words of memory out of 5000000
+ 25049 multiletter control sequences out of 15000+600000
+ 39896 words of font info for 144 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,18n,54p,803b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,18n,54p,803b,1449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
@@ -1620,23 +1627,23 @@ gbsnu4f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu50.pfb></usr/share/
 texmf/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/share/texmf/fonts/type1/arphic
 /gbsnu/gbsnu52.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu53.pfb></usr
 /share/texmf/fonts/type1/arphic/gbsnu/gbsnu54.pfb></usr/share/texmf/fonts/type1
-/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57.pf
-b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6
-7.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu69.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.p
+/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu56.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5c.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu5d.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu5e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu61.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu65.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6
+6.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu68.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu69.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu6d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.p
 fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fon
 ts/type1/arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
 snu77.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu78.pfb></usr/share/te
@@ -1648,19 +1655,20 @@ rphic/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb>
 type1/arphic/gbsnu/gbsnu82.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
 86.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf
 /fonts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
-u/gbsnu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/shar
-e/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arph
-ic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></u
-sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/typ
-e1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.
-pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fo
-nts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb>
-Output written on chapter1.pdf (72 pages, 511690 bytes).
+u/gbsnu8a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/shar
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu8c.pfb></usr/share/texmf/fonts/type1/arph
+ic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></u
+sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnuff.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb>
+Output written on chapter1.pdf (75 pages, 527586 bytes).
 PDF statistics:
- 2260 PDF objects out of 2487 (max. 8388607)
- 2029 compressed objects within 21 object streams
- 154 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2344 PDF objects out of 2487 (max. 8388607)
+ 2107 compressed objects within 22 object streams
+ 160 named destinations out of 1000 (max. 500000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
