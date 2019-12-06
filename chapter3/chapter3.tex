@@ -70,7 +70,7 @@
 \begin{frame}
   \frametitle{1. 关系的概念}
   \begin{Def}
-    设$A_1, A_2, \ldots, A_n$是$n$个集合，一个$A_1\times A_2 \times \cdots \times A_n$的子集$R$称为$A_1, A_2, \cdots, A_n$间的一个\alert{$n$元关系}，每个$A_i$称为$R$的一个域。
+    设$A_1, A_2, \ldots, A_n$为$n$个集合，一个$A_1\times A_2 \times \cdots \times A_n$的子集$R$称为$A_1, A_2, \cdots, A_n$间的一个\alert{$n$元关系}，每个$A_i$称为$R$的一个域。
   \end{Def}
 \end{frame}
 \section{关系的性质}
@@ -114,7 +114,7 @@
     \[R^{-1}=\{(y,x)|(x,y)\in R\}\]
   \end{Def}\pause
   \begin{Thm}
-    设$R$为集合$X$上的二元关系，则$R$是对称的当且仅当$R=R^{-1}$。
+    设$R$为集合$X$上的二元关系，则$R$为对称的当且仅当$R=R^{-1}$。
   \end{Thm}  
 \end{frame}
 \begin{frame}
@@ -129,7 +129,7 @@
     \[(R_1 \circ R_2)\circ R_3 = R_1 \circ (R_2 \circ R_3)\]
   \end{Thm}\pause
   \begin{Thm}
-    设$R$为集合$X$上的一个二元关系，则$R$是传递的当且仅当$R\circ R \subseteq R$。
+    设$R$为集合$X$上的一个二元关系，则$R$为传递的当且仅当$R\circ R \subseteq R$。
   \end{Thm}\pause
 \end{frame}
 
@@ -196,11 +196,11 @@
 \begin{frame}
   \frametitle{4. 关系矩阵和关系图}
   \begin{Def}
-    设$B$，$C$是两个布尔矩阵，$B$与$C$的逻辑乘是$B$与$C$的对应元素进行逻辑乘，所得到的布尔矩阵记为$B \land C$，即
+    设$B$，$C$是两个布尔矩阵，$B$与$C$的逻辑乘为$B$与$C$的对应元素进行逻辑乘，所得到的布尔矩阵记为$B \land C$，即
     \begin{equation*}
       B \land C = (b_{ij} \land c_{ij})
     \end{equation*}
-    $B$与$C$的逻辑加是$B$与$C$的对应元素进行逻辑加，所得到的布尔矩阵记为$B \lor C$，即
+    $B$与$C$的逻辑加为$B$与$C$的对应元素进行逻辑加，所得到的布尔矩阵记为$B \lor C$，即
     \begin{equation*}
       B \lor C = (b_{ij} \lor c_{ij})
     \end{equation*}
@@ -223,8 +223,8 @@
     \end{align*}
   \end{Def}\pause
   \begin{Thm}
-    设$X, Y, Z$为有穷集合， $|X| =m$，$|Y|=p$，$|Z| = n$。$R$是从$X$到$Y$的二元
-    关系， $S$是从$Y$到$Z$的二元关系，$R$，$S$，$R \circ S$的矩阵分别为$B_{R}$，$B_{S}$，$B_{R\circ S}$，则$B_{R\circ S} = B_R \circ B_S$。
+    设$X, Y, Z$为有穷集合， $|X| =m$，$|Y|=p$，$|Z| = n$。$R$为从$X$到$Y$的二元
+    关系， $S$为从$Y$到$Z$的二元关系，$R$，$S$，$R \circ S$的矩阵分别为$B_{R}$，$B_{S}$，$B_{R\circ S}$，则$B_{R\circ S} = B_R \circ B_S$。
   \end{Thm}
 \end{frame}
 
@@ -420,7 +420,7 @@
 \begin{frame}
   \frametitle{6. 等价关系与集合的划分}
   \begin{Thm}
-    设$\cong$为$X$上的一个等价关系，则$\cong$的所有等价类的集合构成$X$的一个划分。
+    设$\cong$为集合$X$上的一个等价关系，则$\cong$的所有等价类的集合构成$X$的一个划分。
   \end{Thm}
   \pause
   \begin{Thm}
@@ -451,12 +451,12 @@
   \begin{proof}[证明]
     \begin{enumerate}
     \item 证明$f$为映射。这就是要证明对于集合$X$上的任意一个等价关系$\cong$，　
-      $f(\cong) = \{[x]|x\in X\}$为集合$X$的一个划分。
+      $\{[x]_{\cong}|x\in X\}$为集合$X$的一个划分。
     \item 证明$g$为映射。这就是要证明对于集合$X$的任意一个划分$\mathscr{A}$，
-      $g(\mathscr{A}) = \bigcup_{A\in \mathscr{A}}A\times A$为集合$X$上的一个等价关系。
+      $\bigcup_{A\in \mathscr{A}}A\times A$为集合$X$上的一个等价关系。
     \item 证明$g\circ f = I_{\mathbb{R}}$。这就是要证明对于集合$X$上的任意一个等
       价关系$\cong$，$\bigcup_{x\in X}[x]_{\cong}\times [x]_{\cong} = \cong$。
-    \item 证明$f\circ g = I_{\mathbb{A}}$。这就是要证明对于集合$X$的任意一个划分
+    \item 证明$f\circ g = I_{\mathbb{A}}$。这就是要证明对于集合$X$上的任意一个划分
       $\mathscr{A}$，等价关系$\bigcup_{A \in \mathscr{A}}A\times A$所对应的等价类
       的集合就是$\mathscr{A}$。
     \end{enumerate}
@@ -476,7 +476,7 @@
     \end{enumerate}
   \end{Def}\pause
     \begin{Def}
-    设$\leq$是$X$上的一个偏序关系，则称二元组$(X,\leq)$为\alert{偏序集}。
+    设$\leq$为集合$X$上的一个偏序关系，则称二元组$(X,\leq)$为\alert{偏序集}。
   \end{Def}
 \end{frame}
 
@@ -486,7 +486,7 @@
     实数集$\mathbb{R}$上通常的“小于等于”关系$\leq$是偏序关系，所以$(\mathbb{R},\leq)$为偏序集。
   \end{Ex}
   \begin{Ex}
-    设$S$为一个集合，$S$的子集间的包含关系$\subseteq$是$2^S$上的偏序关系，所以$(\mathbb{S},\subseteq)$为偏序集。
+    设$S$为一个集合，$S$的子集间的包含关系$\subseteq$是$2^S$上的偏序关系，所以$(2^{\mathbb{S}},\subseteq)$为偏序集。
   \end{Ex}
 \end{frame}
 
@@ -514,7 +514,8 @@
     设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$使得$\forall x \in A$有$x \leq s$，则称$s$为$A$的\alert{最大元素}；如果存在一个元素$t\in A$使得$\forall x \in A$有$t \leq x$，则称$t$为$A$的\alert{最小元素}。
   \end{Def}
     \begin{Def}
-    设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$,在$A$中没有元素$x$使得$s < x$，则称$s$为$A$的\alert{极大元素}；如果存在一个元素$t$，在$A$中没有元素$x$使得$x < t$，则称$t$为$A$的\alert{极小元素}。
+    设$(X,\leq)$为一个偏序集，$A\subseteq X$。如果存在一个元素$s\in A$,在$A$中没
+    有元素$x$使得$s < x$，则称$s$为$A$的\alert{极大元素}；如果存在一个元素$t\in A$，在$A$中没有元素$x$使得$x < t$，则称$t$为$A$的\alert{极小元素}。
   \end{Def}
 \end{frame}
 \begin{frame}
