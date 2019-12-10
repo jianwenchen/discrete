@@ -38,7 +38,8 @@
     "titlesec"
     "titletoc"
     "xCJKnumb"
-    "tikz")
+    "tikz"
+    "mathrsfs")
    (LaTeX-add-amsthm-newtheorems
     "Def"
     "Ex"))

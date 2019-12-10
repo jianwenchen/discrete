@@ -10,6 +10,9 @@
 \usepackage{mathrsfs}
 
 \justifying\let\raggedright\justifying
+
+\newtheorem{Exercise}{习题}
+
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
 
@@ -37,10 +40,41 @@
     果$A=B$，则称$R$为$A$上的二元关系。
   \end{Def}
   \pause
+  \begin{Ex}
+  设集合$X=\{1,2\}$，则$2^X$上的二元关系$\subseteq$可以定义为一个从$2^X\times
+  2^X$到$\{T,F\}$的映射，
+
+  $\subseteq(\{\phi\},\{\phi\})=T,\subseteq(\{\phi\},\{1\})=T,\subseteq(\{\phi\},\{2\})=T,\subseteq(\{\phi\},\{1,2\})=T,$
+
+    $\subseteq(\{1\},\{\phi\})=F,\subseteq(\{1\},\{1\})=T,\subseteq(\{1\},\{2\})=F,\subseteq(\{1\},\{1,2\})=T,$
+
+      $\subseteq(\{2\},\{\phi\})=F,\subseteq(\{2\},\{1\})=F,\subseteq(\{2\},\{2\})=T,\subseteq(\{2\},\{1,2\})=T,$
+
+        $\subseteq(\{1,2\},\{\phi\})=F,\subseteq(\{1,2\},\{1\})=F,\subseteq(\{1,2\},\{2\})=F,\subseteq(\{1,2\},\{1,2\})=T$
+\end{Ex}
+\end{frame}
+\begin{frame}
+    \frametitle{1. 关系的概念}
+
   \begin{Def}\justifying\let\raggedright\justifying
     设$A$与$B$为两个集合。$A\times B$的任一子集$R$称为从$A$到$B$的一个\alert{二元关系}。如果$(a,b)\in R$，则称$a$与$b$符合关系$R$，记为$aRb$；如果$(a,b) \notin R$，则称$a$与$b$不符合关系$R$，并记为$aR\!\!\! / b$。
     如果$A=B$，则称$R$为$A$上的二元关系。
-  \end{Def}
+  \end{Def}\pause
+    \begin{Ex}
+  设集合$X=\{1,2\}$，则$2^X$上的二元关系$\subseteq$可以定义为$2^X\times
+  2^X$的一个子集，
+
+  \begin{equation*}
+    \begin{split}
+ \subseteq =& \{
+ (\{\phi\},\{\phi\}),(\{\phi\},\{1\}),(\{\phi\},\{2\}),(\{\phi\},\{1,2\}),\\
+ &(\{1\},\{1\}),(\{1\},\{2\}),(\{1\},\{1,2\}),\\
+ &(\{2\},\{2\}),(\{2\},\{1,2\}),(\{1,2\},\{1,2\})
+\}
+    \end{split}
+  \end{equation*}
+\end{Ex}
+
 \end{frame}
 
 \begin{frame}
@@ -79,31 +113,92 @@
   \begin{Def}
     集合$X$上的二元关系$R$称为\alert{自反}的，如果对$X$的任意元素$x$都有$xRx$。
   \end{Def}
+  \pause
+    判断下列二元关系是否是自反的。设集合$X=\{1,2,3,4\}$，
+  \begin{enumerate}
+  \item 集合$X$上的二元关系$R=\{(1,2), (1,3), (1,4), (2,3),
+    (2,4), (3,4)\}$
+  \item 集合$X$上的二元关系$R=\{(1,1), (1,2), (2,2),
+    (2,4), (3,3), (4,4)\}$
+  \item 集合$X$上的二元关系$R = \{(1,1), (2,3), (3,2)\}$
+  \item 集合$X$上的二元关系$R = \{(2,3)\}$
+  \item 集合$X$上的恒等关系$I_X = \{(1,1), (2,2), (3,3),(4,4)\}$
+%  \item 设集合$X = \{0,1\}$, $2^X$上的二元关系$\subseteq$
+  \end{enumerate}
+
 \end{frame}
 
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
    集合$X$上的二元关系$R$称为\alert{反自反}的，如果对$X$的任意元素$x$都有$(x,x) \notin R$。
-  \end{Def}
+ \end{Def}
+   \pause
+    判断下列二元关系是否是反自反的。设集合$X=\{1,2,3,4\}$，
+  \begin{enumerate}
+  \item 集合$X$上的二元关系$R=\{(1,2), (1,3), (1,4), (2,3),
+    (2,4), (3,4)\}$
+  \item 集合$X$上的二元关系$R=\{(1,1), (1,2), (2,2),
+    (2,4), (3,3), (4,4)\}$
+  \item 集合$X$上的二元关系$R = \{(1,1), (2,3), (3,2)\}$
+  \item 集合$X$上的二元关系$R = \{(2,3)\}$
+  \item 集合$X$上的恒等关系$I_X = \{(1,1), (2,2), (3,3),(4,4)\}$
+%  \item 设集合$X = \{0,1\}$, $2^X$上的二元关系$\subseteq$
+  \end{enumerate}
 \end{frame}
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
     集合$X$上的二元关系$R$称为\alert{对称}的，如果对$X$的任意元素$x$，$y$，只要$xRy$就有$yRx$。
   \end{Def}
+    \pause
+    判断下列二元关系是否是对称的。设集合$X=\{1,2,3,4\}$，
+  \begin{enumerate}
+  \item 集合$X$上的二元关系$R=\{(1,2), (1,3), (1,4), (2,3),
+    (2,4), (3,4)\}$
+  \item 集合$X$上的二元关系$R=\{(1,1), (1,2), (2,2),
+    (2,4), (3,3), (4,4)\}$
+  \item 集合$X$上的二元关系$R = \{(1,1), (2,3), (3,2)\}$
+  \item 集合$X$上的二元关系$R = \{(2,3)\}$
+  \item 集合$X$上的恒等关系$I_X = \{(1,1), (2,2), (3,3),(4,4)\}$
+%  \item 设集合$X = \{0,1\}$, $2^X$上的二元关系$\subseteq$
+  \end{enumerate}
 \end{frame}
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
          集合$X$上的二元关系$R$称为\alert{反对称}的，如果对$X$的任意元素$x$，$y$，$xRy$且$yRx$，则$x=y$。    
-  \end{Def}
+       \end{Def}
+         \pause
+    判断下列二元关系是否是反对称的。设集合$X=\{1,2,3,4\}$，
+  \begin{enumerate}
+  \item 集合$X$上的二元关系$R=\{(1,2), (1,3), (1,4), (2,3),
+    (2,4), (3,4)\}$
+  \item 集合$X$上的二元关系$R=\{(1,1), (1,2), (2,2),
+    (2,4), (3,3), (4,4)\}$
+  \item 集合$X$上的二元关系$R = \{(1,1), (2,3), (3,2)\}$
+  \item 集合$X$上的二元关系$R = \{(2,3)\}$
+  \item 集合$X$上的恒等关系$I_X = \{(1,1), (2,2), (3,3),(4,4)\}$
+%  \item 设集合$X = \{0,1\}$, $2^X$上的二元关系$\subseteq$
+  \end{enumerate}
 \end{frame}
 \begin{frame}
   \frametitle{2. 关系的性质}
   \begin{Def}
         集合$X$上的二元关系$R$称为\alert{传递}的，如果对$X$的任意元素$x$，$y$，$z$，只要$xRy$且$yRz$，就有$xRz$。
-  \end{Def}
+      \end{Def}
+        \pause
+    判断下列二元关系是否是传递的。设集合$X=\{1,2,3,4\}$，
+  \begin{enumerate}
+  \item 集合$X$上的二元关系$R=\{(1,2), (1,3), (1,4), (2,3),
+    (2,4), (3,4)\}$
+  \item 集合$X$上的二元关系$R=\{(1,1), (1,2), (2,2),
+    (2,4), (3,3), (4,4)\}$
+  \item 集合$X$上的二元关系$R = \{(1,1), (2,3), (3,2)\}$
+  \item 集合$X$上的二元关系$R = \{(2,3)\}$
+  \item 集合$X$上的恒等关系$I_X = \{(1,1), (2,2), (3,3),(4,4)\}$
+%  \item 设集合$X = \{0,1\}$, $2^X$上的二元关系$\subseteq$
+  \end{enumerate}
 \end{frame}
 \section{关系的运算}
 \begin{frame}
@@ -377,7 +472,7 @@
     \begin{enumerate}[(1)]
     \item $R$是自反的，即对$X$中的任意元素$x$，$xRx$;
     \item $R$是对称的，即对$X$中的任意元素$x$，$y$，如果$xRy$，则$yRx$;
-    \item $R$是传递的，即对$x$中的任意元素$x$，$y$，$z$，如果$xRy$且$yRz$，则$xRz$。
+    \item $R$是传递的，即对$X$中的任意元素$x$，$y$，$z$，如果$xRy$且$yRz$，则$xRz$。
     \end{enumerate}
   \end{Def}
 \end{frame}
@@ -626,12 +721,60 @@
 
 \begin{frame}  
   \frametitle{习题}
-  1. 设$X = \{1,2,3\}$， $Y = \{1,2\}$，$S = \{f|f:X \to Y\}$。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[I_m(f) = I_m(g)\]证明$\cong$是$S$上的等价关系，并求出等价类之集。
+  \begin{Exercise}
+  是否存在一个同时不满足自反性、对称性、反对称性、传递性和反自反性的二元关系？    
+  \end{Exercise}
+  \begin{Exercise}
+  实数集上的“小于”关系$<$是否是反自反的？集合$X$的幂集$2^X$上的“真包含”
+  关系$\subset$是否是反自反的？为什么？    
+  \end{Exercise}
 
-  2. 设$X, Y, S$同习题1。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[f(1) + f(2) + f(3) = g(1) + g(2) + g(3)\]证明$\cong$是$S$上的等价关系，并求出等价类之集。
-
-  3. 设$X, Y, S$同习题1。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[\{f^{-1}(\{y\}) | y \in Y\} = \{g^{-1}(\{y\})|y \in Y\}\]证明$\cong$是$S$上的等价关系，并求出等价类之集。
+  \begin{Exercise}
+  下列说法是否正确？若正确，请给出证明；若不正确，请说明理由。
+  
+  1)设$R$为集合$X$上的反自反的和传递的二元关系，则$R$为反对称的二元关系。
+  
+  2)设$R$为集合$X$上的对称的和传递的二元关系，则$R$为自反的二元关系。    
+  \end{Exercise}
 \end{frame}
+\begin{frame}  
+  \frametitle{习题}
+
+  \begin{Exercise}
+  设$X = \{1,2,3\}$， $Y = \{1,2\}$，$S = \{f|f:X \to Y\}$。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[I_m(f) = I_m(g)\]证明$\cong$是$S$上的等价关系，并求出等价类之集。    
+  \end{Exercise}
+  \begin{Exercise}
+  设$X, Y, S$同习题4。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[f(1) + f(2) + f(3) = g(1) + g(2) + g(3)\]证明$\cong$是$S$上的等价关系，并求出等价类之集。    
+  \end{Exercise}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+ \begin{Exercise}
+  设$X, Y, S$同习题4。$S$上的二元关系$\cong$定义如下：$\forall f,g\in S$，$f \cong g$当且仅当\[\{f^{-1}(\{y\}) | y \in Y\} = \{g^{-1}(\{y\})|y \in Y\}\]证明$\cong$是$S$上的等价关系，并求出等价类之集。  
+  \end{Exercise}
+  \begin{Exercise}
+    是否存在一个偏序关系$\leq$，使$(X,\leq)$中有唯一极大元素，但没有最大元素？如
+    果有，请给出一个具体例子；如果没有，请证明之。
+  \end{Exercise}
+  \begin{Exercise}
+    令$X=\{a,b,c,d\}$，画出偏序集$(2^X,\subseteq)$的Hasse图。
+  \end{Exercise}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+ \begin{Exercise}
+ 令$S=\{1,2,\cdots,12\}$，画出偏序集$(S,|)$的Hasse图，其中$|$为整除关系。它有几
+ 个极大（小）元素？列出这些极大（小）元素。
+  \end{Exercise}
+  \begin{Exercise}
+    偏序集$(X,\leq)$称为有序完备的，当且仅当$X$的每个有上届的非空子集有上确界。
+    证明：偏序集$(X,\leq)$为有序完备的当且仅当对$X$的每个有下界的非空子集有下确
+    界。
+  \end{Exercise}
+\end{frame}
+
 \end{CJK*}
 \end{document}
 
