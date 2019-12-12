@@ -3,6 +3,8 @@
 \usepackage{CJKutf8}
 \usepackage{tikz}
 \setbeamertemplate{theorems}[numbered]
+\usepackage{ragged2e}
+
 
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
@@ -77,7 +79,8 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    如果$(u,v)$和$(v,u)$都是有向图$D$的弧，则称$(u,v)$与$(v,u)$为$D$的\alert{对称弧}。如果$D$中不含对称弧，则称$D$是\alert{定向图}。
+    如果$(u,v)$和$(v,u)$都是有向图$D$的弧，则称$(u,v)$与$(v,u)$为$D$的\alert{对
+      称弧}。如果$D$中不含对称弧，则称$D$为\alert{定向图}。
   \end{Def}
   \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick}]
@@ -109,7 +112,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    设$D=(V,A)$是一个有向图，$D$的\alert{反向图}是有向图$D^T=(V,A^T)$，其中
+    设$D=(V,A)$为一个有向图，$D$的\alert{反向图}为有向图$D^T=(V,A^T)$，其中
     \[A^T=\{(u,v)|(v,u)\in A\}\]
   \end{Def}
 \begin{tikzpicture}[auto,
@@ -141,7 +144,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
   \begin{Def}
-    设$D=(V,A)$是一个有向图，$v$是$D$的任一顶点，以$v$为终点的弧称为$v$的\alert{入弧}；以$v$为始点的弧称为$v$的\alert{出弧}。顶点$v$的入弧的条数称为$v$的入度，记为$id(v)$；顶点$v$的出弧的条数称为$v$的\alert{出度}，记为$od(v)$。
+    设$D=(V,A)$为一个有向图，$v$为$D$的任一顶点，以$v$为终点的弧称为$v$的\alert{入弧}；以$v$为始点的弧称为$v$的\alert{出弧}。顶点$v$的入弧的条数称为$v$的入度，记为$id(v)$；顶点$v$的出弧的条数称为$v$的\alert{出度}，记为$od(v)$。
   \end{Def}
 \centering
 \begin{tikzpicture}[auto,
@@ -161,7 +164,7 @@
 \begin{frame}
   \frametitle{1. 有向图的概念}
     \begin{Thm}
-      设$D=(V,A)$是一个有向图，$|A| = q$，则
+      设$D=(V,A)$为一个有向图，$|A| = q$，则
       \[\sum_{v\in V}id(v) = \sum_{v\in V}od(v) = q\]
       从而
       \[\sum_{v\in V}(id(v) + od(v)) = 2q\]
@@ -400,7 +403,8 @@
   \begin{Def}
     设$D=(V,A)$为一个有向图。$D$的顶点和弧的交错序列
     \[v_0,x_1,v_1,x_2,v_2,\cdots,v_{n-1},x_n,v_n \]
-    称为$D$的一个\alert{有向通道}，如果$x_i = (v_{i-1},v_i)$， $i=1,2,\cdots, n$。 \\$n$称为该有向通道的长。 如果$v_0=v_n$,则称它是\alert{闭有向通道}。
+    称为$D$的一个\alert{有向通道}，如果$x_i = (v_{i-1},v_i)$， $i=1,2,\cdots, n$。
+    \\$n$称为该有向通道的长。 如果$v_0=v_n$,则称它为\alert{闭有向通道}。
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,
@@ -420,7 +424,7 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-设$D=(V,A)$为一个有向图，$D$的一条\alert{有向迹}是$D$的一条所有弧均不相同的有向通道。起点和终点相同的迹称为\alert{闭迹}。迹上出现的弧的条数称为迹的长。   
+设$D=(V,A)$为一个有向图，$D$的一条\alert{有向迹}为$D$的一条所有弧均不相同的有向通道。起点和终点相同的迹称为\alert{闭迹}。迹上出现的弧的条数称为迹的长。   
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,
@@ -440,7 +444,9 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-设$D=(V,A)$为一个有向图，$D$的一条不含重复顶点的有向通道称为$D$的一条\alert{有向路}。有向路上弧的条数称为该有向路的长。一条至少含有两个不同顶点的闭有向通道称为一个\alert{有向圈}，如果该闭有向通道上除起点和终点外各顶点互不相同。
+设$D=(V,A)$为一个有向图，$D$的一条不含重复顶点的有向通道称为$D$的一条\alert{有向
+  路}。有向路上弧的条数称为该有向路的长。一条至少含有两个不同顶点的闭有向通道称
+为一个\alert{有向圈}，如果该闭有向通道上除终点外各顶点互不相同。
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,
@@ -482,7 +488,7 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
   \begin{Def}
-    设$D=(V,A)$是一个有向图，$u$和$v$是$D$的顶点。如果在$D$中有一条从$u$到$v$的
+    设$D=(V,A)$为一个有向图，$u$和$v$为$D$的顶点。如果在$D$中有一条从$u$到$v$的
     有向路，则称从$u$能达到$v$，或者$v$是从$u$\alert{可达}的。
   \end{Def}
   \centering
@@ -543,7 +549,8 @@
 \begin{frame}
   \frametitle{2. 有向路和有向圈}
     \begin{Thm}
-    设$D=(V,A)$是一个有向图。在$V$上定义二元关系$\cong$如下：\[\forall u, v \in V, u \cong v\text{当且仅当}u\text{与}v\text{互达}\]则$\cong$是$V$上的等价关系，$D$的强支就是关于$\cong$的每个等价类的导出子图。
+      设$D=(V,A)$为
+      一个有向图。在$V$上定义二元关系$\cong$如下：\[\forall u, v \in V, u \cong v\text{当且仅当}u\text{与}v\text{互达}\]则$\cong$是$V$上的等价关系，$D$的强支就是关于$\cong$的每个等价类的导出子图。
   \end{Thm}
   \centering
   \begin{tikzpicture}[auto,
@@ -655,6 +662,22 @@
  \end{tikzpicture}     
 \end{frame}
 \input{directedtree}
+
+\newtheorem{Exercise}{习题}
+
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise}\justifying\let\raggedright\justifying
+    设无向图$G=(V,E)$，其中$V=\{1,2,3,4,5,6\}, E = \{\{1,2\},\{2,3\},\{3,1\},
+    \{4,5\}\}$，则无向图$G$有\underline{$\quad\quad\quad$}个连通分量。
+  \end{Exercise}
+    \begin{Exercise}\justifying\let\raggedright\justifying
+    设有向图$G=(V,A)$，其中$V=\{1,2,3,4,5,6\}, A =\{(1,2),(2,3),(3,1),
+    (4,5)\}$，则有向图$G$有\underline{$\quad\quad\quad$}个强连通分量。
+  \end{Exercise}
+
+\end{frame}
+
 \end{CJK*}
 \end{document}
 

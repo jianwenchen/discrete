@@ -421,7 +421,7 @@
 \begin{frame}
   \frametitle{6.3 路、圈、连通图}
   \begin{Def}
-    如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上各顶点互不相同，则称此闭通道为\alert{圈}，或\alert{回路}。
+    如果一条通道上的各顶点互不相同，则称此通道为\alert{路}。如果闭通道上除终点外各顶点互不相同，则称此闭通道为\alert{圈}，或\alert{回路}。
   \end{Def}
   \centering
   \begin{tikzpicture}[auto,
@@ -1547,7 +1547,22 @@ $G$
   \end{proof}
 
 \end{frame}
+\newtheorem{Exercise}{习题}
 
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise}
+    在一个有$n$个人的宴会上，每个人至少有$m$个朋友（$2 \leq m \leq n$）。试证：
+    有不少于$m+1$个人，使得它们按某种方法坐在一张圆桌旁，每人的左右均是他的朋友。
+  \end{Exercise}
+  \begin{Exercise}
+    设$G$是图。证明：若$\delta (G) \geq 2$，则$G$包含长至少是$\delta (G) + 1$的
+    圈。
+  \end{Exercise}
+  \begin{Exercise}
+      若$G$是一个$(p,q)$图，$q > \frac{1}{2}(p-1)(p-2)$，试证$G$是连通图。  
+  \end{Exercise}
+\end{frame}
 
 % \begin{frame}
 %   \frametitle{6.8 带权图与最短路问题}
