@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  12 DEC 2019 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  14 DEC 2019 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1490,9 +1490,9 @@ y/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.95 E \OT1/cmss/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 679--679
+Underfull \hbox (badness 2707) in paragraph at lines 679--679
 []\C70/gbsn/m/it/10.95/8b ¾ \C70/gbsn/m/it/10.95/67 	 \C70/gbsn/m/it/10.95/54 ^
-^Q \C70/gbsn/m/it/10.95/56 þ$\OT1/cmss/m/it/10.95 G \OT1/cmss/m/n/10.95 = (\OT1
+^Q \C70/gbsn/m/it/10.95/56 þ$\OT1/cmss/m/it/10.95 D \OT1/cmss/m/n/10.95 = (\OT1
 /cmss/m/it/10.95 V\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.95 A\OT1/cmss/m/n/10.
 95 )$\C70/gbsn/m/it/10.95/ff ^^L \C70/gbsn/m/it/10.95/51 v \C70/gbsn/m/it/10.95
 /4e -$\OT1/cmss/m/it/10.95 V \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OT1/cm
@@ -1580,7 +1580,7 @@ pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fo
 nts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
 bsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/share/t
 exmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on chapter10.pdf (36 pages, 364813 bytes).
+Output written on chapter10.pdf (36 pages, 364829 bytes).
 PDF statistics:
  1267 PDF objects out of 1440 (max. 8388607)
  1099 compressed objects within 11 object streams

@@ -3,5 +3,5 @@
 \beamer@sectionintoc {3}{路、圈、连通图 }{20}{0}{3}
 \beamer@sectionintoc {4}{补图、偶图}{28}{0}{4}
 \beamer@sectionintoc {5}{欧拉图}{38}{0}{5}
-\beamer@sectionintoc {6}{哈密顿图}{44}{0}{6}
-\beamer@sectionintoc {7}{图的邻接矩阵}{61}{0}{7}
+\beamer@sectionintoc {6}{哈密顿图}{46}{0}{6}
+\beamer@sectionintoc {7}{图的邻接矩阵}{63}{0}{7}

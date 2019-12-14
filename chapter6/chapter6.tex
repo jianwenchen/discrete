@@ -9,6 +9,7 @@
 \setbeamertemplate{theorems}[numbered]
 \newtheorem{Thm}{定理}[section]
 \newtheorem*{Thm1}{定理6.4}
+\newtheorem*{Thm2}{定理５.1}
 \theoremstyle{definition}
 \newtheorem{Def}{定义}[section]
 \theoremstyle{example}
@@ -871,7 +872,38 @@ $G$
   \begin{Thm}
     图G是欧拉图当且仅当$G$是连通的且每个顶点的度是偶数。
   \end{Thm}
+  \begin{proof}[证明]
+      首先，假设图$G$是欧拉图，往证$G$是连通的且每个顶点的度是偶数。
 
+  由图$G$为欧拉图知$G$中有一条包含所有边和所有顶点的闭迹$T:v_0,x_1,v_1,\ldots,
+  x_n,v_n$，其中$v_n=v_0$。显
+  然$G$是连通的。顶点$v_0$在$T$中的第一次出现与一条边相关联，最后一次出现与一
+  条边相关联，其余的每次出现均与两条边相关联，因此其度为偶数。除$v_0$之外的其他
+  顶点在$T$中的每次出现均与两条边相关联，因此其度也为偶数。
+
+  \end{proof}
+\end{frame}
+1
+\begin{frame}
+  \frametitle{6.5 欧拉图}
+  \begin{Thm2}
+    图G是欧拉图当且仅当$G$是连通的且每个顶点的度是偶数。
+  \end{Thm2}
+  \begin{proof}[证明(续上页)]
+  其次，假设$G$是连通的且每个顶点的度是偶数，往证$G$是欧拉图。
+
+  设$v_0,x_1,v_1,\ldots, x_n,v_n$为图$G$的一条最长的迹，记为$Z$，则$Z$为闭迹。否
+  则，　$v_n \neq v_0$，$v_n$在迹$Z$中的最后一次出现与一条边相关联，其他的每次出现
+  均与两条边相关联，由$v_n$的度为偶数知，$v_n$在$G$中还有一条与之关联的边没有在
+  $Z$中出现，记为$x_{n+1}=v_nv_{n+1}$。则$v_0,x_1,v_1,\ldots,
+  x_n,v_n,x_{n+1},v_{n+1}$构成了图$G$的一条更长的迹，这与$v_0,x_1,v_1,\ldots,
+  x_n,v_n$为图$G$的一条最长的迹矛盾。接下来证明$Z$包含了图$G$的所有的边。若不然，
+  则图$G$中有一条边$x$不在$Z$中出现，并且$x$有一个端点在$Z$中出现。在图$G$中去掉
+  $Z$中的所有边，得到图$G'$。取图$G'$中一条包含$x$的最长的迹$Z'$，由图$G'$中所有
+  顶点的度均为偶数易知$Z'$为闭迹（与前面证明$Z$为闭迹的过程相类似）。于是$Z$和
+  $Z'$可以联结成一条更长的迹，这与$v_0,x_1,v_1,\ldots, x_n,v_n$为图$G$的一条最长
+  的迹矛盾。
+  \end{proof}
 \end{frame}
 
 \begin{frame}
@@ -887,7 +919,18 @@ $G$
   \begin{Thm}
     图G有一条欧拉开迹当且仅当$G$是连通的且恰有两个奇度顶点。
   \end{Thm}
+  \begin{proof}[证明]
+      设图$G$有一条欧拉开迹$Z:v_0,x_1,v_1,\ldots, x_n,v_n$，其中$x_i=v_{i-1}v_i, i =
+  1,2,\ldots, n$。显然，图$G$是连通的。顶点$v_0$在$Z$中除了其首次出现与一条边相
+  关联外，其余的每次出现均与两
+  条边相关联，因此顶点$v_0$的度为奇数；同理，$v_n$的度为奇数。除了$v_0$和$v_n$
+  之外其余的每个顶点在$Z$中的每次出现均与两条边相关联，因此其度为偶数。这证明了
+  图$G$恰有两个奇度顶点。
 
+  设图$G$是连通的，且恰有两个奇度顶点$u$和$v$。在顶点$u$和$v$之间加一条边，得
+  到图$G'$。则图$G'$是连通的且每个顶点的度为偶数，因此有一条欧拉闭迹。在该欧拉闭迹上去掉
+  新加的顶点$u$与顶点$v$之间的边，便得到了图$G$的一条欧拉开迹。
+  \end{proof}
 \end{frame}
 
 
@@ -896,7 +939,15 @@ $G$
   \begin{Thm}
     设$G$是连通图，$G$恰有$2n$个奇度顶点，$n \geq 1$，则$G$的全部边可以排成$n$条
     开迹，且不能排成少于$n$条开迹。  \end{Thm}
+  \begin{proof}[证明]
+      设连通图$G$有$2n$个奇度顶点$u_1,v_1,u_2,v_2,\ldots,u_n,v_n$。在$G$中加
+  入$n$条边$u_1v_1$，　$u_2v_2$， $\ldots$， $u_nv_n$，得到图$G'$。则$G'$是连通的，
+  且每个顶点的度为偶数，因此存在一条欧拉闭迹$Z$。在$Z$中去掉新加入的边$u_1v_1,
+  u_2v_2, \ldots, u_nv_n$，则得到图$G$的$n$条开迹。
 
+  假设图$G$的所有边能排成$m$条开迹，$m < n$。则只有这$m$条开迹的端点可能为
+  奇度顶点，因此图$G$至多有$2m$个奇度顶点，这与图$G$有$2n$个奇度顶点矛盾。
+  \end{proof}
 \end{frame}
 
 % \begin{frame}
@@ -1443,6 +1494,27 @@ $G$
 % \centering
 % \includegraphics[width=5cm,height=4cm]{representation} 
 % \end{frame}
+
+\begin{frame}
+  \frametitle{6.7 图的邻接矩阵}
+  \centering
+  \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (E) [label=-135:$v_5$] at (0,0)  {};
+   \node[specification] (F) [label=135:$v_3$] at (0,2)  {};
+   \node[specification] (G) [label=45:$v_2$] at (2,2)  {};
+   \node[specification] (H) [label=-45:$v_4$] at (2,0)  {};
+   \node[specification] (I) [label=-45:$v_1$] at (4,2)  {};
+   
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to  (H);
+   \draw[thick] (H) to  (E);
+   \draw[thick] (E) to  (G);
+   \draw[thick] (G) to  (I);
+ \end{tikzpicture}  
+ \\  G   
+\end{frame}
 
 \begin{frame}
   \frametitle{6.7 图的邻接矩阵}
