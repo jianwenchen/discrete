@@ -3,6 +3,7 @@
 \usepackage{CJKutf8}
 \usepackage{tikz}
 \setbeamertemplate{theorems}[numbered]
+\newtheorem{Exercise}{习题}
 
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
@@ -209,6 +210,22 @@
    \draw[thick] (G) to  (E);
  \end{tikzpicture}  
 
+\end{frame}
+
+\begin{frame}  
+  \frametitle{习题}
+
+  \begin{Exercise}
+  分别画出具有４、５、６、７个顶点的所有树（同构的只算一个）。
+  \end{Exercise}
+  \begin{Exercise}
+  令$G$为一个有$p$个顶点，$k$个支的森林。证明：$G$有$p-k$条边。
+  \end{Exercise}
+  \begin{Exercise}
+    设$a_1$，$a_2$，$\cdots$，$a_p$为$p$个正整数，$p \geq 2$，并且
+    $\sum_{i=1}^pa_i=2(p-1)$。证明：存在一个具有$p$个顶点的树，它的各个顶点的度
+    分别为$a_1$，$a_2$，$\cdots$，$a_p$。
+  \end{Exercise}
 \end{frame}
 
 \end{CJK*}
