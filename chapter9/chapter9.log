@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  21 DEC 2019 01:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  22 DEC 2019 00:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2171,6 +2171,12 @@ Package pdftex.def Info: color26-eps-converted-to.pdf  used on input line 710.
 
 ] [60
 
+] [61
+
+] [62
+
+] [63
+
 ]
 Package epstopdf Info: Source file: <color52.eps>
 (epstopdf)                    date: 2018-12-25 10:19:08
@@ -2180,14 +2186,14 @@ Package epstopdf Info: Source file: <color52.eps>
 (epstopdf)                    size: 3021 bytes
 (epstopdf)             Command: <repstopdf --outfile=color52-eps-converted-to.p
 df color52.eps>
-(epstopdf)             \includegraphics on input line 737.
+(epstopdf)             \includegraphics on input line 775.
 Package epstopdf Info: Output file is already uptodate.
-<color52-eps-converted-to.pdf, id=1752, 304.13625pt x 190.7125pt>
+<color52-eps-converted-to.pdf, id=1832, 304.13625pt x 190.7125pt>
 File: color52-eps-converted-to.pdf Graphic file (type pdf)
 <use color52-eps-converted-to.pdf>
-Package pdftex.def Info: color52-eps-converted-to.pdf  used on input line 737.
+Package pdftex.def Info: color52-eps-converted-to.pdf  used on input line 775.
 (pdftex.def)             Requested size: 113.80948pt x 85.35712pt.
- [61
+ [64
 
  <./color52-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <color53.eps>
@@ -2198,14 +2204,14 @@ Package epstopdf Info: Source file: <color53.eps>
 (epstopdf)                    size: 3021 bytes
 (epstopdf)             Command: <repstopdf --outfile=color53-eps-converted-to.p
 df color53.eps>
-(epstopdf)             \includegraphics on input line 745.
+(epstopdf)             \includegraphics on input line 783.
 Package epstopdf Info: Output file is already uptodate.
-<color53-eps-converted-to.pdf, id=1781, 304.13625pt x 190.7125pt>
+<color53-eps-converted-to.pdf, id=1860, 304.13625pt x 190.7125pt>
 File: color53-eps-converted-to.pdf Graphic file (type pdf)
 <use color53-eps-converted-to.pdf>
-Package pdftex.def Info: color53-eps-converted-to.pdf  used on input line 745.
+Package pdftex.def Info: color53-eps-converted-to.pdf  used on input line 783.
 (pdftex.def)             Requested size: 113.80948pt x 85.35712pt.
- [62
+ [65
 
  <./color53-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <color51.eps>
@@ -2216,18 +2222,18 @@ Package epstopdf Info: Source file: <color51.eps>
 (epstopdf)                    size: 3099 bytes
 (epstopdf)             Command: <repstopdf --outfile=color51-eps-converted-to.p
 df color51.eps>
-(epstopdf)             \includegraphics on input line 754.
+(epstopdf)             \includegraphics on input line 792.
 Package epstopdf Info: Output file is already uptodate.
-<color51-eps-converted-to.pdf, id=1809, 304.13625pt x 278.03876pt>
+<color51-eps-converted-to.pdf, id=1889, 304.13625pt x 278.03876pt>
 File: color51-eps-converted-to.pdf Graphic file (type pdf)
 <use color51-eps-converted-to.pdf>
-Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 754.
+Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 792.
 (pdftex.def)             Requested size: 113.80948pt x 85.35957pt.
- [63
+ [66
 
- <./color51-eps-converted-to.pdf>] [64
+ <./color51-eps-converted-to.pdf>] [67
 
-] [65
+] [68
 
 ]
 \tf@nav=\write6
@@ -2239,11 +2245,11 @@ Package pdftex.def Info: color51-eps-converted-to.pdf  used on input line 754.
 \tf@snm=\write8
 \openout8 = `chapter9.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 769.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 769.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 807.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 807.
  (./chapter9.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 769.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 769.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 807.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 807.
 Package rerunfilecheck Info: File `chapter9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2252,11 +2258,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22708 strings out of 494406
- 424632 string characters out of 6169674
- 503340 words of memory out of 5000000
- 25335 multiletter control sequences out of 15000+600000
- 35650 words of font info for 127 fonts, out of 8000000 for 9000
+ 22903 strings out of 494406
+ 427907 string characters out of 6169674
+ 508484 words of memory out of 5000000
+ 25502 multiletter control sequences out of 15000+600000
+ 36735 words of font info for 131 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  48i,14n,62p,799b,1571s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -2299,19 +2305,20 @@ type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
 7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf
 /fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
 u/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu82.pfb></usr/shar
-e/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arph
-ic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></u
-sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/typ
-e1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.
-pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu95.pfb></usr/share/texmf/fo
-nts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
-bsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/t
-exmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter9.pdf (65 pages, 711849 bytes).
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu84.pfb></usr/share/texmf/fonts/type1/arph
+ic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.pfb></u
+sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8f.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on chapter9.pdf (68 pages, 745819 bytes).
 PDF statistics:
- 2120 PDF objects out of 2487 (max. 8388607)
- 1872 compressed objects within 19 object streams
- 133 named destinations out of 1000 (max. 500000)
- 408 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2208 PDF objects out of 2487 (max. 8388607)
+ 1952 compressed objects within 20 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 416 words of extra memory for PDF output out of 10000 (max. 10000000)
 
