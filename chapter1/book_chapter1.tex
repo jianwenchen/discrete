@@ -1,0 +1,42 @@
+\documentclass{book}[oneside]
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{xCJKnumb}
+\usepackage{tikz}
+\titleformat{\chapter}{\centering\Huge\bfseries}{第\, \xCJKnumber{\thechapter}\,
+    章}{1em}{}
+  % \renewcommand{\chaptermark}[1]{\markboth{第 \thechapter 章}{}}
+\usepackage{mathrsfs}
+
+\newtheorem{Def}{定义}[chapter]
+\newtheorem{Thm}{定理}[chapter]
+\newtheorem{Exercise}{练习}[chapter]
+\newtheorem*{Example}{例}
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+  \title{离散数学}
+  \author{陈建文}
+  \maketitle
+  %\tableofcontents
+  \setcounter{chapter}{0}
+  \input{set}
+\end{CJK*}
+\end{document}
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+
+
