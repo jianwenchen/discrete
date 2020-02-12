@@ -1,4 +1,4 @@
-\chapter{集合}
+\chapter{集合及其运算}
   \begin{Def}
     通常把一些互不相同的东西放在一起所形成的整体叫做一个集合。构成集合的每个东西叫做集合的元素。
 给定一个集合$A$和一个元素$a$，用$a \in A$表示$a$是$A$的一个元素，用$a \notin A$表示$a$不是$A$的一个元素。
@@ -17,7 +17,10 @@
 \end{itemize}
 \end{enumerate}
 
-存在一个集合，该集合中不包含任何元素，称为空集，记为$\Phi$。
+存在一个集合，该集合中不包含任何元素，称为空集，记为$\phi$。
+  \begin{Thm}
+   空集为任一个集合的子集且空集是唯一的。 
+  \end{Thm}
 
   
     \begin{Def}
@@ -50,8 +53,9 @@
   \begin{Def}
     设$A,B$为任意的两个集合，至少属于集合 $A$ 与集合$B$之一的那些元素构成的集合称为$A$与$B$的并集，记为$A \cup B$。
   \begin{equation*}
-      A\cup B = \{x|x \in A \lor x \in B\}
+      A\cup B = \{x|x \in A \lor x \in B\} 
     \end{equation*}
+    （这里$\lor$表示“或者”）
   \end{Def}
 \end{minipage}
 \begin{minipage}{0.29\linewidth}
@@ -124,7 +128,7 @@
 {\flushleft
 \begin{minipage}{0.70\linewidth}
   \begin{Def}
-    在许多实际问题中，常以某个集合$S$为出发点，而所涉及的集合都是$S$的子集。这个包含所考虑的所有集合的集合$S$，称为该问题的全集。如果$A$是$S$的子集，则差集$S \setminus A$称为集合$A$对集合$S$的余集，记为$A^c$。
+    在许多实际问题中，常以某个集合$S$为出发点，而所涉及的集合都是$S$的子集。这个包含所考虑的所有集合的集合$S$，称为该问题的全集。如果$A$为$S$的子集，则差集$S \setminus A$称为集合$A$对集合$S$的余集，记为$A^c$。
     \begin{equation*}
       A^c = \{x|x \in S \land x \notin A\}
     \end{equation*}
@@ -156,11 +160,37 @@
 8. $C\setminus (A \cup B) = (C \setminus A) \cap (C \setminus B)$, $C \setminus (A \cap B) = (C \setminus A) \cup (C \setminus B)$.\\ 
 8'. $(A \cup B)^c = A^c \cap B^c$, $(A \cap B)^c = A^c \cup B^c$.\\
 \end{Thm}
+  以下只证明结论６的第一条，其他结论的证明留给读者自己完成。
 
+  首先在草稿纸上做如下的分析。
+
+  \begin{equation*}
+    \begin{split}
+      \forall x, &x \in A \cap (B \cup C) \\
+      \Leftrightarrow& x \in A \land x \in (B \cup C)\\
+      \Leftrightarrow& x \in A \land (x \in B \lor x \in C)\\
+      \Leftrightarrow& (x \in A \land x \in B) \lor (x \in A \land x \in C)\\
+      \Leftrightarrow& (x \in A \cap B) \lor (x \in A \cap C)\\
+      \Leftrightarrow& x \in (A \cap B) \cup (A \cap C)
+    \end{split}
+  \end{equation*}
+  然后将上面的分析转化为证明如下：  
+\begin{proof}[证明]
+  先证$A \cap (B \cup C) \subseteq (A \cap B) \cup (A \cap C)$。
+
+  对任意的$x$，如果$x \in A \cap (B \cup C)$，则 $x \in A$并且$x \in (B \cup C)$，从而$x \in A$，并且$x \in B$或者$ x \in C$，
+  因此，$x \in A$并且$x \in B$，或者$x \in A$并且$ x \in C$，即，$x \in A \cap B$ 或者$x \in A \cap C$，于是，$x \in (A \cap B) \cup (A \cap C)$。
+
+  再证$(A \cap B) \cup (A \cap C) \subseteq A \cap (B \cup C)$。
+
+    对任意的$x$，如果$x \in (A \cap B) \cup (A \cap C)$，则 $x \in A \cap B$ 或者$x \in A \cap C$，从而$x \in A$并且$x \in B$，或者$x \in A$并且$ x \in C$，
+  因此，$x \in A$，并且$x \in B$或者$ x \in C$，即，$x \in A$并且$x \in (B \cup C)$，于是，$x \in A \cap (B \cup C)$。
+
+\end{proof}
 {\flushleft
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    设$A,B$为两个集合，$A\setminus B$与$B\setminus A$的并集称为$A$与$B$的对称差，记为$A \bigtriangleup B$。
+    设$A,B$为任意的两个集合，$A\setminus B$与$B\setminus A$的并集称为$A$与$B$的对称差，记为$A \bigtriangleup B$。
     \begin{equation*}
       A\bigtriangleup B = (A \setminus B) \cup (B \setminus A)
     \end{equation*}
@@ -199,6 +229,52 @@
 5. $A \cap (B \bigtriangleup C) = (A \cap B) \bigtriangleup (A \cap C)$.\\ 
   \end{Thm}
 
+\begin{proof}[证明]以下证明结论２，其他结论留给读者思考。
+  
+  因为
+  \begin{equation}
+  x \in A \bigtriangleup B \Leftrightarrow
+  (x \in A \land x \notin B) \lor (x \notin A \land x
+  \in B),    
+  \end{equation}
+
+  所以
+  \begin{equation}
+    \begin{split}
+      x \notin A \bigtriangleup B &\Leftrightarrow
+  (x \notin A \lor x \in B) \land (x \in A \lor x
+  \notin B)\\
+  &\Leftrightarrow (x \notin A \land x \notin B) \lor (x \in A \land x \in B )
+    \end{split}
+  \end{equation}
+
+  于是
+  \begin{equation}\label{xor1}
+    \begin{split}
+      &x \in (A \bigtriangleup B) \bigtriangleup C\\
+      &\Leftrightarrow (x \in A \bigtriangleup B \land x \notin C) \lor (x \notin A \bigtriangleup B \land x \in C)\\
+      &\Leftrightarrow (((x \in A \land x \notin B) \lor (x \notin A \land x \in B)) \land x \notin C)\\
+      &\lor (((x \notin A \land x \notin B) \lor (x \in A \land x \in B )) \land x \in C)\\
+      &\Leftrightarrow (x \in A \land x \notin B \land x \notin C) \lor (x \notin A \land x \in B \land x \notin C)\\
+      &\lor (x \notin A \land x \notin B \land x \in C) \lor (x \in A \land x \in B \land x \in C)
+    \end{split}
+  \end{equation}
+
+  \begin{equation}\label{xor2}
+    \begin{split}
+      &x \in A \bigtriangleup (B \bigtriangleup C)\\
+      &\Leftrightarrow x \in (B \bigtriangleup C) \bigtriangleup A\\
+      &\Leftrightarrow (x \in A \land x \notin B \land x \notin C) \lor (x \notin A \land x \in B \land x \notin C)\\
+      &\lor (x \notin A \land x \notin B \land x \in C) \lor (x \in A \land x \in B \land x \in C)
+    \end{split}
+  \end{equation}
+  其中\eqref{xor2}式的第二行由对称差运算的交换律得到，\eqref{xor2}式的第三行由与
+   \eqref{xor1}式的对称性得到。
+
+  由\eqref{xor1}式和\eqref{xor2}式可得
+  $(A\bigtriangleup B)\bigtriangleup C = A\bigtriangleup (B\bigtriangleup C)$。
+\end{proof}
+
   \begin{Def}  
     以集合为元素的集合称为集族。如果$I$为任意一个集合，对$I$中每个元素$\alpha$都有一个唯一的集合与之对应，这个集合记为$A_{\alpha}$，那么所有这些$A_{\alpha}$形成的集族可以用$\{A_{\alpha}\}_{\alpha \in I}$表示，其中$I$称为标号集。
   \end{Def}
@@ -213,8 +289,8 @@
     设$I=\{x \in \mathbb{R} | 0 < x \leq 1\}$，$\forall x \in \mathbb{R}, A_x=\{y\in \mathbb{R}|0 < y < x\}$，
     则
     \begin{equation*}
-      \bigcup_{x\in I}A_x=?,
-      \bigcap_{x\in I}A_x=?      
+      \bigcup_{x\in I}A_x=\{x \in \mathbb{R} | 0 < x \leq 1\},
+      \bigcap_{x\in I}A_x=\phi      
     \end{equation*}
   \end{Example}
 
@@ -228,13 +304,13 @@
 \end{enumerate}
 \end{Thm}
   \begin{Def}
-    两个对象按照一定的顺序排列构成的整体称为一个有序对。如果第一个对象为 $a$ ，第二个对象为 $b$ ，则该有序对记为 $(a,b)$。$(a,b)=(c,d)$ 当且仅当 $a=c$ 并且 $b=d$。
+    两个对象按照一定的顺序排列构成的整体称为一个有序对。如果第一个对象为$a$ ，第二个对象为$b$ ，则该有序对记为$(a,b)$。$(a,b)=(c,d)$当且仅当$a=c$并且$b=d$。
   \end{Def}
   \begin{Def}
-    设$A$与$B$为任意两个集合，则称集合 $\{(a,b)|a\in A \text{且} b \in B\}$ 为$A$与$B$的笛卡尔乘积，记为$A \times B$。
+    设$A$与$B$为任意两个集合，则称集合 $\{(a,b)|a\in A \land b \in B\}$为$A$与$B$的笛卡尔乘积，记为$A \times B$。
 即
 \begin{equation*}
-  A \times B = \{(a,b)|a \in A \text{且} b \in B\}
+  A \times B = \{(a,b)|a \in A \land b \in B\}
 \end{equation*}
   \end{Def}
   \begin{Example}
@@ -370,10 +446,24 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
 
 \end{proof}
 \begin{Example}
-  在1000名大学毕业生的调查中，每个人至少掌握了一门外语，其中804人掌握了英语，205人掌握了日语，190人掌握了 俄语，125  人 既 掌 握 了 英 语 又 掌 握 了 日 语，57人既掌握了日语又掌握了俄语，85人既掌握了英语又掌握了俄语。试求这1000名大学生，英语、日语、俄语全掌握的有多少人?
+  在1000名大学毕业生的调查中，每个人至少掌握了一门外语，其中804人掌握了英语，205人掌握了日语，190人掌握了 俄语，125人既掌握了英语又掌握了日语，57人既掌握了日语又掌握了俄语，85人既掌握了英语又掌握了俄语。试求在这1000名大学生中，英语、日语、俄语全掌握的有多少人?
 \end{Example}
 
-
+\begin{proof}[解]
+  设$A,B,C$分别为掌握了英语、日语、俄语的大学生的集合，则
+  \begin{equation*}
+    \begin{split}
+      &|A \cup B \cup C|\\
+      = &|A| + |B| + |C|\\
+      - & |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|\\
+    \end{split}
+  \end{equation*}
+  即
+  \begin{equation*}
+    1000 = 804 + 205 + 190 - 125 - 85 - 57 +  |A \cap B \cap C|
+  \end{equation*}
+  解得英语、日语、俄语全掌握的人数$|A \cap B \cap C|=68$。
+\end{proof}
     \begin{Exercise}
    设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
   \end{Exercise}
@@ -395,35 +485,9 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
    设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
    (B\setminus C)$。
  \end{Exercise}
-  \begin{proof}[证明]
-   先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
-   (B\setminus C)$。
-
-   对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
-   \notin C$，　从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
-   \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
-   (B\setminus C)$。
-
-   再证 $(A\setminus C) \cup
-   (B\setminus C) \subseteq (A\cup B) \setminus C$。
-
-   对任意的$x$，如果$x \in (A\setminus C) \cup
-   (B\setminus C)$，则$x \in A
-   \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
-   B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
-   \notin C$, 因此$x \in (A\cup B) \setminus C$。
- \end{proof}
     \begin{Exercise}
       下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
     \end{Exercise}
-
-    \begin{proof}[解]
-      该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，　则$(A
-      \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
-此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
-    \end{proof}
 
   \begin{Exercise}
 下列命题中哪个是真的？
@@ -466,9 +530,49 @@ $(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap
 2) $(A \bigtriangleup B)^c = (A \cap B) \cup (A^c \cap B^c)$
 
 3) $(A \bigtriangleup B)^c = (A^c \cup B) \cap (A \cup B^c)$
-  \end{Exercise}
+\end{Exercise}
+\clearpage
+\newtheorem*{Exercise1.4}{练习1.4}
+
+  \begin{Exercise1.4}
+   设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
+   (B\setminus C)$。
+ \end{Exercise1.4}
+  \begin{proof}[证明]
+   先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
+   (B\setminus C)$。
+
+   对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
+   \notin C$，从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
+   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
+   \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
+   (B\setminus C)$。
+
+   再证 $(A\setminus C) \cup
+   (B\setminus C) \subseteq (A\cup B) \setminus C$。
+
+   对任意的$x$，如果$x \in (A\setminus C) \cup
+   (B\setminus C)$，则$x \in A
+   \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
+   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
+   B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
+   \notin C$, 因此$x \in (A\cup B) \setminus C$。
+ \end{proof}
+
+\newtheorem*{Exercise1.5}{练习1.5}
+
+    \begin{Exercise1.5}
+      下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
+    \end{Exercise1.5}
+
+    \begin{proof}[解]
+      该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，则$(A
+      \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
+此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
+    \end{proof}
+
 \chapter{}
 %%% Local Variables:
 %%% mode: latex
-%%% TeX-master: "book"
+%%% TeX-master: "book_chapter1"
 %%% End:
