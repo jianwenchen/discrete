@@ -1,4 +1,6 @@
 \chapter{集合及其运算}
+
+
   \begin{Def}
     通常把一些互不相同的东西放在一起所形成的整体叫做一个集合。构成集合的每个东西叫做集合的元素。
 给定一个集合$A$和一个元素$a$，用$a \in A$表示$a$是$A$的一个元素，用$a \notin A$表示$a$不是$A$的一个元素。
@@ -464,8 +466,8 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   \end{equation*}
   解得英语、日语、俄语全掌握的人数$|A \cap B \cap C|=68$。
 \end{proof}
-    \begin{Exercise}
-   设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
+  \begin{Exercise}
+    设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\quad\quad\quad}$，$A\cap B=\underline{\quad\quad\quad}$，$A\setminus B=\underline{\quad\quad\quad}$，$A\bigtriangleup B=\underline{\quad\quad\quad}$，$A\times B=\underline{\quad\quad\quad}$。
   \end{Exercise}
   \begin{Exercise}
     下列命题中哪个是假的？
@@ -478,8 +480,8 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
 
     D. 对每个集合$A$，$A \subseteq 2^A$。
   \end{Exercise}
-  \begin{Exercise}
-    设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\quad\quad\quad}$，$A\cap B=\underline{\quad\quad\quad}$，$A\setminus B=\underline{\quad\quad\quad}$，$A\bigtriangleup B=\underline{\quad\quad\quad}$，$A\times B=\underline{\quad\quad\quad}$。
+    \begin{Exercise}
+   设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
   \end{Exercise}
   \begin{Exercise}
    设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
@@ -531,45 +533,61 @@ $(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap
 
 3) $(A \bigtriangleup B)^c = (A^c \cup B) \cap (A \cup B^c)$
 \end{Exercise}
-\clearpage
-\newtheorem*{Exercise1.4}{练习1.4}
+% \clearpage
+% \newtheorem{Exercise1}{练习}[chapter]
+%   \begin{Exercise1}
+%     设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\{1,2,3,4\}}$，$A\cap B=\underline{\{2,3\}}$，$A\setminus B=\underline{\{1\}}$，$A\bigtriangleup B=\underline{\{1,4\}}$，$A\times B=\underline{\{(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4)\}}$。
+%   \end{Exercise1}
+%   \begin{Exercise1}
+%     下列命题中哪个是假的？(D)
 
-  \begin{Exercise1.4}
-   设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
-   (B\setminus C)$。
- \end{Exercise1.4}
-  \begin{proof}[证明]
-   先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
-   (B\setminus C)$。
+%     A. 对每个集合$A$，$\phi \in 2^A$。
 
-   对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
-   \notin C$，从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
-   \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
-   (B\setminus C)$。
+%     B. 对每个集合$A$，$\phi \subseteq 2^A$。
 
-   再证 $(A\setminus C) \cup
-   (B\setminus C) \subseteq (A\cup B) \setminus C$。
+%     C. 对每个集合$A$，$A \in 2^A$。
 
-   对任意的$x$，如果$x \in (A\setminus C) \cup
-   (B\setminus C)$，则$x \in A
-   \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
-   B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
-   \notin C$, 因此$x \in (A\cup B) \setminus C$。
- \end{proof}
+%     D. 对每个集合$A$，$A \subseteq 2^A$。
+%   \end{Exercise1}
 
-\newtheorem*{Exercise1.5}{练习1.5}
+%     \begin{Exercise1}
+%    设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\{\phi, \{\phi\}, \{\{\phi\}\}, \{\phi, \{\phi\}\}}$。
+%   \end{Exercise1}
 
-    \begin{Exercise1.5}
-      下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
-    \end{Exercise1.5}
+%   \begin{Exercise1}
+%    设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
+%    (B\setminus C)$。
+%  \end{Exercise1}
+%   \begin{proof}[证明]
+%    先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
+%    (B\setminus C)$。
 
-    \begin{proof}[解]
-      该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，则$(A
-      \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
-此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
-    \end{proof}
+%    对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
+%    \notin C$，从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
+%    且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
+%    \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
+%    (B\setminus C)$。
+
+%    再证 $(A\setminus C) \cup
+%    (B\setminus C) \subseteq (A\cup B) \setminus C$。
+
+%    对任意的$x$，如果$x \in (A\setminus C) \cup
+%    (B\setminus C)$，则$x \in A
+%    \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
+%    且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
+%    B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
+%    \notin C$, 因此$x \in (A\cup B) \setminus C$。
+%  \end{proof}
+
+%     \begin{Exercise1}
+%       下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
+%     \end{Exercise1}
+
+%     \begin{proof}[解]
+%       该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，则$(A
+%       \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
+% 此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
+%     \end{proof}
 
 \chapter{}
 %%% Local Variables:
