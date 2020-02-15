@@ -56,48 +56,48 @@
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{1. 集合的概念}
-  \begin{tabular}{cc|c}
-    p& q& p $\land$ q\\
-    \hline
-    T&T&T\\
-    T&F&F\\
-    F&T&F\\
-    F&F&F\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{cc|c}
-    p& q& p $\lor$ q\\
-    \hline
-    T&T&T\\
-    T&F&T\\
-    F&T&T\\
-    F&F&F\\
-  \end{tabular}\hspace{1cm}
-  \begin{tabular}{c|c}
-    p& $\lnot$ p\\
-    \hline
-    T&F\\
-    F&T\\
-  \end{tabular}
+% \begin{frame}
+%   \frametitle{1. 集合的概念}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\land$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&F\\
+%     F&T&F\\
+%     F&F&F\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\lor$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&T\\
+%     F&T&T\\
+%     F&F&F\\
+%   \end{tabular}\hspace{1cm}
+%   \begin{tabular}{c|c}
+%     p& $\lnot$ p\\
+%     \hline
+%     T&F\\
+%     F&T\\
+%   \end{tabular}
 
-    \begin{tabular}{cc|c}
-    p& q& p $\to$ q\\
-    \hline
-    T&T&T\\
-    T&F&F\\
-    F&T&T\\
-    F&F&T\\
-  \end{tabular}\hspace{0.87cm}
-  \begin{tabular}{cc|c}
-    p& q& p $\leftrightarrow$ q\\
-    \hline
-    T&T&T\\
-    T&F&F\\
-    F&T&F\\
-    F&F&T\\
-  \end{tabular}
-\end{frame}
+%     \begin{tabular}{cc|c}
+%     p& q& p $\to$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&F\\
+%     F&T&T\\
+%     F&F&T\\
+%   \end{tabular}\hspace{0.87cm}
+%   \begin{tabular}{cc|c}
+%     p& q& p $\leftrightarrow$ q\\
+%     \hline
+%     T&T&T\\
+%     T&F&F\\
+%     F&T&F\\
+%     F&F&T\\
+%   \end{tabular}
+% \end{frame}
 
 \begin{frame}
   \frametitle{1. 集合的概念}
@@ -111,21 +111,10 @@
   \frametitle{2. 子集、集合的相等}
 
   \begin{Def}
-    设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，并且$B$中的每个元素都是$A$中的元素,则称$A$与$B$\alert{相等}，并记为\\ $A=B$。
-  \end{Def}
-  \begin{itemize}
-\pause
-  \item   $\{1,2,3,4,5\} = \{3,4,2,1,5\}$
-\pause
-\item $\{x \in \mathcal{R} | x^2 -5x + 6 = 0\} = \{2,3\}$
-  \end{itemize}
-\end{frame}
-\begin{frame}
-  \frametitle{2. 子集、集合的相等}
-  \begin{Def}
-设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$为$B$的
-\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$并且$A \neq B$,则称 $A$为$B$ 的\alert{真子集}，记为$A\subset B$。    
-  \end{Def}
+    设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$为$B$的
+\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$且存在$x\in B$使得$x \notin A$,则称 $A$为$B$ 的\alert{真子集}，记为$A\subset B$。    
+
+\end{Def}
   \begin{itemize}
 \pause
   \item   $\{1,2,4\} \subseteq \{1,2,3,4,5\}$
@@ -135,8 +124,21 @@
 \end{frame}
 \begin{frame}
   \frametitle{2. 子集、集合的相等}
+  \begin{Def}
+    设$A$，$B$为两个集合，如果$A \subseteq B$且$B \subseteq A$，则称$A$与$B$\alert{相等}，并记为$A=B$。
+  \end{Def}
+    \begin{itemize}
+\pause
+  \item   $\{1,2,3,4,5\} = \{3,4,2,1,5\}$
+\pause
+\item $\{x \in \mathcal{R} | x^2 -5x + 6 = 0\} = \{2,3\}$
+  \end{itemize}
+
+\end{frame}
+\begin{frame}
+  \frametitle{2. 子集、集合的相等}
   \begin{Thm}
-   空集是任一个集合的子集且空集是唯一的。 
+   空集为任一个集合的子集且空集是唯一的。 
   \end{Thm}
 \end{frame}
 \begin{frame}
@@ -233,7 +235,7 @@
   \frametitle{3. 集合的基本运算}
 \begin{minipage}{0.69\linewidth}
   \begin{Def}
-    在许多实际问题中，常以某个集合$S$为出发点，而所涉及的集合都是$S$的子集。这个包含所考虑的所有集合的集合$S$，称为该问题的\alert{全集}。如果$A$是$S$的子集，则差集$S \setminus A$称为集合$A$对集合$S$的\alert{余集}，记为$A^c$。
+    在许多实际问题中，常以某个集合$S$为出发点，而所涉及的集合都是$S$的子集。这个包含所考虑的所有集合的集合$S$，称为该问题的\alert{全集}。如果$A$为$S$的子集，则差集$S \setminus A$称为集合$A$对集合$S$的\alert{余集}，记为$A^c$。
     \begin{equation*}
       A^c = \{x|x \in S \land x \notin A\}
     \end{equation*}
@@ -462,7 +464,7 @@
 \begin{frame}
   \frametitle{3. 集合的运算}
   \begin{Def}
-    两个对象按照一定的顺序排列构成的整体称为一个\alert{有序对}。如果第一个对象为 $a$ ，第二个对象为 $b$ ，则该有序对记为 $(a,b)$~。
+    两个对象按照一定的顺序排列构成的整体称为一个\alert{有序对}。如果第一个对象为 $a$ ，第二个对象为 $b$ ，则该有序对记为 $(a,b)$。
 
     $(a,b)=(c,d)$ 当且仅当 $a=c$ 并且 $b=d$。
   \end{Def}\pause
@@ -519,7 +521,7 @@ $(a_1,a_2, \ldots, a_n)=(b_1,b_2, \ldots, b_n)$当且仅当$a_1=b_1$,$a_2=b_2$�
 \begin{frame}
   \frametitle{6. 有穷集合的基数}
   \begin{Def}
-    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的\alert{映射}$f$是一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的\alert{映射}$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
     从$X$到$Y$的映射$f$常记为$f:X\to Y$。
   \end{Def}
     \begin{Def}
@@ -675,7 +677,7 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
 \begin{frame}
 \frametitle{6. 有穷集合的基数}
 \begin{Ex}
-  在1000名大学毕业生的调查中，每个人至少掌握了一门外语，其中804人掌握了英语，205人掌握了日语，190人掌握了 俄语，125  人 既 掌 握 了 英 语 又 掌 握 了 日 语，57人既掌握了日语又掌握了俄语，85人既掌握了英语又掌握了俄语。试求这1000名大学生，英语、日语、俄语全掌握的有多少人。
+  在1000名大学毕业生的调查中，每个人至少掌握了一门外语，其中804人掌握了英语，205人掌握了日语，190人掌握了 俄语，125  人 既 掌 握 了 英 语 又 掌 握 了 日 语，57人既掌握了日语又掌握了俄语，85人既掌握了英语又掌握了俄语。试求这1000名大学生，英语、日语、俄语全掌握的有多少人？
 \end{Ex}
 \end{frame}
 \begin{frame}
@@ -755,114 +757,7 @@ $(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap
   \end{Exercise}  
 \end{frame}
 
-\begin{frame}
-  \frametitle{习题}
-    \begin{Exercise1}
-   设集合$S=\{\phi, \{\phi\}\}$，则$2^S=\underline{\quad\quad\quad}$。
-  \end{Exercise1}
-  \begin{Exercise1}
-    下列命题中哪个是假的？
 
-    A. 对每个集合$A$，$\phi \in 2^A$。
-
-    B. 对每个集合$A$，$\phi \subseteq 2^A$。
-
-    C. 对每个集合$A$，$A \in 2^A$。
-
-    D. 对每个集合$A$，$A \subseteq 2^A$。
-  \end{Exercise1}
-  \begin{Exercise1}
-    设集合$A=\{1,2,3\}$，$B=\{2,3,4\}$，则$A\cup B=\underline{\quad\quad\quad}$，$A\cap B=\underline{\quad\quad\quad}$，$A\setminus B=\underline{\quad\quad\quad}$，$A\bigtriangleup B=\underline{\quad\quad\quad}$，$A\times B=\underline{\quad\quad\quad}$。
-  \end{Exercise1}
-\end{frame}
-\begin{frame}
-  \frametitle{习题}
-  \begin{Exercise1}
-   设$A$，$B$，$C$为集合，证明：$(A\cup B) \setminus C = (A\setminus C) \cup
-   (B\setminus C)$。
- \end{Exercise1}
- \begin{proof}[证明]\justifying\let\raggedright\justifying
-   先证$(A\cup B) \setminus C \subseteq (A\setminus C) \cup
-   (B\setminus C)$。
-
-   对任意的$x$，如果$x \in (A\cup B) \setminus C$，则$x \in (A\cup B)$并且$x
-   \notin C$，　从而$x \in A$或者$x \in B$，并且$x \notin C$，即$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立。于是，$x \in A
-   \setminus C$或者$x \in B \setminus C$，因此，$x \in (A\setminus C) \cup
-   (B\setminus C)$。
-
-   再证 $(A\setminus C) \cup
-   (B\setminus C) \subseteq (A\cup B) \setminus C$。
-
-   对任意的$x$，如果$x \in (A\setminus C) \cup
-   (B\setminus C)$，则$x \in A
-   \setminus C$或者$x \in B \setminus C$，从而$x \in A$并
-   且$x \notin C$成立，或者$x \in B$并且$x \notin C$成立，即$x \in A$或者$x \in
-   B$，并且$x \notin C$，于是$x \in (A\cup B)$并且$x
-   \notin C$, 因此$x \in (A\cup B) \setminus C$。
- \end{proof}
-\end{frame}
-\begin{frame}
-  \frametitle{习题}
-    \begin{Exercise1}
-      下列等式是否成立：$(A\cup B) \setminus C = A \cup (B\setminus C)$?
-    \end{Exercise1}
-    \begin{proof}[解]
-      该等式不成立。举反例如下：设$A = \{1\}, B = \{1\}, C=\{1\}$，　则$(A
-      \cup B)\setminus C = \phi $，而$A \cup (B\setminus C) = \{1\}$，　
-此时$(A\cup B) \setminus C \neq A \cup (B\setminus C)$。
-    \end{proof}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{习题}
-  \begin{Exercise1}
-下列命题中哪个是真的？
-
-A. 对任何集合$A$，$B$，$2^{A\cup B} = 2^A \cup 2^B$。
-
-B. 对任何集合$A$，$B$，$2^{A\cap B} = 2^A \cap 2^B$。
-
-C. 对任何集合$A$，$B$，$2^{A\setminus B} = 2^A \setminus 2^B$。
-
-D. 对任何集合$A$，$B$，$2^{A\bigtriangleup B} = 2^A \bigtriangleup 2^B$。
-  \end{Exercise1}
-  \begin{Exercise1}
-    设$A$，$B$，$C$为集合，并且$A\cup B = A \cup C$，则下列哪个断言成立？
-
-    A. $B = C$
-
-    B. $A \cap B = A \cap C$
-
-    C. $A \cap B^c = A \cap C^c$
-
-    D. $A^c \cap B = A^c \cap C$
-  \end{Exercise1}
-\end{frame}
-\begin{frame}
-  \frametitle{习题}
-  \begin{Exercise1}
-    设$A$，$B$，$C$，$D$为任意四个集合，证明
-
-    $(A \cap B) \times (C \cap D) =
-    (A\times C) \cap (B \times D)$
-  \end{Exercise1}
-  \begin{Exercise1}
-   设$A$，$B$，$C$为集合，化简
-
-$(A \cap B \cap C)\cup (A^c \cap B \cap C) \cup (A \cap B^c \cap C) \cup (A \cap B \cap C^c) \cup (A^c \cap B^c \cap C) \cup (A \cap B^c \cap C^c) \cup (A^c \cap B \cap C^c)$
-  \end{Exercise1}
-  \begin{Exercise1}
-   证明
-
-1) $A\bigtriangleup B = (A\cup B) \cap (A^c \cup B^c)$
-
-2) $(A \bigtriangleup B)^c = (A \cap B) \cup (A^c \cap B^c)$
-
-3) $(A \bigtriangleup B)^c = (A^c \cup B) \cap (A \cup B^c)$
-  \end{Exercise1}  
-\end{frame}
 
 \end{CJK*}
 \end{document}
