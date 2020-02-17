@@ -1,8 +1,0 @@
-\beamer@sectionintoc {1}{映射}{2}{0}{1}
-\beamer@sectionintoc {2}{鸽笼原理}{10}{0}{2}
-\beamer@sectionintoc {3}{映射的一般性质}{15}{0}{3}
-\beamer@sectionintoc {4}{映射的合成}{20}{0}{4}
-\beamer@sectionintoc {5}{逆映射}{22}{0}{5}
-\beamer@sectionintoc {6}{置换}{28}{0}{6}
-\beamer@sectionintoc {7}{代数运算}{36}{0}{7}
-\beamer@sectionintoc {8}{集合的特征函数}{56}{0}{8}
