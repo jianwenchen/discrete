@@ -34,7 +34,7 @@
     设$f:A \to Y$，$A \subseteq X$， 则称$f$为$X$上的一个部分映射。
   \end{Def}
   \begin{Def}
-    两个映射$f$与$g$称为是相等的当且仅当$f$和$g$都为$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
+    两个映射$f$与$g$称为是相等的当且仅当$f$和$g$都为从$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
   \end{Def}
   \begin{Def}
     设$f:X\to X$，如果$\forall x \in X, f(x) = x$，则称$f$为$X$上的恒等映射。$X$上的恒等映射常记为$I_X$。
@@ -89,9 +89,16 @@
   \begin{Def}
      设$f:X\to Y$为双射，$f$的逆映射$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
    \end{Def}
+   \begin{Example}
+     设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，则$f^{-1}=\{(4,1),(5,2),(6,3)\}$。
+   \end{Example}
     \begin{Def}
      设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的逆映射。
    \end{Def}
+      \begin{Example}
+     设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，$g=\{(4,1),(5,2),(6,3)\}$,由于$f\circ g = I_{Y}$且$ g\circ f = I_{X}$，$f^{-1}=g$。
+   \end{Example}
+
    以上两个定义是等价的。
 
      \begin{Thm}
@@ -167,7 +174,7 @@
     当$n \geq 2$时， $n$次奇置换的个数与$n$次偶置换的个数相等，都等于$\frac{n!}{2}$。
   \end{Thm}
       \begin{Def}
-    一个集合及其在该集合上定义的若干个代数运算合成为一个代数系。
+    一个集合及其在该集合上定义的若干个代数运算合称为一个代数系。
   \end{Def}
 我们熟知的实数集$R$，与其上的加法运算"$+$"和乘法运算"$*$"一起构成了一个代数系，满足如下性质：
   \begin{Thm}
@@ -203,7 +210,7 @@
     设“$\circ$”为集合$X$上的一个二元代数运算。如果$\forall a, b, c \in X$，恒有$(a \circ b) \circ c = a \circ (b \circ c)$， 则称二元代数运算“$\circ$”满足结合律。
   \end{Def}
   \begin{Def}
-    设“+”与“$\circ$”为集合$X$上的两个二元代数运算。\\如果$\forall a, b, c \in X$，恒有\[a \circ (b + c) = a \circ b + a \circ c,\] 则称二元代数运算“$\circ$”对“$+$”满足左分配律。
+    设“$+$”与“$\circ$”为集合$X$上的两个二元代数运算。\\如果$\forall a, b, c \in X$，恒有\[a \circ (b + c) = a \circ b + a \circ c,\] 则称二元代数运算“$\circ$”对“$+$”满足左分配律。
     如果$\forall a, b, c \in X$，恒有\[(b + c)\circ a = b \circ a + c \circ a,\] 则称二元代数运算“$\circ$”对“$+$”满足右分配律。
   \end{Def}
   \begin{Def}
@@ -295,7 +302,7 @@
     \end{align}
   \end{Def}
   \begin{Thm}
-    设$X$是一个集合，则代数系$(2^X, \cup, \cap, ^c)$与$(Ch(X), \lor, \land, \bar{} \ )$同构。
+    设$X$为一个集合，则代数系$(2^X, \cup, \cap, ^c)$与$(Ch(X), \lor, \land, \bar{} \ )$同构。
   \end{Thm}
 
   \begin{Thm}[鸽笼原理]
