@@ -110,9 +110,9 @@
 \begin{frame}
   \frametitle{2. 子集、集合的相等}
 
-  \begin{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
     设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$为$B$的
-\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$且存在$x\in B$使得$x \notin A$,则称 $A$为$B$ 的\alert{真子集}，记为$A\subset B$。    
+\alert{子集}，记为$A \subseteq B$; 如果$A \subseteq B$且存在$x\in B$使得$x \notin A$,则称 $A$为$B$的\alert{真子集}，记为$A\subset B$。    
 \end{Def}
   \begin{itemize}
 \pause
@@ -142,12 +142,17 @@
 \end{frame}
 \begin{frame}
   \frametitle{2. 子集、集合的相等}
-
 \begin{Def}
   集合$S$的所有子集构成的集合称为$S$的幂集，记为$2^S$或者$\mathcal{P}(S)$。
 \end{Def}\pause
 \begin{Ex}
-  设$S=\{1,2,3\}$，则$2^s=\{\phi, \{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$。
+    $2^{\phi}=\{\phi\}$
+
+    $2^{\{1\}}=\{\phi, \{1\}\}$
+
+  $2^{\{1,2\}}=\{\phi, \{1\},\{2\},\{1,2\}\}$
+  
+  $2^{\{1,2,3\}}=\{\phi, \{1\},\{2\},\{1,2\},\{3\},\{1,3\},\{2,3\},\{1,2,3\}\}$
 \end{Ex}
 \end{frame}
 \section{集合的基本运算}
@@ -505,7 +510,6 @@ $(a_1,a_2, \ldots, a_n)=(b_1,b_2, \ldots, b_n)$当且仅当$a_1=b_1$,$a_2=b_2$�
     如果$X=\{a_1,b_1\}$，$Y=\{a_2,b_2\}$，$Z=\{a_3,b_3\}$ 那么 $X \times Y \times Z = ?$
 \small{
     \begin{equation*}
-\pause
       \begin{split}
        X \times Y \times Z =& \{ (a_1,a_2, a_3), (a_1,a_2, b_3), (a_1, b_2, a_3), (a_1,b_2, b_3), \\
 &(b_1, a_2, a_3), (b_1, a_2, b_3), (b_1, b_2, a_3), (b_1, b_2, b_3) \}\\
@@ -712,13 +716,13 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   \begin{Exercise}
 下列命题中哪个是真的？
 
-A. 对任何集合$A$，$B$，$2^{A\cup B} = 2^A \cup 2^B$。
+A. 对任意集合$A$，$B$，$2^{A\cup B} = 2^A \cup 2^B$。
 
-B. 对任何集合$A$，$B$，$2^{A\cap B} = 2^A \cap 2^B$。
+B. 对任意集合$A$，$B$，$2^{A\cap B} = 2^A \cap 2^B$。
 
-C. 对任何集合$A$，$B$，$2^{A\setminus B} = 2^A \setminus 2^B$。
+C. 对任意集合$A$，$B$，$2^{A\setminus B} = 2^A \setminus 2^B$。
 
-D. 对任何集合$A$，$B$，$2^{A\bigtriangleup B} = 2^A \bigtriangleup 2^B$。
+D. 对任意集合$A$，$B$，$2^{A\bigtriangleup B} = 2^A \bigtriangleup 2^B$。
   \end{Exercise}
   \begin{Exercise}
     设$A$，$B$，$C$为集合，并且$A\cup B = A \cup C$，则下列哪个断言成立？
