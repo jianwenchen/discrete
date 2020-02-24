@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem*{Ex}{选择}
+\newtheorem*{yesno}{判断}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \begin{Ex}
+       下列命题中哪个是假的？
+
+    A. 对每个集合$A$，$\phi \in 2^A$。
+
+    B. 对每个集合$A$，$\phi \subseteq 2^A$。
+
+    C. 对每个集合$A$，$A \in 2^A$。
+
+    D. 对每个集合$A$，$A \subseteq 2^A$。
+
+  \end{Ex}
+  
+  \begin{yesno}
+        设$X$和$A$为任意两个集合，则$A \in 2^X$等价于$A \subseteq X$。
+      \end{yesno}
+\begin{yesno}
+    对每个集合$A$，$\{A\}\subseteq 2^A$。  
+\end{yesno}
+      
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
