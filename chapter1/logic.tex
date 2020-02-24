@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem*{Example}{例}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  命题：可以判断真假的陈述句。通常，我们用$T$表示真，用$F$表示假。
+  \begin{Example}\quad
+    
+    \begin{itemize}
+    \item 2是偶数。(真命题)
+    \item 北京是中国的首都。（真命题）
+    \item 多伦多是加拿大的首都。（假命题）
+    \item 这句话是假的。（不能判断真假的陈述句，不是命题）
+    \end{itemize}
+  \end{Example}
+  谓词：命题的谓语部分。
+  
+  \begin{Example}\quad
+    
+    \begin{description}
+    \item     [$P(x): x$ 是偶数]　这里$P$为一元谓词，表示“是偶数”。当$x$为某个确定的数字时，$P(x)$则对应一个命题。例如$P(2)$为真命题，$P(1)$为假命题。这里,$P$之所以被称为一元谓词，是因为$P(x)$只包含一个变量$x$。
+    \item     [$P(x,y): x >y$]  这里$P$为二元谓词，表示$>$。当$x$和$y$为确定的数字时，$P(x,y)$则对应一个命题。例如$1>0$为真命题，$0>1$为假命题。这里，$P$之所以被称为二元谓词，是因为$P(x,y)$包含两个变量$x$和$y$。
+    \end{description}
+相应的，有三元谓词，四元谓词，......
+\end{Example}
+
+我们还可以用如下方式由谓词得到命题：
+
+\begin{description}
+\item [$\forall x P(x)$] 对任意的$x$，$P(x)$。For All中的$A$上下颠倒可以得到$\forall$。
+\item [$\exists x P(x)$] 存在$x$，$P(x)$。There Exists中的$E$左右颠倒可以得到$\exists$。
+\end{description}
+
+命题可以由联结词$\lnot$，$\land$，$\lor$，$\to$，$\leftrightarrow$联结而构成复合命题。
+
+设$p$为命题，则$\lnot p$表示“$p$不成立”。
+
+ \begin{tabular}{c|c}
+    p& $\lnot$ p\\
+    \hline
+    T&F\\
+    F&T\\
+  \end{tabular}
+
+  设$p$和$q$为两个命题，则$p\land q$表示“$p$成立，并且$q$成立”。
+  
+  \begin{tabular}{cc|c}
+    p& q& p $\land$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&F\\
+  \end{tabular}
+
+  设$p$和$q$为两个命题，则$p\lor q$表示“$p$成立，或者$q$成立”。
+  
+  \begin{tabular}{cc|c}
+    p& q& p $\lor$ q\\
+    \hline
+    T&T&T\\
+    T&F&T\\
+    F&T&T\\
+    F&F&F\\
+  \end{tabular}
+
+设$p$和$q$为两个命题，则$p\to q$表示“如果$p$成立，那么$q$成立”。  
+
+    \begin{tabular}{cc|c}
+    p& q& p $\to$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&T\\
+    F&F&T\\
+    \end{tabular}\hspace{0.87cm}
+
+    这里需要注意的是，当$p$为假时，则$p\to q$一定为真，这是所有数学家共同的约定。
+    下面的例子可以帮助大家更好的理解其实我们已经用到了这个约定。
+
+    对任意的实数$x$,当$x>1$时，$x^2 > 1$。该命题显然是真命题，可以符号化为$\forall x \; x > 1 \to x^2 > 1$。那么，既然对于任意的$x$，$x>1 \to x^2>1$成立，则
+
+    １）当$x=2$时, $2 > 1 \to 2^2 >1$成立，这对应于以上真值表的第一行；
+
+    ２）当$x=0$时，$0 > 1 \to 0^2 > 1$成立，这对应于以上真值表的第四行；
+
+    ３）当$x=-2$时，$-2>1 \to (-2)^2 > 1$成立，这对应于以上真值表的第三行。
+    
+设$p$和$q$为两个命题，则$p\to q$表示“$p$等价于$q$”。  
+
+  \begin{tabular}{cc|c}
+    p& q& p $\leftrightarrow$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&T\\
+  \end{tabular}
+
+  请大家思考，设$p$，$q$，$r$为命题，则$(p\lor q)\land r$所代表的命题的含义是什么？$(p\land r)\lor (q \land r)$所代表的命题的含义是什么？这两个命题是等价的吗？
+  我们可以通过枚举$p$,$q$,$r$依次取值为$T$和$F$时,$(p\lor q)\land r$和$(p\land r)\lor (q \land r)$同时取值为$T$或$F$，从而验证这两个命题是等价的，如下所示：
+
+    \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$& $(p\lor q)\land r$&$(p\land r)\lor (q \land r)$\\
+    \hline
+    T&T&T&T&T\\
+    T&F&T&T&T\\
+    F&T&T&T&T\\
+      F&F&T&F&F\\
+    T&T&F&F&F\\
+    T&F&F&F&F\\
+    F&T&F&F&F\\
+      F&F&F&F&F\\      
+  \end{tabular}
+
+  用同样的方法我们可以验证:
+
+  $(p\land q)\lor r$与$(p\lor r)\land (q \lor r)$是等价的。
+
+      \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$&$(p\land q)\lor r$ &$(p\lor r)\land (q \lor r)$\\
+    \hline
+    T&T&T&T&T\\
+    T&F&T&T&T\\
+    F&T&T&T&T\\
+      F&F&T&T&T\\
+    T&T&F&T&T\\
+    T&F&F&F&F\\
+    F&T&F&F&F\\
+        F&F&F&F&F\\
+  \end{tabular}
+
+
+  $\lnot (p\land q)$与$\lnot p \lor \lnot q$是等价的。
+
+      \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$&$\lnot (p\land q)$ &$\lnot p \lor \lnot q$\\
+    \hline
+    T&T&T&F&F\\
+    T&F&T&T&T\\
+    F&T&T&T&T\\
+      F&F&T&T&T\\      
+  \end{tabular}
+
+
+  $\lnot (p \lor q)$与$\lnot p \land \lnot q$是等价的。
+  
+      \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$&$\lnot (p \lor q)$&$\lnot p \land \lnot q$\\
+    \hline
+    T&T&T&F&F\\
+    T&F&T&F&F\\
+    F&T&T&F&F\\
+    F&F&T&T&T\\      
+  \end{tabular}
+
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
