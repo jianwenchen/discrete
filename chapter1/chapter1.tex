@@ -528,7 +528,7 @@ $(a_1,a_2, \ldots, a_n)=(b_1,b_2, \ldots, b_n)$当且仅当$a_1=b_1$,$a_2=b_2$�
     从$X$到$Y$的映射$f$常记为$f:X\to Y$。
   \end{Def}
     \begin{Def}
-    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则 称 $f$ 为从$X$到$Y$的\alert{单射}。
+    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的\alert{单射}。
   \end{Def}
   \begin{Def}
     设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的\alert{满射}。
@@ -601,7 +601,7 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
 
   \pause 当$n=1$时，结论显然成立。
 
-  \pause 假设定理的结论对$n \geq 1$个有穷集合成立，往证对$n+1$个有穷集合定理的结论也成立。实际上，
+  \pause 假设当$n=k(k \geq 1)$时结论成立，往证当$n=k+1$时结论也成立。实际上，
   \renewcommand{\qedsymbol}{}
 \end{proof}
 \end{frame}
@@ -610,10 +610,10 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   \frametitle{6. 有穷集合的基数}
   \begin{equation}\label{eq1}
     \begin{split}
-      &|\bigcup_{i=1}^{n+1}A_i|\\
-      =&|(\bigcup_{i=1}^nA_i) \cup A_{n+1}|\\
-      =&|\bigcup_{i=1}^nA_i| + |A_{n+1}| - |(\bigcup_{i=1}^nA_i) \cap A_{n+1}|\\
-      =&|\bigcup_{i=1}^nA_i| + |A_{n+1}| - |(A_1 \cap A_{n+1}) \cup (A_2 \cap A_{n+1}) \cup \cdots \cup (A_n \cap A_{n+1})|
+      &|\bigcup_{i=1}^{k+1}A_i|\\
+      =&|(\bigcup_{i=1}^kA_i) \cup A_{k+1}|\\
+      =&|\bigcup_{i=1}^kA_i| + |A_{k+1}| - |(\bigcup_{i=1}^kA_i) \cap A_{k+1}|\\
+      =&|\bigcup_{i=1}^kA_i| + |A_{k+1}| - |(A_1 \cap A_{k+1}) \cup (A_2 \cap A_{k+1}) \cup \cdots \cup (A_k \cap A_{k+1})|
     \end{split}
   \end{equation}
   
@@ -624,10 +624,10 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   由归纳假设
   \begin{equation}\label{eq2}
 \begin{split}
-    &|\bigcup_{i=1}^nA_i|\\
-=&\sum_{i=1}^n|A_i| - \sum_{1\leq i < j \leq n}|A_i \cap A_j| + \sum_{1 \leq  i < j < k \leq n}|A_i \cap A_j \cap A_k|\\
+    &|\bigcup_{i=1}^kA_i|\\
+=&\sum_{i=1}^k|A_i| - \sum_{1\leq i < j \leq k}|A_i \cap A_j| + \sum_{1 \leq  i < j < t \leq k}|A_i \cap A_j \cap A_t|\\
 -&\ldots\\
-+&(-1)^{n+1}|A_1 \cap A_2 \cap \cdots \cap A_n| 
++&(-1)^{k+1}|A_1 \cap A_2 \cap \cdots \cap A_k| 
   \end{split}
 \end{equation}
   
@@ -638,15 +638,15 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   \small{
   \begin{equation}\label{eq3}
     \begin{split}
-      &|(A_1 \cap A_{n+1}) \cup (A_2 \cap A_{n+1}) \cup \cdots \cup (A_n \cap A_{n+1})|\\
-      =&\sum_{i=1}^n|A_i \cap A_{n+1}| - \sum_{1\leq i < j \leq n}|(A_i \cap A_{n+1}) \cap (A_j \cap A_{n+1}) |\\
-      &+ \sum_{1 \leq  i < j < k \leq n}|(A_i \cap A_{n+1}) \cap (A_j \cap A_{n+1}) \cap (A_k \cap A_{n+1})|\\
+      &|(A_1 \cap A_{k+1}) \cup (A_2 \cap A_{k+1}) \cup \cdots \cup (A_k \cap A_{k+1})|\\
+      =&\sum_{i=1}^k|A_i \cap A_{k+1}| - \sum_{1\leq i < j \leq k}|(A_i \cap A_{k+1}) \cap (A_j \cap A_{k+1}) |\\
+      &+ \sum_{1 \leq  i < j < t \leq k}|(A_i \cap A_{k+1}) \cap (A_j \cap A_{k+1}) \cap (A_t \cap A_{k+1})|\\
 &-\ldots\\
-&+(-1)^{n+1}|(A_1 \cap A_{n+1}) \cap (A_2 \cap A_{n+1}) \cap \cdots \cap (A_n \cap A_{n+1})| \\
-      =&\sum_{i=1}^n|A_i \cap A_{n+1}| - \sum_{1\leq i < j \leq n}|(A_i  \cap A_j \cap A_{n+1}) |\\
-      &+ \sum_{1 \leq  i < j < k \leq n}|A_i  \cap A_j  \cap A_k \cap A_{n+1}|\\
+&+(-1)^{k+1}|(A_1 \cap A_{k+1}) \cap (A_2 \cap A_{k+1}) \cap \cdots \cap (A_k \cap A_{k+1})| \\
+      =&\sum_{i=1}^k|A_i \cap A_{k+1}| - \sum_{1\leq i < j \leq k}|(A_i  \cap A_j \cap A_{k+1}) |\\
+      &+ \sum_{1 \leq  i < j < t \leq n}|A_i  \cap A_j  \cap A_t \cap A_{k+1}|\\
 &-\ldots\\
-&+(-1)^{n+1}|A_1  \cap A_2  \cap \cdots \cap A_n \cap A_{n+1}| \\
+&+(-1)^{k+1}|A_1  \cap A_2  \cap \cdots \cap A_k \cap A_{k+1}| \\
     \end{split}
   \end{equation}}
 \end{frame}
@@ -655,10 +655,10 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
   将\eqref{eq2}和\eqref{eq3}代入\eqref{eq1}得
   \begin{equation*}
     \begin{split}
-    &|\bigcup_{i=1}^{n+1}A_i|\\
-=&\sum_{i=1}^{n+1}|A_i| - \sum_{1\leq i < j \leq {n+1}}|A_i \cap A_j| + \sum_{1 \leq  i < j < k \leq {n+1}}|A_i \cap A_j \cap A_k|\\
+    &|\bigcup_{i=1}^{k+1}A_i|\\
+=&\sum_{i=1}^{k+1}|A_i| - \sum_{1\leq i < j \leq {k+1}}|A_i \cap A_j| + \sum_{1 \leq  i < j < t \leq {k+1}}|A_i \cap A_j \cap A_t|\\
 -&\ldots\\
-+&(-1)^{n+1+1}|A_1 \cap A_2 \cap \cdots \cap A_{n+1}|
++&(-1)^{k+1+1}|A_1 \cap A_2 \cap \cdots \cap A_{k+1}|
 \end{split}
 \end{equation*}
 \end{frame}
@@ -670,7 +670,7 @@ $|A \cup B| = |A| + |B| - |A \cap B|$。
     \begin{split}
       &|\bigcap_{i=1}^nA_{i}^c|\\
 =&|S| - \sum_{i=1}^n|A_i| + \sum_{1\leq i < j \leq n}|A_i \cap A_j|
--\sum_{1 \leq  i < j < k \leq n}|A_i \cap A_j \cap A_k| + \cdots \\
+-\sum_{1 \leq  i < j < t \leq n}|A_i \cap A_j \cap A_t| + \cdots \\
 +&(-1)^n|A_1 \cap A_2 \cap \cdots \cap A_n|
     \end{split}
   \end{equation*}
