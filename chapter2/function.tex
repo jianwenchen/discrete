@@ -89,19 +89,42 @@
   \begin{Def}
      设$f:X\to Y$为双射，$f$的逆映射$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
    \end{Def}
+
+   \begin{Def}\label{inverse1}
+          设$f:X\to Y$为一个双射, 则$g:Y\to X, g=\{(y,x)|(x,y)\in f\}$称为$f$的逆映射，记为$g=f^{-1}$。
+   \end{Def}
    \begin{Example}
      设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，则$f^{-1}=\{(4,1),(5,2),(6,3)\}$。
    \end{Example}
-    \begin{Def}
+    \begin{Def}\label{inverse2}
      设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的逆映射。
    \end{Def}
       \begin{Example}
      设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，$g=\{(4,1),(5,2),(6,3)\}$,由于$f\circ g = I_{Y}$且$ g\circ f = I_{X}$，$f^{-1}=g$。
    \end{Example}
+\begin{Thm}
+   定义\ref{inverse1}和定义\ref{inverse2}是等价的。
+ \end{Thm}
+ \begin{proof}[证明]
+   设$f$为从集合$X$到集合$Y$的映射，$g$为从集合$Y$到集合$X$的映射。
 
-   以上两个定义是等价的。
+   以下先假设$g$满足定义\ref{inverse1}，往证$g$满足定义\ref{inverse2}。
 
-     \begin{Thm}
+   假设$f$为从集合$X$到集合$Y$的满射，$g$为从集合$Y$到集合$X$的映射，$g=\{(y,x)|(x,y)\in f\}$，易验证$f\circ g = I_{Y}$且$g\circ f = I_{X}$。
+
+   接下来，假设$g$满足定义\ref{inverse2}，往证$g$满足定义\ref{inverse1}。
+
+   假设$f$为从集合$X$到集合$Y$的映射，存在一个映射$g:Y\to X$使得$f\circ g = I_{Y}$且$g\circ f = I_{X}$,往证$f$为双射，且$g=\{(y,x)|(x,y)\in f\}$。
+
+   对任意的$x_1\in X$，$x_2\in X$，如果$f(x_1)=f(x_2)$，则$g(f(x_1)=g(f(x_2))$，再由$g\circ f = I_{X}$知$x_1=x_2$，从而$f$为单射。对任意的$y\in Y$，由$f\circ g = I_{Y}$知$f(g(y))=y$，从而$f$为满射。这证明了$f$为双射。
+
+   以下证明$g=\{(y,x)|(x,y)\in f\}$，这就是要证明左边的集合等于右边的集合。
+
+   对任意的$(y,x)\in g$，则$x=g(y)$，从而$f(x)=f(g(y))$，由$f\circ g = I_{Y}$知$f(x)=y$，从而$(x,y)\in f$。
+
+   对任意的$(x,y)\in f$，则$y=f(x)$，从而$g(y)=g(f(x))$，由$g\circ f = I_{X}$知$g(y)=x$，从而$(y,x) \in g$。
+ \end{proof}
+ \begin{Thm}
     设$f:X\to Y$为可逆映射，则$(f^{-1})^{-1}=f$。
   \end{Thm}
   \begin{Thm}
@@ -120,6 +143,19 @@
     \item $f$右可逆当且仅当$f$为满射。
     \end{enumerate}
   \end{Thm}
+  \begin{proof}[证明]
+    先证(1)。
+
+设$f$为左可逆的，则存在一个映射 $g:Y\to X$ 使 得 $g\circ f = I_X$。对任意的$x_1\in X$，$x_2\in X$，如果$f(x_1)=f(x_2)$，则$g(f(x_1)=g(f(x_2))$，再由$g\circ f = I_{X}$知$x_1=x_2$，从而$f$为单射。
+
+设$f$为单射，则$f$为从集合$X$到$Im(f)$的双射。于是，有$g:Im(f)\to X$使得$g\circ f = I_X$。扩充$g$到$Y$上：对任意的$y\in Y$，若$y\in Y\setminus Im(f)$，则$g(y)$不变，而当$y\in Im(f)$时，规定$g(y)$为$X$中任意一个固定的元素$x_0$，则$g$为从集合$Y$到集合$X$的映射，且$g\circ f = I_X$。所以，$f$为左可逆的。
+
+再证(2)。
+
+设$f$为右可逆的，则存在一个映射$g:Y\to X$ 使 得 $f\circ g=I_Y$。对任意的$y\in Y$，由$f\circ g = I_{Y}$知$f(g(y))=y$，从而$f$为满射。
+
+设$f$为满射，则对任意的$y\in Y$，$f^{-1}(\{y\})\neq \phi$。令$g:Y\to X$，其定义为，对任意的$y\in Y$，$g(y)=x$，其中$x$为$f^{-1}(\{y\})$中一个特定元素。于是，对任意的$y\in Y$，设$g(y)=x$，则$f(x)=y$，从而$(fg)(y) = f(g(y)) = f(x) = y = I_y(y)$。所以$fg=I_y$，即$f$为右可逆的。
+  \end{proof}
 
   \begin{Def}
     有穷集合$S$到自身的一一对应称为$S$上的一个置换。如果$|S| = n$, 则$S$上的置换就说成是$n$次置换。

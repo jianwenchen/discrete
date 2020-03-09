@@ -178,10 +178,14 @@
    \end{Def}
    \pause
      \begin{block}{定义5.1'}
+     设$f:X\to Y$为一个双射, 则$g:Y\to X, g=\{(y,x)|(x,y)\in f\}$称为$f$的逆映射，记为$g=f^{-1}$。
+   \end{block}
+        \begin{block}{定义5.1''}
      设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的\alert{逆映射}。
    \end{block}
+
    \begin{Thm}
-     定义5.1与定义5.1'是等价的。
+     定义5.1'与定义5.1''是等价的。
    \end{Thm}
 \end{frame}
 \begin{frame}
@@ -684,7 +688,18 @@
     是否存在一个从集合$X$到$X$的一一对应，使得$f=f^{-1}$，但$f \neq I_X$?
   \end{Exercise}
 \end{frame}
+\newtheorem*{Exercise11}{习题11}
 
+\begin{frame}
+  \frametitle{习题选讲}
+  \begin{Exercise11}
+    $n^2+1$个士兵站成一排，则可以使其中的至少$n+1$个士兵向前走一步站成一个按身高从小到大的队列，或站成一个按身高从大到小的队列。
+  \end{Exercise11}
+  $4\quad8\quad9\quad3\quad6\quad1\quad7\quad2\quad5\quad0$
+
+  $3\quad2\quad1\quad3\quad2\quad3\quad1\quad2\quad1\quad1$
+  
+\end{frame}
 \end{CJK*}
 \end{document}
 
