@@ -1,0 +1,44 @@
+\input{p136-3-Ex}
+
+首先，让我们回顾一下刻画实数系的公理系统。
+
+     设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $\forall x \in \mathbb{R} x \neq 0 \to x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+       \item $x \leq x$
+   \item $ x \leq y \land y \leq x \rightarrow x = y$
+   \item $x \leq y \land y \leq z \rightarrow x \leq z$
+   \item $x \leq y \lor y \leq x$ 
+\item $x > y \rightarrow x + z > y + z$
+\item $x > y \land z >0 \rightarrow x * z > y * z$
+\item   $\forall A \subseteq \mathbb{R} (A \neq \phi \land \exists x \in \mathbb{R} (\forall y \in A (y \leq x)) \rightarrow \exists z \in R ((\forall y \in A (y \leq z) )\land ( \forall x \in \mathbb{R} (\forall y \in A (y \leq x) \rightarrow z \leq x))))$   
+    \end{enumerate}
+
+其中最后一条公理为：实数集的任意一个非空子集如果有上界，则必有上确界。
+
+接下来，我们来看结论中涉及的一些基本概念。
+
+设$f:R\to R$为一个函数。如果对任意的$x_1\in R$，$x_2\in R$，$x_1< x_2$，那么$f(x_1) \leq f(x_2)$，则称$f$为单调函数。
+
+设$x_0\in R$，$L\in R$，如果对任意的$\varepsilon\in R$， $\varepsilon> 0$，存在$\delta \in R$，　$\delta > 0$，　只要$|x-x_0|<\delta$，就有$|f(x) - L|<0$，则称函数$f$在$x_0$处的极限为$L$，记为$\lim_{x\to x_0}f(x)=L$。
+
+如果$\lim_{x\to x_0}f(x)=f(x_0)$，则称函数$f$在$x_0$处连续，$x_0$为函数$f$的连续点；如果函数$f$在$x_0$处不连续，则称$x_0$为函数$f$的不连续点。
+
+\begin{proof}[证明]
+  对任意的$x_0\in R$，由单调函数的定义知，集合$\{f(x)|x<x_0\}$有上界$f(x_0)$，从而有上确界，定义$L(x_0)=sup \{f(x)|x<x_0\}$；集合$\{f(x)|x>x_0\}$有下界$f(x_0)$，从而有下确界，定义$U(x_0)=inf \{f(x)|x>x_0\}$。如果$x_1<x_2$，那么$U(x_1)\leq f(\frac{x_1+x_2}{2}) \leq L(x_2)$。另外，如果$x_0$为$f$的不连续点，可以证明$L(x_0) <  U(x_0)$。因此，集合$S=\{(L(x),U(x))|x\text{为函数}$f$\text{的不连续点}\}$中的开区间两两不相交。在$S$中的每个开区间中取一个有理数，则所有这些有理数的集合与函数$f$的所有不连续点构成的集合是对等的，从而$f$的所有不连续点所构成的集合为至多可数的。
+
+  设$x_0$为$f$的不连续点，以下证明$L(x_0) <  U(x_0)$。由$L(x_0)\leq f(x_0) \leq U(x_0)$知$L(x_0) \leq U(x_0)$，因此只需证$L(x_0)\neq U(x_0)$。用反证法，假设$L(x_0)=U(x_0)$，则$L(x_0)=U(x_0)=f(x_0)$。对任意的$\varepsilon >0$，由$L(x_0)$的定义知存在$x'<x_0$使得$f(x')>L(x_0)-\varepsilon=f(x_0)-\varepsilon$；由$U(x_0)$的定义知存在$x''>x_0$使得$f(x'')<U(x_0) + \varepsilon=f(x_0) + \varepsilon$。设$\delta = \min (|x'-x_0|, |x''-x_0|)$，那么当$|x-x_0|< \delta$时，就有$|f(x)-f(x_0)|<\delta$，从而$\lim_{x\to x_0}=f(x_0)$，函数$f$在$x_0$处连续，这与$x_0$为$f$的不连续点矛盾。
+\end{proof}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "p136-3"
+%%% End:
