@@ -70,7 +70,7 @@
 \begin{frame}
   \frametitle{6.2 基本定义}
   \begin{Def}\justifying\let\raggedright\justifying
-    在图$G=(V,E)$中，如果$\{u,v\}\in E$,则称\alert{顶点$u$与$v$邻接};若$x$与$y$是图$G$的两条边，并且仅有一个公共端点，即$|x \cap y|= 1$,则称\alert{边$x$与$y$邻接};如果$x=\{u,v\}$是图$G$的一条边，则称\alert{$u$与$x$互相关联}，同样的，称\alert{$v$与$x$互相关联}。
+    在图$G=(V,E)$中，如果$\{u,v\}\in E$,则称\alert{顶点$u$与$v$邻接};若$x$与$y$为图$G$的两条边，并且仅有一个公共端点，即$|x \cap y|= 1$,则称\alert{边$x$与$y$邻接};如果$x=\{u,v\}$为图$G$的一条边，则称\alert{$u$与$x$互相关联}，同样的，称\alert{$v$与$x$互相关联}。
   \end{Def}
         \centering
     \begin{tikzpicture}[auto,
@@ -115,7 +115,7 @@
 \begin{frame}
   \frametitle{6.2 基本定义}
   \begin{Def}
-    设$v$为图$G=(V,E)$的任意一个顶点，$G$中与$v$关联的边的数目称为顶点$v$的\alert{度}，记为$\deg x$。
+    设$v$为图$G=(V,E)$的任意一个顶点，$G$中与$v$关联的边的数目称为顶点$v$的\alert{度}，记为$\deg v$。
   \end{Def}
    \centering
     \begin{tikzpicture}[auto,
@@ -291,7 +291,7 @@
    \draw[thick] (A) to  (B);
    \draw[thick] (B) to  (E);
  \end{tikzpicture}
- \\ \centering H 
+ \\ \centering H
     \end{minipage}
     \pause
   \begin{Def}
@@ -342,7 +342,7 @@
 
     \pause
   \begin{Def}
-    设$G$的子图$H$具有某种性质，若$G$中不存在与$H$不同的具有此性质且包含$H$的子图，则称$H$是具有此性质的\alert{极大子图}。
+    设图$G$的子图$H$具有某种性质，若$G$中不存在与$H$不同的具有此性质且包含$H$的子图，则称$H$是具有此性质的\alert{极大子图}。
   \end{Def}
 \pause
   \begin{Def}
@@ -570,6 +570,7 @@ $G$
   \begin{Def}
     图$G$的极大连通子图称为$G$的一个\alert{支}。
   \end{Def}
+    \centering
   \begin{minipage}{0.33\linewidth}
     \centering
     \begin{tikzpicture}[auto,
@@ -582,8 +583,7 @@ $G$
    \draw[thick] (B) to  (C);
    \draw[thick] (C) to  (D);
    \draw[thick] (D) to  (A);
- \end{tikzpicture}\\
- $G_1$
+ \end{tikzpicture}
 \end{minipage}\hfill
 \begin{minipage}{0.33\linewidth}
   \centering
@@ -598,8 +598,7 @@ $G$
    \draw[thick] (G) to  (H);
    \draw[thick] (H) to  (E);
    \draw[thick] (E) to  (G);
- \end{tikzpicture}  \\
- $G_2$
+ \end{tikzpicture}  
 \end{minipage}\hfill
 \begin{minipage}{0.33\linewidth}
   \centering
@@ -610,9 +609,11 @@ $G$
    \node[specification] (K) [label=-45:$v_{11}$] at (2,0)  {};
    \draw[thick] (I) to  (J);
    \draw[thick] (J) to  (K);
- \end{tikzpicture}\\
- $G_3$
+ \end{tikzpicture}
 \end{minipage}
+\vspace*{2cm}
+$G$
+
 \end{frame}
 
 \begin{frame}
@@ -707,14 +708,14 @@ $G$
     \item 存在三个顶点，其中的每个顶点都与顶点$v_1$相邻接。不失一般性，不妨设这
       个三个顶点为$v_2,v_3,v_4$。
       \begin{itemize}
-      \item[-] 在顶点$v_2,v_3,v_4$中，存在两个顶点相邻接。
-      \item[-] 在顶点$v_2,v_3,v_4$中，任意两个顶点都不邻接。
+      \item[-] 在顶点$v_2,v_3,v_4$中，存在两个顶点相邻接，此时$G$中存在三角形。
+      \item[-] 在顶点$v_2,v_3,v_4$中，任意两个顶点都不邻接，此时$G^c$中存在三角形。
       \end{itemize}
     \item 存在三个顶点，其中的每个顶点都与顶点$v_1$不邻接。不失一般性，不妨设这
       个三个顶点为$v_2,v_3,v_4$。
       \begin{itemize}
-      \item[-] 在顶点$v_2,v_3,v_4$中，存在两个顶点不邻接。
-      \item[-] 在顶点$v_2,v_3,v_4$中，任意两个顶点互相邻接。
+      \item[-] 在顶点$v_2,v_3,v_4$中，存在两个顶点不邻接，此时$G^c$中存在三角形。
+      \item[-] 在顶点$v_2,v_3,v_4$中，任意两个顶点互相邻接，此时$G$中存在三角性。
       \end{itemize}
 
     \end{itemize}
@@ -747,7 +748,7 @@ $G$
 \begin{frame}
   \frametitle{6.4 补图、偶图}
   \begin{Thm}
-    图$G$为偶图的充分必要条件是它的所有圈都是偶数长。
+    图$G$为偶图的充分必要条件为它的所有圈都是偶数长。
   \end{Thm}
 \end{frame}
 
@@ -870,10 +871,10 @@ $G$
 \begin{frame}
   \frametitle{6.5 欧拉图}
   \begin{Thm}
-    图G是欧拉图当且仅当$G$是连通的且每个顶点的度是偶数。
+    图G为欧拉图当且仅当$G$为连通的且每个顶点的度为偶数。
   \end{Thm}
   \begin{proof}[证明]
-      首先，假设图$G$是欧拉图，往证$G$是连通的且每个顶点的度是偶数。
+      首先，假设图$G$为欧拉图，往证$G$是连通的且每个顶点的度为偶数。
 
   由图$G$为欧拉图知$G$中有一条包含所有边和所有顶点的闭迹$T:v_0,x_1,v_1,\ldots,
   x_n,v_n$，其中$v_n=v_0$。显
@@ -883,17 +884,17 @@ $G$
 
   \end{proof}
 \end{frame}
-1
+
 \begin{frame}
   \frametitle{6.5 欧拉图}
   \begin{Thm2}
-    图G是欧拉图当且仅当$G$是连通的且每个顶点的度是偶数。
+    图G为欧拉图当且仅当$G$为连通的且每个顶点的度为偶数。
   \end{Thm2}
   \begin{proof}[证明(续上页)]
-  其次，假设$G$是连通的且每个顶点的度是偶数，往证$G$是欧拉图。
+  其次，假设$G$为连通的且每个顶点的度为偶数，往证$G$为欧拉图。
 
   设$v_0,x_1,v_1,\ldots, x_n,v_n$为图$G$的一条最长的迹，记为$Z$，则$Z$为闭迹。否
-  则，　$v_n \neq v_0$，$v_n$在迹$Z$中的最后一次出现与一条边相关联，其他的每次出现
+  则，$v_n \neq v_0$，$v_n$在迹$Z$中的最后一次出现与一条边相关联，其他的每次出现
   均与两条边相关联，由$v_n$的度为偶数知，$v_n$在$G$中还有一条与之关联的边没有在
   $Z$中出现，记为$x_{n+1}=v_nv_{n+1}$。则$v_0,x_1,v_1,\ldots,
   x_n,v_n,x_{n+1},v_{n+1}$构成了图$G$的一条更长的迹，这与$v_0,x_1,v_1,\ldots,
@@ -917,7 +918,7 @@ $G$
 \begin{frame}
   \frametitle{6.5 欧拉图}
   \begin{Thm}
-    图G有一条欧拉开迹当且仅当$G$是连通的且恰有两个奇度顶点。
+    图G有一条欧拉开迹当且仅当$G$为连通的且恰有两个奇度顶点。
   \end{Thm}
   \begin{proof}[证明]
       设图$G$有一条欧拉开迹$Z:v_0,x_1,v_1,\ldots, x_n,v_n$，其中$x_i=v_{i-1}v_i, i =
@@ -937,7 +938,7 @@ $G$
 \begin{frame}
   \frametitle{6.5 欧拉图}
   \begin{Thm}
-    设$G$是连通图，$G$恰有$2n$个奇度顶点，$n \geq 1$，则$G$的全部边可以排成$n$条
+    设$G$为连通图，$G$恰有$2n$个奇度顶点，$n \geq 1$，则$G$的全部边可以排成$n$条
     开迹，且不能排成少于$n$条开迹。  \end{Thm}
   \begin{proof}[证明]
       设连通图$G$有$2n$个奇度顶点$u_1,v_1,u_2,v_2,\ldots,u_n,v_n$。在$G$中加
@@ -1177,11 +1178,11 @@ $G$
 \begin{frame}
   \frametitle{6.6 哈密顿图}
   \begin{Thm}
-    设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
+    设$G$为一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p - 1,
     \end{equation*}
-则$G$是连通的。
+则$G$为连通的。
 \end{Thm}
 
 \end{frame}
@@ -1244,7 +1245,7 @@ $G$
 \begin{frame}
   \frametitle{6.6 哈密顿图}
   \begin{Thm1}
-    设$G$是一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
+    设$G$为一个有$p$个顶点的图，如果对$G$的每一对不临接的顶点$u$和$v$，均有
     \begin{equation*}
       \deg u + \deg v \geq p - 1,
     \end{equation*}
@@ -1607,7 +1608,7 @@ $G$
   \begin{proof}[证明(续上页)]
 
 
-    (iiii)当$\delta(G)\geq 3$时,$2q\geq 3p$，即$2(p+4) \geq 3p$，　可以得到$p \leq
+    (iv)当$\delta(G)\geq 3$时,$2q\geq 3p$，即$2(p+4) \geq 3p$，　可以得到$p \leq
     8$。此时若图$G$中有长度小于等于$4$的圈，将其上的４条边去掉，得到的图$G'$中有
     $p'$个顶点，$q'$条边。则$q'\geq p'$，图$G'$中必定有一个圈，与原来图$G$中去掉的边
     所构成的圈一起构成图$G$中两个边不重的圈。若图$G$中所有圈的长度至少为$5$，设
