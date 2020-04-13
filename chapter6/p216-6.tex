@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+      证明：唯一没有三角形的$(p,[\frac{p^2}{4}])$图为$K(\lfloor \frac{p}{2} \rfloor,\lceil \frac{p}{2} \rceil )$。
+\end{Ex}
+\begin{proof}[证法一]用数学归纳法证明以下结论：唯一没有三角形的包含$p$个顶点且边数$q\geq [\frac{p^2}{4}]$的图一定为$K(\lfloor \frac{p}{2} \rfloor,\lceil \frac{p}{2} \rceil )$。施归纳于顶点数$p$，只证$p$为奇数的情况，$p$为偶数的情况是类似的。
+
+  1) 当$p=1$时，唯一没有三角形的包含一个顶点且边数$q\geq 0$的图一定为$K(0,1)$，结论显然成立。（注：我们把$(1,0)$图也称为偶图，并记为$K(0,1)$或 $K(1,0)$）。
+
+  
+
+  2)假设当$p=2k-1(k\geq 1)$时结论成立，往证当$p=2k+1$时结论也成立。设$G$为一个没有三角形，顶点数$p=2k+1$，边数$q \geq [\frac{p^2}{4}]$的图。显然，$G$中至少有两个邻接的顶点$u$和$v$。图$G'=G-\{u\}-\{v\}$中没有三角形，有$2k-1$个顶点。因为$G$中没有三角形，如果$u$与$G'$的$x$个顶点邻接，则$v$至多能与$G'$中剩余的$2k-1-x$个顶点邻接，于是$G'$中的边数
+  \begin{equation*}
+    \begin{split}
+      q'&\geq q - x - (2k-1-x) - 1\\
+      &\geq [\frac{(2k+1)^2}{4}]-2k\\
+      &=k^2-k\\
+      &=[\frac{(2k-1)^2}{4}]
+    \end{split}
+  \end{equation*}
+
+  由归纳假设，$G'$为$K(\lfloor \frac{2k-1}{2} \rfloor,\lceil \frac{2k-1}{2} \rceil )$，即$K(k-1,k)$。以下证明$G$必为$K(k,k+1)$。假设偶图$G'$的顶点集有一个二划分为$\{V_1,V_2\}$，使得$G'$的任意一条边的两个端点一个在$V_1$中，一个在$V_2$中，$|V_1|=k-1$，$|V_2|=k$。由$G$中没有三角形知$V_1$和$V_2$中的每个顶点在$G$中至多与顶点$u$和顶点$v$中的一个邻接。另外，$V_1$和$V_2$中的每个顶点在$G$中必与顶点$u$和顶点$v$中的一个邻接，否则，$G$中的边数$q < (k-1)k + (2k-1) + 1 = k^2 + k = [\frac{(2k+1)^2}{4}]$，矛盾。不妨设在$G$中$V_2$中的某个顶点与$v$相邻接，由$G$中没有三角形知$v$不能与$V_1$中的顶点相邻接，从而$u$与$V_1$中每个顶点相邻接，$v$与$V_2$中的每个顶点相邻接。这证明了$G$为$K(k,k+1)$。
+  
+  
+\end{proof}
+
+\begin{proof}[证法二]设$G$为一个没有三角形，包含$p$个顶点且边数$q\geq [\frac{p^2}{4}]$的图。设$V$为$G$的顶点集合，$v$为$G$中度最大的顶点，$V_1$为所有与$v$邻接的顶点构成的集合，$V_2=V\setminus V_1$。以下证明$V_1$中的顶点互相不邻接，$V_2$中的顶点互相不邻接，$|V_1|$和$|V_2|$最多相差$1$，从而完成定理的证明。
+
+  首先，由$V_1$中的每个顶点都与$v$邻接，$G$中没有三角形知$V_1$中的顶点互相不邻接。
+
+  构造一个完全偶图$G'$，$G'$的顶点集为$V_1\cup V_2$，$V_1$中的任意两个顶点互相不邻接，$V_2$中的任意两个顶点互相不邻接，$V_1$和$V_2$中的任意两个顶点互相邻接。由$v_1$为$G$中度最大的顶点知对任意的$v\in V$，$v$在$G$中的度$d(v)$小于等于$v$在$G'$中的度$d'(v)$。而一个图中所有顶点的度数之和为边数的两倍，从而$G$中的边数$q$小于等于$G'$中的边数$q'$,即
+  \begin{equation}\label{formula1}
+    q \leq |V_1||V_2|
+  \end{equation}
+
+  易验证
+  \begin{equation}\label{formula2}
+    |V_1||V_2| \leq [\frac{p^2}{4}]
+  \end{equation}
+
+  由$q\geq [\frac{p^2}{4}]$知\eqref{formula1}式和\eqref{formula2}式中的等号成立。由$\eqref{formula1}$式中的等号成立知在$G$中$V_1$中的每个顶点必与$V_2$中的每个顶点邻接，再由$G$中没有三角形知，$V_2$中任意两个顶点在$G$中不邻接。由$|V_1|+|V_2|=p$知$\eqref{formula2}$中的等式成立当且仅当$|V_1|$与$|V_2|$最多相差$1$。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
