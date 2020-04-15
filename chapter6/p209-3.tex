@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+  若$G$是一个$(p,q)$图，$q > \frac{1}{2}(p-1)(p-2)$，试证$G$是连通图。  
+  \end{Ex}
+  \begin{proof}[证明]
+    用反证法。假设$G$不连通，则至少有两个连通分量。设其中一个连通分量的顶点数为
+    $p_1$，边数为$q_1$，所有其他连通分量的顶点数为$p_2$，边数为$q_2$。则
+    \begin{equation*}
+      \begin{split}
+        &\frac{1}{2}(p-1)(p-2)\\
+        =&\frac{1}{2}(p_1 + p_2 -1)(p_1 + p_2 -2)\\
+        =&\frac{1}{2}(p_1 + p_2 -1)((p_1 - 1) + (p_2 - 1))\\
+        =&\frac{1}{2}(p_1(p_1 -1) +  p_1(p_2 - 1) + p_2(p_1 - 1) + p_2(p_2-1) - (p_1 - 1) - (p_2-1))\\
+        =&\frac{1}{2}(p_1(p_1 -1) +   p_2(p_2-1) + 2(p_1 - 1)(p_2-1))\\
+        =&\frac{p_1(p_1 -1)}{2} +   \frac{p_2(p_2-1)}{2} + (p_1 - 1)(p_2-1))\\
+        \geq&\frac{p_1(p_1 -1)}{2} +   \frac{p_2(p_2-1)}{2}\\
+        \geq & q
+      \end{split}
+    \end{equation*}
+    矛盾。
+  \end{proof}
+\end{CJK}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
