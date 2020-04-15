@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+  \begin{Exercise}
+  设$G$为图。证明：若$\delta(G)\geq 2$，则$G$包含长度至少为$\delta(G)+1$的图。  
+  \end{Exercise}
+  \begin{proof}[证明]
+    设$P=v_0v_1\ldots v_n$为$G$中的一条最长路，则$v_0$只能与$P$中的顶点相邻接，否则假设$v_0$与不在$P$中的顶点$u$邻接，则$uv_0v_1\ldots v_n$构成了$G$中一条更长的路，与$P$为$G$中的最长路矛盾。取最大的$s$使得$v_0$与$v_s$相邻接，则$C=v_0v_1\ldots v_sv_0$为长度至少为$\delta(G)+1$的圈，这是因为$v_0$至少与$\delta(G)$个顶点相邻接，而所有这些与$v_0$邻接的顶点均在圈$C$中。
+  \end{proof}
+\end{CJK}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
