@@ -25,7 +25,10 @@
   \begin{Def}
     图$G$的\alert{顶点连通度}是指为了产生一个不连通图或平凡图所需要从$G$中去掉的最少顶点数目, 记为$\kappa (G)$。
   \end{Def}\pause
-  \centering
+
+    \centering
+  \begin{minipage}{0.33\linewidth}
+    
       \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
    \node[specification] (A)  at (0,-1)  {};
@@ -47,8 +50,9 @@
    \draw[thick] (A) to  (D);
    \draw[thick] (B) to  (E);
    \draw[thick] (C) to  (F);
- \end{tikzpicture}\hspace{1cm}\pause
-      \begin{tikzpicture}[auto,
+ \end{tikzpicture}  \end{minipage}
+ \begin{minipage}{0.33\linewidth}
+  \begin{tikzpicture}[auto,
     specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
    \node[specification] (A)  at (18:1.5cm)  {};
    \node[specification] (B)  at (90:1.5cm)  {};
@@ -68,13 +72,21 @@
    \draw[thick] (B) to  (E);
    \draw[thick] (C) to  (E);
 
- \end{tikzpicture}
+ \end{tikzpicture} \end{minipage}
+\hspace{0.5cm}
+ \begin{minipage}[c]{0.2\linewidth}
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  at (0,0)  {};
+ \end{tikzpicture}   
+ \end{minipage}
+
 \end{frame}
 
 \begin{frame}
   \frametitle{1. 顶点连通度和边连通度}
   \begin{Def}
-    图$G$的\alert{边连通度}是指为了产生一个不连通图或平凡图所需要从$G$中去掉的最少边的数目, 记为$\lambda (G)$。
+    图$G$的\alert{边连通度}是指为了产生一个不连通图或者平凡图所需要从$G$中去掉的最少边的数目, 记为$\lambda (G)$。
   \end{Def}\pause
   \centering
   \begin{minipage}[c]{0.33\linewidth}
@@ -237,7 +249,7 @@
 
    \pause 因为$\delta(G) \geq [\frac{p}{2}]$，所以$G$是连通的。\pause 如果$G$为平凡图，　则$\lambda (G) = \delta(G) = 0$。如果$G$不是平凡图，则$\lambda(G) > 0$，从而存在$V$的真子集$A$使得$G$中联结$A$中的一个顶点与$V\setminus A$中的一个顶点的边恰有$\lambda(G)$条。\pause 所有这些边的集合记为$F$。
 
-  \pause  由$|A| + |V\setminus A| = p$知必有$|A| \leq [\frac{p}{2}]$或者$|V\setminus A| \leq [p/2]$。\pause 不妨设$|A| \leq [\frac{p}{2}]$。 \pause 由于$\delta(G) \geq [\frac{p}{2}]$，$A$中的每个顶点至少与$V\setminus A$中的一个顶点邻接。\pause 否则，如果$A$中的某个顶点$u$只与$A$中的顶点邻接，则$\deg u \leq |A|-1 \leq [\frac{p}{2}] - 1 < \delta(G)$，矛盾。 
+  \pause  由$|A| + |V\setminus A| = p$知必有$|A| \leq [\frac{p}{2}]$或者$|V\setminus A| \leq [\frac{p}{2}]$。\pause 不妨设$|A| \leq [\frac{p}{2}]$。 \pause 由于$\delta(G) \geq [\frac{p}{2}]$，$A$中的每个顶点至少与$V\setminus A$中的一个顶点邻接。\pause 否则，如果$A$中的某个顶点$u$只与$A$中的顶点邻接，则$\deg u \leq |A|-1 \leq [\frac{p}{2}] - 1 < \delta(G)$，矛盾。 
 
 \pause    设$v$为$A$中的任一顶点， $v$与$V\setminus A$中的$x$个顶点邻接，与$A$中的$y$个顶点邻接，则$\deg v = x + y$。 \pause $v$与$V\setminus A$中的$x$个顶点邻接，所对应的边的集合记为$F_1$，则$F_1 \subseteq F$；
  \pause    $v$与$A$中的$y$个顶点邻接，而这$y$个顶点中的每个顶点都至少与$V\setminus A$中的一个顶点邻接，所对应的边的集合记为$F_2$，则$F_2 \subseteq F$ 并且$F_1 \cap F_2 = \phi$，\pause 从而
@@ -249,25 +261,37 @@
 \begin{frame}
   \frametitle{1. 顶点连通度和边连通度}
   \begin{Def}
-    设$G$是一个图，如果$\kappa (G) \geq n$，则称$G$是\alert{$n$-顶点连通}的，简称$n$-连通;如果$\lambda (G) \geq n$，则称$G$是\alert{$n$-边连通}的。
+    设$G$为一个图，如果$\kappa (G) \geq n$，则称$G$为\alert{$n$-顶点连通}的，简称$n$-连通;如果$\lambda (G) \geq n$，则称$G$为\alert{$n$-边连通}的。
   \end{Def}
 \end{frame}
 
 \begin{frame}
   \frametitle{1. 顶点连通度和边连通度}
   \begin{Thm}
-    设$G=(V,E)$是有$p$个顶点的图，$p \geq 3$，则$G$是2-连通的，当且仅当$G$的任意两个不同的顶点在$G$的同一个圈上。
+    设$G=(V,E)$为有$p$个顶点的图，$p \geq 3$，则$G$为2-连通的，当且仅当$G$的任意两个不同的顶点在$G$的同一个圈上。
   \end{Thm}
 \end{frame}
 
 \section{门格尔定理}
+
+\begin{frame}
+  \frametitle{2. 门格尔定理}
+    \begin{Def}
+    设$u$与$v$为图$G$中的两个不同的顶点。两条联结$u$与$v$的路，如果除了$u$与$v$外没有公共顶点，则称这两条路为联结$u$与$v$的\alert{不相交路}；如果联结$u$与$v$的两条路上没有公共边，则称这两条路为联结$u$与$v$的\alert{边不相交路}。
+  \end{Def}
+  \begin{Thm}
+    图$G$为$n-$连通的当且仅当每一对不同顶点间至少有$n$条不相交路。
+  \end{Thm}
+  \begin{Thm}
+    图$G$为$n-$边连通的当且仅当$G$的任一对不同的顶点间至少有$n$条边不相交路。
+  \end{Thm}
+\end{frame}
 \section{匹配、霍尔定理}
 \begin{frame}
   \frametitle{3. 匹配、霍尔定理}
 
   \begin{Def}
-    设$G=(V,E)$是一个图，$G$的任两条不邻接的边$x$与$y$称为互相\alert{独
-      立}的。$G$的边集$E$的子集$Y$称为$G$的一个\alert{匹配}，如果$Y$中任意两条边都是互相独立的。
+    设$G=(V,E)$为一个图，$G$的任意两条不邻接的边$x$与$y$称为互相\alert{独立}的。$G$的边集$E$的子集$Y$称为$G$的一个\alert{匹配}，如果$Y$中任意两条边都是互相独立的。
   \end{Def}
 \pause
 \centering
@@ -276,7 +300,7 @@
 \begin{frame}
   \frametitle{3. 匹配、霍尔定理}
   \begin{Def}
-    设$Y$是图$G=(V,E)$的一个匹配，如果$2|Y|=|V|$，则称$Y$为$G$的一个\alert{完美匹配}。
+    设$Y$为图$G=(V,E)$的一个匹配，如果$2|Y|=|V|$，则称$Y$为$G$的一个\alert{完美匹配}。
   \end{Def}
 \pause
 \centering
@@ -287,7 +311,7 @@
   \frametitle{3. 匹配、霍尔定理}
 
     \begin{Def}
-   设$Y$是图$G=(V,E)$的一个匹配，如果对于$G$的任一匹配$Y'$，恒有$|Y'|\leq |Y|$, 则称$Y$为$G$的一个\alert{最大匹配}。
+   设$Y$为图$G=(V,E)$的一个匹配，如果对于$G$的任一匹配$Y'$，恒有$|Y'|\leq |Y|$, 则称$Y$为$G$的一个\alert{最大匹配}。
   \end{Def}
 \pause
 \centering
@@ -300,8 +324,7 @@
   \begin{Def}
     设$G=(V,E)$为一个偶图且$V=V_1\cup V_2$,
     $\forall x \in
-    E$，$x$为联结$V_1$的一个顶点与$V_2$的一个顶点的边。如果存在$G$的一
-    个匹配$Y$使得$|Y|=min\{|V_1|,|V_2|\}$，则称$Y$是偶图$G$的一个\alert{完全匹配}。
+    E$，$x$为联结$V_1$的一个顶点与$V_2$的一个顶点的边。如果存在$G$的一个匹配$Y$使得$|Y|=min\{|V_1|,|V_2|\}$，则称$Y$是偶图$G$的一个\alert{完全匹配}。
   \end{Def}
 
 \end{frame}
@@ -311,8 +334,7 @@
   \frametitle{3. 匹配、霍尔定理}
 
   \begin{Def}
-    设$X$为一个有穷集合，$A_1,A_2,\ldots,A_n$为$X$的子集的一个序列，由$X$的互不
-    相同的元素构成的序列$s_1,s_2,\ldots,s_n$称为系统\[T:A_1,A_2,\ldots,A_n\]的\alert{相异代表系}，如果$s_i\in A_i$，$i=1,2,\ldots,n$。
+    设$X$为一个有穷集合，$A_1,A_2,\ldots,A_n$为$X$的子集的一个序列，由$X$的互不相同的元素构成的序列$s_1,s_2,\ldots,s_n$称为系统\[T:A_1,A_2,\ldots,A_n\]的\alert{相异代表系}，如果$s_i\in A_i$，$i=1,2,\ldots,n$。
   \end{Def}
 
 \end{frame}
@@ -362,6 +384,14 @@ $M_1\cup M_2$构成了$G$的完全匹配，且$|M_1\cup M_2| = |V_1|$。
 \end{frame}
 
 \begin{frame}
+  \frametitle{匹配}
+    \begin{Thm}
+    设$X$为一个有限集，系统$T:A_1,A_2,\cdots,A_n$为$X$的一些子集组成的，则$T$有相异代表系的充分必要条件是$\forall I \subseteq \{1,2,\cdots, n\}$有
+    \[|\bigcup_{i\in I}A_i|\geq |I|\]
+  \end{Thm}
+\end{frame}
+\begin{frame}
+  
   \frametitle{参考文献}
 
     \begin{thebibliography}{99}
@@ -372,7 +402,6 @@ $M_1\cup M_2$构成了$G$的完全匹配，且$|M_1\cup M_2| = |V_1|$。
 
 %  \cite{Gale:Marriage}
 \end{frame}
-
 
 
 \end{CJK}
