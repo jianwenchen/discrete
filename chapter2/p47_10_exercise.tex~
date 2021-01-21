@@ -1,0 +1,3 @@
+\begin{Exercise}
+  设$M$为一个非空集合，$\phi:M \to M$，$N\subseteq M$。令$\mathscr{A}=\{P|P\subseteq M \text{且} N\subseteq P,\phi(P)  \subseteq P\}$，$G=\cat_{P\in \mathscr{A}}P$。
+\end{Exercise}

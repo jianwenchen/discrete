@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{可数集}{2}{0}{1}
 \beamer@sectionintoc {2}{连续统集}{10}{0}{2}
 \beamer@sectionintoc {3}{基数及其比较}{18}{0}{3}
-\beamer@sectionintoc {4}{康托-伯恩斯坦定理}{22}{0}{4}
-\beamer@sectionintoc {5}{公理集合论}{23}{0}{5}
+\beamer@sectionintoc {4}{康托-伯恩斯坦定理}{24}{0}{4}
+\beamer@sectionintoc {5}{公理集合论}{25}{0}{5}

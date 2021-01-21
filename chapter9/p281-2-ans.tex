@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+\begin{Exercise}
+  设$G$为一个有$k$个支的平面图。如果$G$的顶点数、边数、面数分别为$p$，$q$和$f$，试证：
+  \[p-q+f=k+1\]
+\end{Exercise}
+\begin{proof}[证明]
+  设$G$的的$k$个支分别为$G_1$，$G_2$，$\ldots$，$G_k$，其中$G_i$有$p_i$个顶点，$q_i$条边，$f_i$个面（$1\leq i \leq k$）。
+
+  由欧拉公式知，
+  \begin{align*}
+    p_1-q_1+f_1&=2\\
+    p_2-q_2+f_2&=2\\
+    \cdots&\\
+    p_k-q_k+f_k&=2
+  \end{align*}
+  以上各式相加得：
+  \[(p_1+p_2+\ldots+p_k)-(q_1+q_2+\ldots+q_k)+(f_1+f_2+\ldots+f_k)=2k\]
+
+由$G$只有一个外部面知
+\[f_1 + f_2 + \ldots + f_k = f + (k-1)\]
+从而
+\[p-q+f+(k-1)=2k\]
+即
+\[p-q+f = k + 1\]
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

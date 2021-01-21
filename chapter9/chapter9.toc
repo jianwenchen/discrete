@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{平面图及其欧拉公式}{7}{0}{1}
+\beamer@sectionintoc {2}{非哈密顿平面图}{34}{0}{2}
+\beamer@sectionintoc {3}{库拉托斯基定理}{40}{0}{3}
+\beamer@sectionintoc {4}{图的顶点着色}{43}{0}{4}

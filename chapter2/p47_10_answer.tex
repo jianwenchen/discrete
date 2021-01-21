@@ -1,0 +1,13 @@
+\begin{proof}[证明]
+  (1) 易验证$G\subseteq M$且$N\subseteq G$，$\phi(G) \subseteq G$，从而$G \in \mathscr{A}$。
+
+  (2) 由$N\subseteq G$，$\phi(G) \subseteq G$知$N\cup \phi(G) \subseteq G$。
+
+  以下证明$G \subseteq N\cup \phi(G)$。首先验证
+  \begin{equation}\label{formula1}
+  G=N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots
+  \end{equation}
+  由此易得$G \subseteq N\cup \phi(G)$。
+
+  \eqref{formula1}式就是要证$\cap_{P\in \mathscr{A}}P = N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots$。首先验证$N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots \in \mathscr{A}$，从而$\cap_{P\in \mathscr{A}}P \subseteq  N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots$。其次验证对任意的$P\in \mathscr{A}$，$N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots \subseteq P$, 从而$N \cup \phi(N) \cup \ldots \cup \phi^n(N) \cup \ldots \subseteq \cap_{P\in \mathscr{A}}P$。  
+\end{proof}

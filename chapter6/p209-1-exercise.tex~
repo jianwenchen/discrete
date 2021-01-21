@@ -1,0 +1,3 @@
+\begin{Exercise}
+  设$u$与$v$为图$G$的两个不同顶点。如果$u$与$v$间有两条不同的通道（迹），则$G$中是否有圈？
+\end{Exercise}

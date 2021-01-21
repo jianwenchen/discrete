@@ -1,0 +1,215 @@
+\chapter{无穷集合}
+  \begin{Def}
+    如果从集合$X$到集合$Y$存在一个双射，则称$X$与$Y$对等，记为$X \sim Y$。
+  \end{Def}
+  \begin{Def}
+    如果从自然数集$\mathbb{N}$到集合$X$存在一个一一对应$f:\mathbb{N}\to X$，则称
+    集合$X$为可数无穷集合，简称可数集或可列集。如果$X$不是可数集且$X$不是有穷集合，则称$X$为不可数无穷集合，简称不可数集。
+  \end{Def}
+  \begin{Thm}
+    集合$A$为可数集的充分必要条件为$A$的全部元素可以排成无重复项的序列
+    \[a_1, a_2, \ldots, a_n, \cdots\]
+    因此，$A$可写成$A = \{a_1, a_2, a_3, \cdots\}$。
+  \end{Thm}
+  \begin{Thm}
+   设$A$为可数集合，$B$为有穷集合，则$A\cup B$为可数集。
+  \end{Thm}
+  \begin{Thm}
+    设$A$与$B$为两个可数集，则$A\cup B$为可数集。
+  \end{Thm}
+
+    \begin{Thm}
+    设$A_1, A_2, \cdots, A_n, \cdots$为可数集合的一个无穷序列，则$\bigcup_{n=1}^{\infty}A_n$为可数集。即可数多个可数集之并为可数集。
+  \end{Thm}
+  \begin{Thm}
+    设$A$与$B$为两个可数集，则$A\times B$为可数集。
+  \end{Thm}
+  \begin{Thm}
+    全体有理数之集$\mathbb{Q}$为可数集。
+  \end{Thm}
+  \begin{Thm}
+    区间$[0,1]$中的所有实数构成的集合为不可数集。
+  \end{Thm}
+  \begin{Def}
+    凡与集合$[0,1]$存在一个一一对应的集合称为具有“连续统的势”的集合，简称连续统。
+  \end{Def}
+    \begin{Thm}
+    无穷集合必包含有可数子集。
+  \end{Thm}
+  \begin{Thm}
+    设$M$为一个无穷集合，$A$为至多可数集合，则$M \sim M \cup A$。
+  \end{Thm}
+  \begin{proof}[证明]
+    因为$M$为一个无穷集合，所以$M$中必有一个可数子集$D$。令$P=M\setminus D$，则
+    \[M=P\cup D, M\cup A = P\cup (D\cup (A\setminus P))\]
+    由$P\sim P$，$D\sim D\cup (A\setminus P)$，得到$M\sim M\cup A$。
+  \end{proof}
+  \begin{Thm}
+    设$M$为无穷集合，$A$为$M$的至多可数子集，$M\setminus A$为无穷集合，则$M \sim M\setminus A$。
+  \end{Thm}
+  \begin{Thm}
+    设$A_1, A_2, \cdots, A_n$为$n$个两两不相交的连续统，则$\bigcup_{i=1}^nA_i$为连续统。
+  \end{Thm}
+  \begin{Thm}
+    设$A_1, A_2, \cdots, A_n, \cdots$为两两不相交的集序列。如果$A_k \sim [0,1], k = 1, 2, \cdots$，则
+    \[\bigcup_{n=1}^{\infty}A_n \sim [0,1]\]
+  \end{Thm}
+ \begin{Cor}
+   全体实数之集是一个连续统。
+ \end{Cor}
+ \begin{Cor}
+   全体无理数之集是一个连续统。
+ \end{Cor}
+  \begin{Def}
+    集合$A$的基数为一个符号，凡与$A$对等的集合都赋以同一个记号。集合$A$的基数记为$|A|$。
+  \end{Def}
+  \begin{Def}
+    所有与集合$A$对等的集合构成的集族称为$A$的基数。
+  \end{Def}
+    \begin{Def}
+    集合$A$的基数与集合$B$的基数称为是相等的，当且仅当$A \sim B$。
+  \end{Def}
+  \begin{Def}
+    设$\alpha$，$\beta$为任意两个基数，$A$,$B$为分别以$\alpha$，$\beta$为其基数的
+    集合。如果$A$与$B$的一个真子集对等，但$A$却不能与$B$对等，则称基数$\alpha$小于基数$\beta$，记为$\alpha < \beta$。
+  \end{Def}
+  显然，
+  $\alpha \leq \beta$当且仅当存在单射$f:A \to B$。
+
+  $\alpha < \beta$当且仅当存在单射$f:A \to B$且不存在$A$到$B$的双射。
+
+  \begin{Thm}[康托]
+    对任一集合$M$，$|M| < |2^{M}|$。
+  \end{Thm}
+  \begin{proof}[证明]
+    令$i:M\to
+    2^M$，其定义为对任意的$m\in M$，$i(m)=\{m\}$。于
+    是，$i$为从$M$到$2^M$的单射，故$|M|\leq |2^M|$。为了完成定理的证明，
+    我们还需要证明：如果$f:M\to 2^M$为单射，则$f$一定不为满射。为此，令
+    \[X=\{m\in M|m \notin f(m)\}\]显然，$X\in 2^M$。现在证明对任意
+    的$x\in M$，$f(x)\neq M$。实际上，如果存在$x_0\in X$使得$f(x_0)=X$，
+    则如果$x_0\in X$，那么由$X$的的定义知$x_0\notin
+    f(x_0)$，即$x_0\notin X$；如果$x_0\notin X$，即$x_0\notin f(x_0)$，由$X$的定义可得$x_0\in X$。总之，$x_0\in X$与$x_0\notin X$都引出矛盾，从而不存在$x_0\in M$使得$f(x_0)=X$。因此，$f$不为满射，从而
+    \[|M|<|2^M|\]
+  \end{proof}
+  \begin{Thm}[康托-伯恩斯坦]
+    设$A$，$B$为两个集合。如果存在单射$f:A\to B$与单射$g:B\to A$，则$A$与$B$的基数相等。
+  \end{Thm}
+
+  \begin{proof}[证明]
+    设$f:A\to B$和$g:B\to A$都为单射。令$\psi:2^A\to 2^A$,对任意
+    的$E\in 2^A$，\[\psi(E)=A\setminus g(B\setminus f(E))\]易见，如果$E\subseteq F\subseteq A$，则$\psi(E)\subseteq \psi(F)$。
+    令\[\mathbb{D}=\{E\subseteq A|E\subseteq \psi(E)\}\]，则$\phi\in \mathbb{D}$。又令
+    \[D=\bigcup_{E\in \mathbb{D}}E,\]
+    则对任意的$E\in \mathbb{D}$,由$E\subseteq D$知$E\subseteq \psi(E) \subseteq \psi(D)$，从而$D\subseteq \psi(D)$。
+    于是$\psi(D)\subseteq \psi(\psi(D))$,故$\psi(D)\in \mathbb{D}$，因此，$\psi(D)\subseteq D$，所以
+    \[D=\psi(D)=A\setminus(B\setminus f(D))\]
+    令$h:A\to B$，对任意的$x\in A$，定义
+    \[h(x)=\begin{cases}
+        f(x),&\text{如果}x\in D\\
+        g^{-1}(x),&\text{如果}x\in A\setminus D
+      \end{cases}
+    \]
+    其中$g^{-1}$为视$g$为$B$到$g(B)$的一一对应时$g$的逆，易见$h$为一一对应。所以$A$与$B$的基数相等。
+  \end{proof}。
+
+刻画集合的ZFC公理系统（Zermelo-Fraenkel-Choice axioms of set theory）：
+  \begin{Ax}[外延公理]
+    \begin{equation*}
+      \forall A \forall B (\forall x (x \in A \leftrightarrow x\in B)\rightarrow A = B)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[空集公理]
+    \begin{equation*}
+      \exists \phi \forall x (x \notin \phi)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[对公理]
+    \begin{equation*}
+      \forall u \forall v \exists B \forall x (x \in B \Leftrightarrow x = u \lor x = v)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[并集公理]
+    \begin{equation*}
+     \forall A \exists B \forall x (x \in B \leftrightarrow (\exists b \in A) x \in b)
+    \end{equation*}
+  \end{Ax}
+    \begin{Ax}[幂集公理]
+    \begin{equation*}
+      \forall a \exists B \forall x ( x \in B \leftrightarrow x \subseteq a)
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[子集公理]
+    \begin{equation*}
+      \forall c \exists B \forall x (x \in B \leftrightarrow x \in c \land \varphi(x))
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[无穷公理]
+    \begin{equation*}
+      \begin{split}
+      \exists A ( \phi \in A \land (\forall a \in A) a^+ \in A)\\
+      \text{其中} a^+ = a \cup \{a\}
+      \end{split}
+    \end{equation*}
+  \end{Ax}
+    \begin{Ax}[代换公理]
+    \begin{equation*}
+      \begin{split}
+      \forall A ((\forall x \in A) \forall y_1 \forall y_2 (\varphi(x, y_1) \land \varphi(x, y2) \rightarrow y_1 = y_2)\\
+      \rightarrow \exists B \forall y (y \in B \leftrightarrow (\exists x \in A) \varphi(x, y)))
+    \end{split}
+  \end{equation*}
+  \end{Ax}
+  \begin{Ax}[正则公理]
+    \begin{equation*}
+      (\forall A \neq \phi) (\exists m \in A) m \cap A = \phi
+    \end{equation*}
+  \end{Ax}
+  \begin{Ax}[选择公理]
+    \begin{equation*}
+      (\forall \text{relation} R)
+      (\exists \text{function} F)
+      (F \subseteq R \land
+      \text{dom} F
+      = \text{dom} R)
+    \end{equation*}
+  \end{Ax}
+
+  刻画自然数的Peano公理系统：
+  \begin{enumerate}
+  \item $0 \in \mathbb{N}$；
+  \item $n \in \mathbb{N} \rightarrow n ++ \in \mathbb{N}$;
+  \item $\forall n \in \mathbb{N} n ++ \neq 0$；
+  \item $\forall n \in \mathbb{N} \forall m \in \mathbb{N} n \neq m \rightarrow n ++ \neq m ++$；
+    \item $(P(0) \land \forall n \in \mathbb{N} p(n) \rightarrow p(n++) )\rightarrow \forall n p(n)$。 
+  \end{enumerate}
+
+  刻画实数的公理系统：
+  
+     设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $\forall x \in \mathbb{R} x \neq 0 \to x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+       \item $x \leq x$
+   \item $ x \leq y \land y \leq x \rightarrow x = y$
+   \item $x \leq y \land y \leq z \rightarrow x \leq z$
+   \item $x \leq y \lor y \leq x$ 
+\item $x > y \rightarrow x + z > y + z$
+\item $x > y \land z >0 \rightarrow x * z > y * z$
+\item   $\forall A \subseteq \mathbb{R} (A \neq \phi \land \exists x \in \mathbb{R} (\forall y \in A (y \leq x)) \rightarrow \exists z \in R ((\forall y \in A (y \leq z) )\land ( \forall x \in \mathbb{R} (\forall y \in A (y \leq x) \rightarrow z \leq x))))$   
+    \end{enumerate}
+
+      \chapter{}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book_chapter4"
+%%% End:

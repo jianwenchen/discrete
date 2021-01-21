@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+  \begin{Exercise}
+      画出具有$4$个顶点的所有无向图（同构的只算一个）。  
+  \end{Exercise}
+   { \centering
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1.5)  {};
+   \node[specification] (C)  at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ A
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (B) to  (C);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ B
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ C
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (0,1.5)  {};
+   \node[specification] (C)  at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (B) to  (C);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ D
+\end{minipage}\hfill
+
+\vspace*{0.5cm}
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1.5)  {};
+   \node[specification] (C)  at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to (B);
+   \draw[thick] (B) to (C);
+      \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ E
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to (C);
+      \draw[thick] (C) to (A);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ F
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+      \draw[thick] (C) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ G
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (0,1.5)  {};
+   \node[specification] (C)  at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (C) to (B);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ H
+\end{minipage}\hfill
+
+\vspace*{0.5cm}
+\flushleft
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1.5)  {};
+   \node[specification] (C)  at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to (B);
+   \draw[thick] (B) to (D);
+   \draw[thick] (D) to (C);
+      \draw[thick] (C) to (A);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ I
+\end{minipage}
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (B);
+      \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (A) to (C);
+   \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ J
+\end{minipage}
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1.5)  {};
+   \node[specification] (C) at (1.5,1.5)  {};
+   \node[specification] (D) at (1.5,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+      \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (A) to (C);
+   \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.5cm}
+ K
+\end{minipage}
+}
+
+\end{CJK}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

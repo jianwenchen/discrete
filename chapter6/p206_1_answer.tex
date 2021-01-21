@@ -1,0 +1,171 @@
+    \centering
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1)  {};
+   \node[specification] (C)  at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ A
+\end{minipage}\hfill 
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (B) to  (C);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ B
+\end{minipage}\hfill 
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ C
+\end{minipage}\hfill 
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (0,1)  {};
+   \node[specification] (C)  at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (B) to  (C);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ D
+\end{minipage}\hfill
+
+\vspace*{0.5cm}
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1)  {};
+   \node[specification] (C)  at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to (B);
+   \draw[thick] (B) to (C);
+      \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ E
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to (C);
+      \draw[thick] (C) to (A);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ F
+\end{minipage}\hfill
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+      \draw[thick] (C) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ G
+\end{minipage}\hfill 
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A)  at (0,0)  {};
+   \node[specification] (B)  at (0,1)  {};
+   \node[specification] (C)  at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (C) to (B);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ H
+\end{minipage}\hfill 
+
+\vspace*{0.5cm}
+\flushleft
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B)  at (0,1)  {};
+   \node[specification] (C)  at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to (B);
+   \draw[thick] (B) to (D);
+   \draw[thick] (D) to (C);
+      \draw[thick] (C) to (A);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ I
+\end{minipage}
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+      \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (A) to (C);
+   \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ J
+\end{minipage} 
+  \begin{minipage}{0.24\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+      \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (A) to (C);
+   \draw[thick] (B) to (D);
+ \end{tikzpicture}\\
+ \vspace*{0.3cm}
+ K
+\end{minipage}

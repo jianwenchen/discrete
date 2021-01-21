@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+\begin{Ex}
+  设$f:X\to Y$。
+  
+  (1)如果存在唯一的一个映射$g:Y\to X$，使得$gf=I_X$，那么$f$是否可逆呢？
+
+  (2)如果存在唯一的一个映射$g:Y\to X$，使得$fg=I_Y$，那么$f$是否可逆呢？
+\end{Ex}
+\begin{proof}[解]
+
+  (1)$f$不一定可逆，举例如下：
+
+  设集合$X=\{1\}$，$Y=\{1,2\}$，$f:X\to Y$，$f(1)=1$。则存在唯一的一个映射$g:Y\to X$，$g(1)=1,g(2)=1$,使得$gf=I_X$，但$f$不可逆。
+
+
+  (2)$f$一定可逆，证明如下：
+
+  由$fg=I_Y$知$f$为满射。以下证明$f$为单射。用反证法，假设$f$不为单射，则存在$x_1\in X$，$x_2\in X$，$x_1\neq x_2$但$f(x_1)=f(x_2)$。
+
+  设$y_0=f(x_1)=f(x_2)$，则$g(y_0)\neq x_1$或者$g(y_0)\neq x_2$。
+
+  令$h:Y\to X$，
+  \[h(y)=\begin{cases}
+      g(y) &\text{如果} y \neq y_0,\\
+      x_1 &\text{如果} y = y_0\text{且} g(y_0) \neq x_1\\
+      x_2 &\text{如果} y= y_0 \text{且} g(y_0) \neq x_2
+    \end{cases}
+  \]
+  则$fh=I_Y$，且$h\neq g$，与存在唯一的一个映射$g:Y\to X$，使得$fg=I_Y$，矛盾。
+\end{proof}
+
+\begin{Ex}
+  设$f:X\to Y$，$X$与$Y$为有穷集合。
+
+  (1)如果$f$为左可逆的，那么$f$有多少个左逆映射？
+
+  (2)如果$f$为右可逆的，那么$f$有多少个右逆映射？
+\end{Ex}
+
+\begin{proof}[解]
+  (1) $|X|^{|Y|-|X|}$
+
+  (2) $\prod _{y\in Y}|f^{-1}(\{y\})|$
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

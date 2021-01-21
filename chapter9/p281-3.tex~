@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \huge
+\begin{Exercise}[p281-3]
+  如果$G$为顶点数$p>11$的平面图，试证$G^c$不是平面图。
+\end{Exercise}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

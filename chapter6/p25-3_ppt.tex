@@ -1,0 +1,132 @@
+\documentclass{beamer}
+\usepackage{ragged2e}
+\usepackage{CJKutf8}
+\usepackage{tikz}
+\setbeamertemplate{theorems}[numbered]
+\justifying\let\raggedright\justifying
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+\newtheorem{Thm}{定理}[section]
+\theoremstyle{definition}
+\newtheorem{Def}{定义}
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+\newtheorem*{Exercise}{习题}
+\newtheorem{Exercise1}{习题}
+
+\date{}
+\author{陈建文}
+\title{习题讲解}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+    \begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+    \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+\pause
+  \begin{Def}
+    设$A,B$为任意的两个集合，由既属于集合$A$又属于集合$B$的所有元素构成的集合称为$A$与$B$的\alert{交集}，记为$A \cap B$。
+    \begin{equation*}
+      A\cap B = \{x|x \in A \land x \in B\}
+    \end{equation*}
+  \end{Def}\pause
+  \begin{Ex}
+    \begin{itemize}
+    \item 设$A=\{1,2\},B=\{2,3\}$，则$A \cap B = \{2\}$
+    \item 设$C=\{2,3\},D=\{3\}$，则$C \cap D = \{3\}$
+    \end{itemize}
+    \end{Ex}
+\end{frame}
+
+\begin{frame}
+    \begin{Exercise}
+      设$A$，$B$，$C$，$D$为任意四个集合，证明
+ \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+\pause   
+    \begin{Def}
+    两个对象按照一定的顺序排列构成的整体称为一个\alert{有序对}。如果第一个对象为$a$，第二个对象为$b$，则该有序对记为 $(a,b)$。
+
+    $(a,b)=(c,d)$当且仅当$a=c$并且$b=d$。
+  \end{Def}\pause
+  \begin{Def}
+    设$A$与$B$为任意两个集合，则称集合 $\{(a,b)|a\in A \land b \in B\}$ 为$A$与$B$的\alert{笛卡尔乘积}，记为$A \times B$。
+即
+\begin{equation*}
+  A \times B = \{(a,b)|a \in A \land b \in B\}
+\end{equation*}
+\end{Def}{\small
+\begin{Ex}
+    
+  如果$A=\{1,2\}$，$C=\{2,3\}$，则$A \times C = \{ (1,2), (1,3), (2,2), (2,3)\}$
+  
+    如果$B=\{2,3\}$，$D=\{3\}$，则$B \times D = \{ (2,3), (3,3)\}$
+\end{Ex}}
+\end{frame}
+
+\begin{frame}
+\begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+    \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+ \pause
+如果$A=\{1,2\}$，$B=\{2,3\}$，$C=\{2,3\}$，$D=\{3\}$，则
+\begin{equation*}
+  \begin{split}
+      &(A\times C)\cap (B \times D)\\
+  =&\{(1,2),(1,3),(2,2),(2,3)\} \cap \{(2,3),(3,3)\}\\
+  =&\{(2,3)\}\\
+  &(A\cap B) \times (C \cap D)\\
+  =&\{2\}\times \{3\}\\
+  =&\{(2,3)\}\\
+  \end{split}
+\end{equation*}  
+\end{frame}
+
+\begin{frame}
+    \begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+    \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+\pause
+  \begin{equation*}
+    \begin{split}
+    \forall x \forall y&(x,y) \in (A\times C)\cap (B \times D)\\ 
+    \Leftrightarrow&(x,y) \in A \times C \land (x,y) \in B \times D\\
+    \Leftrightarrow&x \in A \land y \in C \land x \in B \land y \in D\\
+    \Leftrightarrow&x \in A \land x \in B \land y \in C \land y \in D\\
+    \Leftrightarrow&x \in A \cap B \land y \in C \cap D\\
+    \Leftrightarrow&(x,y) \in (A\cap B) \times (C \cap D)
+    \end{split}
+  \end{equation*}
+
+\end{frame}
+
+\begin{frame}
+    \begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+        \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+\pause
+\begin{proof}[证明]\justifying\let\raggedright\justifying
+
+先证$(A\times C)\cap (B \times D)\subseteq (A\cap B) \times (C \cap D)$。
+
+对任意的$x$和$y$，如果$(x,y)\in (A\times C)\cap (B \times D)$，则$(x,y)\in A\times C$，并且$(x,y)\in B \times D$，从而$x\in A,y\in C, x \in B, y\in D$，即$x\in A$， $x \in B$，$ y\in C$， $y\in D$，于是$x \in A\cap B$并且$y \in C \cap D$，因此$(x,y) \in (A\cap B) \times (C \cap D)$。
+
+再证$(A\cap B) \times (C \cap D) \subseteq (A\times C)\cap (B \times D)$。
+
+  对任意的$x$和$y$，$(x,y) \in (A\cap B) \times (C \cap D)$，则$x\in A\cap B$并且$y \in C \cap D$，从而$x\in A$， $x \in B$，$ y\in C$， $y\in D$， 即$x\in A,y\in C, x \in B, y\in D$，
+于是$(x,y)\in A\times C$，并且$(x,y)\in B \times D$，因此$(x,y)\in (A\times C)\cap (B \times D)$。
+
+\end{proof}
+\end{frame}
+
+
+\end{CJK*}
+\end{document}

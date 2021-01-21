@@ -1,10 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  4 JUN 2019 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  12 MAY 2020 01:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\input chapter8.tex
-(./chapter8.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+**chapter8.tex
+(./chapter8.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1388,12 +1391,12 @@ File: c70gbsn.fdx 2012/05/07 4.8.3
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1410,228 +1413,229 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [7
 
-] [8
-
 ]
 
 LaTeX Font Warning: Font shape `C70/gbsn/m/it' undefined
-(Font)              using `C70/gbsn/m/n' instead on input line 217.
+(Font)              using `C70/gbsn/m/n' instead on input line 229.
 
 
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
+[][] 
+ []
+
+[8
+
+]
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [9
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [10
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [11
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [12
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [13
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [14
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [15
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [16
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [17
 
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
+Overfull \hbox (4.89664pt too wide) in paragraph at lines 229--229
 [][] 
  []
 
 [18
 
+] [19
+
 ]
-Overfull \hbox (4.89664pt too wide) in paragraph at lines 217--217
-[][] 
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
-[19
-
-] [20
+[20
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [21
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [22
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [23
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [24
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [25
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [26
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [27
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [28
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [29
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [30
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [31
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [32
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [33
 
 ]
-Overfull \vbox (20.54231pt too high) detected at line 246
+Overfull \vbox (20.54231pt too high) detected at line 258
  []
 
 [34
 
-]
-Overfull \vbox (20.54231pt too high) detected at line 246
- []
-
-[35
+] [35
 
 ] [36
 
 ] [37
 
 ]
-<matching.png, id=1062, 651.43375pt x 587.19376pt>
+<matching.png, id=1070, 651.43375pt x 587.19376pt>
 File: matching.png Graphic file (type png)
 <use matching.png>
-Package pdftex.def Info: matching.png  used on input line 275.
+Package pdftex.def Info: matching.png  used on input line 299.
 (pdftex.def)             Requested size: 142.2622pt x 113.80792pt.
  [38
 
  <./matching.png>]
 File: matching.png Graphic file (type png)
 <use matching.png>
-Package pdftex.def Info: matching.png  used on input line 275.
+Package pdftex.def Info: matching.png  used on input line 299.
 (pdftex.def)             Requested size: 142.2622pt x 113.80792pt.
  [39
 
 ]
-<perfect.png, id=1118, 747.79375pt x 1056.94875pt>
+<perfect.png, id=1126, 747.79375pt x 1056.94875pt>
 File: perfect.png Graphic file (type png)
 <use perfect.png>
-Package pdftex.def Info: perfect.png  used on input line 284.
+Package pdftex.def Info: perfect.png  used on input line 308.
 (pdftex.def)             Requested size: 142.26485pt x 113.79718pt.
  [40
 
  <./perfect.png>]
 File: perfect.png Graphic file (type png)
 <use perfect.png>
-Package pdftex.def Info: perfect.png  used on input line 284.
+Package pdftex.def Info: perfect.png  used on input line 308.
 (pdftex.def)             Requested size: 142.26485pt x 113.79718pt.
  [41
 
 ]
-<maximum.png, id=1171, 747.79375pt x 1056.94875pt>
+<maximum.png, id=1179, 747.79375pt x 1056.94875pt>
 File: maximum.png Graphic file (type png)
 <use maximum.png>
-Package pdftex.def Info: maximum.png  used on input line 296.
+Package pdftex.def Info: maximum.png  used on input line 320.
 (pdftex.def)             Requested size: 113.80731pt x 85.34789pt.
- [42
+
+[42
 
  <./maximum.png>]
 File: maximum.png Graphic file (type png)
 <use maximum.png>
-Package pdftex.def Info: maximum.png  used on input line 296.
+Package pdftex.def Info: maximum.png  used on input line 320.
 (pdftex.def)             Requested size: 113.80731pt x 85.34789pt.
  [43
 
@@ -1642,7 +1646,7 @@ Package pdftex.def Info: maximum.png  used on input line 296.
 ] [46
 
 ]
-Underfull \hbox (badness 2057) in paragraph at lines 347--347
+Underfull \hbox (badness 2057) in paragraph at lines 369--369
 []\C70/gbsn/m/it/10.95/8b ¾$\OT1/cmss/m/it/10.95 G \OT1/cmss/m/n/10.95 = ((\OT1
 /cmss/m/it/10.95 V[]\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.95 V[]\OT1/cmss/m/n
 /10.95 )\OML/cmm/m/it/10.95 ; \OT1/cmss/m/it/10.95 E\OT1/cmss/m/n/10.95 )$\C70/
@@ -1655,22 +1659,11 @@ it/10.95/76 „ \C70/gbsn/m/it/10.95/4e ^^@ * \C70/gbsn/m/it/10.95/5b Œ \C70/gbsn
 
 [47
 
-]
-Underfull \hbox (badness 1331) in paragraph at lines 362--362
-\OMS/cmsy/m/n/10.95 j\OT1/cmss/m/it/10.95 B\OMS/cmsy/m/n/10.95 j$\C70/gbsn/m/it
-/10.95/30 ^^B $\OT1/cmss/m/it/10.95 G[]$\C70/gbsn/m/it/10.95/4e : \C70/gbsn/m/i
-t/10.95/50 v \C70/gbsn/m/it/10.95/56 þ \C70/gbsn/m/n/10.95/ff ^^L \C70/gbsn/m/i
-t/10.95/4e ^^T \C70/gbsn/m/n/10.95/57 ($\OT1/cmss/m/it/10.95 G[]$\C70/gbsn/m/it
-/10.95/4e - \C70/gbsn/m/it/10.95/5b ù \C70/gbsn/m/it/10.95/96 Æ \C70/gbsn/m/n/1
-0.95/54 ^^H$\OT1/cmss/m/it/10.95 V[] \OMS/cmsy/m/n/10.95 n \OT1/cmss/m/it/10.95
- A$\C70/gbsn/m/it/10.95/76 „ \C70/gbsn/m/it/10.95/4e û \C70/gbsn/m/n/10.95/61 ^
-^O \C70/gbsn/m/it/10.95/5b P \C70/gbsn/m/it/10.95/96 Æ$\OT1/cmss/m/it/10.95 C$\
-C70/gbsn/m/n/10.95/ff ^^L
- []
-
-[48
+] [48
 
 ] [49
+
+] [50
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1682,11 +1675,11 @@ C70/gbsn/m/n/10.95/ff ^^L
 \tf@snm=\write8
 \openout8 = `chapter8.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
  (./chapter8.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
 Package rerunfilecheck Info: File `chapter8.out' has not changed.
 (rerunfilecheck)             Checksum: 7AD289BE36383A4529CF5DF236D7983E;281.
 
@@ -1695,64 +1688,67 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22278 strings out of 494406
- 417323 string characters out of 6169674
- 519088 words of memory out of 5000000
- 24942 multiletter control sequences out of 15000+600000
- 46683 words of font info for 168 fonts, out of 8000000 for 9000
+ 22348 strings out of 494406
+ 418477 string characters out of 6169674
+ 520184 words of memory out of 5000000
+ 24997 multiletter control sequences out of 15000+600000
+ 47836 words of font info for 172 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,14n,62p,803b,1887s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsn
-u30.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/share/texm
-f/fonts/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fonts/type1/arphic/gbs
-nu/gbsnu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/sha
-re/texmf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/texmf/fonts/type1/arp
-hic/gbsnu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu54.pfb></
-usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/ty
-pe1/arphic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57
-.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/f
-onts/type1/arphic/gbsnu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/
-gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/
-texmf/fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic
-/gbsnu/gbsnu60.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr
-/share/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1
-/arphic/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pf
-b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/font
-s/type1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
-nu6b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/tex
-mf/fonts/type1/arphic/gbsnu/gbsnu6e.pfb></usr/share/texmf/fonts/type1/arphic/gb
-snu/gbsnu70.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/sh
-are/texmf/fonts/type1/arphic/gbsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/ar
-phic/gbsnu/gbsnu73.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb><
-/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/t
-ype1/arphic/gbsnu/gbsnu76.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7
-7.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/
-fonts/type1/arphic/gbsnu/gbsnu7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
-/gbsnu7b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share
-/texmf/fonts/type1/arphic/gbsnu/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphi
-c/gbsnu/gbsnu7e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></us
-r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type
-1/arphic/gbsnu/gbsnu81.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu86.p
-fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fon
-ts/type1/arphic/gbsnu/gbsnu89.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
-snu8b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/te
-xmf/fonts/type1/arphic/gbsnu/gbsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/g
-bsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/s
-hare/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/share/texmf/fonts/type1/a
-rphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb>
-</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chapter8.pdf (49 pages, 527709 bytes).
+ 48i,14n,62p,796b,1885s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu30.pf
+b></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/share/texmf/font
+s/type1/arphic/gbsnu/gbsnu4f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbs
+nu50.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu51.pfb></usr/share/tex
+mf/fonts/type1/arphic/gbsnu/gbsnu52.pfb></usr/share/texmf/fonts/type1/arphic/gb
+snu/gbsnu53.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu54.pfb></usr/sh
+are/texmf/fonts/type1/arphic/gbsnu/gbsnu55.pfb></usr/share/texmf/fonts/type1/ar
+phic/gbsnu/gbsnu56.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu57.pfb><
+/usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu59.pfb></usr/share/texmf/fonts/t
+ype1/arphic/gbsnu/gbsnu5b.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5
+c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu5e.pfb></usr/share/texmf/
+fonts/type1/arphic/gbsnu/gbsnu5f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu
+/gbsnu60.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu61.pfb></usr/share
+/texmf/fonts/type1/arphic/gbsnu/gbsnu62.pfb></usr/share/texmf/fonts/type1/arphi
+c/gbsnu/gbsnu63.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu65.pfb></us
+r/share/texmf/fonts/type1/arphic/gbsnu/gbsnu66.pfb></usr/share/texmf/fonts/type
+1/arphic/gbsnu/gbsnu67.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu68.p
+fb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu6b.pfb></usr/share/texmf/fon
+ts/type1/arphic/gbsnu/gbsnu6c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gb
+snu6e.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu70.pfb></usr/share/te
+xmf/fonts/type1/arphic/gbsnu/gbsnu71.pfb></usr/share/texmf/fonts/type1/arphic/g
+bsnu/gbsnu72.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu73.pfb></usr/s
+hare/texmf/fonts/type1/arphic/gbsnu/gbsnu74.pfb></usr/share/texmf/fonts/type1/a
+rphic/gbsnu/gbsnu75.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu76.pfb>
+</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu77.pfb></usr/share/texmf/fonts/
+type1/arphic/gbsnu/gbsnu79.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu
+7a.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7b.pfb></usr/share/texmf
+/fonts/type1/arphic/gbsnu/gbsnu7c.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
+u/gbsnu7d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu7e.pfb></usr/shar
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu7f.pfb></usr/share/texmf/fonts/type1/arph
+ic/gbsnu/gbsnu80.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu81.pfb></u
+sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu86.pfb></usr/share/texmf/fonts/typ
+e1/arphic/gbsnu/gbsnu88.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu89.
+pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8b.pfb></usr/share/texmf/fo
+nts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/g
+bsnu8f.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/t
+exmf/fonts/type1/arphic/gbsnu/gbsnu91.pfb></usr/share/texmf/fonts/type1/arphic/
+gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></usr/
+share/texmf/fonts/type1/arphic/gbsnu/gbsnu97.pfb></usr/share/texmf/fonts/type1/
+arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnuff.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+
+Output written on chapter8.pdf (50 pages, 548583 bytes).
 PDF statistics:
- 1628 PDF objects out of 1728 (max. 8388607)
- 1428 compressed objects within 15 object streams
- 103 named destinations out of 1000 (max. 500000)
- 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1667 PDF objects out of 1728 (max. 8388607)
+ 1461 compressed objects within 15 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,9 @@
+\begin{proof}[证明]
+    （１）如果$\kappa(G)=0$，则$G$不连通，此时$\lambda(G)=0$，故$\kappa(G) = \lambda(G)$。
+
+  （２）如果$\kappa(G)=1$，则$G$中存在顶点$u$，$G-u$不连通。由$\deg u=3$知，$G-u$至少存在一个分支只有一条边与$u$相连，显然去掉这条边之后，$G$不连通，所以$\lambda(G)=1$，故$\kappa(G)=\lambda(G)$。
+
+  （３）如果$\kappa(G)=2$，则存在两个顶点$v_1$和$v_2$，$G-\{v_1,v_2\}$不连通。$G-v_1$是连通的，且$G-v_1-v_2$不连通，类似于（２）中的讨论知$G-v_1$中存在一条边$e_2$，$G-v_1-e_2$不连通。另一方面由$\lambda(G)\geq \kappa(G)=2$知$G-e_2$是连通的，由于$G-e_2-v_1=G-v_1-e_2$不连通，由与（２）类似的讨论知$G-e_2$中存在一条边$e_1$，$G-e_2-e_1$不连通，所以$\lambda(G)=2$，故$\kappa(G)=\lambda(G)$。
+
+  （４）如果$\kappa(G)\geq 3$，由$\kappa(G) \leq \lambda(G) \leq \delta(G) = 3$知，$\kappa(G)=\lambda(G)=3$。
+\end{proof}

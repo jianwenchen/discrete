@@ -1,10 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  21 DEC 2019 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  21 APR 2020 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**\input chapter7.tex
-(./chapter7.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+**chapter7.tex
+(./chapter7.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1448,13 +1451,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21837 strings out of 494406
- 409883 string characters out of 6169674
- 491833 words of memory out of 5000000
- 24648 multiletter control sequences out of 15000+600000
+ 21841 strings out of 494406
+ 409927 string characters out of 6169674
+ 491941 words of memory out of 5000000
+ 24652 multiletter control sequences out of 15000+600000
  27542 words of font info for 99 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 48i,14n,55p,803b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,55p,796b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
@@ -1493,7 +1496,7 @@ e/texmf/fonts/type1/arphic/gbsnu/gbsnu90.pfb></usr/share/texmf/fonts/type1/arph
 ic/gbsnu/gbsnu95.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb></u
 sr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu98.pfb></usr/share/texmf/fonts/typ
 e1/arphic/gbsnu/gbsnuff.pfb>
-Output written on chapter7.pdf (12 pages, 245876 bytes).
+Output written on chapter7.pdf (12 pages, 246229 bytes).
 PDF statistics:
  589 PDF objects out of 1000 (max. 8388607)
  470 compressed objects within 5 object streams

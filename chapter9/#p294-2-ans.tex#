@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+
+\begin{Exercise}[294-2]
+  设$G$为一个没有三角形的可平面图。应用数学归纳法证明$G$为4-可着色的。
+\end{Exercise}
+\begin{proof}[证明]
+  用数学归纳法证明，施归纳于顶点数$p$。
+
+    （１）当$p=1$时，结论显然成立。
+
+    （２）假设当$p=k(k\geq 1)$时结论成立，往证当$p=k+1$时结论也成立。设$G$为包含$k+1$个顶点，没有三角形的可平面图知，$G$中存在一个顶点$v$，$\deg v \leq 3$。显然，$G-v$为包含$k$个顶点，没有三角形的可平面图，由归纳假设，$G-v$为$4$可着色的。假设已经用至多$4$种颜色对$G-v$进行了顶点着色，使得任意相邻的顶点着不同的颜色，那么此时在$G$中与$v$邻接的顶点用了至多$3$种颜色，用另外一种不同的颜色对顶点$v$进行着色，从而用至多$4$种颜色就可以对$G$的顶点进行着色使得相邻的顶点着不同的颜色，即$G$为$4$可着色的。
+    
+  \end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

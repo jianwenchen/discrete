@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+  任一偶置换均可被分解成3-循环置换$(123)$，$(124)$，$\ldots$，$12n$中若干个之乘积。 
+  \end{Ex}
+  \begin{proof}[证明]
+    \[(12i)(12j)=(2i)(1j)\]
+    \[(12s)(12t)=(2s)(1t)\]
+    \[(12i)(12j)(12s)(12t)(12i)(12j)=(2i)(1j)(2s)(1t)(2i)(1j)=(2i)(2s)(2i)(1j)(1t)(1j)=(is)(jt)\]
+  \end{proof}
+\end{CJK}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

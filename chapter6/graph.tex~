@@ -1,0 +1,149 @@
+\chapter{图的基本概念}
+设$V$为一个集合，$V$的一切二元子集之集合记为$\mathcal{P}_2(V)$，即
+\begin{equation*}
+  \mathcal{P}_2(V) = \{A|A \subseteq V \text{且} |A| = 2\}\text{。}
+\end{equation*}
+\begin{Def}
+  设$V$为一个非空有限集合，$E \subseteq \mathcal{P}_2(V)$，二元组$G = (V, E)$称为一个无向图。$V$中的元素称为无向图$G$的顶点，$V$为顶点集；$E$中的元素称为无向图$G$的边，$E$为边集。无向图简称图。如果$|V|=p$，$|E|=q$，则称$G$为一个$(p,q)$图，即$G$是一个具有$p$个顶点$q$条边的图。
+\end{Def}
+      \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+
+   \begin{Def}
+    在图$G=(V,E)$中，如果$\{u,v\}\in E$,则称顶点$u$与$v$邻接;若$x$与$y$是图$G$的两条边，并且仅有一个公共端点，即$|x \cap y|= 1$,则称边$x$与$y$邻接;如果$x=\{u,v\}$是图$G$的一条边，则称$u$与$x$互相关联，同样的，称$v$与$x$互相关联。
+  \end{Def}
+
+    \begin{Def}
+   如果一个图中两个顶点间允许有多于一条边存在，则称为多重图，这些边称为多重边; 如果一个图中允许联结一个顶点与其自身的边存在，则称为带环图，这些边称为环;允许有环或多重边存在的图，称之为伪图。
+  \end{Def}
+  \begin{Def}
+设$G=(V,E)$为一个图，如果$E=\Phi$,则称$G$为零图; $(1,0)$图称为平凡图。    
+  \end{Def}
+
+  \begin{Def}
+    设$v$为图$G=(V,E)$的任意一个顶点，$G$中与$v$关联的边的数目称为顶点$v$的度，记为$\deg x$。
+  \end{Def}
+
+  \begin{Thm}
+    设$G=(V,E)$为一个具有$p$个顶点$q$条边的图，则$G$中各顶点度的和等于边的条数$q$的两倍，即
+        \begin{equation*}
+      \sum_{v \in V}\deg v = 2q
+    \end{equation*}
+  \end{Thm}
+  \begin{Thm}
+       在任一图中，度为奇数的顶点的数目必为偶数。
+  \end{Thm}
+ \begin{Def}
+    图$G$称为$r$度正则图，如果$G$的每个顶点的度都等于$r$。３度正则图也叫三次图。
+    一个具有$p$个顶点的$p-1$度正则图称为包含$p$个顶点的完全图，记为$K_p$。
+  \end{Def}
+  \begin{Def}
+    设$G=(V,E)$为一个图，图$H=(V_1,E_1)$称为$G$的一个子图，当且仅当$V_1$为$V$的
+    非空子集且$E_1$为$E$的子集。如果$H \neq G$，则称$H$为$G$的真子图。
+  \end{Def}
+    \begin{minipage}[c]{0.4\textwidth}
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\ \centering G 
+    \end{minipage}\hspace{2cm}
+    \begin{minipage}[c]{0.4\textwidth}
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (E);
+ \end{tikzpicture}
+\\ \centering H 
+    \end{minipage}
+
+  \begin{Def}
+    设$G=(V,E)$为一个图，如果$F\subseteq E$，则称$G$的子图$H=(V,F)$ 为$G$的一个生成子图。
+  \end{Def}
+  \begin{minipage}[c]{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to  (D);
+   \draw[thick] (D) to  (E);
+   \draw[thick] (E) to  (A);
+   \draw[thick] (A) to  (C);
+   \draw[thick] (B) to  (E);
+   \draw[thick] (C) to  (E);
+   \draw[thick] (D) to  (A);
+ \end{tikzpicture}
+\\ \centering G 
+    \end{minipage}\hspace{2cm}
+    \begin{minipage}[c]{0.4\textwidth}
+\centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick, inner sep = 0pt, minimum size=2mm}]
+   \node[specification] (A)  [label=0:$v_2$] at (18:1.3cm)  {};
+   \node[specification] (B)  [label=90:$v_1$] at (90:1.3cm)  {};
+   \node[specification] (C)  [label=180:$v_5$] at (162:1.3cm)  {};
+   \node[specification] (D) [label=180:$v_4$] at (234:1.3cm)  {};
+   \node[specification] (E)  [label=0:$v_3$] at (306:1.3cm)  {};      
+   
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (E);
+ \end{tikzpicture}
+ \\ \centering H
+    \end{minipage}
+
+
+      \chapter{}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book_chapter6"
+%%% End:

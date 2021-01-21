@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{Dijkstra}
+E.~W. Dijkstra.
+\newblock A note on two problems in connexion with graphs.
+\newblock {\em Numerische Mathematik}, 1(1):269--271, 1959.
+
+\bibitem{Shapley}
+D.~Gale and L.S. Shapley.
+\newblock College admissions and the stability of marriage.
+\newblock {\em The American Mathematical Monthly}, 69(1), 1962.
+
+\bibitem{Kruskal}
+JR. Joseph B.~Kruskal.
+\newblock On the shortest spanning subtree of a graph and the traveeling
+  salesman problem.
+\newblock {\em Proceedings of the American Mathematical Society}, 7(1):48--50,
+  1956.
+
+\bibitem{Prim}
+R.~C. Prim.
+\newblock Shortest connection networks and some generalizations.
+\newblock {\em Bell System Technical Journal}, 33(6):668--676, 1957.
+
+\end{thebibliography}

@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}
+  设$a_1$，$a_2$，$\cdots$，$a_p$为$p$个正整数，$p\geq 2$，并且$\sum_{i=1}^pa_i=2(p-1)$。证明：存在一棵具有$p$个顶点的树，它的各个顶点的度分别为$a_1$，$a_2$，$\cdots$，$a_p$。
+\end{Exercise}
+\begin{proof}[证明]  用数学归纳法证明，施归纳于$p$。
+
+  (1)当$p=2$时，$a_1+a_2=2(2-1)=2$。由$a_1$，$a_2$为正整数知,$a_1=1$，$a_2=1$。两个顶点之间联结一条边，就构成了一棵满足条件的树。
+
+  (2)假设当$p=k(k\geq 2)$时结论成立，往证当$p=k+1$时结论成立。设$a_1$，$a_2$，$\cdots$，$a_{k+1}$为$k+1$个正整数，并且$\sum_{i=1}^{k+1}a_i=2(k+1-1)=2k$。此时必存在$s$，$1\leq s \leq k+1$，使得$a_s=1$。否则，如果对任意的$i$，$1\leq i \leq k+1$，$a_i\geq 2$，那么$\sum_{i=1}^{k+1}a_i\geq 2(k+1)$，与$\sum_{i=1}^{k+1}a_i=2k$矛盾。不妨设$a_{k+1}=1$。此时必存在$t$，$1\leq t \leq k$，$a_t>1$。否则,$a_1=a_2=\cdots=a_k=1$，于是$\sum_{i=1}^{k+1}a_i=k+1<2k$，矛盾。不妨设$a_k>1$。于是$a_1,a_2,\cdots,a_{k-1},a_{k}-1$为正整数，并且$a_1 + a_2 + \cdots + a_{k-1} + (a_{k}-1) = 2(k-1)$。由归纳假设，存在一棵具有$k$个顶点的树，它的各个顶点的度分别为$a_1$，$a_2$，$\cdots$，$a_{k-1}$，$a_k-1$。在其度为$a_k-1$的顶点上联结一条边和一个顶点，便得到了一个一棵具有$k+1$个顶点的树，它的各个顶点的度分别为$a_1$，$a_2$，$\cdots$，$a_{k+1}$。
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

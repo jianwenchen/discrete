@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}[p281-3]
+  如果$G$为顶点数$p>11$的可平面图，试证$G^c$不是可平面图。
+\end{Exercise}
+\begin{proof}[证明]
+  用反证法，假设$G^c$也是可平面图。设$G$有$q$条边，由$G$为可平面图知
+  \[q \leq 3p - 6\]
+  设$G^c$有$q_1$条边，由$G^c$为有$p$个顶点的可平面图知
+  \[q_1 \leq 3p - 6\]
+  于是
+  \[q + q _1 \leq 6p-12\]
+  即
+  \[\frac{p(p-1)}{2} \leq 6p-12\]
+  \[p^2-p \leq 12p-24\]
+  \[p^2-13p+24 \leq 0\]
+  当$p\geq 11$时，
+  \begin{equation*}
+    \begin{split}
+     &p^2-13p+24\\
+     =&(p-\frac{13}{2})^2-\frac{169}{4}+24\\
+     \geq&(11-\frac{13}{2})^2-\frac{169}{4} + 24\\
+     =&\frac{81}{4} - \frac{169}{4} + 24\\
+     =&2 \geq 0
+    \end{split}
+  \end{equation*}
+  矛盾。
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,40 @@
+\input{p136-3-Ex}
+
+首先，让我们回顾一下刻画实数系的公理系统。
+
+     设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $\forall x \in \mathbb{R} x \neq 0 \to x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+       \item $x \leq x$
+   \item $ x \leq y \land y \leq x \rightarrow x = y$
+   \item $x \leq y \land y \leq z \rightarrow x \leq z$
+   \item $x \leq y \lor y \leq x$ 
+\item $x > y \rightarrow x + z > y + z$
+\item $x > y \land z >0 \rightarrow x * z > y * z$
+\item   $\forall A \subseteq \mathbb{R} (A \neq \phi \land \exists x \in \mathbb{R} (\forall y \in A (y \leq x)) \rightarrow \exists z \in R ((\forall y \in A (y \leq z) )\land ( \forall x \in \mathbb{R} (\forall y \in A (y \leq x) \rightarrow z \leq x))))$   
+    \end{enumerate}
+
+其中最后一条为：
+
+接下来，我们来看结论中涉及的一些基本概念。
+
+设$X$为实数集$R$的一个子集，$f:X\to R$为一个函数。如果对任意的$x_1\in R$，$x_2\in R$，$x_1< x_2$，那么$f(x_1) \leq f(x_2)$，则称$f$为单调函数。
+
+
+
+\begin{proof}[证明]
+  
+\end{proof}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "p136-3"
+%%% End:

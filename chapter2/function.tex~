@@ -1,0 +1,307 @@
+\chapter{映射}
+
+  \begin{Def}
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
+    从$X$到$Y$的映射$f$常记为$f:X\to Y$。
+  \end{Def}
+
+  \begin{Example}
+    设集合$X=\{-1,0,1\}$，集合$Y=\{0,1,2\}$，$\forall x \in X, f(x)=x^2$，即$f(-1)=1,f(0)=0,f(1)=1$，则$f$为从集合$X$到集合$Y$的映射。
+  \end{Example}
+
+  \begin{Def}
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射为一个满足以下两个条件的$X\times Y$的子集$f$：
+    \begin{enumerate}
+    \item 对$X$的每一个元素$x$，存在一个$y\in Y$，使得$(x,y) \in f$；
+    \item 若$(x,y)\in f$，$(x,y')\in f$，则$y=y'$。
+    \end{enumerate}
+    $(x,y)\in f$记为$y=f(x)$。
+  \end{Def}
+  \begin{Example}
+    设集合$X=\{-1,0,1\}$，集合$Y=\{0,1,2\}$，$f=\{(-1,1),(0,0),(1,1)\}$，则$f$为从集合$X$到集合$Y$的映射。
+  \end{Example}
+
+  定义2.1和定义2.2是等价的。
+  \begin{Def}
+    设$f$为从集合$X$到集合$Y$的映射，$f:X\to Y$，　如果$y = f(x)$，则称$y$为$x$在$f$下的象，称$x$为$y$的原象。$X$称为$f$的定义域；集合$\{f(x) | x \in X\}$称为$f$的值域，记为$Im(f)$。
+  \end{Def}
+  \begin{Def}
+    设$f:X\to Y$，$A\subseteq X$，当把$f$的定义域限制在$A$上时，就得到了一个
+    $\phi: A\to Y$，$\forall x \in A$，$\phi(x) = f(x)$。$\phi$称为$f$在$A$上的
+    限制，并且常用$f|A$来表示$\phi$。反过来，我们也称$f$为$\phi$在$X$上的扩张。
+  \end{Def}
+    \begin{Def}
+    设$f:A \to Y$，$A \subseteq X$， 则称$f$为$X$上的一个部分映射。
+  \end{Def}
+  \begin{Def}
+    两个映射$f$与$g$称为是相等的当且仅当$f$和$g$都为$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
+  \end{Def}
+  \begin{Def}
+    设$f:X\to X$，如果$\forall x \in X, f(x) = x$，则称$f$为$X$上的恒等映射。$X$上的恒等映射常记为$I_X$。
+  \end{Def}
+
+    \begin{Def}
+    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的单射。
+  \end{Def}
+  \begin{Def}
+    设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的满射。
+  \end{Def}
+  \begin{Def}
+    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的双射，或者称$f$为从$X$到$Y$的一一对应。
+  \end{Def}
+  \begin{Def}
+    设$f:X\to Y$，$A \subseteq X$，$A$在$f$下的象定义为\[f(A)=\{f(x)|x\in A\}\]
+  \end{Def}
+  \begin{Example}
+    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f(\{-1,0\})=\{0,1\}$
+  \end{Example}
+  \begin{Def}
+    设$f:X\to Y$，$B \subseteq Y$，$B$在$f$下的原象定义为\[f^{-1}(B)=\{x\in X|f(x)\in B\}\]
+  \end{Def}
+  \begin{Example}
+    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f^{-1}(\{-1,0\})=\{0\}$
+  \end{Example}
+  \begin{Thm}
+    设$f:X\to Y$，$A \subseteq Y$，$B \subseteq Y$， 则
+    \begin{enumerate}
+    \item $f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B)$
+    \item $f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B)$
+    \item $f^{-1}(A^c)=(f^{-1}(A))^c$
+    \item $f^{-1}(A \bigtriangleup B) = f^{-1}(A) \bigtriangleup f^{-1}(B)$
+    \end{enumerate}
+  \end{Thm}
+    \begin{Thm}
+    设$f:X\to Y$，$A \subseteq X$，$B \subseteq X$， 则
+    \begin{enumerate}
+    \item $f(A \cup B) = f(A) \cup f(B)$
+    \item $f(A \cap B) \subseteq f(A) \cap f(B)$
+    \item $f(A \bigtriangleup B) \supseteq f(A) \bigtriangleup f(B)$
+    \end{enumerate}
+  \end{Thm}
+
+  \begin{Def}
+    设$f:X\to Y$，$g:Y\to Z$为映射，映射$f$与$g$的合成$g\circ f:X\to Z$定义为\[(g\circ f)(x) = g(f(x))\]
+  \end{Def}
+\begin{Thm}
+  设$f:X \to Y$，$g:Y\to Z$，$h:Z\to W$ 为映射，则 \[ (h \circ g) \circ f = h \circ (g \circ f) \]
+\end{Thm}
+
+  \begin{Def}
+     设$f:X\to Y$为双射，$f$的逆映射$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
+   \end{Def}
+    \begin{Def}
+     设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的逆映射。
+   \end{Def}
+   以上两个定义是等价的。
+
+     \begin{Thm}
+    设$f:X\to Y$为可逆映射，则$(f^{-1})^{-1}=f$。
+  \end{Thm}
+  \begin{Thm}
+    设$f:X\to Y$，$g:Y\to Z$都为可逆映射，则$g\circ f$也为可逆映射并且$(g\circ f)^{-1} = f^{-1}\circ g^{-1}$。
+  \end{Thm}
+
+    \begin{Def}
+    设$f:X\to Y$为一个映射，如果存在一个映射 $g:Y\to X$ 使 得 $g\circ f = I_X$，
+    则称$f$为左可逆的，$g$称为$f$的左逆映射；如果存在一个映射
+    $h:Y\to X$ 使 得 $f\circ h=I_Y$，则称$f$为右可逆的，$h$称为$f$的右逆映射。
+  \end{Def}
+  \begin{Thm}
+    设$f:X\to Y$为一个映射，则
+    \begin{enumerate}
+    \item $f$左可逆当且仅当$f$为单射；
+    \item $f$右可逆当且仅当$f$为满射。
+    \end{enumerate}
+  \end{Thm}
+
+  \begin{Def}
+    有穷集合$S$到自身的一一对应称为$S$上的一个置换。如果$|S| = n$, 则$S$上的置换就说成是$n$次置换。
+  \end{Def}
+设$S=\{1,2,\ldots,n\}$，$\sigma:S\to S$为$S$上的一个置换，$\sigma(1) = k_1$， $\sigma(2) = k_2$，$\ldots$，$\sigma(n) = k_n$，我们用如下的一个表来表示置换$\sigma$:
+\[\sigma=\begin{pmatrix}1&2&\ldots&n\\k_1&k_2&\ldots&k_n\end{pmatrix}\]
+\begin{Example}
+  设$S=\{1,2,3,4\}$，$\sigma(1) = 3$，　$\sigma(2) = 2$，　$\sigma(3) = 4$，　$\sigma(4) = 1$，则$\sigma$可以表示为
+  \[\sigma=\begin{pmatrix}1&2&3&4\\3&2&4&1\end{pmatrix}\]
+  这里，列的次序无关紧要，例如，$\sigma$还可以表示为
+  \[\sigma=\begin{pmatrix}2&1&3&4\\2&3&4&1\end{pmatrix}\]
+\end{Example}
+
+  \begin{Def}
+    设$\alpha$与$\beta$为集合$S=\{1,2,3,4\}$上的两个置换，则$\alpha$与$\beta$为两个从$S$到$S$的双射，讨论置换时，我们用$\alpha\beta$表示$\alpha$与$\beta$的合成$\beta \circ \alpha$。
+    注意这里$\alpha$与$\beta$的次序，从运算的角度看有一定的便利性，但也有的教材中采用相反的顺序。按照我们的写法，讨论置换时，如果$i \in S$，则用$(i)\alpha$表示$i$在$\alpha$下的像，简记为$i\alpha$。
+  \end{Def}
+  \begin{Example}
+    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+    则
+    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  \end{Example}
+
+   若$\alpha$与$\beta$为两个$n$次置换，当把$\beta$的表示式中的上一行按$\alpha$的下一行的顺序写出时，则$\alpha \beta$的下一行就是$\beta$的新表示式中的下一行。
+  \begin{Example}
+    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+    则
+    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&3&2\\2&1&3\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  \end{Example}   
+   \begin{Def}
+     设$\sigma$为$S$上的一个$n$次置换，若$i_1\sigma=i_2$，$i_2\sigma = i_3$， $\cdots$， $i_{k-1}\sigma = i_k$， $i_k\sigma = i_1$，而$\forall i \in S\setminus \{i_1, i_2, \ldots, i_k\}$， $i\sigma = i$，
+     则称$\sigma$为一个$k$循环置换，记为$(i_1i_2\cdots i_k)$。 $2-$循环置换称为对换。
+   \end{Def}
+   \begin{Example}
+   设$S=\{1,2,3,4,5\}$，则\[(1,2,3)=\begin{pmatrix}1&2&3&4&5\\2&3&1&4&5\end{pmatrix},(2,3)=\begin{pmatrix}1&2&3&4&5\\1&3&2&4&5\end{pmatrix}\]     
+   \end{Example}
+   \begin{Thm}
+    每个置换都能被分解成若干个没有共同数字的循环置换的乘积。如果不计这些循环置换的顺序以及略去的$1-$循环置换，这个分解是唯一的。
+   \end{Thm}
+   \begin{Thm}
+    当$n\geq 2$时，每个$n$次置换都能被分解成若干个对换的乘积。
+   \end{Thm}
+   \begin{Thm}
+    如果把置换分解成若干个对换的乘积，则对换个数的奇偶性是不变的。
+  \end{Thm}
+  \begin{Def}
+    能被分解为偶数个对换的乘积的置换称为偶置换；能被分解为奇数个对换的乘积的置换称为奇置换。
+  \end{Def}
+    \begin{Thm}
+    当$n \geq 2$时， $n$次奇置换的个数与$n$次偶置换的个数相等，都等于$\frac{n!}{2}$。
+  \end{Thm}
+  \begin{Thm}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x =x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{Thm}
+  \begin{Def}
+    设$X$，$Y$，$Z$为任意三个非空集合。一个 从 $X\times Y$到$Z$的映射 $\phi$ 称 为 $X$与$Y$到$Z$的一个\alert{二元（代数）运算}。当$X=Y=Z$时，则称$\phi$为$X$上的\alert{二元(代数)运算}。
+  \end{Def}
+  \begin{Def}
+    从集合$X$到$Y$的任一映射称为从$X$到$Y$的\alert{一元(代数)运算}。如果$X=Y$，则从$X$到$X$的映射称为$X$上的\alert{一元(代数)运算}。
+  \end{Def}
+  \begin{Def}
+    设$A_1, A_2, \cdots, A_n, D$为非空集合。一个从 $A_1\times A_2\times \cdots \times A_n$到$D$的映射$\phi$称为$A_1, A_2, \cdots, A_n$到$D$的一个\alert{$n$元（代数）运算}。
+    如果$A_1=A_2=\cdots=A_n=D=A$，则称$\phi$为$A$上的\alert{$n$元代数运算}。
+  \end{Def}
+
+  \begin{Def}
+    设“$\circ$”为集合$X$上的一个二元代数运算。如果$\forall a, b \in X$，恒有\\$a \circ b = b \circ a$， 则称二元代数运算“$\circ$”满足\alert{交换律}。
+  \end{Def}
+  \begin{Def}
+    设“$\circ$”为集合$X$上的一个二元代数运算。如果$\forall a, b, c \in X$，恒有$(a \circ b) \circ c = a \circ (b \circ c)$， 则称二元代数运算“$\circ$”满足\alert{结合律}。
+  \end{Def}
+  \begin{Def}
+    设“+”与“$\circ$”为集合$X$上的两个二元代数运算。\\如果$\forall a, b, c \in X$，恒有\[a \circ (b + c) = a \circ b + a \circ c,\] 则称二元代数运算“$\circ$”对“$+$”满足\alert{左分配律}。
+    \\如果$\forall a, b, c \in X$，恒有\[(b + c)\circ a = b \circ a + c \circ a,\] 则称二元代数运算“$\circ$”对“$+$”满足\alert{右分配律}。
+  \end{Def}
+    \begin{Def}
+    一个集合及其在该集合上定义的若干个代数运算合成为一个\alert{代数系}。
+  \end{Def}
+  \begin{Def}
+    设$(X, \circ)$为一个代数系。如果存在一个元素$e\in X$使得对任意的$x\in X$恒有$e\circ x = x \circ e = x$， 则称$e$为“$\circ$”的\alert{单位元素}。
+  \end{Def}
+  \begin{Def}
+    设$(X, \circ)$为一个代数系，“$\circ$”有单位元素$e$，$a\in X$，如果$\exists b\in X$使得\[a\circ b = b \circ a = e,\]  则称$b$为$a$的\alert{逆元素}。
+  \end{Def}
+  \begin{Def}
+    设$(S,+)$与$(T, \oplus)$为两个代数系。如果存在一个一一对应$\phi:S\to T$， 使得$\forall x, y \in S$，有
+    \begin{align*}
+      \phi(x+y) &= \phi(x) \oplus \phi(y),
+    \end{align*}
+    则称代数系$(S,+)$与$(T, \oplus)$\alert{同构}，并记为$S\cong T$, $\phi$称为这两个代数系之间的一个同构。
+  \end{Def}
+  \begin{Def}
+    设$(S,+, \circ)$与$(T, \oplus, *)$为两个代数系。如果存在一个一一对应$\phi:S\to T$， 使得$\forall x, y \in S$，有
+    \begin{align*}
+      \phi(x+y) &= \phi(x) \oplus \phi(y),\\
+      \phi(x\circ y)&= \phi(x) * \phi(y),
+    \end{align*}
+    则称代数系$(S,+,\circ)$与$(T, \oplus, *)$\alert{同构}，并记为$S\cong T$, $\phi$称为这两个代数系之间的一个同构。
+  \end{Def}
+  \begin{tabular}{cc|c}
+    p& q& p $\land$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{cc|c}
+    p& q& p $\lor$ q\\
+    \hline
+    T&T&T\\
+    T&F&T\\
+    F&T&T\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{c|c}
+    p& $\lnot$ p\\
+    \hline
+    T&F\\
+    F&T\\
+  \end{tabular}
+
+  \vspace{1cm}\pause
+    \begin{tabular}{cc|c}
+    x& y& x $\land$ y\\
+    \hline
+    1&1&1\\
+    1&0&0\\
+    0&1&0\\
+    0&0&0\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{cc|c}
+    x& y& x $\lor$ y\\
+    \hline
+    1&1&1\\
+    1&0&1\\
+    0&1&1\\
+    0&0&0\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{c|c}
+    x& $\bar{x}$\\
+    \hline
+    1&0\\
+    0&1\\
+  \end{tabular}
+  
+代数系$(\{T,F\},\land,\lor,\lnot)$与$(\{1,0\},\land, \lor,\bar{ })$是同构的。
+  \begin{Def}
+    设$X$为一个集合，$E \subseteq X$。 $E$的\alert{特征函数}$\chi_E:X\to \{0,1\}$定义为
+    \begin{equation*}
+      \chi_E(x)=
+      \begin{cases}
+        1 & \text{如果} x \in E,\\
+        0 & \text{如果} x \notin E.
+      \end{cases}
+    \end{equation*}
+  \end{Def}
+  \begin{Def}
+    令$Ch(X) = \{\chi |\chi:X \to \{0,1\}\}$。
+    $\forall \chi, \chi' \in Ch(X)$及$x \in X$，
+    \begin{align}
+      (\chi \lor \chi')(x) &= \chi(x) \lor \chi'(x)\nonumber\\
+      (\chi \land \chi')(x) &= \chi(x) \land \chi'(x)\nonumber\\
+      \bar{\chi}(x) &=   \overline{\chi(x)}
+    \end{align}
+  \end{Def}
+  \begin{Thm}
+    设$X$是一个集合，则代数系$(2^X, \cup, \cap, ^c)$与$(Ch(X), \lor, \land, \bar{} \ )$同构。
+  \end{Thm}
+
+
+
+\chapter{}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book_chapter2"
+%%% End:

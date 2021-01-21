@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+  试证：每个$n$次置换均可被分解成这样的一些置换的乘积：每个置换或为$(1,2)$，或为
+  $(23\cdots n)$。  
+  \end{Ex}
+  \begin{proof}[证明]
+    \[(23\cdots n)(12) = (12\cdots n)\]
+    \[(12\cdots n)^{-1}(12)(12\cdots n) = (23)\]
+    \[(12\cdots n)^{-1}(23)(12\cdots n) = (34)\]
+    $\ldots$
+    \[(12\cdots n)^{-1}(n-2 \quad n-1)(12\cdots n) = (n-1 \quad n)\]
+    每个置换均可被分解成(12)，(23)，$\cdots$，(n-1\quad n)的乘积，故结论成立。
+  \end{proof}
+\end{CJK}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

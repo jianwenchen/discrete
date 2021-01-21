@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}
+  设$R$，$S$为集合$X$上的等价关系。如果$R\circ S$为等价关系，则$(R\cup S)^+\subseteq R\circ S$。
+\end{Exercise}
+\begin{proof}[证明]
+  对任意的$a\in X,c\in X$，由$(a,c)\in (R\cup S)^+$，往证$(a,c)\in R\circ S$。
+
+  对任意的$a\in X,c\in X$，如果$(a,c)\in (R\cup S)^+$，则存在自然数$n$，$n\geq 1$，　$(a,c)\in (R\cup S)^n$。
+
+  以下用数学归纳法证明，对任意的自然数$n$，$n\geq 1$，$(R\cup S)^n\subseteq R\circ S$。
+
+  (1)当$n=1$时，对任意的$a\in X,c\in X$，如果$(a,c)\in R\cup S$，则$(a,c)\in R$或者$(a,c)\in S$。如果$(a,c)\in R$，此时由$S$为等价关系知$(c,c)\in S$，从而$(a,c)\in R\circ S$；　如果$(a,c)\in S$，此时由$R$为等价关系知$(a,a)\in R$，从而$(a,c)\in R\circ S$。
+
+  (2)假设当$n=k(k\geq 1)$时结论成立，往证当$n=k+1$时结论也成立。
+
+  由$R$,$S$,$R\circ S$都为$X$上的等价关系知，$S\circ R=S^{-1}\circ R^{-1}=(R\circ S)^{-1}=R\circ S$。
+
+  对任意的$a\in X,c\in X$，如果$(a,c)\in (R\cup S)^{k+1}=(R\cup S)^k\circ (R\cup S)$，则存在$b\in X$，$(a,b)\in (R\cup S)^k$并且$(b,c)\in (R\cup S)$。由归纳假设，$(a,b)\in R\circ S$。如果$(b,c)\in R$，那么$(a,c)\in (R\circ S)\circ R = R\circ (S\circ R) = R\circ (R\circ S) = (R\circ R)\circ S = R^2\circ S \subseteq R\circ S$；如果$(b,c)\in S$，那么$(a,c)\in (R\circ S)\circ S = R\circ (S\circ S) = R\circ S^2 \subseteq R\circ S$。
+  
+
+  
+\end{proof}
+
+
+\end{CJK}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+

@@ -1,0 +1,67 @@
+\begin{proof}[解]
+    \begin{minipage}{0.3\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (0,1)  {};
+   \node[specification] (C) at (1,1)  {};
+   \node[specification] (D) at (1,0)  {};
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (A) to (C);
+   \draw[thick] (B) to (D);
+ \end{tikzpicture}
+\end{minipage}
+    \begin{minipage}{0.3\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (1,0)  {};
+   \node[specification] (C) at (2,0)  {};
+   \node[specification] (D) at (0,1)  {};
+   \node[specification] (E) at (1,1)  {};
+   \node[specification] (F) at (2,1)  {};
+   \draw[thick] (A) to  (D);
+   \draw[thick] (A) to  (E);
+   \draw[thick] (A) to (F);
+   \draw[thick] (B) to (D);
+   \draw[thick] (B) to (E);
+   \draw[thick] (B) to (F);
+   \draw[thick] (C) to (D);
+   \draw[thick] (C) to (E);
+   \draw[thick] (C) to (F);
+ \end{tikzpicture}
+\end{minipage}
+    \begin{minipage}{0.3\linewidth}
+    \centering
+    \begin{tikzpicture}[auto,
+    specification/.style ={circle, draw, thick}]
+   \node[specification] (A) at (0,0)  {};
+   \node[specification] (B) at (1/2,1/2)  {};
+   \node[specification] (C) at (1,1/2)  {};
+   \node[specification] (D) at (3/2,0)  {};
+   \node[specification] (E) at (0,3/2)  {};
+   \node[specification] (F) at (1/2,1)  {};
+   \node[specification] (G) at (1,1)  {};
+   \node[specification] (H) at (3/2,3/2)  {};
+   
+   \draw[thick] (A) to  (B);
+   \draw[thick] (B) to  (C);
+   \draw[thick] (C) to (D);
+   \draw[thick] (D) to (A);
+   \draw[thick] (E) to  (F);
+   \draw[thick] (F) to  (G);
+   \draw[thick] (G) to (H);
+   \draw[thick] (H) to (E);
+   \draw[thick] (A) to  (E);
+   \draw[thick] (B) to  (F);
+   \draw[thick] (C) to (G);
+   \draw[thick] (D) to (H);
+ \end{tikzpicture}
+\end{minipage}
+
+\end{proof}

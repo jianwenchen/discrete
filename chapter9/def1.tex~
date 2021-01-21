@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Def}{定义}
+  \huge
+\begin{Def}
+图$G$称为被嵌入平面$S$内，如果$G$的图解已画在$S$上，而且任意两条边均不相交（除可能在端点相交外）。已嵌入平面内的图称为{\bfseries 平面图}。如果一个图可以嵌入平面，则称此图为{\bfseries 可平面的}。
+\end{Def}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

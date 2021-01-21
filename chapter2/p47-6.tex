@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+\begin{Ex}
+设$f:X\to Y$。试证：$f$为单射当且仅当对任意的$F\in 2^Y$，$f^{-1}(f(F))=F$。
+\end{Ex}
+\begin{proof}[证明]
+  设$f$为单射，对任意的$F\in 2^Y$，往证$f^{-1}(f(F))=F$。
+
+  对任意的$x$，$x\in f^{-1}(f(F))$，则$f(x)\in f(F)$，于是存在$x'\in F$，$f(x)=f(x')$，由$f$为单射知$x=x'$，从而$x\in F$。
+
+  对任意的$x$，$x\in F$，则$f(x)\in f(F)$，从而$x\in f^{-1}(f(F))$。
+
+  设对任意的$F\in 2^Y$，$f^{-1}(f(F))=F$,以下证明$f$为单射。
+
+  对任意的$x_1\in X$，$x_2\in X$，如果$f(x_1)=f(x_2)$,则$f(\{x_1\})=f(\{x_2\})$，于是$f^{-1}(f(\{x_1\}))=f^{-1}(f(\{x_2\}))$，从而$\{x_1\}=\{x_2\}$，于是$x_1=x_2$。
+  
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

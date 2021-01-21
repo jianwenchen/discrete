@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \huge
+\begin{Exercise}[281-2]
+  设$G$为一个有$k$个支的平面图。如果$G$的顶点数、边数、面数分别为$p$，$q$和$f$，试证：
+  \[p-q+f=k+1\]
+\end{Exercise}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

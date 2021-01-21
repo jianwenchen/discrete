@@ -118,7 +118,7 @@
     对任一图$G$，有 $\kappa (G) \leq \lambda (G) \leq \delta (G)$。
   \end{Thm}
   \begin{proof}[证明]
-    先证$\lambda (G) \leq \delta (G)$。如果$\delta(G) = 0$，则$G$不连通或者为平凡图，此时$\lambda(G) = 0$，$\lambda(G)\leq \delta(G)$成立。如果$\delta(G)>0$，不妨设$\deg v = \delta(G)$,从$G$中去掉与$v$关联的$\delta(G)$条边之后，得到的图中$v$为孤立顶点。所以$\lambda(G) \leq \delta(G)$，因此，对任意的图$G$，$\lambda(G)\leq \delta(G)$。
+    先证$\lambda (G) \leq \delta (G)$。如果$\delta(G) = 0$，则$G$不连通或者为平凡图，此时$\lambda(G) = 0$，$\lambda(G)\leq \delta(G)$成立。如果$\delta(G)>0$，不妨设$\deg v = \delta(G)$,从$G$中去掉与$v$关联的$\delta(G)$条边之后，得到的图中$v$为孤立顶点，所以$\lambda(G) \leq \delta(G)$。因此，对任意的图$G$，$\lambda(G)\leq \delta(G)$。
 
     接下来证明$\kappa (G) \leq \lambda (G)$。如果$G$不连通或者为平凡图，则$\kappa(G)=\lambda(G)=0$。如果$G$是连通的且有一座桥$x$，则$\lambda(G)=1$。因为在这种情况下$G$或者有一个割点关联于$x$或者$G$为$K_2$，所以$\kappa(G)=1$。最后假定$\lambda(G)\geq 2$，则$G$中有$\lambda(G)$条边，移去它们后所得到的图不连通。显然，移去这些边中的$\lambda(G)-1$条边后得到一个图，它有一条桥$x=uv$。对于这$\lambda(G)-1$条边中每一条，选取一个关联于它但与$u$和$v$都不同的顶点。移去这些顶点之后就移去了这$\lambda(G)-1$条边。如果这样产生的图是不连通的，则$\kappa(G) < \lambda(G)$。否则，$x$是这样产生的图的一条桥，从而移去$u$或$v$就产生了一个不连通图或平凡图。所以，在任何情况下，$\kappa(G) \leq \lambda(G)$。
   \end{proof}
@@ -141,7 +141,7 @@
    由$|A| + |V\setminus A| = p$知必有$|A| \leq [\frac{p}{2}]$或者$|V\setminus A| \leq [\frac{p}{2}]$。 不妨设$|A| \leq [\frac{p}{2}]$。  由于$\delta(G) \geq [\frac{p}{2}]$，$A$中的每个顶点至少与$V\setminus A$中的一个顶点邻接。 否则，如果$A$中的某个顶点$u$只与$A$中的顶点邻接，则$\deg u \leq |A|-1 \leq [\frac{p}{2}] - 1 < \delta(G)$，矛盾。 
     设$v$为$A$中的任一顶点， $v$与$V\setminus A$中的$x$个顶点邻接，与$A$中的$y$个顶点邻接，则$\deg v = x + y$。  $v$与$V\setminus A$中的$x$个顶点邻接，所对应的边的集合记为$F_1$，则$F_1 \subseteq F$；
     $v$与$A$中的$y$个顶点邻接，而这$y$个顶点中的每个顶点都至少与$V\setminus A$中的一个顶点邻接，所对应的边的集合记为$F_2$，则$F_2 \subseteq F$ 并且$F_1 \cap F_2 = \phi$，从而
-    \[\lambda(G) \geq |F_1| + |F_2| \geq x + y = \deg v \geq  \delta(G)\]
+    \[\lambda(G) \geq |F_1| + |F_2| = x + y = \deg v \geq  \delta(G)\]
   \end{proof}
 
     \begin{Def}
@@ -208,9 +208,9 @@ $V_1\setminus \{u\}$的子集$B$，　$|N(B)| \geq |B|$。由归纳假设，偶�
 （ii）存在$V_1$的真子集$A$，$|N(A)| = |A|$。
 
 考虑图$G$中由$A \cup N(A)$导出的子图$G_1$以及由$(V_1\setminus A) \cup
-N(V_1\setminus A)$导出的子图$G_2$。　$G_1$为偶图，且在$G_1$中对$A$的任意子集$B$，$|N(B)| \geq |B|$。
+(N(V_1\setminus A)\setminus N(A))$导出的子图$G_2$。　$G_1$为偶图，且在$G_1$中对$A$的任意子集$B$，$|N(B)| \geq |B|$。
 $G_2$为偶图，且在$G_2$中对集合$V_1\setminus A$的任意子集$C$，　$|N(C)| \geq |C|$，　这是因为如果
-$|N(C)| < |C|$, 则$|N(C \cup A)| < |C \cup A|$，　与前提条件矛盾。由归纳假设，
+$|N(C)| < |C|$, 则在$G$中$|N(C \cup A)| < |C \cup A|$，　与前提条件矛盾。由归纳假设，
 $G_1$有完全匹配$M_1$，$|M_1|=|A|$，$G_2$有完全匹配$M_2$，$|M_2|=|V_1\setminus A|$。于是
 $M_1\cup M_2$构成了$G$的完全匹配，且$|M_1\cup M_2| = |V_1|$。
   \end{proof}

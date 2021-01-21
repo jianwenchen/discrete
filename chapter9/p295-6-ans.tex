@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+\begin{Exercise}[295-6]
+  证明：如果图$G$的任意两个奇数长的圈都有一个公共顶点，则$\chi (G) \leq 5$。
+\end{Exercise}
+\begin{proof}[证明]
+  用反证法，假设$\chi(G)=n$, $n \geq 6$。对图$G$的顶点用$n$种颜色进行着色，使得任意两个相邻的顶点着不同的颜色。
+
+  设$V_1$，$V_2$，$V_3$为其中着3种不同颜色的顶点集合，$V_4$，$V_5$，$V_6$为其中着另外3种不同颜色的顶点集合。则由$V_1\cup V_2\cup V_3$导出的子图$G_1$不是2-可着色的，从而$G_1$中存在一个奇数长的圈$C_1$;同理，由$V_3\cup V_4\cup V_6$导出的子图$G_2$中存在一个奇数长的圈$C_2$。$C_1$和$C_2$没有公共顶点，矛盾。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

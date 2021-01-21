@@ -1,0 +1,37 @@
+\begin{proof}[证法一]
+  根据传递闭包的定义进行证明。只需证$R\circ S$为包含$R\cup S$的所有传递关系的交。
+
+  首先证明$R\circ S$为包含$R\cup S$的传递关系。对任意的$a\in X,c\in X$，如果$(a,c)\in R\cup S$，则$(a,c)\in R$或者$(a,c)\in S$。如果$(a,c)\in R$，此时由$S$为等价关系知$(c,c)\in S$，从而$(a,c)\in R\circ S$；　如果$(a,c)\in S$，此时由$R$为等价关系知$(a,a)\in R$，从而$(a,c)\in R\circ S$。这证明了$R\cup S\subseteq R\circ S$。由$R\circ S$为等价关系知$R\circ S$为传递的。
+
+  其次，设$T$为任意一个包含$R\cup S$的传递关系，证明$R\circ S \subseteq T$。对任意的$a\in X,c\in X$,如果$(a,c)\in R\circ S$，则存在$b\in X$，$(a,b)\in R$并且$(b,c)\in S$。从而$(a,b)\in R\cup S \subseteq T$，$(b,c)\in R\cup S \subseteq T$，再由$T$为传递关系知$(a,b)\in T$。
+\end{proof}
+
+\begin{proof}[证法二]
+  先证$R\circ S\subseteq (R\cup S)^+$。
+
+  对任意的$a\in X,c\in X$，如果$(a,c)\in R\circ S$，则存在$b\in X$，$(a,b)\in R$并且$(b,c)\in S$，从而$(a,b)\in R\cup S$并且$(b,c)\in R\cup S$，于是$(a,b)\in (R\cup S)^2 \subseteq (R\cup S)^+$。
+
+  再证$(R\cup S)^+\subseteq R\circ S$。
+
+  对任意的$a\in X,c\in X$，由$(a,c)\in (R\cup S)^+$，往证$(a,c)\in R\circ S$。
+
+  对任意的$a\in X,c\in X$，如果$(a,c)\in (R\cup S)^+$，则存在自然数$n$，$n\geq 1$，　$(a,c)\in (R\cup S)^n$。
+
+  以下用数学归纳法证明，对任意的自然数$n$，$n\geq 1$，$(R\cup S)^n\subseteq R\circ S$。
+
+  (1)当$n=1$时，对任意的$a\in X,c\in X$，如果$(a,c)\in R\cup S$，则$(a,c)\in R$或者$(a,c)\in S$。如果$(a,c)\in R$，此时由$S$为等价关系知$(c,c)\in S$，从而$(a,c)\in R\circ S$；　如果$(a,c)\in S$，此时由$R$为等价关系知$(a,a)\in R$，从而$(a,c)\in R\circ S$。
+
+  (2)假设当$n=k(k\geq 1)$时结论成立，往证当$n=k+1$时结论也成立。
+
+  由$R$,$S$,$R\circ S$都为$X$上的等价关系知，$S\circ R=S^{-1}\circ R^{-1}=(R\circ S)^{-1}=R\circ S$。
+
+  对任意的$a\in X,c\in X$，如果$(a,c)\in (R\cup S)^{k+1}=(R\cup S)^k\circ (R\cup S)$，则存在$b\in X$，$(a,b)\in (R\cup S)^k$并且$(b,c)\in (R\cup S)$。由归纳假设，$(a,b)\in R\circ S$。如果$(b,c)\in R$，那么$(a,c)\in (R\circ S)\circ R = R\circ (S\circ R) = R\circ (R\circ S) = (R\circ R)\circ S = R^2\circ S \subseteq R\circ S$；如果$(b,c)\in S$，那么$(a,c)\in (R\circ S)\circ S = R\circ (S\circ S) = R\circ S^2 \subseteq R\circ S$。
+  
+
+  
+\end{proof}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book_chapter3"
+%%% End:

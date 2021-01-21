@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}设$G$为一个$(p,q)$图，证明：$\chi(G) \geq p^2/(p^2-2q)$
+\end{Exercise}
+\begin{proof}[证明]  设图$G$的色数$\chi(G)=n$，则$G$可以用$n$种颜色进行顶点着色使得相邻的顶点着不同的颜色。设着不同颜色的顶点的个数分别为$p_1,p_2,\ldots,p_n$，则
+  \[p_1+p_2+\ldots +p_n = p_1 \cdot 1 + p_2\cdot 1 + \ldots + p_n\cdot 1 \leq \sqrt{p_1^2 + p_2^2 + \ldots + p_n^2} \cdot \sqrt{n}\]
+  于是
+  \[\sqrt{n} \geq \frac{p_1+p_2+\ldots + p_n}{\sqrt{p_1^2 + p_2^2 + \ldots + p_n^2}}\]
+  从而
+  \begin{equation}
+    \label{eq:1}
+  n \geq \frac{p^2}{p_1^2 + p_2^2 + \ldots + p_n^2}    
+  \end{equation}
+  再由
+  \[(p_1+p_2+\ldots + p_n)^2 = p_1^2 + p_2^2 + \ldots + p_n^2 + 2\sum_{1\leq i<j\leq n}p_ip_j\]
+  知
+  \[p_1^2 + p_2^2 + \ldots + p_n^2=p^2-2\sum_{1\leq i<j\leq n}p_ip_j\leq p^2-2q\]
+  结合\eqref{eq:1}式知
+  \[n \geq p^2/(p^2-2q)\]
+  结论得证。
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

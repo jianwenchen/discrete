@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+\begin{Ex}
+设$f:X\to Y$。试证：$f$为满射当且仅当对任意的$E\in 2^Y$，$f(f^{-1}(E))=E$。
+\end{Ex}
+\begin{proof}[证明]
+  设$f$为满射，对任意的$E\in 2^Y$往证$f(f^{-1}(E))=E$。
+
+  对任意的$y$，$y\in f(f^{-1}(E))$，则存在$x$，$x\in f^{-1}(E)$并且$y=f(x)$，于是存在$x$，$f(x) \in E$并且$y=f(x)$，从而$y\in E$。
+
+  对任意的$y$，$y\in E$，由$f$为满射知存在$x$，$y=f(x)$，从而$f(x)\in E$，即$x\in f^{-1}(E)$，由$y=f(x)$知$y\in f(f^{-1}(E))$。
+
+  设对任意的$E\in 2^Y$，$f(f^{-1}(E))=E$，往证$f$为满射。
+
+  对任意的$y\in Y$，则$f(f^{-1}(\{y\}))=\{y\}$，于是$f^{-1}(\{y\})\neq \phi$，即存在$x\in X$，$f(x)=y$，从而$f$为满射。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

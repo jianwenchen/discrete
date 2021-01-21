@@ -1,7 +1,7 @@
 \chapter{映射}
 
   \begin{Def}
-    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的{\bfseries 映射}$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
     从$X$到$Y$的映射$f$常记为$f:X\to Y$。
   \end{Def}
 
@@ -10,7 +10,7 @@
   \end{Example}
 
   \begin{Def}
-    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射为一个满足以下两个条件的$X\times Y$的子集$f$：
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的{\bfseries 映射}为一个满足以下两个条件的$X\times Y$的子集$f$：
     \begin{enumerate}
     \item 对$X$的每一个元素$x$，存在一个$y\in Y$，使得$(x,y) \in f$；
     \item 若$(x,y)\in f$，$(x,y')\in f$，则$y=y'$。
@@ -23,7 +23,7 @@
 
   定义2.1和定义2.2是等价的。
   \begin{Def}
-    设$f$为从集合$X$到集合$Y$的映射，$f:X\to Y$，　如果$y = f(x)$，则称$y$为$x$在$f$下的象，称$x$为$y$的原象。$X$称为$f$的定义域；集合$\{f(x) | x \in X\}$称为$f$的值域，记为$Im(f)$。
+    设$f$为从集合$X$到集合$Y$的映射，$f:X\to Y$，　如果$y = f(x)$，则称$y$为$x$在$f$下的{\bfseries 象}，称$x$为$y$的{\bfseries 原象}。$X$称为$f$的{\bfseries 定义域}；集合$\{f(x) | x \in X\}$称为$f$的{\bfseries 值域}，记为$Im(f)$。
   \end{Def}
   \begin{Def}
     设$f:X\to Y$，$A\subseteq X$，当把$f$的定义域限制在$A$上时，就得到了一个
@@ -41,22 +41,22 @@
   \end{Def}
 
     \begin{Def}
-    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的单射。
+    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的{\bfseries 单射}。
   \end{Def}
   \begin{Def}
-    设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的满射。
+    设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的{\bfseries 满射}。
   \end{Def}
   \begin{Def}
-    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的双射，或者称$f$为从$X$到$Y$的一一对应。
+    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的{\bfseries 双射}，或者称$f$为从$X$到$Y$的一一对应。
   \end{Def}
   \begin{Def}
-    设$f:X\to Y$，$A \subseteq X$，$A$在$f$下的象定义为\[f(A)=\{f(x)|x\in A\}\]
+    设$f:X\to Y$，$A \subseteq X$，$A$在$f$下的{\bfseries 象}定义为\[f(A)=\{f(x)|x\in A\}\]
   \end{Def}
   \begin{Example}
     设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f(\{-1,0\})=\{0,1\}$
   \end{Example}
   \begin{Def}
-    设$f:X\to Y$，$B \subseteq Y$，$B$在$f$下的原象定义为\[f^{-1}(B)=\{x\in X|f(x)\in B\}\]
+    设$f:X\to Y$，$B \subseteq Y$，$B$在$f$下的{\bfseries 原象}定义为\[f^{-1}(B)=\{x\in X|f(x)\in B\}\]
   \end{Def}
   \begin{Example}
     设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f^{-1}(\{-1,0\})=\{0\}$
@@ -80,24 +80,24 @@
   \end{Thm}
 
   \begin{Def}
-    设$f:X\to Y$，$g:Y\to Z$为映射，映射$f$与$g$的合成$g\circ f:X\to Z$定义为\[(g\circ f)(x) = g(f(x))\]
+    设$f:X\to Y$，$g:Y\to Z$为映射，映射$f$与$g$的{\bfseries 合成}$g\circ f:X\to Z$定义为\[(g\circ f)(x) = g(f(x))\]
   \end{Def}
 \begin{Thm}
   设$f:X \to Y$，$g:Y\to Z$，$h:Z\to W$ 为映射，则 \[ (h \circ g) \circ f = h \circ (g \circ f) \]
 \end{Thm}
 
   \begin{Def}
-     设$f:X\to Y$为双射，$f$的逆映射$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
+     设$f:X\to Y$为双射，$f$的{\bfseries 逆映射}$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
    \end{Def}
 
    \begin{Def}\label{inverse1}
-          设$f:X\to Y$为一个双射, 则$g:Y\to X, g=\{(y,x)|(x,y)\in f\}$称为$f$的逆映射，记为$g=f^{-1}$。
+          设$f:X\to Y$为一个双射, 则$g:Y\to X, g=\{(y,x)|(x,y)\in f\}$称为$f$的{\bfseries 逆映射}，记为$g=f^{-1}$。
    \end{Def}
    \begin{Example}
      设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，则$f^{-1}=\{(4,1),(5,2),(6,3)\}$。
    \end{Example}
     \begin{Def}\label{inverse2}
-     设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的逆映射。
+     设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为{\bfseries 可逆}的，而$g$称为$f$的{\bfseries 逆映射}。
    \end{Def}
       \begin{Example}
      设集合$X=\{1,2,3\}$，$Y=\{4,5,6\}$，$f=\{(1,4),(2,5),(3,6)\}$为从$X$到$Y$的双射，$g=\{(4,1),(5,2),(6,3)\}$,由于$f\circ g = I_{Y}$且$ g\circ f = I_{X}$，$f^{-1}=g$。
@@ -203,6 +203,15 @@
    \begin{Thm}
     如果把置换分解成若干个对换的乘积，则对换个数的奇偶性是不变的。
   \end{Thm}
+  \begin{proof}[证明]
+    设$\sigma$为一个$n$次置换。$\sigma$的符号$sign(\sigma)$定义为$(-1)^{|\{(x,y)|x < y \land (x)\sigma > (y)\sigma \}|}$。
+
+设$\alpha = \beta (i,j)$，$i < j$，此时如果$(i)\beta> (j)\beta$,则$(i)\alpha < (j)\alpha$；反之，如果$(i)\beta< (j)\beta$,则$(i)\alpha > (j)\alpha$。
+
+易知，$sign(\alpha) = -sign(\beta)$。
+
+于是，如果置换$\sigma$可以分解为$m$个对换的乘积$\sigma = I(i_1,k_1)(i_2,k_2)\cdots (i_m,k_m)$，其中$I$为恒等置换，由$sign(I)=1$知$sign(\sigma) = (-1)^m$。而$sign(\sigma)$只能为$1$和$-1$两者之一，因此如果$\sigma$能分解成偶数个对换的乘积，则只能分解成偶数个对换的乘积；如果$\sigma$能分解成奇数个对换的乘积，则只能分解成奇数个对换的乘积。
+  \end{proof}
   \begin{Def}
     能被分解为偶数个对换的乘积的置换称为偶置换；能被分解为奇数个对换的乘积的置换称为奇置换。
   \end{Def}
