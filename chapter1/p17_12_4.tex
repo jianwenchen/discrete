@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+  \begin{Ex}
+    以下结论是否成立，若成立，给出证明；若不成立，请说明理由。
+    
+      设$R$，$S$，$T$为任意三个集合，则$ (R\bigtriangleup S)\cup (R\bigtriangleup T)\subseteq R\bigtriangleup (S\cup T)$。
+\end{Ex}
+\begin{proof}[解]
+  该结论不成立。这是因为当$R=\{1\}, S=\{1\}, T = \phi$时，$(R\bigtriangleup S)\cup (R\bigtriangleup T)=\{1\}$，$R\bigtriangleup (S\cup T)=\phi$， $(R\bigtriangleup S)\cup (R\bigtriangleup T)\subseteq R\bigtriangleup (S\cup T)$不成立。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

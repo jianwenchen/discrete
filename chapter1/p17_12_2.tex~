@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+\begin{Ex}
+      设$R$，$S$，$T$为任意三个集合，证明：$(R\bigtriangleup S)\cap (R\bigtriangleup T)\subseteq R\bigtriangleup (S\cap T)$。
+\end{Ex}
+\begin{proof}[证明]
+  \begin{equation*}
+    \begin{split}
+  &(R\bigtriangleup S)\cap (R\bigtriangleup T)\\
+  =&(R\setminus S \cup S\setminus R) \cap (R\setminus T \cup T\setminus R)\\
+  =&(R\setminus S \cap R\setminus T)\cup (R\setminus S\cap T\setminus R)\cup (S\setminus R\cap R\setminus T)\cup (S\setminus R\cap T\setminus R)\\
+  =&R\setminus (S\cup T)\cup \phi \cup \phi \cup (S\cap T)\setminus R\\
+  =&R\setminus (S\cup T)\cup  (S\cap T)\setminus R\\
+\end{split}
+\end{equation*}
+以下只需证明$R\setminus (S\cup T) \cup (S\cap T)\setminus R\subseteq R\bigtriangleup (S\cap T)$。
+
+对任意的$x\in R\setminus (S\cup T) \cup (S\cap T)\setminus R$，则$x\in R\setminus (S\cup T)$或者$x\in (S\cap T)\setminus R$。
+
+若$x\in R\setminus (S\cup T)$，易知$x\in R\setminus (S\cap T)$，从而$x\in R\bigtriangleup (S\cap T)$；若$x\in (S\cap T)\setminus R$，$x\in R\bigtriangleup (S\cap T)$也成立。
+这证明了当$x \in R\setminus (S\cup T) \cup (S\cap T)\setminus R$时，$x\in R\bigtriangleup (S\cap T)$。
+
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

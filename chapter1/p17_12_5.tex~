@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+  \begin{Ex}   
+      设$R$，$S$，$T$为任意三个集合，证明$ (R\cup S)\bigtriangleup (R\cup T)\subseteq R\cup (S\bigtriangleup T)$。
+\end{Ex}
+\begin{proof}[证明]
+  。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

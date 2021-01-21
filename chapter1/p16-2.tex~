@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+      设$A$，$B$为集合，试证$A=\phi \Leftrightarrow B= A\bigtriangleup B$。
+\end{Ex}
+\begin{proof}[证法一]
+  当$A=\phi$时，显然$B= A\bigtriangleup B$。
+
+  设$B= A\bigtriangleup B$，往证$A=\phi$。用反证法。设$A\neq \phi$，则存在$x\in A$。此时，如果$x\in B$，则$x\notin A\bigtriangleup B = B$，矛盾；如果$x\notin B$，则$x\in A\bigtriangleup B=B$，也矛盾。
+\end{proof}
+
+\begin{proof}[证法二]
+  $B= A\bigtriangleup B \Leftrightarrow B \bigtriangleup B = (A\bigtriangleup B)\bigtriangleup B \Leftrightarrow \phi = A\bigtriangleup (B\bigtriangleup B) \Leftrightarrow \phi = A$。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

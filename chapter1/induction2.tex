@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+    设$A_1$，$A_2$，$\ldots$，$A_n$为集合，证明$(A_1\cap A_2\cap \ldots \cap A_n)^c = A_1^c\cup A_2^c\cup \ldots \cup A_n^c$
+\end{Ex}
+
+\begin{proof}[证明]
+  用数学归纳法证明，施归纳于$n$。
+  
+  １．当$n=1$时，结论显然成立。
+
+  ２．假设当$n=k(k\geq 1)$时结论成立，往证当$n=k+1$时结论也成立。
+  \begin{equation*}
+    \begin{split}
+      &(A_1\cap A_2\cap \ldots \cap A_k \cap A_{k+1})^c\\
+      =&(A_1\cap A_2\cap \ldots \cap A_k)^c \cup A_{k+1}^c\\
+    \end{split}
+  \end{equation*}
+  
+  由归纳假设，$(A_1\cap A_2\cap \ldots \cap A_k)^c = A_1^c\cup A_2^c\cup \ldots \cup A_k^c$
+
+  从而$(A_1\cap A_2\cap \ldots \cap A_k\cap A_{k+1})^c = A_1^c\cup A_2^c\cup \ldots \cup A_k^c\cup A_{k+1}^c$，结论得证。
+  
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

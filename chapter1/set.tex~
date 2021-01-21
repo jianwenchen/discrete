@@ -1,0 +1,88 @@
+\chapter{集合}
+  \begin{Def}
+    通常把一些互不相同的东西放在一起所形成的整体叫做一个集合。构成集合的每个东西叫做集合的元素。
+给定一个集合$A$和一个元素$a$，用$a \in A$表示$a$是$A$的一个元素，用$a \notin A$表示$a$不是$A$的一个元素。
+  \end{Def}
+
+  有两种方法表示一个集合：
+\begin{enumerate}
+\item 把构成集合的那些元素全部列出来
+  \begin{itemize}
+  \item $A = \{1, 2, 3\}$
+\item $C = \{a, b, c, \ldots, z\}$
+  \end{itemize}
+\item 用概括集合中各元素的属性来表示集合$\{x|P(x)\}$
+\begin{itemize}
+\item $E = \{n|n \in \mathcal{Z} \land n\text{ is even}\}$
+\item $E = \{n \in \mathcal{Z} | n\text{ is even}\}$
+\end{itemize}
+\end{enumerate}
+
+存在一个集合，该集合中不包含任何元素，称为空集，记为$\Phi$。
+
+  
+    \begin{Def}
+    设$A$，$B$为两个集合，如果$A$中的每个元素都是$B$中的元素，则称$A$为$B$的
+子集，记为$A \subseteq B$; 如果$A \subseteq B$且存在$x\in B$使得$x \notin A$,则称 $A$为$B$ 的真子集，记为$A\subset B$。    
+\end{Def}
+\begin{itemize}
+  \item   $\{1,2,4\} \subseteq \{1,2,3,4,5\}$
+\item $\{1,2,4\} \subset \{1,2,3,4,5\}$
+  \end{itemize}
+
+    \begin{Def}
+    设$A$，$B$为两个集合，如果$A \subseteq B$且$B \subseteq A$，则称$A$与$B$相等，并记为$A=B$。
+  \end{Def}
+    \begin{itemize}
+  \item   $\{1,2,3,4,5\} = \{3,4,2,1,5\}$
+\item $\{x \in \mathcal{R} | x^2 -5x + 6 = 0\} = \{2,3\}$
+  \end{itemize}
+
+\begin{Def}
+  集合$S$的所有子集构成的集合称为$S$的幂集，记为$2^S$或者$\mathcal{P}(S)$。
+\end{Def}
+\begin{Example}
+  设$S=\{1,2,3\}$，则$2^s=\{\phi, \{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$。
+\end{Example}
+
+
+
+%\begin{minipage}{0.69\linewidth}
+  % \begin{Def}
+  %   设$A,B$为任意的两个集合，至少属于集合 $A$ 与集合$B$之一的那些元素构成的集合称为 $A$ 与 $B$的并集，记为$A \cup B$。
+  % \begin{equation*}
+  %     A\cup B = \{x|x \in A \lor x \in B\}
+  %   \end{equation*}
+  % \end{Def}
+%\end{minipage}
+%\begin{minipage}{0.29\linewidth}
+% \begin{tikzpicture}[thick, scale=0.3]
+%   \draw (-3.5, -3.5) rectangle (3.5, 3.5);
+%   \filldraw[fill=red] (-1,0) circle [radius=2cm]
+%                (1,0) circle [radius=2cm];
+%   \draw (-1,0) node[left] {$A$};
+%   \draw (1,0) node[right] {$B$};
+%   \draw (-2.5,2.5) node {$S$};
+% \end{tikzpicture}
+%  \end{minipage}
+
+\begin{Example}
+  $\{1,2\} \cup \{2,3\} = \{1,2,3\}$
+\end{Example}
+
+
+\begin{Exercise}
+设$A$，$B$，$C$是集合，证明$(A\bigtriangleup B)\bigtriangleup C =
+A\bigtriangleup (B\bigtriangleup C)$。
+\end{Exercise}
+
+\begin{Exercise}
+设$A$，$B$，$C$，$D$是任意四个集合，证明$(A\cap B) \times (C \cap D) = (A
+\times C)
+\cap (B \times D)$。
+\end{Exercise}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "book"
+%%% End:

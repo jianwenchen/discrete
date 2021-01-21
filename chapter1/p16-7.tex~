@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+      设$A,B,C$都是集合，若$A\cup B = A\cup C$且$A\cap B = A\cap C$，试证$B=C$。
+\end{Ex}
+\begin{proof}[证明] 
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

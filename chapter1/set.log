@@ -1,0 +1,285 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.23)  11 FEB 2020 19:56
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**set.tex
+(./set.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+./set.tex:1: Undefined control sequence.
+l.1 \chapter
+            {ÈõÜÂêà}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./set.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{È
+              õÜÂêà}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no È in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no Ü in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ê in font nullfont!
+Missing character: There is no à in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+./set.tex:3: LaTeX Error: Environment Ex undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{Ex}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./set.tex:4: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 Ë
+     Ææ$A$Ôºå$B$Ôºå$C$ÊòØÈõÜÂêàÔºåËØÅÊòé$(A\bigtriangleup B)\bigtriangleup C =
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ø in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no Ü in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ê in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no Ø in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no „ in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no Ç in font nullfont!
+
+./set.tex:6: LaTeX Error: \begin{document} ended by \end{Ex}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \end{Ex}
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (63.72713pt too wide) in paragraph at lines 4--7
+[]$\OML/cmm/m/it/10 A$$B$$C$$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 4
+ []
+
+
+Overfull \hbox (20.86461pt too wide) in paragraph at lines 4--7
+\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 4
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 4--7
+\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (16.38892pt too wide) in paragraph at lines 4--7
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 4
+ []
+
+
+Overfull \hbox (20.86461pt too wide) in paragraph at lines 4--7
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 4
+ []
+
+
+Overfull \hbox (11.75139pt too wide) in paragraph at lines 4--7
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )$
+ []
+
+
+./set.tex:8: LaTeX Error: Environment Ex undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin{Ex}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./set.tex:9: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 Ë
+     Ææ$A$Ôºå$B$Ôºå$C$Ôºå$D$ÊòØ‰ªªÊÑèÂõõ‰∏™ÈõÜÂêàÔºåËØÅÊòé$(A\cap B) \times ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no Ø in font nullfont!
+Missing character: There is no ‰ in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no è in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no ‰ in font nullfont!
+Missing character: There is no ∏ in font nullfont!
+Missing character: There is no ™ in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no Ü in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ê in font nullfont!
+Missing character: There is no à in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no å in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no Ø in font nullfont!
+Missing character: There is no Å in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no é in font nullfont!
+Missing character: There is no „ in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no Ç in font nullfont!
+
+./set.tex:12: LaTeX Error: \begin{document} ended by \end{Ex}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \end{Ex}
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (70.06186pt too wide) in paragraph at lines 9--13
+[]$\OML/cmm/m/it/10 A$$B$$C$$D$$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m
+/n/10 \
+ []
+
+
+Overfull \hbox (19.75351pt too wide) in paragraph at lines 9--13
+\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 9--13
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 \
+ []
+
+
+Overfull \hbox (23.00136pt too wide) in paragraph at lines 9--13
+\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 9--13
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 9--13
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 \
+ []
+
+
+Overfull \hbox (19.75351pt too wide) in paragraph at lines 9--13
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (12.44585pt too wide) in paragraph at lines 9--13
+\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$
+ []
+
+)
+! Emergency stop.
+<*> set.tex
+           
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 8 strings out of 494406
+ 150 string characters out of 6169674
+ 48069 words of memory out of 5000000
+ 3576 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 18i,1n,12p,100b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

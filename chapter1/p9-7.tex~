@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+  \begin{Ex}
+    设有$n$个集合$A_1$，$A_2$，$\ldots$，$A_n$，且$A_1\subseteq A_2\subseteq \ldots \subseteq A_n \subseteq A_1$，试证
+   \[A_1 = A_2 = \ldots = A_n\]
+\end{Ex}
+
+\begin{proof}[证明]
+  用数学归纳法证明，施归纳于$n$。
+  
+  １．当$n=2$时，$A_1\subseteq A_2 \subseteq A_1$，$A_1=A_2$显然成立。
+
+  ２．假设当$n=k(k\geq 2)$时结论成立，往证当$n=k+1$时结论也成立。
+
+  设$A_1\subseteq A_2\subseteq \ldots \subseteq A_{k} \subseteq A_{k+1} \subseteq A_1$，则由$A_{k} \subseteq A_{k+1} \subseteq A_1$知$A_{k} \subseteq A_1$,
+  于是$A_1\subseteq A_2\subseteq \ldots \subseteq A_{k} \subseteq A_1$，由归纳假设,$A_1 = A_2 = \ldots = A_k$。
+
+  由$A_1=A_k$，$A_{k+1}\subseteq A_1$知$A_{k+1} \subseteq A_k$，再由$A_{k}\subseteq A_{k+1}$知，$A_k=A_{k+1}$。
+  
+  于是$A_1=A_2=\ldots = A_k = A_{k+1}$，结论得证。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

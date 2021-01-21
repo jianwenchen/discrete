@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+\begin{Ex}
+      设$R$，$S$，$T$为任意三个集合，证明：$(R\bigtriangleup S)\cap (R\bigtriangleup T)\subseteq R\bigtriangleup (S\cap T)$。
+    \end{Ex}
+
+    \begin{proof}[证明（利用自然语言叙述）]
+      
+    \end{proof}
+    
+\begin{proof}[证明(利用集合运算规则)]
+  \begin{equation*}
+    \begin{split}
+  &(R\bigtriangleup S)\cap (R\bigtriangleup T)\\
+  =&(R\setminus S \cup S\setminus R) \cap (R\setminus T \cup T\setminus R)\\
+  =&(R\setminus S \cap R\setminus T)\cup (R\setminus S\cap T\setminus R)\cup (S\setminus R\cap R\setminus T)\cup (S\setminus R\cap T\setminus R)\\
+  =&R\setminus (S\cup T)\cup \phi \cup \phi \cup (S\cap T)\setminus R\\
+  =&R\setminus (S\cup T)\cup  (S\cap T)\setminus R\\
+  \subseteq &R\setminus (S\cap T) \cup (S\cap T)\setminus R\\
+  =&R\bigtriangleup (S\cap T)
+\end{split}
+\end{equation*}
+\end{proof}
+\begin{proof}[证明（利用符号逻辑）]
+    \begin{equation*}
+    \begin{split}
+      \forall x, &x \in (R\bigtriangleup S)\cap (R\bigtriangleup T) \\
+      \Leftrightarrow& x \in (R\bigtriangleup S) \land x\in R\bigtriangleup T\\
+      \Leftrightarrow& x \in (R\setminus S)\cup (S\setminus R) \land x\in (R\setminus T)\cup (T\setminus R)\\
+      \Leftrightarrow& ((x \in R \land x\notin S) \lor (x \in S \land x \notin R))\land ((x\in R \land x\notin T)\lor (x\in T \land x \notin R))\\
+      \Leftrightarrow& (x \in R \land x \notin S  \land x\notin T) \lor (x \in S \land x \in T \land x\notin R)\\
+      \Rightarrow & (x \in R \land (x\notin S \lor x\notin T)) \lor (x \in S \land x \in T \land x\notin R)\\
+      \Leftrightarrow& (x \in R \land x \notin S\cap T)\lor ((x\in S\cap T)\land x\notin R)\\
+      \Leftrightarrow& (x \in R  \setminus (S\cap T))\lor (x\in (S\cap T)\setminus R)\\
+      \Leftrightarrow& x \in R  \bigtriangleup (S\cap T)\\      
+    \end{split}
+  \end{equation*}
+
+\end{proof}
+
+
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

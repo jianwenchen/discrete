@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}
+  毕业舞会上，小伙子与姑娘跳舞。已知每个小伙子至少与一个姑娘跳过舞，但未能与所有的姑娘跳过舞。同样的，每个姑娘也至少与一个小伙子跳过舞，但也未能与所有的小伙子跳过舞。证明：在所有参加舞会的小伙子与姑娘中，必可找到两个小伙子与两个姑娘，这两个小伙子中的每一个只与这两个姑娘中的一个跳过舞，而这两个姑娘中的每一个也只与这两个小伙子中的一个跳过舞。
+\end{Exercise}
+\begin{proof}[证明]设$b_1$为与姑娘跳舞最多的小伙子。由$b_1$未能与所有的姑娘跳过舞知，存在一个姑娘$g_2$，$b_1$未能与$g_2$跳过舞。由每个姑娘至少与一个小伙子跳过舞知，存在一个小伙子$g_2$与$b_2$跳过舞。在与小伙子$b_1$跳过舞的姑娘中，必存在一个姑娘$g_1$未能与小伙子$b_2$跳过舞，否则与$b_1$为与姑娘跳舞最多的小伙子矛盾。于是，$b_1$与$g_1$跳过舞，但未与$g_2$跳过舞；$b_2$与$g_2$跳过舞，但未与$g_1$跳过舞，结论得证。  
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

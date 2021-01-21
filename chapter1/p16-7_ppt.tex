@@ -1,0 +1,72 @@
+\documentclass{beamer}
+\usepackage{ragged2e}
+\usepackage{CJKutf8}
+\usepackage{tikz}
+\setbeamertemplate{theorems}[numbered]
+\justifying\let\raggedright\justifying
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+
+  
+\theoremstyle{definition}
+\newtheorem{Def}{定义}
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+\newtheorem*{Exercise}{习题}
+
+\date{}
+\author{陈建文}
+\title{习题讲解}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}
+
+\begin{Exercise}
+      设$A,B,C$都是集合，若$A\cup B = A\cup C$且$A\cap B = A\cap C$，试证$B=C$。
+\end{Exercise}
+\pause
+\begin{proof}[证法一]\justifying\let\raggedright\justifying
+
+  先证$B\subseteq C$。
+
+  对任意的$x \in B$，分两种情况讨论：
+
+  1)若$x \in A$:此时$x \in A\cap B$，由$A\cap B = A\cap C$知$x \in A\cap C$，从而$x \in C$。
+
+  2)若$x \notin A$:此时由$x\in B$知$x\in A\cup B$，再由$A\cup B = A\cup C$知$x \in A\cup C$，再由$x \notin A$知$x \in C$。
+
+  综合以上两种情况知对任意的$x$,当$x\in B$时$x\in C$，即$B \subseteq C$。
+  
+
+  由$B$和$C$的对称性知$C \subseteq B$，因此$B=C$。
+\end{proof}
+
+\end{frame}
+\begin{frame}
+\begin{Exercise}
+      设$A,B,C$都是集合，若$A\cup B = A\cup C$且$A\cap B = A\cap C$，试证$B=C$。
+\end{Exercise}
+\pause
+\begin{proof}[证法二]\justifying\let\raggedright\justifying
+
+  $B= B\cap (A\cup B) = B \cap (A \cup C) = (B \cap A) \cup (B \cap C) = (A \cap B) \cup (B \cap C) = (A \cap C) \cup (B \cap C) = (C \cap A) \cup (C \cap B) = C \cap (A \cup B) = C \cap (A \cup C) = C$
+  
+\end{proof}  
+\end{frame}
+
+\begin{frame}
+\begin{Exercise}
+      设$A,B,C$都是集合，若$A\cup B = A\cup C$且$A\cap B = A\cap C$，试证$B=C$。
+    \end{Exercise}
+    \pause
+\begin{proof}[证法三]\justifying\let\raggedright\justifying
+由已知条件知$(A\cup B)\setminus (A\cap B) = (A\cup C)\setminus (A\cap C)$，从而$A\bigtriangleup B = A \bigtriangleup C$，于是$A \bigtriangleup (A\bigtriangleup B) =A \bigtriangleup (A \bigtriangleup C)$, 由对称差运算的结合律知$(A \bigtriangleup A)\bigtriangleup B =(A \bigtriangleup A) \bigtriangleup C$，即$\phi \bigtriangleup B = \phi \bigtriangleup C$，从而$B = C$。
+\end{proof}
+  
+\end{frame}
+
+\end{CJK*}
+\end{document}

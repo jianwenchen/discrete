@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+
+    \begin{Ex}
+    设集合$S$有$n$个元素，证明$2^S$有$2^n$个元素。
+  \end{Ex}
+
+  \begin{proof}[证明]
+    用数学归纳法证明，施归纳于$n$：
+
+    1.当$n=0$时，$S=\phi$，$2^{\phi} = \{\phi\}$有$1$个元素，结论成立。
+
+    2.假设当$n=k(k\geq
+    0)$时结论成立，往证当$n=k+1$时结论也成立。设集合$S$中有$k+1$个元
+    素$s_1$，$s_2$，$\ldots$，$s_k$，$s_{k+1}$，记
+    \begin{align*}
+      S_1&=2^{S\setminus \{s_{k+1}\}}\\
+      S_2&=\{X\cup \{s_{k+1}\}|X\subseteq S\setminus \{s_{k+1}\}\}
+    \end{align*}
+    则$2^S = S_1\cup S_2$。
+
+    考虑映射$f:S_1\to S_2$，对任意的$X\in S_1$，$f(X)=X\cup \{s_{k+1}\}$。易验证$f$为从$S_1$到$S_2$的双射，从而$|S_1|=|S_2|$。
+
+    显然$S_1\cap S_2=\phi$，再由归纳假设,$|S_1|=2^k$，从而$|2^S|=|S_1|+|S_2|=2^k+2^k=2^{k+1}$。
+    
+  \end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

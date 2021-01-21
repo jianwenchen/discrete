@@ -1,0 +1,47 @@
+\documentclass{beamer}
+\usepackage{ragged2e}
+\usepackage{CJKutf8}
+\usepackage{tikz}
+\setbeamertemplate{theorems}[numbered]
+\justifying\let\raggedright\justifying
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+
+  
+\theoremstyle{definition}
+\newtheorem{Def}{定义}
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+\newtheorem*{Exercise}{习题}
+
+\date{}
+\author{陈建文}
+\title{习题讲解}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}
+    \begin{Exercise}
+    设$A$，$B$，$C$，$D$为任意四个集合，证明
+    \[(A\times C)\cap (B \times D) = (A\cap B) \times (C \cap D)\]
+\end{Exercise}
+\pause
+  \begin{Def}
+    设$A,B$为任意的两个集合，由既属于集合 $A$又属于集合$B$的所有元素构成的集合称为 $A$ 与 $B$的\alert{交集}，记为$A \cap B$。
+    \begin{equation*}
+      A\cap B = \{x|x \in A \land x \in B\}
+    \end{equation*}
+  \end{Def}\pause
+  \begin{Ex}
+    \begin{itemize}
+    \item 设$A=\{1,2\},B=\{2,3\}$，则$A \cap B = \{2\}$
+    \item 设$C=\{2,3\},D=\{3\}$，则$A \cap B = \{3\}$
+    \end{itemize}
+    \end{Ex}
+\end{frame}
+
+
+\end{CJK*}
+\end{document}

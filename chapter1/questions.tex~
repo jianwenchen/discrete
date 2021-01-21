@@ -8,30 +8,15 @@
 
 \begin{document}
 \begin{CJK}{UTF8}{gbsn}
-\underline{课程学习目标：}
-\begin{enumerate}
-\item 提升逻辑思维能力
-\item 提升抽象思维能力
-\item 提升利用数学语言准确描述计算机科学问题和电子信息科学问题的能力
-\end{enumerate}
-
   命题：可以判断真假的陈述句。通常，我们用$T$表示真，用$F$表示假。
   \begin{Example}\quad
     
-    \begin{enumerate}
-    \item 0是自然数。(真命题)
-    \item 如果$n$为自然数，那么$n++$也为自然数。（真命题）
-    \item 如果$n$为自然数，那么$n++ \neq 0$。(真命题)
-    \item 如果$P(0)$成立，并且对于自然数$n$当$P(n)$成立时，$P(n++)$也成立，那么对所有的自然数$n$，$P(n)$成立。(真命题)
-    \item 对任意的自然数$a,b,c$，$(a + b) + c = a + (b + c)$。(真命题)
-    \item 对任意的有理数$x,y,z$，$(x + y) + z = x + (y + z)$。(真命题）
-    \item $\sqrt{2}$是无理数。(真命题)
-    \item $\sqrt{2}$是有理数。(假命题）
-    \item 设$f:[a,b] \to R$为一个Riemann可积函数，$F:[a,b] \to R$在$[a,b]$上满足$F'(x)=f(x)$，那么$\int_{a}^{b}f(x)dx = F(b) - F(a)$。(真命题)
-    \item “集合”在数学上是一个不可定义的概念。(真命题)
-    \item 任何一幅地图都可以用四种颜色进行着色，使得相邻的区域着以不同的颜色。
+    \begin{itemize}
+    \item 2是偶数。(真命题)
+    \item 北京是中国的首都。（真命题）
+    \item 多伦多是加拿大的首都。（假命题）
     \item 这句话是假的。（不能判断真假的陈述句，不是命题）
-    \end{enumerate}
+    \end{itemize}
   \end{Example}
   谓词：命题的谓语部分。
   
@@ -153,56 +138,28 @@
 
   $\lnot (p\land q)$与$\lnot p \lor \lnot q$是等价的。
 
-      \begin{tabular}{cc|cc}
-    $p$& $q$&$\lnot (p\land q)$ &$\lnot p \lor \lnot q$\\
+      \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$&$\lnot (p\land q)$ &$\lnot p \lor \lnot q$\\
     \hline
-    T&T&F&F\\
-    T&F&T&T\\
-    F&T&T&T\\
-      F&F&T&T\\      
+    T&T&T&F&F\\
+    T&F&T&T&T\\
+    F&T&T&T&T\\
+      F&F&T&T&T\\      
   \end{tabular}
 
 
   $\lnot (p \lor q)$与$\lnot p \land \lnot q$是等价的。
   
-      \begin{tabular}{cc|cc}
-    $p$& $q$&$\lnot (p \lor q)$&$\lnot p \land \lnot q$\\
+      \begin{tabular}{ccc|cc}
+    $p$& $q$& $r$&$\lnot (p \lor q)$&$\lnot p \land \lnot q$\\
     \hline
-    T&T&F&F\\
-    T&F&F&F\\
-    F&T&F&F\\
-    F&F&T&T\\      
+    T&T&T&F&F\\
+    T&F&T&F&F\\
+    F&T&T&F&F\\
+    F&F&T&T&T\\      
   \end{tabular}
 
 
-  有些逻辑术语从外文翻译成中文时产生了不同的称谓，在本门课程中关于逻辑术语我们做如下的约定：
-
-
-  The negation of a proposition $P$: $\lnot P$
-
-  命题$P$的否定：$\lnot P$
-
-  The converse of $P\to Q$: $Q \to P$
-
-  命题$P\to Q$的逆命题：$Q\to P$
-
-
-
-  The inverse of $P\to Q$: $\lnot P \to \lnot Q$
-  
-  在较深入的探讨数理逻辑的教材中，该概念用的很少，因此我们不给出具体的翻译称谓，在需要表达该概念时明确说明为$\lnot P \to \lnot Q$即可。
-
-  
-  The contrapositive of $P\to Q$: $\lnot Q \to \lnot P$
-
-  命题$P\to Q$的逆否命题：$\lnot Q \to \lnot P$
-
-  需要特别说明的是，命题$P\to Q$的否定为$\lnot (P \to Q)$，而不是$P \to \lnot Q$。这将和英文表达相一致：The negation of $P\to Q$ is $\lnot (P \to Q)$. 
-
-  
-  
-
-  
 \end{CJK}
 \end{document}
 

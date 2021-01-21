@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Ex}{习题}
+\begin{Ex}
+  设$V$为一个集合，证明：$\forall S,T,W \in 2^V$有$S \subseteq T \subseteq W$当且仅当$S \bigtriangleup T \subseteq S \bigtriangleup W$且$S \subseteq W$。
+\end{Ex}
+
+\begin{proof}[证明]
+  首先，$\forall S,T,W \in 2^V$由$S \subseteq T \subseteq W$往证$S \bigtriangleup T \subseteq S \bigtriangleup W$且$S \subseteq W$。
+
+  由$S \subseteq T \subseteq W$知$S \bigtriangleup T = T\setminus S$，$S \bigtriangleup W = W\setminus S$，由$T\subseteq W$知$T\setminus S \subseteq W\setminus S$，从而$S \bigtriangleup T \subseteq S \bigtriangleup W$。$S \subseteq W$显然成立。
+
+  接下来，$\forall S,T,W \in 2^V$由$S \bigtriangleup T \subseteq S \bigtriangleup W$且$S \subseteq W$往证$S \subseteq T \subseteq W$。
+
+  由$S\subseteq W$知$S\bigtriangleup W = W\setminus S$。
+  
+  先证$S\subseteq T$。用反证法，假设$S\subseteq T$不成立,则存在$x$，$x\in S$但$x \notin T$，于是$x\in S\setminus T\subseteq S\bigtriangleup T \subseteq S\bigtriangleup W = W\setminus S$，这与$x\in S$矛盾。
+
+  再证$T\subseteq W$。用反证法，假设$T\subseteq W$不成立,则存在$x$，$x\in T$但$x \notin W$，由$S\subseteq W$知$x\notin S$，于是$x \in T\setminus S \subseteq S\bigtriangleup T \subseteq S\subseteq W = W\setminus S$，这与$x\notin W$矛盾。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

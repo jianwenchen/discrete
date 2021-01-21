@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Ex}{习题}
+  \begin{Ex}
+      设$R$，$S$，$T$为任意三个集合，证明$R\bigtriangleup (S\cup T) \subseteq  (R\bigtriangleup S)\cup (R\bigtriangleup T)$。
+\end{Ex}
+\begin{proof}[证明]
+  对任意的$x\in R\bigtriangleup (S\cup T)$，$x\in R\setminus (S\cup T)$或者$x\in  (S\cup T)\setminus R$。如果$x\in R\setminus (S\cup T)$,显然$x\in R\setminus S$,从而$x\in R\bigtriangleup S$，因此$x\in (R\bigtriangleup S)\cup (R\bigtriangleup T)$；如果$x\in  (S\cup T)\setminus R$，则$x\in S\cup T$并且$x\notin R$，即$x\in S$或者$x\in T$，并且$x\notin R$,从而$x\in S$并且$x\notin R$,或者$x\in T$并且$x\notin R$，即$x\in S\setminus R$或者$x\in T\setminus R$，因此$x\in (R\bigtriangleup S)\cup (R\bigtriangleup T)$。这证明了对任意的$x\in R\bigtriangleup (S\cup T)$，$x\in (R\bigtriangleup S)\cup (R\bigtriangleup T)$，结论得证。
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
