@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \huge
+\begin{Exercise}[321-1]
+  设$T$为一棵正则$m$元有序树$(m>1)$，它有$n_0$个叶子，$T$有多少条弧？
+\end{Exercise}
+\begin{proof}[解]
+  设$T$中出度为$m$的结点个数为$n_m$，则\[mn_m=n_m+n_0-1\]
+  从而\[n_m=\frac{n_0-1}{m-1}\]
+  于是，$T$中的弧数为\[mn_m=\frac{m(n_0-1)}{m-1}\]
+\end{proof}
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

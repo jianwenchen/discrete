@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \huge
+\begin{Exercise}[p321-3]
+  设$T$为一棵有$n_0$个叶子的二元树，出度为$2$的顶点数为$n_2$，试证：$n_0=n_2+1$。
+\end{Exercise}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

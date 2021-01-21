@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \newtheorem*{Def}{定义}
+  \Large
+    \begin{Def}
+    设$X$，$Y$，$Z$为任意三个非空集合。一个 从 $X\times Y$到$Z$的映射 $\phi$ 称 为 $X$与$Y$到$Z$的一个二元（代数）运算。当$X=Y=Z$时，则称$\phi$为$X$上的二元(代数)运算。
+  \end{Def}
+  \begin{Def}
+    从集合$X$到$Y$的任一映射称为从$X$到$Y$的一元(代数)运算。如果$X=Y$，则从$X$到$X$的映射称为$X$上的一元(代数)运算。
+  \end{Def}
+  \begin{Def}
+    设$A_1, A_2, \cdots, A_n, D$为非空集合。一个从 $A_1\times A_2\times \cdots \times A_n$到$D$的映射$\phi$称为$A_1, A_2, \cdots, A_n$到$D$的一个$n$元（代数）运算。
+    如果$A_1=A_2=\cdots=A_n=D=A$，则称$\phi$为$A$上的$n$元代数运算。
+  \end{Def}
+
+       \begin{Def}
+    一个集合及其在该集合上定义的若干个代数运算合称为一个代数系。
+  \end{Def}
+  \begin{Def}
+    设$(S,+)$与$(T, \oplus)$为两个代数系。如果存在一个一一对应$\phi:S\to T$， 使得$\forall x, y \in S$，有
+    \begin{align*}
+      \phi(x+y) &= \phi(x) \oplus \phi(y),
+    \end{align*}
+    则称代数系$(S,+)$与$(T, \oplus)$同构，并记为$S\cong T$, $\phi$称为这两个代数系之间的一个同构。
+  \end{Def}
+
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

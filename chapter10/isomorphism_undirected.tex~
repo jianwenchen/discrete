@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+  \newtheorem*{Def}{定义}
+  \huge
+  \begin{Def}
+    设$D_1=(V_1,A_1)$，$D_2=(V_2,A_2)$都为有向图，如果存在一个一一对应$\varphi:V_1 \to V_2$，使得$\forall u,v \in V_1, (u,v) \in A_1$当且仅当$(\varphi(u), \varphi(v)) \in A_2$，则称$D_1$与$D_2${\bfseries 同构}。
+  \end{Def}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

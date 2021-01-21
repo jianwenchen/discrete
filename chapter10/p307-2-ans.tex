@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+  \newtheorem*{Exercise}{习题}
+\begin{Exercise}[p307-2]
+  设$D$为一个有$p$个顶点$q$条弧的强连通的有向图，则$q$至少是多大？
+\end{Exercise}
+\begin{proof}[答]
+  当$p=1$时，$q=0$;当$p>1$时，$q$至少为$p$。
+
+  当$p>1$时，设$u$和$v$为$D$的两个顶点，由$D$为强连通的知从$u$到$v$有一条有向路$uu_1u_2\ldots u_nv$，从$v$到$u$有一条有向路$vu_{n+2}u_{n+3}\ldots u_{n+m}u$。
+  考虑有向闭通道$W=uu_1u_2\ldots u_nvu_{n+2}u_{n+3}\ldots u_{n+m}u$，记$u_0=u$，$v_{n+1}=v$。设$u_j$为$W$上第一个与前面的某个顶点$u_i$重复的顶点，那么$u_iu_{i+1}\ldots u_j$构成了$D$中的一个圈。这证明了当$p>1$时，任意一个强连通图中必定有圈。因此，抹去$D$中所有弧的方向所得到的无向图为连通的，且至少有$1$个圈，去掉该圈上的一条边，所得到的无向图仍然为连通的，从而$q-1\geq p-1$，即$q\geq p$。
+
+  显然由$p$个顶点$v_1,v_2,\ldots,v_p$依次相连所构成的圈$v_1v_2\ldots v_pv_1$有$p$条弧。因此$q$至少为$p$。
+ 
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

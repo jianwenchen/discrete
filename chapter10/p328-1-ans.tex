@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\newtheorem*{Exercise}{习题}
+\begin{Exercise}[p328-1]
+用数学归纳法证明每个比赛图中必有有向哈密顿路。
+\end{Exercise}
+\begin{proof}[证明]
+  用数学归纳法证明，施归纳于顶点数$p$。
+
+  （１）当$p=1$时，结论显然成立。
+
+  （２）假设当$p=k(k\geq 1)$时结论成立，往证当$p=k+1$时结论也成立。设$D=(V,A)$为一个包含$k+1$个顶点的比赛图，$v$为$D$的任意一个顶点，则$D-v$为一个包含$k$个顶点的比赛图。由归纳假设，$D-v$有一条有向哈密顿路$v_1v_2\ldots v_k$。如果$(v,v_1)\in A$，那么$vv_1v_2\ldots v_k$为有向图$D$的一条有向哈密顿路；如果$(v_k,v)\in A$，那么$v_1v_2\ldots v_kv$为有向图$D$的一条有向哈密顿路；如果$(v,v_1)\notin A$并且$(v_k,v)\notin A$，由$D$为比赛图知$(v_1,v)\in A$并且$(v,v_k)\in A$，在$1,2,\ldots, k$中选取最大的下标$i$使得$(v_i,v)\in A$，则$(v,v_{i+1})\in A$，于是$v_1,v_2,\ldots,v_i,v,v_{i+1},\ldots,v_k$为$D$的一条有向哈密顿路。 
+\end{proof}
+
+\end{CJK}
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
