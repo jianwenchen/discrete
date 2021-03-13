@@ -3,6 +3,7 @@
 \usepackage{CJKutf8}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\newtheorem{Ex}{练习}
 
 \newtheorem*{Example}{例}
 
@@ -11,20 +12,89 @@
 \underline{课程学习目标：}
 \begin{enumerate}
 \item 提升逻辑思维能力
+  \begin{enumerate}
+  \item 直接证明法
+  \item 数学归纳法
+  \item 反证法
+
+    ...
+  \end{enumerate}
 \item 提升抽象思维能力
 \item 提升利用数学语言准确描述计算机科学问题和电子信息科学问题的能力
 \end{enumerate}
 
+\underline{一个直接证明法的例子：}
+
+证明：设$x, y, z$为任意三个非负有理数，则$(x + y) + z = x + (y + z)$。
+\begin{proof}[证明]
+  设$x=\frac{a}{b}$，$y=\frac{c}{d}$，$z=\frac{e}{f}$，其中$a$，$c$，$e$为自然数，$b$，$d$，$f$为正整数，
+  则
+  \begin{align*}
+    (x + y) + z&=(\frac{a}{b}+\frac{c}{d})+\frac{e}{f}\\
+               &=\frac{ad+bc}{bd}+\frac{e}{f}\\
+    &=\frac{adf+bcf+bde}{bdf}\\
+    x + (y + z)&=\frac{a}{b}+(\frac{c}{d}+\frac{e}{f})\\
+               &=\frac{a}{b} + \frac{cf + de}{df}\\
+    &=\frac{adf+bcf+bde}{bdf}    
+  \end{align*}
+  这证明了$(x + y) + z = x + (y + z)$。
+\end{proof}
+
+\underline{一个数学归纳法的例子：}
+
+证明：设$a, b, c$为任意三个自然数，则$(a + b) + c = a + (b + c)$。
+
+\begin{proof}[证明]
+  用数学归纳法证明。
+
+  1.当$c=0$时，$(a+b)+0=a+(b+0)$显然成立。
+
+  2.对于任意的自然数$k$，假设当$c=k$时结论成立，往证当$c=k+1$时结论也成立。$(a+b)+(k+1)=((a+b)+k)+1$，而$a+(b+(k+1))=a+((b+k)+1)=(a+(b+k))+1$。由归纳假设，$(a+b)+k=a+(b+k)$，从而$(a+b)+(k+1)=a+(b+(k+1))$。
+  结论得证。
+\end{proof}
+
+
+刻画自然数的Peano公理（1889年提出）：
+\begin{enumerate}
+    \item 0为自然数。
+    \item 如果$n$为自然数，那么$n++$也为自然数。
+    \item 如果$n$为自然数，那么$n++ \neq 0$。
+    \item 设$n$，$m$为自然数，如果$n \neq m$，那么$n++ \neq m++$。
+    \item 如果$P(0)$成立，并且对于任意的自然数$n$，当$P(n)$成立时，$P(n++)$也成立，那么对任意的自然数$n$，$P(n)$成立。 
+    \end{enumerate}
+
+    在以上Peano公理的基础上，递归的定义自然数的加法如下：
+    
+    对任意的自然数$m$，
+    \begin{enumerate}
+    \item $m + 0 = m$
+    \item 对任意的自然数$n$，$m + (n++) = (m + n)++$
+    \end{enumerate}
+    证明：设$a, b, c$为任意三个自然数，则$(a + b) + c = a + (b + c)$。
+
+\begin{proof}[证明]
+  用数学归纳法证明。
+
+  1.当$c=0$时，$(a+b)+0=a+(b+0)$显然成立。
+
+  2.对于任意的自然数$k$，假设当$c=k$时结论成立，往证当$c=k++$时结论也成立。$(a+b)+(k++)=((a+b)+k)++$，而$a+(b+(k++))=a+((b+k)++)=(a+(b+k))++$。由归纳假设，$(a+b)+k=a+(b+k)$，从而$(a+b)+(k++)=a+(b+(k++))$，  结论得证。
+\end{proof}
+
+\underline{一个反证法的例子：}
+
+证明：$\sqrt{2}$是无理数。
+\begin{proof}[证明]
+  用反证法。假设$\sqrt{2}$为有理数，则存在互素的整数$m$和$n$使得$\sqrt{2}=\frac{n}{m}$，于是
+  \begin{equation}\label{eq_1}
+    2m^2=n^2
+  \end{equation}
+  这说明$n$为偶数，从而存在整数$k$，使得$n=2k$。带入\eqref{eq_1}得，$m^2=2k^2$，从而$m$为偶数，这与$m$和$n$互素矛盾，结论得证。
+\end{proof}
   命题：可以判断真假的陈述句。通常，我们用$T$表示真，用$F$表示假。
   \begin{Example}\quad
     
     \begin{enumerate}
-    \item 0是自然数。(真命题)
-    \item 如果$n$为自然数，那么$n++$也为自然数。（真命题）
-    \item 如果$n$为自然数，那么$n++ \neq 0$。(真命题)
-    \item 如果$P(0)$成立，并且对于自然数$n$当$P(n)$成立时，$P(n++)$也成立，那么对所有的自然数$n$，$P(n)$成立。(真命题)
     \item 对任意的自然数$a,b,c$，$(a + b) + c = a + (b + c)$。(真命题)
-    \item 对任意的有理数$x,y,z$，$(x + y) + z = x + (y + z)$。(真命题）
     \item $\sqrt{2}$是无理数。(真命题)
     \item $\sqrt{2}$是有理数。(假命题）
     \item 设$f:[a,b] \to R$为一个Riemann可积函数，$F:[a,b] \to R$在$[a,b]$上满足$F'(x)=f(x)$，那么$\int_{a}^{b}f(x)dx = F(b) - F(a)$。(真命题)
@@ -174,7 +244,58 @@
     F&F&T&T\\      
   \end{tabular}
 
+  $p \to q$与$\lnot p \lor q$是等价的。
+  
+      \begin{tabular}{cc|cc}
+    $p$& $q$&$p \to q$&$\lnot p \lor q$\\
+    \hline
+    T&T&T&T\\
+    T&F&F&F\\
+    F&T&T&T\\
+    F&F&T&T\\      
+  \end{tabular}
+  
 
+  我们还可以利用真值表检验$(p\to q) \land (p\to \lnot q) \to \lnot p$是永真的。
+  
+      \begin{tabular}{cc|cc}
+    $p$& $q$&$(p\to q) \land (p\to \lnot q) \to \lnot p$\\
+    \hline
+    T&T&T\\
+    T&F&T\\
+    F&T&T\\
+    F&F&T\\      
+      \end{tabular}
+
+      假设我约定"$\to$"的真值表如下：
+
+    \begin{tabular}{cc|c}
+    p& q& p $\to$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&T\\
+    \end{tabular}\hspace{0.87cm}
+
+    我们会发现复合命题$(p\to q) \land (p\to \lnot q) \to \lnot p$不是永真的，这将与我们关于“蕴含”的思维不相符。
+
+    同时我们还会发现$p \to q$和$q\to p$在逻辑上是等价的。
+
+    \begin{tabular}{cc|cc}
+    p& q& p $\to$ q&q $\to$ p\\
+    \hline
+    T&T&T&T\\
+    T&F&F&F\\
+    F&T&F&F\\
+    F&F&T&T\\
+    \end{tabular}\hspace{0.87cm}
+
+    这也与我们的思维习惯不相符。
+
+    
+
+  
   有些逻辑术语从外文翻译成中文时产生了不同的称谓，在本门课程中关于逻辑术语我们做如下的约定：
 
 
