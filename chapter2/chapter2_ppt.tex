@@ -17,7 +17,7 @@
 \newtheorem{Def}{定义}[section]
 \theoremstyle{example}
 \newtheorem*{Ex}{例：}
-\newtheorem{Exercise}{习题}
+\newtheorem*{Exercise}{习题}
 
 \date{}
 \author{陈建文}
@@ -86,25 +86,51 @@
     设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的\alert{满射}。
   \end{Def}
   \begin{Def}\justifying\let\raggedright\justifying
-    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的\alert{双射}，或者称$f$为从$X$到$Y$的\alert{一一对应}。
+    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的\alert{双射}，或者称$f$为从$X$到$Y$的\alert{一一对应}。这时也称$X$与$Y$\alert{对等}，记为$X\sim Y$。
   \end{Def}
 
 \end{frame}
-\section{鸽笼原理}
 \begin{frame}
-  \frametitle{2. 鸽笼原理}
-  \begin{Thm}[鸽笼原理]
+  \frametitle{1.映射}
+  \begin{Def}
+    从集合$X$到集合$Y$的所有映射之集记为$Y^X$，即$\{f|f:X\to Y\}$。
+  \end{Def}
+\end{frame}
+\section{抽屉原理}
+\begin{frame}
+  \frametitle{2. 抽屉原理}
+  \begin{Thm}[抽屉原理]
     如果把$n+1$个物体放到$n$个盒子里，则必有一个盒子里至少放了两个物体。
   \end{Thm}
-  \pause
-  \begin{Ex}
-    已知$m$个整数$a_1,a_2,\ldots,a_m$，试证：存在两个整数 $k$， $l$， \\ $0\leq k < l \leq m$，使得$a_{k+1}+a_{k+2}+\ldots+a_{l}$能被$m$整除。
-  \end{Ex}
+  
+  %\begin{Ex}
+  %  已知$m$个整数$a_1,a_2,\ldots,a_m$，试证：存在两个整数 $k$， $l$， \\ $0\leq k < l \leq m$，使得$a_{k+1}+a_{k+2}+\ldots+a_{l}$能被$m$整除。
+  %\end{Ex}
 \end{frame}
 
 \begin{frame}
-  \frametitle{2. 鸽笼原理}
-  \begin{Thm}[鸽笼原理的强形式]
+    \frametitle{2. 抽屉原理}
+  \begin{Ex}
+    从$1,2,\ldots, 2n$中任意选出$n+1$个数，则这$n+1$个数中必有两个数，使得其中之一能除尽另一个。
+  \end{Ex}
+  \pause
+  \begin{proof}[证明]\justifying\let\raggedright\justifying
+  每个整数均可写成$2^l\cdot d$的形式，其中$l$为非负整数，$d$为奇数。因此，当把选出的$n+1$个整数都写成这种形式时，便得到了$n+1$个奇数$d_1,d_2,\cdots, d_{n+1}$，并且$1\leq d_i \leq 2n -1$，$i=1,2,\cdots, n+1$。但$1$到$2n$之间仅有$n$个奇数，由抽屉原理可知，必有$i,j$使得$d_i=d_j$，$i\neq j$。于是，$d_i$与$d_j$对应的两个整数$2^{l_i}\cdot {d_i}$与$2^{l_j}\cdot {d_j}$中必有一个可以整除另外一个。
+  \end{proof}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2. 抽屉原理}
+  \begin{Ex}
+    任何６个人中，或有$3$个人互相认识，或有$3$个人互相不认识。
+  \end{Ex}
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{2. 抽屉原理}
+  \begin{Thm}[抽屉原理的强形式]
     设$q_1$，$q_2$，$\ldots$，$q_n$为$n$个正整数。如果把 $q_1 + q_2 + \cdots + q_n$  $- n$ $ + 1$ 个物体放到$n$个盒子中，则或者第一个盒子中至少含有$q_1$个物体，或者第二个盒子中至少含有$q_2$个物体，$\ldots$，
     或者第$n$个盒子中至少含有$q_n$个物体。
   \end{Thm}\pause
@@ -112,8 +138,22 @@
     如果把$n(r-1) + 1$个物体放入$n$个盒子里，则至少有一个盒子里放了不少于$r$个物体。
   \end{Cor}\pause
   \begin{Cor}
-    如果把$n$个正整数$m_1, m_2, \ldots, m_n$的平均值\[\frac{m_1 + m_2 + \ldots + m_n}{n} > r - 1,\] 则$m_1, m_2, \ldots, m_n$中至少有一个正整数不小于$r$。
+    如果$n$个正整数$m_1, m_2, \ldots, m_n$的平均值\[\frac{m_1 + m_2 + \ldots + m_n}{n} > r - 1,\] 则$m_1, m_2, \ldots, m_n$中至少有一个正整数不小于$r$。
   \end{Cor}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2. 抽屉原理}
+  \begin{Ex}
+    $n^2+1$个士兵站成一排，则可以使其中的至少$n+1$个士兵向前走一步站成一个按身高从小到大的队列，或站成一个按身高从大到小的队列。
+  \end{Ex}
+  
+\end{frame}
+\begin{frame}
+  \frametitle{2. 抽屉原理}
+  \begin{Exercise}
+    在一个半径为$16$的圆内任意放入$650$个点。给你一个形似垫圈的圆环，此圆环的外半径为$3$，内半径为$2$。现在要求你用这个垫圈盖住这$650$个点中的至少$10$个点，这可能吗？证明你的结论。
+  \end{Exercise}
 \end{frame}
 \section{映射的一般性质}
 \begin{frame}
@@ -122,7 +162,7 @@
     设$f:X\to Y$，$A \subseteq X$，$A$在$f$下的\alert{象}定义为\[f(A)=\{f(x)|x\in A\}\]
   \end{Def}\pause
   \begin{Ex}
-    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，$f(\{-1,0\})$=?
+    设$f:\{-1,0,1\}\to \{0,1,2\}$，$f(x)=x^2$，$f(\{-1,0\})$=?
   \end{Ex}
 \end{frame}
 \begin{frame}
@@ -131,19 +171,20 @@
     设$f:X\to Y$，$B \subseteq Y$，$B$在$f$下的\alert{原象}定义为\[f^{-1}(B)=\{x\in X|f(x)\in B\}\]
   \end{Def}\pause
   \begin{Ex}
-    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f^{-1}(\{-1,0\})$=?
+    设$f:\{-1,0,1\}\to \{0,1,2\}$，$f(x)=x^2$，则$f^{-1}(\{1,2\})$=?
   \end{Ex}
 \end{frame}
 
 \begin{frame}
   \frametitle{3. 映射的一般性质}
   \begin{Thm}
-    设$f:X\to Y$，$A \subseteq Y$，$B \subseteq Y$， 则
+    设$f:X\to Y$，$C \subseteq Y$，$D \subseteq Y$， 则
     \begin{enumerate}[(1)]
-    \item $f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B)$
-    \item $f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B)$
-    \item $f^{-1}(A^c)=(f^{-1}(A))^c$
-    \item $f^{-1}(A \bigtriangleup B) = f^{-1}(A) \bigtriangleup f^{-1}(B)$
+    \item $f^{-1}(C \cup D) = f^{-1}(C) \cup f^{-1}(D)$
+    \item $f^{-1}(C \cap D) = f^{-1}(C) \cap f^{-1}(D)$
+    \item $f^{-1}(C \setminus D)=f^{-1}(C) \setminus f^{-1}(D)$
+    \item $f^{-1}(C^c) = (f^{-1}(C))^c$
+    \item $f^{-1}(C \bigtriangleup D) = f^{-1}(C) \bigtriangleup f^{-1}(D)$
     \end{enumerate}
   \end{Thm}
     \begin{Thm}
@@ -151,6 +192,7 @@
     \begin{enumerate}[(1)]
     \item $f(A \cup B) = f(A) \cup f(B)$
     \item $f(A \cap B) \subseteq f(A) \cap f(B)$
+    \item $f(A \setminus B) \supseteq f(A) \setminus f(B)$
     \item $f(A \bigtriangleup B) \supseteq f(A) \bigtriangleup f(B)$
     \end{enumerate}
   \end{Thm}
@@ -232,26 +274,26 @@
 \begin{frame}
   \frametitle{6. 置换} 
   \begin{Def}
-    设$\alpha$与$\beta$为集合$S=\{1,2,3,4\}$上的两个置换，则$\alpha$与$\beta$为两个从$S$到$S$的双射，讨论置换时，我们用$\alpha\beta$表示$\alpha$与$\beta$的合成$\beta \circ \alpha$。
+    设$\alpha$与$\beta$为集合$S$上的两个置换，则$\alpha$与$\beta$为两个从$S$到$S$的双射，讨论置换时，我们用$\alpha\beta$表示$\alpha$与$\beta$的合成$\beta \circ \alpha$。
     注意这里$\alpha$与$\beta$的次序，从运算的角度看有一定的便利性，但也有的教材中采用相反的顺序。按照我们的写法，讨论置换时，如果$i \in S$，则用$(i)\alpha$表示$i$在$\alpha$下的像，简记为$i\alpha$。
   \end{Def}
-  \begin{Ex}
-    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
-    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
-    则
-    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
-  \end{Ex}
+  % \begin{Ex}
+  %   设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+  %   \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+  %   则
+  %   \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  % \end{Ex}
  \end{frame}
 
  \begin{frame}
   \frametitle{6. 置换} 
   若$\alpha$与$\beta$为两个$n$次置换，当把$\beta$的表示式中的上一行按$\alpha$的下一行的顺序写出时，则$\alpha \beta$的下一行就是$\beta$的新表示式中的下一行。
-  \begin{Ex}
-    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
-    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
-    则
-    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&3&2\\2&1&3\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
-  \end{Ex}   
+  % \begin{Ex}
+  %   设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+  %   \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+  %   则
+  %   \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&3&2\\2&1&3\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  % \end{Ex}   
  \end{frame}
  \begin{frame}
    \frametitle{6. 置换}
@@ -259,9 +301,9 @@
      设$\sigma$为$S$上的一个$n$次置换，若$i_1\sigma=i_2$，$i_2\sigma = i_3$， $\cdots$， $i_{k-1}\sigma = i_k$， $i_k\sigma = i_1$，而$\forall i \in S\setminus \{i_1, i_2, \ldots, i_k\}$， $i\sigma = i$，
      则称$\sigma$为一个\alert{$k$循环置换}，记为$(i_1i_2\cdots i_k)$。 $2-$循环置换称为\alert{对换}。
    \end{Def}
-   \begin{Ex}
-   设$S=\{1,2,3,4,5\}$，则$(1,2,3)=\begin{pmatrix}1&2&3&4&5\\2&3&1&4&5\end{pmatrix}$，$(2,3)=\begin{pmatrix}1&2&3&4&5\\1&3&2&4&5\end{pmatrix}$     
-   \end{Ex}
+   % \begin{Ex}
+   % 设$S=\{1,2,3,4,5\}$，则$(1,2,3)=\begin{pmatrix}1&2&3&4&5\\2&3&1&4&5\end{pmatrix}$，$(2,3)=\begin{pmatrix}1&2&3&4&5\\1&3&2&4&5\end{pmatrix}$     
+   % \end{Ex}
  \end{frame}
 
  \begin{frame}
