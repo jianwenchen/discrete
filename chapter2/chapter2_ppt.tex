@@ -1,0 +1,709 @@
+\documentclass{beamer}
+%\usepackage{beamerthemesplit}
+\usepackage{CJKutf8}
+\usepackage{tikz}
+\setbeamertemplate{theorems}[numbered]
+
+\usepackage{ragged2e}
+%\justifying\let\raggedright\justifying
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+\newtheorem{Thm}{定理}[section]
+\newtheorem{Cor}{推论}[section]
+\theoremstyle{definition}
+\newtheorem{Def}{定义}[section]
+\theoremstyle{example}
+\newtheorem*{Ex}{例：}
+\newtheorem{Exercise}{习题}
+
+\date{}
+\author{陈建文}
+
+\title{第二章 映射}
+\begin{frame}
+  \titlepage
+\end{frame}  
+\section{映射}
+\begin{frame}
+  \frametitle{1. 映射}
+  
+  % \begin{Def}
+  %   设$X$和$Y$是两个非空集合，$P(x,y)$是定义在$X\times Y$上的一个二元谓词，且满足以下两个条件：
+  %   \begin{enumerate}[(1)]
+  %   \item 对$X$的每一个元素$x$， 存在$y\in Y$， 使得$P(x,y)$取值为真；
+  %   \item 如果$P(x,y_1)$，$P(x, y_2)$同时取值为真，则$y_1 = y_2$。
+  %   \end{enumerate}
+  %   则$P(x,y)$确定了一个\alert{映射}$f:X\to Y$， 对任何的$x\in X$，$f(x)$定义为$Y$中使得$P(x,y)$为真的唯一的$y$。这里$y$称为$x$在$f$下的\alert{象}，而$x$称为$y$的\alert{原象}。
+  %   $X$称为$f$的\alert{定义域}；集合$\{f(x) | x \in X\}$称为$f$的\alert{值域}，记为$Im(f)$。
+  % \end{Def}
+  \begin{Def}
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的\alert{映射}$f$为一个法则，根据$f$，对$X$中的每个元素$x$都有$Y$中唯一确定的元素$y$与之对应。
+    从$X$到$Y$的映射$f$常记为$f:X\to Y$。
+  \end{Def}\pause
+
+  \begin{Def}
+    设$X$和$Y$为两个非空集合。一个从$X$到$Y$的映射为一个满足以下两个条件的$X\times Y$的子集$f$：
+    \begin{enumerate}
+    \item 对$X$的每一个元素$x$，存在一个$y\in Y$，使得$(x,y) \in f$；
+    \item 若$(x,y)\in f$，$(x,y')\in f$，则$y=y'$。
+    \end{enumerate}
+    $(x,y)\in f$记为$y=f(x)$。
+  \end{Def}\pause
+
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f$为从集合$X$到集合$Y$的映射，$f:X\to Y$，　如果$y = f(x)$，则称$y$为$x$在$f$下的\alert{象}，称$x$为$y$的\alert{原象}。$X$称为$f$的\alert{定义域}；集合$\{f(x) | x \in X\}$称为$f$的\alert{值域}，记为$Im(f)$。
+  \end{Def}
+\end{frame}
+\begin{frame}
+  \frametitle{1. 映射}
+
+  \begin{Def}
+    设$f:X\to Y$，$A\subseteq X$，当把$f$的定义域限制在$A$上时，就得到了一个
+    $\phi: A\to Y$，$\forall x \in A$，$\phi(x) = f(x)$。$\phi$称为$f$在$A$上的
+    \alert{限制}，并且常用$f|A$来表示$\phi$。反过来，我们也称$f$为$\phi$在$X$上的\alert{扩张}。
+  \end{Def}\pause
+    \begin{Def}
+    设$f:A \to Y$，$A \subseteq X$， 则称$f$为$X$上的一个\alert{部分映射}。
+  \end{Def}\pause
+  \begin{Def}
+    两个映射$f$与$g$称为是\alert{相等}的当且仅当$f$和$g$都为从$X$到$Y$的映射，并且$\forall x \in X$总有$f(x) = g(x)$。
+  \end{Def}\pause
+  \begin{Def}
+    设$f:X\to X$，如果$\forall x \in X, f(x) = x$，则称$f$为$X$上的恒等映射。$X$上的恒等映射常记为$I_X$。
+  \end{Def}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{1.映射}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$，如果$\forall x_1, x_2 \in X$， 只要$x_1 \neq x_2$，  就 有 $f(x_1) \neq f(x_2)$，   则称$f$为从$X$到$Y$的\alert{单射}。
+  \end{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$， 如果$\forall y \in Y$， $\exists x \in X$使得 $f(x) = y$， 则称$f$为从$X$到$Y$的\alert{满射}。
+  \end{Def}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$，如果$f$既是单射又是满射，则称$f$为从$X$到$Y$的\alert{双射}，或者称$f$为从$X$到$Y$的\alert{一一对应}。
+  \end{Def}
+
+\end{frame}
+\section{鸽笼原理}
+\begin{frame}
+  \frametitle{2. 鸽笼原理}
+  \begin{Thm}[鸽笼原理]
+    如果把$n+1$个物体放到$n$个盒子里，则必有一个盒子里至少放了两个物体。
+  \end{Thm}
+  \pause
+  \begin{Ex}
+    已知$m$个整数$a_1,a_2,\ldots,a_m$，试证：存在两个整数 $k$， $l$， \\ $0\leq k < l \leq m$，使得$a_{k+1}+a_{k+2}+\ldots+a_{l}$能被$m$整除。
+  \end{Ex}
+\end{frame}
+
+\begin{frame}
+  \frametitle{2. 鸽笼原理}
+  \begin{Thm}[鸽笼原理的强形式]
+    设$q_1$，$q_2$，$\ldots$，$q_n$为$n$个正整数。如果把 $q_1 + q_2 + \cdots + q_n$  $- n$ $ + 1$ 个物体放到$n$个盒子中，则或者第一个盒子中至少含有$q_1$个物体，或者第二个盒子中至少含有$q_2$个物体，$\ldots$，
+    或者第$n$个盒子中至少含有$q_n$个物体。
+  \end{Thm}\pause
+  \begin{Cor}
+    如果把$n(r-1) + 1$个物体放入$n$个盒子里，则至少有一个盒子里放了不少于$r$个物体。
+  \end{Cor}\pause
+  \begin{Cor}
+    如果把$n$个正整数$m_1, m_2, \ldots, m_n$的平均值\[\frac{m_1 + m_2 + \ldots + m_n}{n} > r - 1,\] 则$m_1, m_2, \ldots, m_n$中至少有一个正整数不小于$r$。
+  \end{Cor}
+\end{frame}
+\section{映射的一般性质}
+\begin{frame}
+  \frametitle{3. 映射的一般性质}
+  \begin{Def}
+    设$f:X\to Y$，$A \subseteq X$，$A$在$f$下的\alert{象}定义为\[f(A)=\{f(x)|x\in A\}\]
+  \end{Def}\pause
+  \begin{Ex}
+    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，$f(\{-1,0\})$=?
+  \end{Ex}
+\end{frame}
+\begin{frame}
+  \frametitle{3. 映射的一般性质}
+  \begin{Def}
+    设$f:X\to Y$，$B \subseteq Y$，$B$在$f$下的\alert{原象}定义为\[f^{-1}(B)=\{x\in X|f(x)\in B\}\]
+  \end{Def}\pause
+  \begin{Ex}
+    设$f:\{-1,0,1\}\to \{-1,0,1\}$，$f(x)=x^2$，则$f^{-1}(\{-1,0\})$=?
+  \end{Ex}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3. 映射的一般性质}
+  \begin{Thm}
+    设$f:X\to Y$，$A \subseteq Y$，$B \subseteq Y$， 则
+    \begin{enumerate}[(1)]
+    \item $f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B)$
+    \item $f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B)$
+    \item $f^{-1}(A^c)=(f^{-1}(A))^c$
+    \item $f^{-1}(A \bigtriangleup B) = f^{-1}(A) \bigtriangleup f^{-1}(B)$
+    \end{enumerate}
+  \end{Thm}
+    \begin{Thm}
+    设$f:X\to Y$，$A \subseteq X$，$B \subseteq X$， 则
+    \begin{enumerate}[(1)]
+    \item $f(A \cup B) = f(A) \cup f(B)$
+    \item $f(A \cap B) \subseteq f(A) \cap f(B)$
+    \item $f(A \bigtriangleup B) \supseteq f(A) \bigtriangleup f(B)$
+    \end{enumerate}
+  \end{Thm}
+
+\end{frame}
+
+\section{映射的合成}
+\begin{frame}
+  \frametitle{4. 映射的合成}
+  \begin{Def}
+    设$f:X\to Y$，$g:Y\to Z$为映射，映射$f$与$g$的\alert{合成} $g\circ f:X\to Z$定义为\[(g\circ f)(x) = g(f(x))\]
+  \end{Def}
+  \pause
+\begin{Thm}
+  设$f:X \to Y$，$g:Y\to Z$，$h:Z\to W$ 为映射，则 \[ (h \circ g) \circ f = h \circ (g \circ f) \]
+\end{Thm}
+
+\end{frame}
+
+\section{逆映射}
+\begin{frame}
+  \frametitle{5. 逆映射}
+  \begin{Def}
+     设$f:X\to Y$为双射，$f$的\alert{逆映射}$f^{-1}:Y\to X$定义为：对任意的$y\in Y$，存在唯一的$x$使得$f(x)=y$,则$f^{-1}(y)=x$。
+   \end{Def}
+   \pause
+     \begin{block}{定义5.1'}
+     设$f:X\to Y$为一个双射, 则$g:Y\to X, g=\{(y,x)|(x,y)\in f\}$称为$f$的逆映射，记为$g=f^{-1}$。
+   \end{block}
+        \begin{block}{定义5.1''}
+     设$f:X\to Y$为一个映射。如果存在一个映射$g:Y\to X$使得\[f\circ g = I_{Y} \text{且} g\circ f = I_{X},\]则称映射$f$为可逆的，而$g$称为$f$的\alert{逆映射}。
+   \end{block}
+
+   \begin{Thm}
+     定义5.1'与定义5.1''是等价的。
+   \end{Thm}
+\end{frame}
+\begin{frame}
+  \frametitle{5. 逆映射}
+  \begin{Thm}
+    设$f:X\to Y$为可逆映射，则$(f^{-1})^{-1}=f$。
+  \end{Thm}
+  \pause
+  \begin{Thm}
+    设$f:X\to Y$，$g:Y\to Z$都为可逆映射，则$g\circ f$也为可逆映射并且$(g\circ f)^{-1} = f^{-1}\circ g^{-1}$。
+  \end{Thm}
+\end{frame}
+\begin{frame}
+  \frametitle{5. 逆映射}
+  \begin{Def}\justifying\let\raggedright\justifying
+    设$f:X\to Y$为一个映射，如果存在一个映射 $g:Y\to X$ 使 得 $g\circ f = I_X$，
+    则称$f$为\alert{左可逆}的，$g$称为$f$的\alert{左逆映射}；如果存在一个映射
+    $h:Y\to X$ 使 得 $f\circ h=I_Y$，则称$f$为\alert{右可逆}的，$h$称为$f$的\alert{右逆映射}。
+  \end{Def}\pause
+  \begin{Thm}
+    设$f:X\to Y$为一个映射，则
+    \begin{enumerate}
+    \item $f$左可逆当且仅当$f$为单射；
+    \item $f$右可逆当且仅当$f$为满射。
+    \end{enumerate}
+  \end{Thm}
+\end{frame}
+\section{置换}
+\begin{frame}
+  \frametitle{6. 置换}
+  \begin{Def}
+    有穷集合$S$到自身的一一对应称为$S$上的一个\alert{置换}。如果$|S| = n$, 则$S$上的置换就说成是\alert{$n$次置换}。
+  \end{Def}
+\justifying\let\raggedright\justifying
+设$S=\{1,2,\ldots,n\}$，$\sigma:S\to S$为$S$上的一个置换，$\sigma(1) = k_1$， $\sigma(2) = k_2$，$\ldots$，$\sigma(n) = k_n$，我们用如下的一个表来表示置换$\sigma$:
+\[\sigma=\begin{pmatrix}1&2&\ldots&n\\k_1&k_2&\ldots&k_n\end{pmatrix}\]
+\small{\begin{Ex}
+  设$S=\{1,2,3,4\}$，$\sigma(1) = 3$，　$\sigma(2) = 2$，　$\sigma(3) = 4$，　$\sigma(4) = 1$，则$\sigma$可以表示为
+  \[\sigma=\begin{pmatrix}1&2&3&4\\3&2&4&1\end{pmatrix}\]
+  这里，列的次序无关紧要，例如，$\sigma$还可以表示为
+  \[\sigma=\begin{pmatrix}2&1&3&4\\2&3&4&1\end{pmatrix}\]
+\end{Ex}}
+\end{frame}
+\begin{frame}
+  \frametitle{6. 置换} 
+  \begin{Def}
+    设$\alpha$与$\beta$为集合$S=\{1,2,3,4\}$上的两个置换，则$\alpha$与$\beta$为两个从$S$到$S$的双射，讨论置换时，我们用$\alpha\beta$表示$\alpha$与$\beta$的合成$\beta \circ \alpha$。
+    注意这里$\alpha$与$\beta$的次序，从运算的角度看有一定的便利性，但也有的教材中采用相反的顺序。按照我们的写法，讨论置换时，如果$i \in S$，则用$(i)\alpha$表示$i$在$\alpha$下的像，简记为$i\alpha$。
+  \end{Def}
+  \begin{Ex}
+    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+    则
+    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  \end{Ex}
+ \end{frame}
+
+ \begin{frame}
+  \frametitle{6. 置换} 
+  若$\alpha$与$\beta$为两个$n$次置换，当把$\beta$的表示式中的上一行按$\alpha$的下一行的顺序写出时，则$\alpha \beta$的下一行就是$\beta$的新表示式中的下一行。
+  \begin{Ex}
+    设$S=\{1,2,3\}$，$\alpha$和$\beta$为$S$上的两个置换，
+    \[\alpha=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix},\beta=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\]，
+    则
+    \[\alpha\beta=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\begin{pmatrix}1&3&2\\2&1&3\end{pmatrix}=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\]，    
+  \end{Ex}   
+ \end{frame}
+ \begin{frame}
+   \frametitle{6. 置换}
+   \begin{Def}\justifying\let\raggedright\justifying
+     设$\sigma$为$S$上的一个$n$次置换，若$i_1\sigma=i_2$，$i_2\sigma = i_3$， $\cdots$， $i_{k-1}\sigma = i_k$， $i_k\sigma = i_1$，而$\forall i \in S\setminus \{i_1, i_2, \ldots, i_k\}$， $i\sigma = i$，
+     则称$\sigma$为一个\alert{$k$循环置换}，记为$(i_1i_2\cdots i_k)$。 $2-$循环置换称为\alert{对换}。
+   \end{Def}
+   \begin{Ex}
+   设$S=\{1,2,3,4,5\}$，则$(1,2,3)=\begin{pmatrix}1&2&3&4&5\\2&3&1&4&5\end{pmatrix}$，$(2,3)=\begin{pmatrix}1&2&3&4&5\\1&3&2&4&5\end{pmatrix}$     
+   \end{Ex}
+ \end{frame}
+
+ \begin{frame}
+   \frametitle{6. 置换}
+   \begin{Thm}
+    每个置换都能被分解成若干个没有共同数字的循环置换的乘积。如果不计这些循环置换的顺序以及略去的$1-$循环置换，这个分解是唯一的。
+   \end{Thm}
+ \end{frame}
+
+ \begin{frame}
+   \frametitle{6. 置换}
+   \begin{Thm}
+    当$n\geq 2$时，每个$n$次置换都能被分解成若干个对换的乘积。
+   \end{Thm}
+ \end{frame}
+
+ \begin{frame}
+   \frametitle{6. 置换}
+   \begin{Thm}
+    如果把置换分解成若干个对换的乘积，则对换个数的奇偶性是不变的。
+  \end{Thm}
+  \pause
+  \begin{Def}
+    能被分解为偶数个对换的乘积的置换称为\alert{偶置换}；能被分解为奇数个对换的乘积的置换称为\alert{奇置换}。
+  \end{Def}
+  \pause
+  \begin{Thm}
+    当$n \geq 2$时， $n$次奇置换的个数与$n$次偶置换的个数相等，都等于$\frac{n!}{2}$。
+  \end{Thm}
+ \end{frame}
+
+ 
+\section{代数运算}
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{Def}
+    一个集合及其在该集合上定义的若干个代数运算合称为一个\alert{代数系}。
+  \end{Def}
+
+  \begin{Thm}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x =x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{Thm}
+\end{frame}
+ 
+\section{代数运算}
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.5\linewidth}
+    
+  \begin{Thm}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x =x + (-x) = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{Thm}
+\end{minipage}\pause
+\begin{minipage}[t]{0.5\linewidth}
+  \begin{Def}
+    设$X$，$Y$，$Z$为任意三个非空集合。一个 从 $X\times Y$到$Z$的映射 $\phi$ 称 为 $X$与$Y$到$Z$的一个\alert{二元（代数）运算}。当$X=Y=Z$时，则称$\phi$为$X$上的\alert{二元(代数)运算}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    从集合$X$到$Y$的任一映射称为从$X$到$Y$的\alert{一元(代数)运算}。如果$X=Y$，则从$X$到$X$的映射称为$X$上的\alert{一元(代数)运算}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设$A_1, A_2, \cdots, A_n, D$为非空集合。一个从 $A_1\times A_2\times \cdots \times A_n$到$D$的映射$\phi$称为$A_1, A_2, \cdots, A_n$到$D$的一个\alert{$n$元（代数）运算}。
+    如果$A_1=A_2=\cdots=A_n=D=A$，则称$\phi$为$A$上的\alert{$n$元代数运算}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设“$\circ$”为集合$X$上的一个二元代数运算。如果$\forall a, b \in X$，恒有\\$a \circ b = b \circ a$， 则称二元代数运算“$\circ$”满足\alert{交换律}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设“$\circ$”为集合$X$上的一个二元代数运算。如果$\forall a, b, c \in X$，恒有$(a \circ b) \circ c = a \circ (b \circ c)$， 则称二元代数运算“$\circ$”满足\alert{结合律}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设“$+$”与“$\circ$”为集合$X$上的两个二元代数运算。\\如果$\forall a, b, c \in X$，恒有\[a \circ (b + c) = a \circ b + a \circ c,\] 则称二元代数运算“$\circ$”对“$+$”满足\alert{左分配律}。
+    \\如果$\forall a, b, c \in X$，恒有\[(b + c)\circ a = b \circ a + c \circ a,\] 则称二元代数运算“$\circ$”对“$+$”满足\alert{右分配律}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设$(X, \circ)$为一个代数系。如果存在一个元素$e\in X$使得对任意的$x\in X$恒有$e\circ x = x \circ e = x$， 则称$e$为“$\circ$”的\alert{单位元素}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{minipage}[t]{0.49\linewidth}
+  \begin{block}{定理7.1}
+    设$x, y, z \in \mathbb{R}$，则
+   \begin{enumerate}
+   \item   $x + y = y + x$
+   \item   $(x + y) + z = x + (y + z)$
+   \item   $0 + x = x + 0 = x$
+   \item   $(-x) + x = (-x) + x = 0$
+   \item   $x * y = y * x$
+   \item   $(x * y) * z = x * (y *z)$
+   \item   $1 * x = x * 1 = x$
+   \item   $x^{-1} * x = x * x^{-1} = 1$
+   \item   $x* (y + z) = x * y + x * z$
+   \item   $(y + z) * x = y * x + z * x$
+    \end{enumerate}
+  \end{block}\pause
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+  \begin{Def}
+    设$(X, \circ)$为一个代数系，“$\circ$”有单位元素$e$，$a\in X$，如果$\exists b\in X$使得\[a\circ b = b \circ a = e,\]  则称$b$为$a$的\alert{逆元素}。
+  \end{Def}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{Def}
+    设$(S,+)$与$(T, \oplus)$为两个代数系。如果存在一个一一对应$\phi:S\to T$， 使得$\forall x, y \in S$，有
+    \begin{align*}
+      \phi(x+y) &= \phi(x) \oplus \phi(y),
+    \end{align*}
+    则称代数系$(S,+)$与$(T, \oplus)$\alert{同构}，并记为$S\cong T$, $\phi$称为这两个代数系之间的一个同构。
+  \end{Def}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{Def}
+    设$(S,+, \circ)$与$(T, \oplus, *)$为两个代数系。如果存在一个一一对应$\phi:S\to T$， 使得$\forall x, y \in S$，有
+    \begin{align*}
+      \phi(x+y) &= \phi(x) \oplus \phi(y),\\
+      \phi(x\circ y)&= \phi(x) * \phi(y),
+    \end{align*}
+    则称代数系$(S,+,\circ)$与$(T, \oplus, *)$\alert{同构}，并记为$S\cong T$, $\phi$称为这两个代数系之间的一个同构。
+  \end{Def}
+\end{frame}
+
+\begin{frame}
+  \frametitle{7. 代数运算}
+  \begin{tabular}{cc|c}
+    p& q& p $\land$ q\\
+    \hline
+    T&T&T\\
+    T&F&F\\
+    F&T&F\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{cc|c}
+    p& q& p $\lor$ q\\
+    \hline
+    T&T&T\\
+    T&F&T\\
+    F&T&T\\
+    F&F&F\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{c|c}
+    p& $\lnot$ p\\
+    \hline
+    T&F\\
+    F&T\\
+  \end{tabular}
+
+  \vspace{1cm}\pause
+    \begin{tabular}{cc|c}
+    x& y& x $\land$ y\\
+    \hline
+    1&1&1\\
+    1&0&0\\
+    0&1&0\\
+    0&0&0\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{cc|c}
+    x& y& x $\lor$ y\\
+    \hline
+    1&1&1\\
+    1&0&1\\
+    0&1&1\\
+    0&0&0\\
+  \end{tabular}\hspace{1cm}
+  \begin{tabular}{c|c}
+    x& $\bar{x}$\\
+    \hline
+    1&0\\
+    0&1\\
+  \end{tabular}
+  
+代数系$(\{T,F\},\land,\lor,\lnot)$与$(\{1,0\},\land, \lor,\bar{ })$是同构的。
+\end{frame}
+
+\section{集合的特征函数}
+\begin{frame}
+  \frametitle{8. 集合的特征函数}
+  \begin{Def}
+    设$X$为一个集合，$E \subseteq X$。 $E$的\alert{特征函数}$\chi_E:X\to \{0,1\}$定义为
+    \begin{equation*}
+      \chi_E(x)=
+      \begin{cases}
+        1 & \text{如果} x \in E,\\
+        0 & \text{如果} x \notin E.
+      \end{cases}
+    \end{equation*}
+  \end{Def}
+\end{frame}
+\begin{frame}
+  \frametitle{8. 集合的特征函数}
+  \begin{Def}
+    令$Ch(X) = \{\chi |\chi:X \to \{0,1\}\}$。
+    $\forall \chi, \chi' \in Ch(X)$及$x \in X$，
+    \begin{align}
+      (\chi \lor \chi')(x) &= \chi(x) \lor \chi'(x)\nonumber\\
+      (\chi \land \chi')(x) &= \chi(x) \land \chi'(x)\nonumber\\
+      \bar{\chi}(x) &=   \overline{\chi(x)}
+    \end{align}
+  \end{Def}
+  \begin{Thm}
+    设$X$为一个集合，则代数系$(2^X, \cup, \cap, ^c)$与$(Ch(X), \lor, \land, \bar{} \ )$同构。
+  \end{Thm}
+\end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+    \begin{Exercise}
+  设$X=\{a,b,c\}, Y=\{0,1\}, Z=\{2,3\}$。$f:X \to Y, f(a) = f(b) = 0, f(c) = 1$；
+  $g:Y\to Z, g(0) = 2, g(1) = 3$。试求$g\circ f$。
+  \end{Exercise}
+  \begin{Exercise}
+    设$f:X \to Y$，$C \subseteq Y$，$D \subseteq Y$，证明
+
+    $f^{-1}(C \setminus D) = f^{-1}(C) \setminus f^{-1}(D)$
+  \end{Exercise}
+    \begin{Exercise}
+    设$f:X \to Y$，$A \subseteq X$，$B \subseteq X$，证明
+
+    $f(A \setminus B) \supseteq f(A) \setminus f(B)$
+    
+  \end{Exercise}
+  \begin{Exercise}
+    设$f:X\to Y$，$A \subseteq X$，则$(f(A))^c \subseteq f(A^c)$成立吗？$ f(A^c)\subseteq (f(A))^c$成立吗？
+  \end{Exercise}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{习题}
+  \begin{Exercise}
+    设$f:X\to Y$，　证明：$f$为满射当且仅当$\forall E \in 2^Y, f(f^{-1}(E)) = E$。
+  \end{Exercise}
+
+  \begin{Exercise}
+    设$f:X\to Y$，　证明：$f$为单射当且仅当$\forall F \in 2^X, f^{-1}(f(F)) = F$。    
+  \end{Exercise}
+    \begin{Exercise}
+    设$f:X \to Y$，$g:Y \to Z$，$A \subseteq Z$，证明：$(gf)^{-1}(A) = f^{-1}(g^{-1}(A))$。
+  \end{Exercise}
+  \begin{Exercise}
+    设$N=\{1,2,\ldots\}$，试构造两个映射$f:N \to N$与$g:N\to N$，使得$fg = I_N$，
+    但$gf \neq I_N$。
+  \end{Exercise}
+\end{frame}
+\begin{frame}
+  \frametitle{习题}
+ \begin{Exercise}
+    设$f:X \to Y$，
+
+    （１）如果存在唯一的一个映射$g:Y\to X$，使得$gf = I_X$，那么$f$是否可逆呢？
+
+    （２）如果存在唯一的一个映射$g:Y\to X$，使得$fg = I_Y$，那么$f$是否可逆呢？
+
+  \end{Exercise}
+  \begin{Exercise}
+    是否存在一个从集合$X$到$X$的一一对应，使得$f=f^{-1}$，但$f \neq I_X$?
+  \end{Exercise}
+\end{frame}
+\newtheorem*{Exercise11}{习题11}
+
+\begin{frame}
+  \frametitle{习题选讲}
+  \begin{Exercise11}
+    $n^2+1$个士兵站成一排，则可以使其中的至少$n+1$个士兵向前走一步站成一个按身高从小到大的队列，或站成一个按身高从大到小的队列。
+  \end{Exercise11}
+  $4\quad8\quad9\quad3\quad6\quad1\quad7\quad2\quad5\quad0$
+
+  $3\quad2\quad1\quad3\quad2\quad3\quad1\quad2\quad1\quad1$
+  
+\end{frame}
+\end{CJK*}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
